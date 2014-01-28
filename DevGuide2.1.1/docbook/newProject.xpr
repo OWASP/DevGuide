@@ -19,6 +19,8 @@
             <file name="owasp-esapi-devguide-2.1.1-chapter1.xml"/>
             <file name="owasp-esapi-devguide-2.1.1-chapter2.xml"/>
             <file name="owasp-esapi-devguide-2.1.1-chapter3.xml"/>
+            <file name="owasp-esapi-devguide-2.1.1-chapter4.xml"/>
+            <file name="owasp-esapi-devguide-2.1.1-chapter5.xml"/>
         </folder>
     </projectTree>
 </project>

@@ -139,6 +139,7 @@ Copyright © 2001 – 2005 Free Software Foundation, licensed as per the Free Do
 <xi:include href="owasp-esapi-devguide-2.1.1-chapter2.xml" />
 <xi:include href="owasp-esapi-devguide-2.1.1-chapter3.xml" />
 <xi:include href="owasp-esapi-devguide-2.1.1-chapter4.xml" />
+<xi:include href="owasp-esapi-devguide-2.1.1-chapter5.xml" />
 </part>
 <part>
 <title>End Matter</title>

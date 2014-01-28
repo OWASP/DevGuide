@@ -6,9 +6,7 @@
 <section>
 <title>Security Architecture and Design</title>
 <!-- ??? image policy_frameworks_intro -->
-<section>
-<title>Secure by Design</title>
-<subtitle>Policy Frameworks</subtitle>
+<subtitle>Secure by Design - Policy Frameworks</subtitle>
 <section>
 <title>Overview</title>
 <para>Secure applications do not just happen – they are the result of an organization deciding that they will produce secure applications. OWASP’s does not wish to force a particular approach or require an organization to pick up compliance with laws that do not affect them - every organization is different.</para>
@@ -67,6 +65,7 @@
 </listitem>
 </itemizedlist>
 <para>IANAL: OWASP is not a qualified source of legal advice; you should seek your own legal advice.</para>
+</section>
 <section>
 <title>COBIT</title>
 <para>COBIT is a popular risk management framework structured around four domains:</para>
@@ -109,14 +108,14 @@ and the relevant standards bodies, such as Standards Australia (
 </section>
 <section>
 <title>Sarbanes-Oxley</title>
-<simplesect>
+<section>
 <title>
 </title>
 <para>A primary motivator for many US organizations in adopting OWASP controls is to assist with ongoing Sarbanes-Oxley compliance. If an organization followed every control in this book, it would not grant the organization SOX compliance. The Guide can be used as a suitable control for application procurement and in-house development, as part of a wider compliance program.</para>
 <para>However, SOX compliance is often used as necessary cover for previously resource starved IT managers to implement long neglected security controls, so it is important to understand what SOX actually requires. A summary of SOX, section 404 obtained from AICPA’s web site at
 <!-- <link>??? http://www.aicpa.org/info/sarbanes_oxley_summary.htm</link> -->
 states:</para>
-</simplesect>
+</section>
 <section>
 <title>Section 404: Management Assessment of Internal Controls</title>
 <para>Requires each annual report of an issuer to contain an "internal control report", which shall:</para>
@@ -134,12 +133,12 @@ This essentially states that management must establish and maintain internal
 control structures and procedures, and an annual evaluation that the controls are effective. As finance is no longer conducted using double entry in ledger books, “SOX compliance” is often extended to mean IT.
 </para>
 </section>
-<simplesect>
+<section>
 <title>
 </title>
 <para>The Guide can assist SOX compliance by providing effective controls for all applications, and not just for the purposes of financial reporting. It allows organizations to buy products which claim they use OWASP controls, or allow organizations to dictate to custom software houses that they must use OWASP controls to produce more secure software.</para>
 <para>However, SOX should not be used as an excuse. SOX controls are necessary to prevent another Enron, not to buy widgets that may or may not help. All controls, whether off the shelf widgets, training, code controls, or process changes, should be selected based on measurable efficacy and ability to treat risk, and not “tick the boxes”.</para>
-</simplesect>
+</section>
 </section>
 <section>
 <title>Development Methodology</title>
@@ -182,8 +181,6 @@ control structures and procedures, and an annual evaluation that the controls ar
 <para>High performing software engineering requires the use of regular improvements to code, along with associated testing regimes. All code and tests must be able to be reverted and versioned.</para>
 <para>This could be done by copying folders on a file server, but it is better performed by source code revision tools, such as Git, Subversion, CVS, SourceSafe, or ClearCase.</para>
 <para>Why include tests in a revision? Tests for later builds do not match the tests required for earlier builds. It is vital that a test is applied to the build for which it was built.</para>
-</section>
-</section>
 </section>
 </section>
 </chapter>
