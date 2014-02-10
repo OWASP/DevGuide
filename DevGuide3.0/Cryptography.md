@@ -1,8 +1,4 @@
-Base Header Level: 1
-Title: 
-Author:
-
-### Cryptography ###
+## Cryptography ##
 
 Cryptography
 Objective
