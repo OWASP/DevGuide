@@ -6,6 +6,12 @@ Thank you for your interest in the OWASP Developer Guide, the first major OWASP 
 
 The OWASP Developer Guide needs help. Lots of it. Please volunteer if you can write even a few paragraphs a month.
 
+## GitHub DevGuide Wiki
+
+Information about the project and how to help the project. This will be updated first then ported over to the OWASP.org wiki.
+
+[https://github.com/OWASP/DevGuide/wiki](https://github.com/OWASP/DevGuide/wiki)
+
 ## Mail List
 
 You can join in the conversation here:
@@ -36,7 +42,7 @@ We discuss a fair amount about the OWASP Guide on Google+
   * English Word | PDF
   * Japanse Word | PDF
   * Spanish Word | PDF
-* OWASP Developer Guide 3.0 (abandoned)
+* OWASP Developer Guide 3.0 (~~abandoned~~)
 * OWASP Developer Guide 2010 (abandoned)
 
 
