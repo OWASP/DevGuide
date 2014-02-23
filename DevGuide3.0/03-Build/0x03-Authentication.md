@@ -49,7 +49,15 @@ A strong hashing algorithm should take a considerable amount of time on a modern
 
 #### Single factor ####
 
+Authenticating an entity entails proving a secret is known, a tangible object is possessed, or an inherent characteristic is present. A secret could be a password or pin number. A tangible object examples might be an employee ID card or Yubikey. An inherent characteristic might be biometric data like a fingerprint, retinal scan, or voice recognition.
+
+But the main point is that only one of these 'challenges' to the entity is used to compare against some known good data stored in single factor authentication. For some trivial purposes, the weak security provided by a password only authentication may be sufficient.
+
 #### Multi-factor authentication ####
+
+When protecting resources from the unauthorized, two-factor authentication is the bare minimum. Usual implementations employ an intangible secret with a real world factor like a physical key or palm print. It is rare to see multi-factor security above two-factor authentication outside of government, medical, and banking applications but not unheard of.
+
+(TBD Provide real world legal requirements that specify that highest levels of security are mandated.)
 
 #### Knowledge based authentication ####
 
