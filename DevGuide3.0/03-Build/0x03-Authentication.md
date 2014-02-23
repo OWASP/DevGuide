@@ -49,7 +49,7 @@ A strong hashing algorithm should take a considerable amount of time on a modern
 
 #### Single factor ####
 
-Authenticating an entity entails proving a secret is known, a tangible object is possessed, or an inherent characteristic is present. A secret could be a password or pin number. A tangible object examples might be an employee ID card or Yubikey. An inherent characteristic might be biometric data like a fingerprint, retinal scan, or voice recognition.
+Authenticating an entity entails proving a secret is known, a tangible object is possessed, or an inherent characteristic is present. A secret could be a password or pin number. A tangible object example might be an employee ID card or Yubikey. An inherent characteristic might be biometric data like a fingerprint, retinal scan, or voice recognition.
 
 But the main point is that only one of these 'challenges' to the entity is used to compare against some known good data stored in single factor authentication. For some trivial purposes, the weak security provided by a password only authentication may be sufficient.
 
