@@ -61,6 +61,8 @@ When protecting resources from the unauthorized, two-factor authentication is th
 
 #### Knowledge based authentication ####
 
+There are two forms of knowledge based authentication(KBA). The first is static KBA where the system requests responses for secret information to be used during authentication. This is a frequently used method as the entity requiring authentication TBA
+
 #### RIsk based authentication ####
 
 #### Claims based Identity ####
