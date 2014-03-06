@@ -61,9 +61,9 @@ When protecting resources from the unauthorized, two-factor authentication is th
 
 #### Knowledge based authentication ####
 
-There are two forms of knowledge based authentication(KBA). The first is static KBA where the system requests responses for secret information to be used during authentication. This is a frequently used method as the entity requiring authentication TBA
+There are two forms of knowledge based authentication(KBA). The first is static KBA where the system requests responses for secret information to be used during authentication. This is a frequently used method. It is straight forward to design and implement the storage of information the user provides. Unfortunately, the information requested is often not difficult to derive from other sources. For example date of birth, mother's maiden name, high school attended, pet's name, or last four digits of a Social Security number can be discovered for most people. The second type of knowledge based authentication is dynamic KBA where the system obtains data already known to the system and presents the user a challenge to verify the user knows the data the system found. Needless to say, these systems are generally more sophisticated and require more planning to execute well. A common example of dynamic KBA might include knowing the amount and/or date of the last transaction for a bank account. The bank knows when someone made their last transaction at the ATM and for what amount. This is an excellent use for knowledge based authentication because finding this information in public data stores would be unlikely. To authenticate the user in control of the bank account, the user would provide matching information to the data stored with the bank.
 
-#### RIsk based authentication ####
+#### Risk based authentication ####
 
 #### Claims based Identity ####
 
