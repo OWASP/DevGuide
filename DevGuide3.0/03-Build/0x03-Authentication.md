@@ -57,7 +57,7 @@ But the main point is that only one of these 'challenges' to the entity is used 
 
 When protecting resources from the unauthorized, two-factor authentication is the bare minimum. Usual implementations employ an intangible secret with a real world factor like a physical key or palm print. It is rare to see multi-factor security above two-factor authentication outside of government, medical, and banking applications but not unheard of.
 
-(TBD Provide real world legal requirements that specify that highest levels of security are mandated.)
+HIPAA in healthcare, Office of Management & Budget Memorandum 07-16 in government, and Special Publication 800-63 Electronic Authentication Guideline from the National Institute of Standards and Technology all specify when two factor authentication is part of best practices if not required.
 
 #### Knowledge based authentication ####
 
