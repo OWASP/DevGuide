@@ -67,7 +67,11 @@ There are two forms of knowledge based authentication(KBA). The first is static 
 
 Risk based authentication takes into account available information and ramps up the security as specified for the profile that is built from the information gathered. A known machine accessing resources from an internally recognized IP address during customary business hours will likely generate a very low risk profile. So, the login challenge presented to the user will likely be fast and easy. By comparison a previously unseen mobile device from outside the internal network at odd hours should generate a higher risk profile and presentation of a more involved challenge or challenges would be appropriate.
 
-#### Claims based Identity ####
+#### Claims based identity ####
+
+This method of identifying a user involves trust. Anyone that has logged in with facebook or google has used claims based identity. The basic idea is that a third-party provides the confirmation that a user has been sufficiently vetted as being that user. This allows separation of identification and authorization &amp; access control which can simplify a lot of registration issues.
+
+
 
 #### Biometric authentication ####
 
