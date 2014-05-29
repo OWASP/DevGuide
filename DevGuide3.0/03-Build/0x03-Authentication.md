@@ -57,7 +57,11 @@ But the main point is that only one of these 'challenges' to the entity is used 
 
 When protecting resources from the unauthorized, two-factor authentication is the bare minimum. Usual implementations employ an intangible secret with a real world factor like a physical key or palm print. It is rare to see multi-factor security above two-factor authentication outside of government, medical, and banking applications but not unheard of.
 
-HIPAA in healthcare, Office of Management & Budget Memorandum 07-16 in government, and Special Publication 800-63 Electronic Authentication Guideline from the National Institute of Standards and Technology all specify when two factor authentication is part of best practices if not required.
+For matters in the United States HIPAA for healthcare, Office of Management &amp; Budget Memorandum 07-16 for government, and Special Publication 800-63 Electronic Authentication Guideline from the National Institute of Standards and Technology all specify when two factor authentication is part of best practices if not required.
+
+Additionally, documents from ISO 2000x (specifically ISO 20007), ISO 31000 (derived from AS/NZS 4360), NZIM, Jericho Forum, ENISA IAF, BSI Germany, and BITS Shared Assessments - AUP / SIG may apply in regards to acceptable international security practices.
+
+
 
 #### Knowledge based authentication ####
 
