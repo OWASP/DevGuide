@@ -4,7 +4,7 @@
 
 Thank you for your interest in the OWASP Developer Guide, the first major OWASP Document. 
 
-The OWASP Developer Guide needs help. Lots of it. Please volunteer if you can write even a few paragraphs a month.
+The OWASP Developer Guide needs help. Lots of it. Please volunteer if you can write even just a few paragraphs.
 
 ## GitHub DevGuide Wiki
 
