@@ -1,4 +1,4 @@
-###UML Resources
+#UML Resources
 
 ##How to edit/access the UML XML files.
 
@@ -10,13 +10,12 @@ The derivative .png or .jpg resource files also go into this directory.
 Please be descriptive with the file name.
 Please name the source and derivative the same filename and let the file extension be the differentiator.
 
-
 ##Using the derivative UML files.
 
 Use the inline style method.
 
 There won't be many of them and I like seeing the images in the context appropriate place of the material.
-Who wants to go to the spot recognize a reference then go to the designated place to see the information.
+Who wants to go to the spot to recognize a reference then go to the designated place to see the information.
 Just put the information in the place people are going to look for it first anyway.
 
 Inline-style markup:
