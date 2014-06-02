@@ -15,5 +15,9 @@ There won't be many of them and I like seeing the images in the context appropri
 Who wants to go to the spot recognize a reference then go to the designated place to see the information.
 Just put the information in the place people are going to look for it first anyway.
 
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+Inline-style markup:
+
+```![alt text](https://avatars2.githubusercontent.com/u/155815?s=140 "Logo Title Text 1")```
+
+Output:
+![alt text](https://avatars2.githubusercontent.com/u/155815?s=140 "Logo Title Text 1")
