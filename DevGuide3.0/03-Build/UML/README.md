@@ -1,11 +1,15 @@
-### UML Resources
+###UML Resources
 
 ##How to edit/access the UML XML files.
 
 Use UML factory, it is of trivial cost for the Android app (best used on tablets...) and free on the desktop via the web app.
 
+This directory will be found in each 'chapter' if necessary
 The source XML goes into this directory.
-The derivative .png or .jpg resource files also go into this directory found in each 'chapter' if necessary.
+The derivative .png or .jpg resource files also go into this directory.
+Please be descriptive with the file name.
+Please name the source and derivative the same filename and let the file extension be the differentiator.
+
 
 ##Using the derivative UML files.
 
