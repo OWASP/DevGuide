@@ -99,6 +99,8 @@ Biometric authentication can be a useful mechanism where the user has a device u
 
 #### Self-registration UML ####
 
+![user based registration](https://cloud.githubusercontent.com/assets/306802/3176074/60166f42-ec01-11e3-9730-f5b555b555e0.png "user based registration")
+
 #### Credential reset UML ####
 
 #### Forgot credential UML ####
