@@ -2,11 +2,11 @@
 
 New content ->
 
-### Overview
+## Overview
 Session management is required to track the state of a users journey through a web application. It is the role of a developer/designer to create or use a session management system in a way that is secure, avoiding the leaking of this
 information to an attacker, leading to common attack vectors such as replay of state, forging state or intercepting the state of another user.
 
-### Introduction
+## Introduction
 The web, by design, is stateless. In its original use case, a request would be made e.g. GET, PUT, DELETE and once the action had occurred, the protocol was complete, the previous state of the system was unknown and unimportant. Naturally,
 as more complex applications have developed, it is rarely possible to create a stateless web application. As well as knowing who the user is, by means of Authentication, it is common to want to know where the user has been or is going and
 whether they have done anything in the process e.g. added an item to a shopping basket, so that this information can be used at a later date. Session management is concerned with how this data is linked to the user securely and how it is
@@ -35,7 +35,7 @@ In some cases, your chosen framework might not contain a session management syst
 have a lot of public exposure to a system to prove that it is reliable and secure. Writing your own system or trying to improve a poor implementation is theoretically possible but carries risk depending on your ability to correctly identify and mitigate all of the
 potential weaknesses.
 
-### Elements of Secure Session Management
+## Elements of Secure Session Management
 #### Cryptographically secure session identifier generation
 As mentioned previously, it is common to store session data on the server and to generate a session identifier to store in a cookie. If this session identifier is not cryptographically secure (such as just using the userid of the current user) or is not suitably
 random, such as incrementing a number, then the session identifier is easy to guess and the session easy to hijack by an attacker. A good session management system will generate a cryptographically secure value for a session identifier. For example, ASP.Net uses
