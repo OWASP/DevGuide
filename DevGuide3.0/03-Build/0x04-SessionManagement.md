@@ -1,8 +1,73 @@
-If you're assigned this chapter, please refactor what's here and make it modern!
+﻿If you're assigned this chapter, please refactor what's here and make it modern!
 
 New content ->
 
-Here lie dragons. 
+### Overview
+Session management is required to track the state of a users journey through a web application. It is the role of a developer/designer to create or use a session management system in a way that is secure, avoiding the leaking of this
+information to an attacker, leading to common attack vectors such as replay of state, forging state or intercepting the state of another user.
+
+### Introduction
+The web, by design, is stateless. In its original use case, a request would be made e.g. GET, PUT, DELETE and once the action had occurred, the protocol was complete, the previous state of the system was unknown and unimportant. Naturally,
+as more complex applications have developed, it is rarely possible to create a stateless web application. As well as knowing who the user is, by means of Authentication, it is common to want to know where the user has been or is going and
+whether they have done anything in the process e.g. added an item to a shopping basket, so that this information can be used at a later date. Session management is concerned with how this data is linked to the user securely and how it is
+stored and ultimately used or deleted.
+
+Although session management might be seen as a dangerous vulnerability to a web application, it can also be dangerous to try and avoid session completely, since that is more likely to cause secret information being passed in URLs or hidden fields.
+It also runs counter to security best-practice which is to keep something simple in order to make mistakes easier to see or find. A correctly managed session system is not a security vulnerability any more than correctly filtered inputs or
+correctly used encryption. Another objection that session is resource-intensive is not generally true, but that depends on correctly designing the content of your session data and not simply storing everything in the session. Data can be stored in
+the main database or in some restricted cases, in the cookies.
+
+### Types of Attack Vector
+In its most simple (and insecure) form, a session management system might simply associate a cookie with a userid and store any session data into this cookie, which would then be sent to the web client and returned to the server on subsequent
+requests. This example can demonstrate the common types of attack vectors in session management. Firstly, imagine the userid and whether they are logged in are stored in the cookie. An attacker hijacks the session simply by creating a local cookie
+with their target userid and a logged in flag and then visits a page on the site, they are immediately logged in to another user's account - a simple session hijack. Secondly, imagine the type of user was stored in this session cookie (user or administrator). An attacker can easily
+change their user type and get elevated privileges - a session forgery. In fact, it is common for session data to be stored on the server but there still needs to exist a link between this stored data and the user who is performing the request,
+which is most commonly achieved with a session cookie recording a single identity value which is then mapped onto the session data on the server. This identity will be sent in the cookie with each request but this in itself can lead to potential
+weaknesses including access of this session value via malicious Javascript or a man-in-the-middle who can read and then re-use the session ID in another browser.
+
+### Using a Framework
+In most cases, a web application will (and generally should) use a framework. These frameworks should all include their own session management system but in the world of security, we should not automatically trust that these systems are implemented
+correctly. They might be partially complete, have a bug or perhaps have not been updated recently. Also, we must remember that frameworks are usually designed to meet the widest range of needs and not necessarily the most secure implementation. It
+is essential that designers or developers investigate their chosen framework in line with the information contained in this document to ensure that best practice is followed and there are no differences between the security requirements of your application
+and the actual framework implementation.
+
+In some cases, your chosen framework might not contain a session management system or perhaps you are not using a framework at all. In general, this must be considered poor security practice since one of the best weapons in the security battle is to
+have a lot of public exposure to a system to prove that it is reliable and secure. Writing your own system or trying to improve a poor implementation is theoretically possible but carries risk depending on your ability to correctly identify and mitigate all of the
+potential weaknesses.
+
+### Elements of Secure Session Management
+#### Cryptographically secure session identifier generation
+As mentioned previously, it is common to store session data on the server and to generate a session identifier to store in a cookie. If this session identifier is not cryptographically secure (such as just using the userid of the current user) or is not suitably
+random, such as incrementing a number, then the session identifier is easy to guess and the session easy to hijack by an attacker. A good session management system will generate a cryptographically secure value for a session identifier. For example, ASP.Net uses
+a 24 character alpanumeric identifier (which will be web safe, as opposed to a binary value).
+
+#### Where to store the session data
+Although it is possible to store almost any session data in a cookie, this is not recommended and for any authorization type information should never be done. Security is best handled on a server, not decided by the contents of a small text file which is easy
+to see and modify. It is preferable to only store the session id in the cookie and store the remaining data either in a database at the server-side or in memory on the web server. There are performance and cost considerations to these choices, depending on the number
+of users on the system and how much data is stored in the session. There are also special considerations if you are using a web server farm due to the memory not being shared. In these cases, if you want to use a memory-based session, you need to use some type of
+shared memory or a mechanism provided by your hosting provider for this purpose.
+
+#### What to store in the session
+One of the ways to reduce the burden on the session storage is to only keep the minimum amount of information in the session that you need to. For instance, a language choice might be kept in a cookie to keep it away from the server and based on the fact that it
+is neither secret or dangerous if it was tampered with. Certain data can also be stored in the URL e.g. the current ordering of a gridview since, again, it is generally not secret and should probably not be kept in a session. Anything that is kept in hidden fields
+on a page is actually visible to anyone who looks. If this data is secret, you should either keep it store in the session or in a related database table.
+
+#### HTTP Only Cookies
+A session cookie in any good framework should default to setting an HTTPOnly flag. This tells the browser that the cookie cannot be accessed by Javascript to read the session of another user who has somehow got malware script running in a site they are visiting.
+
+#### SSL Only Flag
+It is also possible and recommended, wherever possible, to set the Secure flag on the cookie which enforces that the cookie is only allowed to be downloaded via HTTPS. This will only work if your site implements SSL/TLS but prevents a man-in-the-middle being able to read the contents of the cookie.
+
+## Testing for Risks
+The following sections describe specific attack vectors against your site session management system and tell you how to test for the vulnerability and how to fix it, should it exist. It should be noted that some of the fixes are simply options on your session management system, whereas others will affect higher-level parts of your system design and should be considered before your application is written, to avoid the potential difficulty of retro-fitting these controls afterwards.
+
+### Session Token Transmission
+If a session token is captured in transit through network interception, a web application account is then trivially prone to a replay or hijacking attack. Typical web encryption technologies include but are not limited to Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols in order to safeguard the state mechanism token.
+### How to determine if you are vulnerable
+Visit a page on your site and/or login to cause the system to create a new session. Using your browser developer tools, view the cookies for the site and find the session cookie. If it is not marked as secure and your site url is not https then you are vulnerable. Alternatively, if you know your site does not support SSL/TLS at all, then you are also vulnerable.
+### How to protect yourself
+Set up SSL/TLS on your web server and set the Secure flag on your session cookie. Verify the fix by visiting your site, causing it to create a session cookie and using your developer tools to ensure the Secure flag is checked proving that the browser has downloaded the cookie on a secure connection.
+
 
 ***
 
@@ -294,3 +359,4 @@ TODO
 
 ## Further Reading
 David Endler, "Brute-Force Exploitation of Web Application Session IDs" http://downloads.securityfocus.com/library/SessionIDs.pdf
+
