@@ -8,7 +8,7 @@ This is the development version of the OWASP Developer Guide, and will be conver
 
 This repository is the current **development master: version 3.0.**
 
-**Current stable is [version 2.1.1](https://github.com/OWASP/DevGuide/tree/d542d31ca2615650225e9238de0d68f37c37a07c/DevGuide2.1.1)** and is the recommended version for reading until 3.0 becomes more complete.
+**Current stable is [version 2.0.1](https://github.com/OWASP/DevGuide/tree/dc5a2977a4797d9b98486417a5527b9f15d8a251/DevGuide2.0.1)** and is the recommended version for reading until 3.0 becomes more complete.
 
 See our [our wiki](https://github.com/OWASP/DevGuide/wiki), [FAQ page](https://github.com/OWASP/DevGuide/wiki/FAQs), and [Road Map](https://github.com/OWASP/DevGuide/wiki/Road-Map) for more information.
 
