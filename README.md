@@ -6,7 +6,9 @@ Thank you for your interest in the OWASP Developer Guide, the first major [Open 
 
 This is the development version of the OWASP Developer Guide, and will be converted into PDF & MediaWiki for publishing when complete. 
 
-Current master is **version 3.0.** 
+This repository is the current **development master: version 3.0.**
+
+**Current stable is [version 2.1.1](https://github.com/OWASP/DevGuide/tree/d542d31ca2615650225e9238de0d68f37c37a07c/DevGuide2.1.1)** and is the recommended version for reading until 3.0 becomes more complete.
 
 See our [our wiki](https://github.com/OWASP/DevGuide/wiki), [FAQ page](https://github.com/OWASP/DevGuide/wiki/FAQs), and [Road Map](https://github.com/OWASP/DevGuide/wiki/Road-Map) for more information.
 
