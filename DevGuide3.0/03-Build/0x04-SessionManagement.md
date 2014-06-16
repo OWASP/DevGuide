@@ -58,15 +58,154 @@ A session cookie in any good framework should default to setting an HTTPOnly fla
 #### SSL Only Flag
 It is also possible and recommended, wherever possible, to set the Secure flag on the cookie which enforces that the cookie is only allowed to be downloaded via HTTPS. This will only work if your site implements SSL/TLS but prevents a man-in-the-middle being able to read the contents of the cookie.
 
+#### CSRF Tokens
+One of the weaknesses inherent in most session systems is that tabs in a browser share session and it is therefore possible for an attacker to take a victim to a malicious site, which will then call an operation on a vulnerable target site. This visit to the target site will automatically send any relevant cookie/session data and if this in itself is enough to do something dangerous (transfer money, extract data etc.) then the attack has succeeded without the victim necessarily knowing. This is called a Cross-Site Request Forgery (CSRF).
+
+A straight-forward way to stop this involves creating a page-unique token which is stored on the server against the session id. This unique token is stored in the page that the user requests and would be sent back as part of the next site request. If a malicious site accessed the same site, although the cookie (and session) information would be available, the unique token would not since it is embedded in another page. The site would then recognize that there is no CSRF token present (or it does not match the previous one linked to the session) and would fail validation. Most modern frameworks support this feature.
+
+#### Logging and audit
+One of the most important but sometimes least appreciated systems is related to logging and audit. If your organisation is unfortunate to suffer some kind of attack, one of the ways in which it can be mitigated is being able to supply law enforcement with useful data to catch the attacker as well as seeing things happening that are unusual, which might warn you of an attack that is pending. The worst case is not knowing what has happened and why and therefore not being able to prevent it happening again. Reputation is important in business and being able to deal with attacks professionally by collecting a good amount of data is important. Please see the chapter on logging for more information.
+
 ## Testing for Risks
 The following sections describe specific attack vectors against your site session management system and tell you how to test for the vulnerability and how to fix it, should it exist. It should be noted that some of the fixes are simply options on your session management system, whereas others will affect higher-level parts of your system design and should be considered before your application is written, to avoid the potential difficulty of retro-fitting these controls afterwards.
 
 ### Session Token Transmission
-If a session token is captured in transit through network interception, a web application account is then trivially prone to a replay or hijacking attack. Typical web encryption technologies include but are not limited to Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols in order to safeguard the state mechanism token.
-### How to determine if you are vulnerable
+If a session token is captured in transit through network interception, a web application account is then trivially prone to a replay or hijacking attack. Typical web encryption technologies include but are not limited to Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols in order to safeguard the state mechanism token. A variation on this vulnerability means that a man-in-the-middle could intercept the session id and interact directly with the server to perform additional operations without the knowledge of the user.
+#### Applies to frameworks
+All frameworks are potentially at risk
+#### How to determine if you are vulnerable
 Visit a page on your site and/or login to cause the system to create a new session. Using your browser developer tools, view the cookies for the site and find the session cookie. If it is not marked as secure and your site url is not https then you are vulnerable. Alternatively, if you know your site does not support SSL/TLS at all, then you are also vulnerable.
-### How to protect yourself
+#### How to protect yourself
 Set up SSL/TLS on your web server and set the Secure flag on your session cookie. Verify the fix by visiting your site, causing it to create a session cookie and using your developer tools to ensure the Secure flag is checked proving that the browser has downloaded the cookie on a secure connection.
+
+### Weak Session Cryptographic Algorithms
+If your session i.d. is generated in a predictable way, it is possible for an attacker to guess an id that relates to another session and potentially hijack that other session.
+#### Applies to frameworks
+Generally applies to older frameworks. Does NOT apply to latest .Net frameworks or PHP frameworks that use the built-in PHP session functions.
+#### How to determine if you are vulnerable
+Determine a way to obtain 1000 ids within a short period of time and plot these on a graph as numbers to determine if there is a pattern. Alternatively, research your session id generation framework/function to see whether it is known to be cryptographically secure.
+#### How to protect yourself
+In general, you should not create a generation function yourself but prefer to use an alternative library/framework or update your framework to a later version that does use a secure generation protocol. A secure function will use a recognized source of randomness and optionally tie the id to the client ip address and/or a CSRF token.
+
+### Lack of Session ID Keyspace or Entropy
+Even if the generation of a session id is cryptographically strong, if the output is restricted to a short number of bits or is restricted to, for instance, integers only, then the session is still potentially brute-forcible.
+#### Applies to frameworks
+Generally applies to older or homemade frameworks. Does NOT apply to the latest .Net framework or PHP frameworks that use the built-in session functions.
+#### How to determine if you are vulnerable
+Either research your framework to determine how strong the keyspace and entropy is or generate multiple session keys and ensure they are at least 20 alpha-numeric characters. Use a tool like Brutus to attempt to brute-force session ids if you cannot determine directly whether your application is vulnerable.
+#### How to protect yourself
+As with any legacy weaknesses, prefer to use another framework/library or to upgrade your framework to the latest version. It is not generally recommended to produce your own session id generation function, since you will lack the exposure and experience that has been applied to publically available frameworks.
+
+
+### Lack of session timeout
+Any session that does not have a suitably low session time out can create an attack vector on the application. Since many end-users will forget to log out and especially in shared computer environments, the longer the session is allowed to remain active, the more time an attacker has to attempt an attack. “Remember me” functionality is particularly susceptible to this vulnerability, if it allows privileged access to the application without any further checks.
+#### Applies to frameworks
+Does NOT generally apply to newer frameworks by default but applications can be made vulnerable if session features are added to enhance the user experience!
+#### How to determine if you are vulnerable
+An application that uses any kind of trick to automate extending the user session is vulnerable.
+An application that has a “remember me” function is potentially vulnerable.
+A faulty or extensive session timeout can be checked easily by logging in, taking a lunch break and then attempting to continue using the application. If you are allowed to, your application is vulnerable.
+#### How to protect yourself
+Set the idle timeout for your application to between 5 and 20 minutes and ENSURE that it works by testing it. For the most protected applications, do not auto-extend the session and do not use “Remember Me” functionality. On lower risk applications, ensure that “Remember Me” is a convenience to only remember certain low-value information, such as auto-populating an email text box and does not remember e.g. a login unless you have fully risk-assessed what value that would have to an attacker.
+
+### Regeneration of Session Tokens
+If a session token is kept alive for an extended period of time, even if the user is actively using the site, it extends the window that an attacker has to brute-force a specific user or to attempt to replay a previous action using the stolen session id. By recreating session ids regularly, these types of attack are mitigated.
+#### Applies to frameworks
+Applies to all frameworks
+#### How to determine if you are vulnerable
+Either research your framework to determine its default or optional regeneration functionality or stay actively logged into a site for an hour (ensure the session doesn’t expire) and see whether the session id ever changes.
+#### How to protect yourself
+If possible, regenerate tokens, either after a number of requests from a single user e.g. 30 requests = regenerate or if the traffic is lower, then after a fixed period of time e.g. 20 minutes.
+
+
+### Persistent Session Tokens
+Even if your application uses session tokens to store its session, these are only destroyed when the browser is closed. In the case of shared environments, this is not necessarily true and if not done can expose a valid session id to an attacker.
+#### Applies to frameworks
+Applies to all frameworks
+#### How to determine if you are vulnerable
+Login to the application and check the session id. Logout and then using the browser developer tools, check to see whether the session cookie is still present with the same session id. Check to see whether other non-session id data has been removed from the cookie (if used). Any residual data or the same session id being present means your application is vulnerable
+#### How to protect yourself
+When the user logs out, destroy the session, with all its data and if possible, overwrite the session cookies with a newly generated (but useless) session id.
+
+
+### Session id Validation
+Since many systems are designed to work correctly with the correct data, they don’t always fail in a predictable way when incorrect data is used. For instance, if a malformed session id is sent to the server and the server is not coded correctly, the logic for checking the session might break and either allow access to another session or cause some other kind of data leakage or error.
+#### Applies to frameworks
+Generally applies to older or homemade frameworks.
+#### How to determine if you are vulnerable
+A direct code inspection is most helpful to find out if and how the session id is validated before it is used to lookup a session. If this is not possible, various tests should be made by passing invalid session ids to the application being tested to ensure that the system behaves in a desired way, either recreating a valid id or displaying an error. These tests should include but not be limited to session ids that are too long, too short, have unexpected characters in, are only one character long or have unusual characters such as the NULL character (0x0) or other control characters.
+#### How to protect yourself
+Use a framework or library that performs correct validation or in the case of a homemade session function, ensure the session id is pessimistically validated before being used, for example by using a regular expression.
+
+
+### Session token replay or hijack
+This vulnerability exists where an attacker can obtain a session token from a victim and use this to obtain their own access to the system under the pretence of being the victim. This works because many systems tie session to identity. The session id might be obtained from an undeleted session cookie, a user who did not log out, intercepted data from a network or simply by visiting a previous site on a shared computer.
+#### Applies to frameworks
+Potentially applies to all frameworks
+#### How to determine if you are vulnerable
+Take a session cookie and inject it into the application from another browser. If you are able to use the session at the same time in different browsers or if logging out from one browser session does not prevent the other from continuing to use the session, your application is vulnerable.
+#### How to protect yourself
+Use a library or framework that can tie the session to a unique browser id. Attempting access from another browser should either fail or cause intrusion detection to log out the first user.
+Use a library or framework that supports session id regeneration to shorten the window of attack. 
+Do not use persistent cookies for session ids, which expose the session id more easily to an attacker. 
+Force cleanup of session data during logout including server-side session so that a replay cannot occur after the user has logged out.
+
+### Session fixation
+If an attacker can force a victim into using a known value for session, then it is possible for the victim to login to the known session and thereby allow the attacker to access a session that is now authenticated with a web application.
+#### Applies to frameworks
+Any framework that allows session ids to be passed in forms or the querystring are particularly vulnerable. Other frameworks may be vulnerable.
+#### How to determine if you are vulnerable
+Research or test whether it is possible to pass a session id on the querystring, that is accepted and used by the application. If your application URL is a sub-domain (e.g. subdomain.example.com) where you have no control over the other sub-domains, you are potentially vulnerable if an attacker controls another subdomain.
+#### How to protect yourself
+Do not allow session ids to be passed in except via an HTTP cookie.
+Regenerate the session id after logging in. This way, if an attacker did force the victim to login to a pre-known session, it would become invalid as soon as the victim logs in.
+Some frameworks will automatically generate a new session if a session id is presented in a cookie, even if it wasn’t generated on the server. To avoid this, set a flag in the session when it is generated on the server-side and if this flag is not set when a user connects, regenerate the session id.
+Perform correct wiping of session data and overwrite cookies on log out.
+Use some form of browser fingerprinting including client ip address to fix a session id to a client. Although not perfect, this is a very effective against attacks from arbitrary attackers.
+
+
+### Detecting brute-forcing of session ids
+Although a range of measures in other areas of this document are very effective in preventing session attacks, including brute-forcing, it might be desirable to attempt to detect attempted brute-forcing in order to take relevant action. Intrusion detection of this type can be detailed and complicated and will not be fully explained here but the actions you can take are reasonably limited and include IP address blocking (which does not identify individual users), account blocking (which might be real or a hacked account) or some kind of bandwidth throttling. In many cases, Intrusion Detection actions are temporary but long enough to thwart most attempts to brute-force.
+#### Applies to frameworks
+All frameworks
+#### How to determine if you are vulnerable
+Attempt to pass multiple session ids using some kind of test program in quick succession and see whether the system responds in a way that slows or prevents this happening.
+#### How to protect yourself
+You can booby-trap certain session ids and ensure these are never used in real sessions, perhaps every 100th number. If these are sent back to the server, you know someone has guessed the id and you can take any action you deem necessary such as:
+1.Temporary IP address ban. Remember that commonly there are multiple users behind an IP address so a permanent ban is unlikely to be a good idea.
+2.Throttle the speed for the given ip address for a certain amount of time.
+3.If the user is logged on, block their account either permanently or temporarily, possibly requiring a call to reset it.
+4.Investigate possible third-party solutions or libraries that might perform this work for your chosen language/framework.
+
+
+### Tying session to authentication or authorization incorrectly
+In some applications, authentication, authorization and session are seen to be equivalent whereas in reality they are not. If they are seen as the same thing then session = authenticated = authorized. Clearly, having a session does not and should not imply that you are authenticated and even authenticated users are not necessarily authorized for a particular action.
+Note that this topic overlaps with the authentication and authorization chapters.
+#### Applies to frameworks
+All frameworks
+#### How to determine if you are vulnerable
+Log into two browsers with two different users. Take the session id from one session and replace the session id in the other session. If your application is vulnerable, the server should detect the mismatch between authentication and the session id and immediately error with a forced logout. 
+If the system allows you to continue as the user that you logged in with (but the wrong session) then your application is vulnerable but the risk of this depends on what information is stored in the session.
+If the system changes the user you are logged in with as a result of the changed session id then your system is vulnerable.
+#### How to protect yourself
+Your framework should link the session with the authenticated user (the authentication information will usually be present in a separate cookie) in a way that means that if they don’t match, this is detected and forces the user to logout, as well as deleting the session data. Your system then needs to handle what happens if two users (the legitimate one and the attacker) are both logged in when the attacker causes the system to log them out – it shouldn’t break the legitimate user’s account but would need to log them out also with a relevant message.
+Use browser identification to prevent the session being used by a second person and therefore avoiding the need to logout the user and destroy the session.
+
+
+### Split Session Attacks
+If the server has no way of linking a session id to a client, it might be possible for an attacker to piggy-back a victim’s session, possibly seeing what the victim is doing or has done. 
+#### Applies to frameworks
+All frameworks
+#### How to determine if you are vulnerable
+Log into a site from one browser and then copy the session id into a cookie in another browser (or another computer). If it is possible for both users to remain in their respective browser sessions with the same session id, the session has effectively split between two different clients.
+#### How to protect yourself
+Utilise a framework or library that ties session to a specific client using a browser fingerprint and client ip address.
+Use session regeneration at suitable intervals, at which point the old session can be deleted leaving one user without a session – which might be the victim!
+Require re-authentication for high-value operations and regenerate the session id at this point.
+
+
+
+
 
 
 ***
