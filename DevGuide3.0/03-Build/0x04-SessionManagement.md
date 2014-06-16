@@ -203,6 +203,59 @@ Utilise a framework or library that ties session to a specific client using a br
 Use session regeneration at suitable intervals, at which point the old session can be deleted leaving one user without a session – which might be the victim!
 Require re-authentication for high-value operations and regenerate the session id at this point.
 
+## Sessions in RESTful applications
+RESTful applications create a special kind of session problem. The idea behind a RESTful service or application is that no state is stored server-side, all of the relevant information is stored on the client and passed in with the request, either as parameters or implied from the url that is accessed for the request. This brings special considerations for a session scheme, such as how to prevent tampering, hijacking, fixating and replay attacks. 
+
+One of the special considerations is what data can be stored in the session. Since the session is necessarily exposed outside of the server, it cannot contain any information that we cannot trust the client not to modify. For example, setting the users privilege level in a cookie that is sent to the user would not normally be done in a non-REST situation due to the chance of someone attempting to elevate their privilege but in the case of REST, there is no choice, in which case the design should not depend on storing such sensitive information in the session cookie.
+
+Any system needs to consider encryption, hashing and message signatures to provide the necessary protections and although there are various ways to provide the required mechanisms, it is recommended that professional advice is taken before implementing a REST session system in a high-value application.
+
+The following test cases relate to specific attack vectors on REST-based sessions.
+
+### Simple session authentication with signing
+It is possible that your REST system does not require any particular session data and simply needs to authenticate each request to ensure that the client is authorised to use the service or endpoint. This requires at the very least a reliable way of obscuring login credentials, that must necessarily be passed in.
+
+The password/secret should NEVER be passed in the query string, which can be exposed by caches, search engines and in the browser.
+
+At a minimum, SSL/TLS should be used to secure the endpoints. In most cases, if you do NOT use SSL/TLS, many authentication systems are vulnerable to network sniffing. Even if the password/secret is obscured in some way, an attacker can often easily replay the request with the obscured data and still achieve unauthorised access to the service.
+
+The recommended way to pass the password or secret into the system is by using some kind of message authentication code (MAC) and instead of using the secret directly, using it to sign the remainder of the request. By doing this, the server can repeat the process without the secret actually being passed (it is pre-shared) and this will verify that the secret is correct and that the request has not been tampered with. If the date/time is also used in generating the signature, it will also reduce the replay window although you will have to account for slight differences in the time between client and server due to incorrect time settings and network latency.
+
+The following example is based on Amazon Web Services and how they derive their authorization signature:
+
+StringToSign = HTTP-Verb + "\n" +
+________Content-MD5 + "\n" +
+________Content-Type + "\n" +
+________Date + "\n" +
+________CanonicalizedAmzHeaders +
+________CanonicalizedResource;
+
+Signature = Base64(HMAC-SHA1(UTF-8-Encoding-Of(YourSecretAccessKeyID), StringToSign));
+
+Authorization = "AWS" + " " + AWSAccessKeyId + ":" + Signature;
+
+### Replaying authentication or session
+Since the server should not keep track of session in a RESTful system, it cannot track any nonces that could normally be used to prevent replay attacks. For this reason, replay attacks can only be mitigated in REST rather than removed. This must take place by tying the request signatures to the current date/time which will reduce (but not remove) the attack replay window. By using SSL/TLS to encrypt client to server communications, the short replay window of perhaps 5-10 minutes should suitably reduce the risk of replays.
+
+Another mitigation is to use the userid or equivalent in a session authentication code which can be passed as part of the session and which then makes it unusable by another user since when the server checks the MAC of the session coming back, they can determine whether this session was produced for this user or not.
+
+1.Produce relevant session data for user and sign the results with a secret HMAC key and the userid or equivalent
+2.Send the session cookie back with the data and the MAC code
+3.The correct user sends back the session with the next request, the server re-computes the HMAC and it matches so it can proceed.
+4.An attacker attempts to send back the correct users’ session cookie. The server attempts to generate the signature from the attacker’s use id and it doesn’t match. The request is denied.
+
+### Modifying session data to elevate privileges
+As previously stated, any session data in the case of REST is exposed directly to and stored by the client. For this reason, by default, we should assume that people will attempt to modify that data to maliciously or otherwise alter the behaviour of the REST service. For this reason, the data should be protected with a MAC, such that tampering can easily be detected. This works since only the server should every change or set session data and by using a MAC based on a key only known to the server, the user could alter the session but the MAC would then not match and the server can take appropriate action. Since the client does not known the session MAC signing key, they cannot re-compute the MAC to match the altered data.
+
+As with all unshared secrets, the key should be of a suitably long length (256 bits or longer) and generated pseudo-randomly so that the chance of guessing or brute-forcing it is unfeasible. It can also be changed over a suitable period of time (every 3 months) since only the server needs to use this as the signing key.
+
+### Revoking sessions
+Revoking sessions cannot actually be performed independently of blocking a user account since no session information is stored on the server. This means that scenarios that would normally require a session to be deleted such as logging out or intrusion detection would be carried out differently. Logging out does not occur in RESTful services since logging in is by definition a stateful process, which is not how REST is designed to work.
+
+The main area where this might be of concern is in response to a detected attack, where a session might need removing to prevent the attack gaining privileges from a session that has been hijacked. In this case, the likely attack vector is that someone has stolen a session cookie from another user and is using it with their valid credentials. In this case, the session should be validated against the MAC and against the user. Since the server cannot store the link between session and user, it would have to form part of the session MAC e.g.
+
+sessionMac = Base64(hmac-sha1(sessioncontents, secretmackey + thisuserid));
+
 
 
 
