@@ -174,6 +174,8 @@ The authorization grant may be one of four types:
  - Resource Owner Password
  - Client
 
+If authorization is granted, the client receives an _access token_.  The client presents this token to the resource server to actually gain access to the resource requested.  How the token is presented is outside the scope of OAuth 2.0, but rather left to separate _profiles_.  
+
 ###### Authorization Code Grant ######
 
 ![Auth Code Grant](https://cloud.githubusercontent.com/assets/5155869/3379162/1dbd89f4-fbed-11e3-88a7-2557b75f4dac.png "Auth Code Grant")
