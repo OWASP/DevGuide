@@ -6,11 +6,19 @@ Allocated to AJV
 
 Data protection is one of the top issues with secure development, and one of the least well developed from an API point of view. 
 
-Various laws and regulations exist to protect user privacy. Users expect their data to be handled well as a baseline requirement, particularly when it comes to the cloud. 
+Various laws and regulations exist to protect user privacy. Users expect their data to be handled well as a baseline requirement, particularly when it comes to the cloud. It is no longer sufficient to protect against SQL injection and consider data protection done. Users expect more from software vendors. Organisations will not trust their data with you unless you have a strong end to end data protection architecture. 
 
 With recent events exposing both mass surveillance of the Internet, as well as the memory scraping attacks favored by attackers, it is important for developers to include countermeasures to protect data at rest, during processing and data in transit. 
 
-## Principles (if any)
+## Principles
+
+### Encrypt all data in transit
+
+Ten years ago, it was very common for the majority of applications to be unencrypted. There is still strong resistance to the idea of encrypting all data, but end to end encryption is essential to building trust between you and your users. 
+
+With the collection and analysis of metadata shown to be a clear and present danger to the Internet at large, it is important to ensure that all communications to and from your services are encrypted. This doesn't prevent mass surveillence understanding the size or who connects to your services, but it does prevent basic data leakage, which is very common with older web apps and many mobile applications.
+
+For more information, please see TBA below. 
 
 ### Encrypt sensitive data at rest 
 
@@ -30,13 +38,7 @@ This approach allows for safe storage in the cloud, as long the key is not store
 
 For more information, please see TBA below and in the cryptography chapter. 
 
-### Encrypt all data in transit
-
-With the collection and analysis of meta data shown to be a clear and present danger to the Internet at large, it is important to ensure that all communications to and from your services are encrypted. This doesn't prevent mass surveillence understanding the size or who connects to your services, but it does prevent basic data leakage, which is very common with older web apps and many mobile applications.
-
-For more information, please see TBA below. 
-
-### Protect direct object references
+### Protect sensitive data in processing
 
 A common security flaw is direct object references, where a URL design, particularly in RESTful webservices:
 
@@ -58,18 +60,78 @@ For more information, please see TBA below.
 
 ## Positive controls 
 
-### Control
-How to build a secure <thing> using Control to help you, including (or even just) UML diagrams. I prefer swim lanes, but as long as it prints in landscape mode, I'm cool. I don't want portrait diagrams as this is impossible to reflow automatically using our tools.
+### Use end to end encryption for data in transit
 
-### Control
-How to build a secure <thing> using Control to help you
 
+
+### Create per-installation encryption keys for data at rest
+
+
+
+
+### Use secure strings
+
+
+### Use prepared statements,parameterized queries, Active Record, ORMs, or data bindings
+
+As a developer, you should be familiar with the concept of SQL injection (TBA: link to Testing Guide). You can completely avoid SQL injection via the use of prepared statements (also known as paraneterized queries), Active Record data access pattern, or Object Relational Mapping engines (ORMs). 
+
+All major platforms have support for one or more of these safer alternatives to dynamic queries. You should be using them unless you have a very specific requirement for dynamic queries, such as report writing. 
+
+If you have to use dynamic queries, you are responsible for escaping data provided by end users, as this data can be both hostile or accidentally damaging to your database. 
+
+NB: it is not possible to escape table names, SQL DDL (such as "ORDER BY", or "DESC" or "ASC", etc), and so on. If your dyanmic query relies upon user supplied input for this unescapable data, you should strongly validate that data, and review if you could use another data access mechanism, such as prepared statements or an ORM. 
 
 ## Unit or Integration Test Cases
 
+### testForEncryption()
+
+Your integration testing should be per
+
+### testvalidDirectObjectReference()
+
+Test your data model to ensure that user A's records can be created, read, updated and deleted by User A. 
+
+For example, create a setUp() that logs in as User A (Alice), and then inserts a record. 
+
+Then for the test, login as User A (Alice), and as Alice try to create a new record, read both records, updates one or both records, and finally deletes Alice's records. 
+
+### testinvalidDirectObjectReference()
+
+Test your data model to ensure that trying to read an invalid data direct object reference does not work. This will prevent an attacker possibly reading the random user data. 
+
+For example, create a setUp() that logs in as User A (Alice) and creates valid records for Alice. 
+
+Then for the test, either don't login, or login as another valid user, such as "
+
+
+### testvalidDirectObjectReference()
+
+Test your data model to ensure that user A's records can be created, read, updated and deleted by User A. 
+
+For example, create a setUp() that logs in as User A (Alice), and then inserts a record. 
+
+Then for the test, login as User A (Alice), and as Alice try to create a new record, read both records, updates one or both records, and finally deletes Alice's records. 
+
+
+### testsomeOneElsesDirectObjectReference()
+
+Test your data model to ensure that user A's records cannot be accessed or manipulated by user M. 
+
+For example, create a setUp() that logs in as User A (Alice), and inserts a record. Then for the test, login as User M (Mallory), and as Mallory try to create, read, update or delete Alice's records. 
+
+
+
+
 ## Abuse Cases
 
+### Protect against direct object references
+
 ## Negative patterns
+
+### Using dynamic queries for SQL or LDAP access
+
+
 
 ### Control that should never ever appear under pain of infinite nyan cat
 
