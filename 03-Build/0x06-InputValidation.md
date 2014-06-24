@@ -1,9 +1,10 @@
-# Input validation and output encoding
+# Input validation
 
 Allocated to Viral
 
 ## Background
 
+Majority of today’s applications get exploited because it fails to validate the input coming from users, files, 3rd party applications, infrastructure, external entities, database systems or by other processes. Almost every application on the web requires some sort of input from the listed entity. These input sources can be a great starting point for an attacker. Hence, all the inputs to an application must be checked and validated before processing it.
 
 ## Principles (if any)
 
@@ -36,14 +37,4 @@ e.g. shared knowledge questions or answers, or dynamic SQL queries
 ## Sanitization
 ## No input validation
 ## Web service and REST input validation
-
-## When and where to encode
-### SQL
-### HTML value
-### HTML attribute
-### XML value
-### XML attribute
-### CSS entity
-### CSS style
-
 
