@@ -83,6 +83,9 @@ For the highly sensitive data, encrypting within a hardware st
 
 ### Use secure strings
 
+With ASP.NET 2.0 and later, and with Java ???, it is possible to use secure string classes that protect against memory scraping attacks. 
+
+However, in most programming languages, it is not possible to keep memory safe from memory scraping attacks, so the best advice is to ensure sensitive data is zeroed as fast as posible once the use for the sensitive 
 
 
 ### Use prepared statements, parameterized queries, Active Record, ORMs, or data bindings
