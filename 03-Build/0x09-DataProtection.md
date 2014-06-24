@@ -70,13 +70,22 @@ For more information, please review the Cryptography chapter, section TBA.
 
 ### Create per-installation encryption keys for data at rest
 
+Encrypting data at rest needs to protect against a few different attack scenarios:
 
+* Bulk data extraction, such as from SQL injection attacks
+* Malicious administrator attacks, where an administrator accesses data directly from database administration tools
+* Internal attacks, such as logging on to the database using application credentials
+* Accidental loss, such as backups being exposed or lost
 
+All of these scenarios can be protected against by encrypting sensitive data in the application's data models. There are a few drawbacks to this approach, including loss of indexing. However, as long as the data is stored on a system other than the application server, dividing the application encryption key and the encrypted data apart will raise the bar for any but the most determined and advanced attackers. 
+
+For the highly sensitive data, encrypting within a hardware st
 
 ### Use secure strings
 
 
-### Use prepared statements,parameterized queries, Active Record, ORMs, or data bindings
+
+### Use prepared statements, parameterized queries, Active Record, ORMs, or data bindings
 
 As a developer, you should be familiar with the concept of SQL injection (TBA: link to Testing Guide). You can completely avoid SQL injection via the use of prepared statements (also known as paraneterized queries), Active Record data access pattern, or Object Relational Mapping engines (ORMs). 
 
