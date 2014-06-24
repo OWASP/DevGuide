@@ -94,7 +94,9 @@ Capability based security and access control requires supporting infrastructure,
 
 ![Attribute Based Access Control](https://cloud.githubusercontent.com/assets/5155869/3372532/d7b2d0fe-fbab-11e3-8f79-60aacd82204d.png "Attribute Based Access Control")
 
+ABAC provides a more straightforward way to express access control _policies_ in executable access control _rules_.  For instance, an access control policy that states that data classified as secret can be accessed only by persons with secret or higher clearance, and then only from within the internal organizational network (not the Internet), can be expressed as an ABAC rule like: subject with clearance attribute of value "secret" or higher may access data with classification attribute of value "secret" when environmental condition source network has value "internal".
 
+Besides allowing expression of policy in rules, ABAC is resilient to changes in subject and attribute characteristics.  For instance, if a subject loses his secret clearance, he immediately loses access to data classified as secret, without any need to modify access rules.  Alternatively, if data is re-classified from secret to public, a subject may immediately gain access, again without any need to change any ACL or access configuration.  This follows from the direct expression of policy in access control rules.
 
 ### How to enforce access control ###
 
@@ -159,19 +161,58 @@ Ensure that the same access control rules implied by the presentation layer are 
 
 #### OAuth2 ####
 
-##### Authorization Server #####
+The Open Authorization v2 protocol (OAuth 2.0), specified in [RFC 6749](https://tools.ietf.org/html/rfc6749), describes how a client can obtain access to a resource owned by a third party.
 
-##### Providers #####
+In OAuth, the client requests access to resources controlled by the resource owner and hosted by the resource server, and is issued a different set of credentials than those of the resource owner.  Instead of using the resource owner's credentials to access protected resources, the client obtains an access token -- a string denoting a specific scope, lifetime, and other access attributes.  Access tokens are issued to third-party clients by an authorization server with the approval of the resource owner.  The client uses the access token to access the protected resources hosted by the resource server.
 
-##### Clients #####
+##### Authorization Grants #####
+
+The authorization grant may be one of four types:
+
+ - Authorization Code
+ - Implicit
+ - Resource Owner Password
+ - Client
+
+###### Authorization Code Grant ######
+
+![Auth Code Grant](https://cloud.githubusercontent.com/assets/5155869/3379162/1dbd89f4-fbed-11e3-88a7-2557b75f4dac.png "Auth Code Grant")
+
+###### Implicit Grant ######
+
+![Implicit Grant](https://cloud.githubusercontent.com/assets/5155869/3379191/60045ff4-fbed-11e3-8946-8d16862e03f1.png "Implicit Grant")
+
+###### Resource Owner Password Grant ######
+
+![Resource Owner Password Grant](https://cloud.githubusercontent.com/assets/5155869/3379208/959f93b8-fbed-11e3-9754-0ae3c7b9ced6.png "Resource Ownder Password")
+
+###### Client Grant ######
+
+![Client Grant](https://cloud.githubusercontent.com/assets/5155869/3379216/c7982f88-fbed-11e3-9273-0fd9724aa214.png "Client Grant")
 
 ##### Access Tokens #####
 
+Access tokens are credentials used to access protected resources.  An access token is a string representing an authorization issued to the client.  The string is usually opaque to the client.  Tokens represent specific scopes and durations of access, granted by the resource owner, and enforced by the resource server and authorization server.
+
+The token may denote an identifier used to retrieve the authorization information or may self-contain the authorization information in a verifiable manner (i.e., a token string consisting of some data and a signature).
+
+In practice, a single access token type has been specified in standards - the _bearer token_ (see [RFC 6750](http://tools.ietf.org/html/rfc6750).  This token is simply a string with an optional expiration period.  The bearer token is unprotected (both integrity and confidentiality) and unauthenticated.  As a result, the standard requires the use of SSL/TLS when transmitting the token.
+
+An example bearer token looks like the following JSON object:
+
+{
+       "access_token":"mF9.B5f-4.1JqM",
+       "token_type":"Bearer",
+       "expires_in":3600
+     }
+
+Verification of the token is not specified.  It is entirely proprietary.  In the case where the authorization server and resource server are the same, or co-located, a local lookup of the presented access token can be done.   Otherwise, the authorization server provides a proprietary way to enquire as to the the legitimacy of the token (see Interoperability section following).
+
 ##### Interoperability #####
 
-##### Establishing authorization using OAuth2 #####
 
 ##### Calling an API using OAuth2 #####
+
 
 ##### Asking users for permission #####
 
