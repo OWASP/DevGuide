@@ -4,7 +4,7 @@ Allocated to AJV
 
 ## Background
 
-Data protection is one of the top issues with secure development, and one of the least well developed from an API point of view. 
+Data protection is one of the top priorities of secure development, and yet one of the least well developed from an API point of view. It is possible to increase the trust of your application considerably with a few well chosen data protection controls. 
 
 Various laws and regulations exist to protect user privacy. Users expect their data to be handled well as a baseline requirement, particularly when it comes to the cloud. It is no longer sufficient to protect against SQL injection and consider data protection done. Users expect more from software vendors. Organisations will not trust their data with you unless you have a strong end to end data protection architecture. 
 
@@ -14,7 +14,7 @@ With recent events exposing both mass surveillance of the Internet, as well as t
 
 ### Encrypt all data in transit
 
-Ten years ago, it was very common for the majority of applications to be unencrypted. There is still strong resistance to the idea of encrypting all data, but end to end encryption is essential to building trust between you and your users. 
+Ten years ago, it was very common for the majority of applications to transmit all their data unencrypted. There is still strong resistance to the idea of encrypting all data, but end to end encryption is essential to building trust between you and your users. 
 
 With the collection and analysis of metadata shown to be a clear and present danger to the Internet at large, it is important to ensure that all communications to and from your services are encrypted. This doesn't prevent mass surveillence understanding the size or who connects to your services, but it does prevent basic data leakage, which is very common with older web apps and many mobile applications.
 
@@ -62,7 +62,11 @@ For more information, please see TBA below.
 
 ### Use end to end encryption for data in transit
 
+The simplest and easiest method is to encrypt all communications to and from your application. As shown recently, this should also include connections to back end systems such as cloud data storage, application analytics, databases, data warehouses, and web services, as it can no longer be assumed that interception of backend traffic is unlikely. In fact, interception of data center traffic ais liekly
 
+Although there are numerous methods to encrypt traffic between systems, the most common is the use of Transport Layer Security (TLS), often called "SSL encryption" by the lay person. Your application framework or application server should contain instructions on TLS configuration, not only in the traditional sense to web and mobile clients, but also to back end systems such as database servers. 
+
+For more information, please review the Cryptography chapter, section TBA. 
 
 ### Create per-installation encryption keys for data at rest
 
