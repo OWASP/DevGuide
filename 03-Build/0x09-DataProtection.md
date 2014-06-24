@@ -102,9 +102,9 @@ NB: it is not possible to escape table names, SQL DDL (such as "ORDER BY", or "D
 
 ### testForEncryption()
 
-Your integration testing should be per
+Ensure integration and unit tests can test for secure sockets are in use between the end user and application server, as well as between application server and any other trust boundaries, such as database server, in app analytics, content delivery networks, and so on. 
 
-### testvalidDirectObjectReference()
+### testValidDirectObjectReference()
 
 Test your data model to ensure that user A's records can be created, read, updated and deleted by User A. 
 
@@ -112,22 +112,13 @@ For example, create a setUp() that logs in as User A (Alice), and then inserts a
 
 Then for the test, login as User A (Alice), and as Alice try to create a new record, read both records, updates one or both records, and finally deletes Alice's records. 
 
-### testinvalidDirectObjectReference()
+### testInvalidDirectObjectReference()
 
 Test your data model to ensure that trying to read an invalid data direct object reference does not work. This will prevent an attacker possibly reading the random user data. 
 
 For example, create a setUp() that logs in as User A (Alice) and creates valid records for Alice. 
 
 Then for the test, either don't login, or login as another valid user, such as "
-
-
-### testvalidDirectObjectReference()
-
-Test your data model to ensure that user A's records can be created, read, updated and deleted by User A. 
-
-For example, create a setUp() that logs in as User A (Alice), and then inserts a record. 
-
-Then for the test, login as User A (Alice), and as Alice try to create a new record, read both records, updates one or both records, and finally deletes Alice's records. 
 
 
 ### testsomeOneElsesDirectObjectReference()
