@@ -180,6 +180,8 @@ If authorization is granted, the client receives an _access token_.  The client 
 
 ![Auth Code Grant](https://cloud.githubusercontent.com/assets/5155869/3379162/1dbd89f4-fbed-11e3-88a7-2557b75f4dac.png "Auth Code Grant")
 
+This is the type of grant used by Facebook and Google OAuth authorization servers.
+
 ###### Implicit Grant ######
 
 ![Implicit Grant](https://cloud.githubusercontent.com/assets/5155869/3379191/60045ff4-fbed-11e3-8946-8d16862e03f1.png "Implicit Grant")
@@ -212,8 +214,45 @@ Verification of the token is not specified.  It is entirely proprietary.  In the
 
 ##### Interoperability #####
 
+OAuth 2.0 specifies the granting of a token, but does not specify how tokens are verified.  The only current standard token profile, for bearer tokens, also does not specify how the bearer token, which is not signed, is to be verified by the resource server.  As a result, interoperability is something of an issue, and different OAuth 2.0 providers handle verification differently.  A developer implementing OAuth 2.0 will need to customize based on the provider.
+
+For example, Facebook offers a [graph API](https://developers.facebook.com/docs/facebook-login/login-flow-for-web/v2.0) to verify an access token:
+
+ GET graph.facebook.com/debug_token?input_token={token-to-inspect}&access_token={app-token-or-admin-token}
+
+Note: Facebook doesn't use a strictly standard authorization request, either!
+
+Google offers a [_tokeninfo_ endpoint](https://developers.google.com/accounts/docs/OAuth2UserAgent?hl=es#validatetoken) to verify an access token:
+
+ https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=1/fFBGRNJru1FQd44AzqT3Zg
 
 ##### Calling an API using OAuth2 #####
+
+How to include an OAuth access token with API calls is specified in the token type profile.  For bearer tokens, three approaches are available in the profile:
+
+ - Authorization Request Header Field
+ - Form-Encoded Body Parameter
+ - URI Query Parameter
+ 
+The first method places the access token in a bearer authentication scheme in the Authorization HTTP header:
+
+     GET /resource HTTP/1.1
+     Host: server.example.com
+     Authorization: Bearer mF_9.B5f-4.1JqM
+
+This method is the only one resource servers must support.
+
+The second method places the access token in the HTTP request body as a parameter:
+
+     POST /resource HTTP/1.1
+     Host: server.example.com
+     Content-Type: application/x-www-form-urlencoded
+
+     access_token=mF9.B5f-4.1JqM
+
+The last method places the access token in the URI as a query parameter, but is not recommended unless the other methods cannot be used by the client:
+
+     https://server.example.com/resource?access_token=mF_9.B5f-4.1JqM&p=q
 
 
 ##### Asking users for permission #####
@@ -227,16 +266,25 @@ Verification of the token is not specified.  It is entirely proprietary.  In the
 Look at PicketBox, an open source XACML implementation for more details.
 
 
-##### ABAC #####
+##### ABAC Architecture #####
 
-##### Delegation #####
+![ABAC Architecture](https://cloud.githubusercontent.com/assets/5155869/3380601/1c0d7e0c-fc0b-11e3-9825-5f3bea3ecb08.png "ABAC Architecture")
 
-##### Policy Enforcement Point #####
 
-##### Policy Decision Point #####
+##### Policy Enforcement Point (PEP) #####
 
-##### Policy Retrieval Point #####
+Enforces policy decisions in response to a request from a subject requesting access to a protected object; the access control decisions are made by the PDP (Policy Decision Point).
 
-#### Relying Party ####
+##### Policy Decision Point (PDP) #####
+
+Computes access decisions by evaluating the subject, object and environmental attributes provided by the PEP and PIP against the access control policy.
+
+##### Policy Information Point (PIP) #####
+
+Serves as the retrieval source of attributes, or the data required for policy evaluation to provide the information needed by the PDP to make the decisions.
+
+##### Policy Administration Point (PAP) #####
+
+Provides a user interface for creating, managing, testing, and debugging access control policies, and storing these policies in the appropriate repository.
 
 ### References ###
