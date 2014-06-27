@@ -48,6 +48,45 @@ e.g. shared knowledge questions or answers, or dynamic SQL queries
 ***
 
 ## Secure string handling
+One of the most common causes of buffer overflows are caused when strings are copied using pointers to character buffers (e.g. char*). This is because the size of the string is determined by a null terminator (a zero character) placed after the last character in the string. When copying between strings, if this terminator is not handled correctly, the string becomes implicitly longer, its length determined by the (random) location of the next null terminator in memory. The following examples demonstrate some classic mistakes in string handling in C/C++.
+
+    #define MAX_STRING_LENGTH 255
+    public void MyFunction(char* input)
+    {
+        char buffer[MAX_STRING_LENGTH];
+		    strcpy(buffer, input);				// Potential buffer overflow since the input string can be longer than the destination buffer
+    }
+	
+	public void MyFunction(char* input)
+	{
+		// A simple check to avoid this problem
+		if ( strlen(input) > MAX_STRING_LENGTH )
+			return;		// Or handle error etc.
+	
+		char buffer[MAX_STRING_LENGTH];
+		strcpy(buffer, input);				// Potential buffer overflow since the destination buffer is only large enough for a string of 254 length + null terminator
+	}
+	
+	public void MyFunction(char* input)
+	{
+		// A simple check to avoid this problem
+		if ( strlen(input) > MAX_STRING_LENGTH )
+			return;		// Or handle error etc.
+	
+		// Recommend using + 1 to make it obvious that you have allowed for the null terminator
+		char buffer[MAX_STRING_LENGTH + 1];
+		strcpy(buffer, input);
+	}
+	
+Similar issues exist for when copying general memory buffers, which would not have a null terminator and therefore no explicit marker for the end of the data. In these scenarios, you should always provide a length parameter so you know how long the input data is but you should still ensure this value is in a sensible range to avoid someone trying to corrupt the stack by copying more data than has actually been provided. These cases are much rarer in web application development but could occur when, for instance, the user uploads an image or other binary file.
+
+    public void MyFunction(void* input, size_t length)
+	  {
+	     char* buffer = (char*)malloc(length);
+		   memcpy(buffer, input, length); 	// Will work but why not include a sanity check on the value of length?
+	 }
+
+
 ## Enabling secure memory flags
 ## Memory management
 ## Stack overflows
