@@ -161,6 +161,11 @@ This is another issue that is removed by using a managed language such as Java, 
 The solution is also simple and is the same as protecting against buffer overflows general and that is by range checking and not blindly assuming string lengths from the intended use of the system but check and enforce them instead. For examples, see the section on string handling. In addition, input validation would prevent some useful attack code from even being allowed to that point in your program.
 
 ## Heap overflows
+A heap overflow, like a stack buffer overflow, attempts to use unchecked buffers to overwrite data in the heap area of a program. Aside from this happening accidentally, it can also be used as an attack where various changes can be made to execute code or gain access to memory that is not supposed to be read. This is more of an issue on older operating systems which don't have memory protection since the heap is otherwise shared between all programs on a machine meaning a heap overflow attack in one program can access the memory of another.
+
+In modern operating systems and with managed languages, this is much more difficult to achieve although with native code execution on open source systems (or in the case of, say, mobile operating systems where the execution environment is visible), the risk is still there.
+
+Mitigation, as for stack and string buffer overflows is to use one or more of the patterns listed above including input validation, bounds checking and intrusion detection.
 
 ## Integer overflows
 Integer overflows occur due to the nature of how integer values are stored in memory. What happens when, for example, you add 1 to an integer that is already set to 11111111? Answer - it wraps round to 00000000 usually, in other words 'some number' + 1 = 0. This can be worse for signed types since the most significant bit is used to store whether a value is positive or negative. So adding 1 to a SIGNED integer that contains 01111111 doesn't increase the value by 1 by takes the value from its largest maximum value to one of its smallest possible values. Another issue can occur when adding two large unsigned integers, which might cause the value to wrap into something small instead. Any cases in your code where this is possible can therefore have unintended consequences.
