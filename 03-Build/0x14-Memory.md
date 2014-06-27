@@ -207,6 +207,9 @@ A few languages have built-in assertion syntax to explicitly state your assumpti
 ## References
 
 [Wikipedia buffer overflow](http://en.wikipedia.org/wiki/Buffer_overflow)
+
 [Wikipedia integer overflow](http://en.wikipedia.org/wiki/Integer_overflow)
+
 [Wikipedia stack overflow](http://en.wikipedia.org/wiki/Stack_buffer_overflow)
+
 [Wikipedia heap overflow](http://en.wikipedia.org/wiki/Heap_overflow)
