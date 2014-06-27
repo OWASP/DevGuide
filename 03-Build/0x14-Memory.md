@@ -92,5 +92,44 @@ Similar issues exist for when copying general memory buffers, which would not ha
 ## Stack overflows
 ## Heap overflows
 ## Integer overflows
-## Underflows
-## Return to LibC
+Integer overflows occur due to the nature of how integer values are stored in memory. What happens when, for example, you add 1 to an integer that is already set to 11111111? Answer - it wraps round to 00000000 usually, in other words 'some number' + 1 = 0. This can be worse for signed types since the most significant bit is used to store whether a value is positive or negative. So adding 1 to a SIGNED integer that contains 01111111 doesn't increase the value by 1 by takes the value from its largest maximum value to one of its smallest possible values. Another issue can occur when adding two large unsigned integers, which might cause the value to wrap into something small instead. Any cases in your code where this is possible can therefore have unintended consequences.
+
+    // The following would work in many situations but if age was large enough, the buffersize could end up being
+    // really small due to integer overflow. Buffer overflow would then be likely
+    public void MyFunction(int age)
+    {
+        int buffersize = age + age;
+        char* buffer = (char*)malloc(buffersize);
+        // etc..
+    }
+    
+    // If this was designed to have age1 > age2, the values might be assumed to be correct. If they are the wrong way round, however
+    // and the buffersize ends up being negative, this would be interpreted as a very large unsigned number when mallocing the buffer
+    public void MyFunction(byte age1, byte age2)
+    {
+        int buffersize = age1 - age2;
+        char* buffer = (char*)malloc(buffersize);       // Potential cause of out-of-memory error
+        // etc..
+    }
+    
+The issues here can easily be avoided by simple range checks and/or error handling to simply justify assumptions made about the values given. Also, it is preferable (although sometimes slightly awkward) to use unsigned types where appropriate. This can sometimes be hard because library functions can often take a signed type even when it doesn't need to be and casting is required to force these to work correctly. A more extensive version of the second function above, coded very defensively, might look like this:
+
+    public void MyFunction(unsigned char age1, unsigned char age2)
+    {
+        if ( age2 >= age1 )
+        {
+            error("Age 1 must be greater than age 2");
+            return;
+        }
+        if ( age1 > 120 || age2 > 120 )
+        {
+            error("The age given must be less than 120");
+            return;
+        }
+        int buffersize = age1 - age2;
+        char* buffer = (char*)malloc(buffersize);
+        // etc..
+    }
+
+A few languages have built-in assertion syntax to explicitly state your assumptions about input values. These can be left on at runtime to stop execution before anything unexpected happens.
+
