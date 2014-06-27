@@ -1,10 +1,10 @@
 # Memory 
 
 ## Overview
-In some lower-level languages, it is very easy to create code that is prone to memory corruption or manipulation. Although many applications are not vulnerable because of their choice of languages, even within these managed languages, such as Java EE and .Net, it is possible to call unmanaged code either directly or via third-party libraries. It is the responsibility of the designers and developers of an application to consider memory management in each of these libraries to ensure that data is not leaked or the application is not taken offline by an attacker taking advantage of these memory vulnerabilities.
+In some lower-level languages, it is very easy to create code that is prone to memory corruption or manipulation. Although many applications are not vulnerable because of their choice of languages, even within these managed languages, such as Java EE and .Net, it is possible to call unmanaged code either directly or via third-party libraries. It is the responsibility of the designers and developers of an application to consider memory management in each of these libraries to ensure that data is not leaked or the application is not taken offline by an attacker taking advantage of these memory vulnerabilities. There are also specific memory issues that can occur, even in managed languages, specifically out-of-memory errors due to excessive memory consumption.
 
 ## Background
-Not only is all the data of an application stored in memory at some point, but the very execution of a program is governed by values stored in memory. Temporary variables and the location of the function to return to are stored in a stack per-thread and other data that is created, especially using a keyword like "new" or "alloc" is kept in the program's heap. It is therefore possible to either access data present in memory by tricking the application into revealing it, to alter the behaviour generally of the application, either for advantage or to deny service and also possible for an attacker to run attack code by modifying the memory contents of a location that the program is going to use for its next function execution.
+Not only is all the data of an application stored in memory at some point, but the very execution of a program is governed by values stored in memory. Temporary variables and the location of the function to return to are stored in a stack per-thread and other data that is created, especially using a keyword like "new" or "alloc" is kept in the program's heap. It is therefore possible to either access data present in memory by tricking the application into revealing it, to alter the behaviour generally of the application, either for advantage or to deny service and also possible for an attacker to run attack code by modifying the memory contents of a location that the program is going to use for its next function execution. A more obvious attack is to attempt to make the application consume too much memory, causing it to slow and eventually crash.
 
 In general, these vulnerabilities exist partly due to older operating systems not segregating memory effectively and more commonly now by low-level language primitives which provide little or no protection for the way in which memory can be assigned or the size of data that can be copied into a memory location. These decisions were likely made for performance reasons but can still exist in code that might still be called from modern web applications - legacy or otherwise.
 
@@ -39,9 +39,48 @@ Another major security control is simple input validation. Please see the other 
 
 ## Negative patterns
 
-### Control that should never ever appear under pain of infinite nyan cat
+### Using strncpy
+It might seem that because memory problems are usually caused by string length issues, using strncpy (the version of strcpy that takes a length parameter) will make you immune from buffer overflow. This is not strictly correct and must only be applied alongside other measures. The following are examples of where strncpy would not fix the problem:
 
-e.g. shared knowledge questions or answers, or dynamic SQL queries
+    // Broken version of the function with no length checking
+    public void MyFunction(char* input)
+    {
+        char buffer[255];
+        strcpy(buffer, input);		// Obvious potential buffer overflow
+    }
+    
+    // A version that simply replaces strcpy with strncpy
+    public void MyFunction(char* input)
+    {
+        char buffer[255];
+        strncpy(buffer, input, 255);    // If input string is 255 or longer, the null terminator will not be written
+        // This could easily lead to problems further down where the correct length of buffer will be unknown
+    }
+    
+    // An improved version that makes the buffer larger than the strncpy length to allow for terminator
+    public void MyFunction(char* input)
+    {
+        char buffer[255+1];
+        strncpy(buffer, input, 255);	// Still broken. An input string longer than 255 will still not copy a null terminator
+    }
+    
+    // Correct version needs to explicitly terminate the string or preferably return if it is too long
+    public void MyFunction(char* input)
+    {
+        if ( strlen(input) > 255 )
+            return;
+            
+        char buffer[255+1];
+        strcpy(buffer, input);	// Don't need strncpy because we have checked the input string
+    }
+    
+    // If you want to take the first n characters of the input string, make sure you terminate it
+    public void MyFunction(char* input)
+    {
+        char buffer[255+1];
+        strncpy(buffer, input, 255);
+        buffer[255] = '\0';	// Terminate the end, just in case the string is longer than 255
+    }
 
 ## References
 
@@ -89,6 +128,14 @@ Similar issues exist for when copying general memory buffers, which would not ha
 
 ## Enabling secure memory flags
 ## Memory management
+There are two general ways in which memory management or lack of it will cause a vulnerability in your application. Firstly, if there is a way to make your application use excessive memory, it can easily crash. Secondly, if a memory leak is present, the same crash can happen after a period of time or at least the system will start to run very slowly as memory is paged to disk.
+
+Leaking memory is not a problem specific to web applications and is probably considered less of an issue when it comes to the web. This is because of assumptions about the way that the request/response mechanism creates, uses and then disposes of memory and in most cases, this is correct. Where a web application carries out more complex work, especially if calling into unmanaged native libraries, there is a danger that memory is allocated and not freed.
+
+Depending on the complexity of the system, one way to avoid this is to simply check and review code to ensure that memory that is allocated is being freed. Secondly, by attempting to stress test the application, you might be able to see a memory leak over a period of time by using your 'task manager'.
+
+A more likely way for an attacker to use memory against your system is to find a way in which your application can allocate a large amount of memory and to try and invoke this functionality many times over a short period. You should be careful to consider any parts of your application that are memory intensive, a classic example is image processing where the uploaded file might be a compressed png or jpeg which becomes much larger when opened into memory where it is likely to become a bitmap of many MBs in size. You should ensure that uploaded images or similar uploaded files are not excessively big and consider managing the memory for these in an efficient way if it is likely that you will be handling multiple items at the same time. For instance, you could push the work onto some kind of queue to be serviced by another program one item at a time.
+
 ## Stack overflows
 ## Heap overflows
 ## Integer overflows
