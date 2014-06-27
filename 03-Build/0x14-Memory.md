@@ -34,9 +34,9 @@ Another major security control is simple input validation. Please see the other 
 
 
 ## Unit or Integration Test Cases
-
+???
 ## Abuse Cases
-
+???
 ## Negative patterns
 
 ### Using strncpy
@@ -82,10 +82,6 @@ It might seem that because memory problems are usually caused by string length i
         buffer[255] = '\0';	// Terminate the end, just in case the string is longer than 255
     }
 
-## References
-
-***
-
 ## Secure string handling
 One of the most common causes of buffer overflows are caused when strings are copied using pointers to character buffers (e.g. char*). This is because the size of the string is determined by a null terminator (a zero character) placed after the last character in the string. When copying between strings, if this terminator is not handled correctly, the string becomes implicitly longer, its length determined by the (random) location of the next null terminator in memory. The following examples demonstrate some classic mistakes in string handling in C/C++.
 
@@ -127,6 +123,8 @@ Similar issues exist for when copying general memory buffers, which would not ha
 
 
 ## Enabling secure memory flags
+???
+
 ## Memory management
 There are two general ways in which memory management or lack of it will cause a vulnerability in your application. Firstly, if there is a way to make your application use excessive memory, it can easily crash. Secondly, if a memory leak is present, the same crash can happen after a period of time or at least the system will start to run very slowly as memory is paged to disk.
 
@@ -136,8 +134,34 @@ Depending on the complexity of the system, one way to avoid this is to simply ch
 
 A more likely way for an attacker to use memory against your system is to find a way in which your application can allocate a large amount of memory and to try and invoke this functionality many times over a short period. You should be careful to consider any parts of your application that are memory intensive, a classic example is image processing where the uploaded file might be a compressed png or jpeg which becomes much larger when opened into memory where it is likely to become a bitmap of many MBs in size. You should ensure that uploaded images or similar uploaded files are not excessively big and consider managing the memory for these in an efficient way if it is likely that you will be handling multiple items at the same time. For instance, you could push the work onto some kind of queue to be serviced by another program one item at a time.
 
-## Stack overflows
+## Stack buffer overflows
+A stack buffer overflow occurs when something writes data directly to the contents of the thread stack in a location that it is not supposed to potentially or actually overwriting data that is supposed to be there. This can be used, for instance, to make the thread return to a different location than the function it actually came from.
+
+Stack buffer overflow should not be confused with a "stack overflow", which is a general programming error causing stack memory to run out and is a mistake that needs identifying and fixing.
+
+An example below describes the process of a deliberate attack using stack buffer overflow.
+
+    public void MyFunction(char* input)
+    {
+        char buffer[32];
+        strcpy(buffer, input);	// Stack variable here is potentially going to be overflowed
+    }
+    
+    int main(int argc, char** argv)
+    {
+        MyFunction(argv[1]);
+    }
+
+The above is a simple example of a program that contains no length checking and is prone to buffer overflow. Since, however, the buffer is on the stack and stack memory is filled from the top downwards, if somebody overwrites the buffer by passing in a string that is too long (i.e. 32 or more) then firstly the parameter "input" will be overwritten, followed by a frame pointer, followed by the function return address. If the attacker has correctly crafted this attack, they can overwrite the internal buffer with attack code and then modify the return address to point to this newly sent attack code. Note that the function would probably either crash or recurse at this point but if the attacker simply wants to run some shell command like "create user" or such like, then they are likely to have succeeded.
+
+In practice, unless your application is open source, it is unlikely that an attacker would be able to generate a favourable outcome from blind attacks but it is possible and even causing your application to crash is an important reason to resolve these.
+
+This is another issue that is removed by using a managed language such as Java, .Net or PHP as long as you don't invoke vulnerable native code.
+
+The solution is also simple and is the same as protecting against buffer overflows general and that is by range checking and not blindly assuming string lengths from the intended use of the system but check and enforce them instead. For examples, see the section on string handling. In addition, input validation would prevent some useful attack code from even being allowed to that point in your program.
+
 ## Heap overflows
+
 ## Integer overflows
 Integer overflows occur due to the nature of how integer values are stored in memory. What happens when, for example, you add 1 to an integer that is already set to 11111111? Answer - it wraps round to 00000000 usually, in other words 'some number' + 1 = 0. This can be worse for signed types since the most significant bit is used to store whether a value is positive or negative. So adding 1 to a SIGNED integer that contains 01111111 doesn't increase the value by 1 by takes the value from its largest maximum value to one of its smallest possible values. Another issue can occur when adding two large unsigned integers, which might cause the value to wrap into something small instead. Any cases in your code where this is possible can therefore have unintended consequences.
 
@@ -180,3 +204,9 @@ The issues here can easily be avoided by simple range checks and/or error handli
 
 A few languages have built-in assertion syntax to explicitly state your assumptions about input values. These can be left on at runtime to stop execution before anything unexpected happens.
 
+## References
+
+[Wikipedia buffer overflow](http://en.wikipedia.org/wiki/Buffer_overflow)
+[Wikipedia integer overflow](http://en.wikipedia.org/wiki/Integer_overflow)
+[Wikipedia stack overflow](http://en.wikipedia.org/wiki/Stack_buffer_overflow)
+[Wikipedia heap overflow](http://en.wikipedia.org/wiki/Heap_overflow)
