@@ -211,10 +211,10 @@ A few languages have built-in assertion syntax to explicitly state your assumpti
 
 ## References
 
-[Wikipedia buffer overflow](http://en.wikipedia.org/wiki/Buffer_overflow)
+[OWASP Wiki buffer overflow](https://www.owasp.org/index.php/Buffer_Overflow)
 
-[Wikipedia integer overflow](http://en.wikipedia.org/wiki/Integer_overflow)
+[OWASP Wiki integer overflow](https://www.owasp.org/index.php/Integer_overflow)
 
-[Wikipedia stack overflow](http://en.wikipedia.org/wiki/Stack_buffer_overflow)
+[OWASP Wiki stack overflow](https://www.owasp.org/index.php/Stack_overflow)
 
-[Wikipedia heap overflow](http://en.wikipedia.org/wiki/Heap_overflow)
+[OWASP Wiki heap overflow](https://www.owasp.org/index.php/Heap_overflow)
