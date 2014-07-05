@@ -12,7 +12,7 @@ Specifically, it will teach you:
 * About the basics about cryptographic key management.
 * How to avoid common errors when using cryptography.
 
-Also, we consider the topics X.509 certificates, SSL/TLS configuration, and cryptographically secure pseudo-random number generators to be out-of-scope. 
+Also, we consider the topics X.509 certificates, SSL/TLS configuration, and cryptographically secure pseudo-random number generators to be out-of-scope. [1]
 
 ### Platforms Affected 
 
@@ -23,15 +23,14 @@ All Relevant COBIT Topics
 ## Glossary of Cryptographic Terms
 Like most specialized technical areas, cryptography has its own specific jargon.  Rather than trying to define each term as it is used and cause possible distractions for those with familiarity with these terms, we will refer you to the definitions in the following glossaries:
 
-* http://nvlpubs.nist.gov/nistpubs/ir/2013/NIST.IR.7298r2.pdf
-* http://www.rsa.com/rsalabs/node.asp?id=2373
-* http://www.cryptomuseum.com/crypto/glossary.htm
-* http://www.ciphersbyritter.com/GLOSSARY.HTM
+* [http://nvlpubs.nist.gov/nistpubs/ir/2013/NIST.IR.7298r2.pdf](http://nvlpubs.nist.gov/nistpubs/ir/2013/NIST.IR.7298r2.pdf "NISTIR 7298 Revision 2 - Glossary of Key Information Security Terms")
+* [http://www.cryptomuseum.com/crypto/glossary.htm](http://www.cryptomuseum.com/crypto/glossary.htm "Crypto Museum - Glossary of crypto terminology")
+* [http://www.ciphersbyritter.com/GLOSSARY.HTM](http://www.ciphersbyritter.com/GLOSSARY.HTM "Ritter's Crypto Glossary and Dictionary of Technical Cryptography")
 
 There is also more general Internet security glossaries here:
 
-* http://tools.ietf.org/html/rfc4949
-* http://www.garlic.com/~lynn/secure.htm 
+* [http://tools.ietf.org/html/rfc4949](http://tools.ietf.org/html/rfc4949 "RFC 4949 - Internet Security Glossary - Version 2")
+* [http://www.garlic.com/~lynn/secure.htm](http://www.garlic.com/~lynn/secure.htm "Ann and Lynn Wheeler's Security Taxonomy and Glossary") 
 
 ## Description
 ### Uses of Cryptography
@@ -78,7 +77,8 @@ To be useful in a cryptographic sense, a hash function H operating on input x su
 
 1.	They must be one-way functions. That is, given hash algorithm H and digest value d, it is computationally infeasible to compute input x.
 
-2.	Given input x such that d = H(x), it is computationally infeasible to find a second input x', such that H(x') yields the same digest value d.
+2.	Given input x such that d = H(x), it is computationally 
+3.	 to find a second input x', such that H(x') yields the same digest value d.
 
 3.	It is computationally infeasible to find two different inputs, x and x' such that both hash to the same value; that is, such that H(x) == H(x') where x != x'.
 Such cryptographic hash functions are used to provide data integrity (i.e., to detect intentional data tampering), to store passwords or pass phrases, and to provide digital signatures in a more efficient manner than using asymmetric ciphers.  Cryptographic hash functions are also used to extend a relatively small bit of entropy so that secure random number generators can be constructed.
@@ -117,7 +117,7 @@ The simplest cipher mode---and unfortunately often the only one introduced in in
 
 Almost all cryptographic libraries support the four original DES cipher modes of ECB, CBC (Cipher Block Chaining), OFB (Output Feedback), and CFB (Cipher Feedback). Many also support CTR (Counter) mode.
 
-The discussion of all the nuances of cipher modes is beyond the scope of this document; however, some further comments will be discussed about cipher modes a bit later.
+The discussion of all the nuances of cipher modes is beyond the scope of this document; however, some further comments will be discussed about cipher modes a bit later. [2]
 
 ###Initialization Vectors
 
@@ -132,14 +132,14 @@ Asymmetric ciphers  encrypt and decrypt  with two different keys. One key genera
 
 Asymmetric ciphers are several orders of magnitude slower than symmetric ciphers. Because of that, they are used frequently in hybrid cryptosystems, which combine asymmetric and symmetric ciphers. In such hybrid cryptosystems, a random symmetric "session" key (i.e., a key only used for the duration of the encrypted communication) is generated. This random session key is then encrypted using an asymmetric cipher and the recipient's private key. The plaintext data itself is encrypted with the session key. Then the entire bundle (encrypted session key and encrypted message) is all sent together. Both TLS and S/MIME are common cryptosystems using hybrid cryptography.
 
-Cipher modes and padding are still pertinent to asymmetric ciphers, however the cipher mode is almost always ECB . (This is not a problem when the data being encrypted is a random session key.) For padding, generally some form of OAEP is used. PKCS5 (or PKCS7) padding should generally be avoided with asymmetric encryption.
+Cipher modes and padding are still pertinent to asymmetric ciphers, however the cipher mode is almost always ECB [3]. (This is not a problem when the data being encrypted is a random session key.) For padding, generally some form of OAEP is used. PKCS5 (or PKCS7) padding should generally be avoided with asymmetric encryption.
 
 Note that encryption using asymmetric ciphers and OAEP has some limitation though. For example, when OAEP is used as a padding scheme for RSA (that is, RSAEP-OAEP is being used), PKCS1 v2 states that the maximum length of any message that may be encrypted using RSA is: 
 
-k - (2 * hLen) - 2
+    k - (2 * hLen) - 2
 
-where	k	is the RSA modulus length
-and	hLen	is the # of octets in the chosen hash function.
+    where	k		is the RSA modulus length
+    and		hLen	is the # of octets in the chosen hash function.
 
 * Asymmetric cipher algorithms to avoid: TBD
 * Asymmetric cipher algorithms to avoid (except as required by legacy code): TBD
@@ -179,11 +179,11 @@ Authenticated Encryption (AE) is any block cipher mode that provides confidentia
 
 In general, one should prefer authenticated encryption modes whenever there is a chance that an adversary may have a chance to alter or provide the IV and/or ciphertext that you are attempting to decrypt. (A good reason to develop a threat model before you design your encryption.)
 
-Recommended AE cipher modes are Counter with CBC-MAC (CCM) and Galois/Counter Mode (GCM). Both CCM and GCM are NIST approved and patents encumber neither. CCM is the simpler of the two and thus less likely to be fraught with side channels in its implementations. GCM is supposedly more parallelizable so may provide better throughput (at least when implemented in hardware), but it seems to make many cryptographers nervous because there are so many things to get exactly right.  [Note to Java developers: Oracle's JDK 7 now supports both CCM and GCM in the SunJCE. If you are using an earlier JDK release, you can use Bouncy Castle as your JCE provider.  In lieu of using an AE cipher mode, you can "wrap" an HMAC around the IV and ciphertext and check its validity before decrypting. (The so-called "encrypt-then-MAC" approach. ) This is the approach that OWASP ESAPI 2.x (Java) has taken when an AE cipher mode is not available; in fact, it is ESAPI 2.x's default mode for symmetric encryption.
+Recommended AE cipher modes are Counter with CBC-MAC (CCM) and Galois/Counter Mode (GCM). Both CCM and GCM are NIST approved and patents encumber neither. CCM is the simpler of the two and thus less likely to be fraught with side channels in its implementations. GCM is supposedly more parallelizable so may provide better throughput (at least when implemented in hardware), but it seems to make many cryptographers nervous because there are so many things to get exactly right.  [Note to Java developers: Oracle's JDK 7 now supports both CCM and GCM in the SunJCE. If you are using an earlier JDK release, you can use Bouncy Castle as your JCE provider.  In lieu of using an AE cipher mode, you can "wrap" an HMAC around the IV and ciphertext and check its validity before decrypting. (The so-called "encrypt-then-MAC" approach. [4]) This is the approach that OWASP ESAPI 2.x (Java) has taken when an AE cipher mode is not available; in fact, it is ESAPI 2.x's default mode for symmetric encryption. There is no standard supported AE mode in Microsoft's .NET Framework, however some members of the .NET security team have made a .NET assembly supporting both CCM and GCM modes available [here](http://blogs.msdn.com/b/shawnfa/archive/2009/03/17/authenticated-symmetric-encryption-in-net.aspx "Authenticated Symmetric Encryption in .NET").
 
 ###Cipher Padding
 
-A streaming cipher or a block cipher using a streaming mode such as OFB, CFB, CTR, etc. does not require padding. However, we recommend that you use padding with any block cipher that uses a block mode (e.g., CBC). For symmetric block ciphers, PKCS7 (RFC 5652) or PKCS5 padding are good choices as they are supported by almost all cryptographic libraries. For most practical purposes, PKCS5 padding is the same as PKCS7 padding, except that technically, PKCS5 padding can only be used to pad ciphers whose block size is 64 bits  (In fact, the standard SunJCE cryptographic provider in Java supports only PKCS5 padding, but not PKCS7 padding. On the other hand, the .NET Framework supports only PKCS7 padding, but not PKCS5 padding. . Fortunately, in practice, these two padding schemes can generally used interchangeably.) For asymmetric ciphers, one needs to be more cautious in the choice of padding because of cryptographic weaknesses with some padding schemes used with such ciphers. For the RSA algorithm, we recommend the OAEP padding scheme OAEP with SHA-1 and MGF1 padding (OAEPWithSHA1andMGF1Padding)
+A streaming cipher or a block cipher using a streaming mode such as OFB, CFB, CTR, etc. does not require padding. However, we recommend that you use padding with any block cipher that uses a block mode (e.g., CBC). For symmetric block ciphers, PKCS7 (RFC 5652) or PKCS5 padding are good choices as they are supported by almost all cryptographic libraries. For most practical purposes, PKCS5 padding is the same as PKCS7 padding, except that technically, PKCS5 padding can only be used to pad ciphers whose block size is 64 bits  (In fact, the standard SunJCE cryptographic provider in Java supports only PKCS5 padding, but not PKCS7 padding. On the other hand, the .NET Framework supports only PKCS7 padding, but not PKCS5 padding. Fortunately, in practice, these two padding schemes can generally used interchangeably.) For asymmetric ciphers, one needs to be more cautious in the choice of padding because of cryptographic weaknesses with some padding schemes used with such ciphers. For the RSA algorithm, we recommend the OAEP padding scheme OAEP with SHA-1 and MGF1 padding (OAEPWithSHA1andMGF1Padding)
 
 Recommended: Block ciphers using block mode – PKCS7 or PKCS5 padding; with RSA - OAEPWithSHA1andMGF1Padding
 
@@ -211,11 +211,11 @@ Digital signatures of course are also useful for signing other things, for insta
 
 ###Recommendations for algorithms:
 
-* For MIC:	Because of the assumption that you are the only one that controls the bits and the hash signature, any secure one-way hash will do. SHA1 or MD5 are generally adequate because in this case the algorithms are really only acting as a checksum, much as a 32-bit CRC might be used. However, if there is concern that an adversary can attempt collisions but for some reason not change the hash signature (e.g., maybe it's built into some widely distributed software), then use a stronger hash algorithm such as SHA-256.
+* **For MIC:**	Because of the assumption that you are the only one that controls the bits and the hash signature, any secure one-way hash will do. SHA1 or MD5 are generally adequate because in this case the algorithms are really only acting as a checksum, much as a 32-bit CRC might be used. However, if there is concern that an adversary can attempt collisions but for some reason not change the hash signature (e.g., maybe it's built into some widely distributed software), then use a stronger hash algorithm such as SHA-256.
 
-* For MAC:	HMAC-SHA1 is acceptable. HMAC-SHA256 or HMAC-SHA3 is recommended for new applications and/or long term use.
+* **For MAC:**	HMAC-SHA1 is acceptable. HMAC-SHA256 or HMAC-SHA3 is recommended for new applications and/or long term use.
 
-* For Digital Signatures:	RSA. DSA may be used in a pinch but is should be avoided because it is much more sensitive to implementation flaws. 
+* **For Digital Signatures:**	RSA. DSA may be used in a pinch but is should be avoided because it is much more sensitive to implementation flaws. 
 
 ###Cryptography for Authentication
 
@@ -225,7 +225,7 @@ The second way that cryptography is used for authentication is for storing a use
 
 ###Using Cryptography to Solve Practical Problems
 
-Amongst the two most common uses of cryptography securing data-at-rest (e.g., stored in a file or a database) and securing data in transit. When we use the term "securing" data via cryptography, we are generally referring to providing confidentiality and ensuring data integrity / authenticity. That is the minimum expectations of using cryptography to "secure" data as discussed in this section and subsections.
+Among the two most common uses of cryptography securing data-at-rest (e.g., stored in a file or a database) and securing data in transit. When we use the term "securing" data via cryptography, we are generally referring to providing confidentiality and ensuring data integrity / authenticity. That is the minimum expectations of using cryptography to "secure" data as discussed in this section and subsections.
 
 ##Securing Data at Rest
 
@@ -234,7 +234,7 @@ Amongst the two most common uses of cryptography securing data-at-rest (e.g., st
 When it comes to stored data-at-rest so that it is encrypted in an SQL database, there are three commonly practiced approaches:
 
 * The SQL database engine itself handles the encryption and decryption. Examples of this are Oracle Database "Transparent Data Encryption" and Microsoft SQL Server "Transparent Data Encryption" . (We will refer to these as Oracle TDE and SQL Server TDE respectively, and just refer to the technology as TDE in general.) 
-* The application code completely handles the encryption and decryption of the sensitive data before it is stored in and after it is retrieved from said database. 
+* The application code completely handles the encryption and decryption of the sensitive data before it is stored in and after it is retrieved from said database, as well as ensuring its authenticity.
 * An appropriate proxy (for example, MIT's CryptDB or a custom web service that clients start using to access the data rather than accessing it directly) between the application and the database handles all the encryption / decryption.
 
 Each of these approaches have their own advantages and disadvantages of securing data-at-rest stored in a database. Exploring all of these pros and cons is beyond the current scope of this wiki page, although this may be provided in the future should the need warrant.
@@ -272,7 +272,7 @@ At other times, while it is recommended as a very poor solution, it may be the o
 The disadvantages of the DB Engine TDE approach are great. They are:
 
 * Because the DB engine itself decrypts all the data transparently to clients, once the DB is provided the decrypted master key, any client having query access to the encrypted columns will have access to the decrypted data. If this is not the desired state, in order to keep the data secure, the database access model often needs to be significantly revamped to construct separate DB views for each different use case actor with legitimate access to at least portions of the database. 
-* Deterministic encryption is usually the preferred solution by DBAs and application developers, but unfortunately it has numerous short comings. With deterministic encryption, the same plaintext will always encrypt to the same ciphertext (at least until a key change operation is done to generate new DB key encryption keys). However, for the same reasons that we do not generally allow the reuse of IVs (even for CBC mode; in any other mode, it is a major disaster in the making), deterministic encryption is not considered secure. The details of these cryptographic attacks are beyond the scope of this document. However, using non-deterministic encryption with a unique IV (or "salt") per record results in stronger encryption but does not allow the DB engine to do indexed searching on that specific column. Speak to the author if you wish more details or attack scenarios. 
+* Deterministic encryption is usually the preferred solution by both database administrators and application developers, but unfortunately it has numerous short-comings. With deterministic encryption, the same plaintext will always encrypt to the same ciphertext (at least until a key change operation is done to generate new DB key encryption keys). However, for the same reasons that we do not generally allow the reuse of IVs (even for CBC mode; in any other mode, it is a major disaster in the making), deterministic encryption is not considered secure. The details of these cryptographic attacks are beyond the scope of this document. However, using non-deterministic encryption with a unique IV (or "salt") per record results in stronger encryption but does not allow the DB engine to do indexed searching on that specific column. Speak to the author if you wish more details or attack scenarios. 
 * When backup copies of an open / online database are made, certain types of these backups make copies of the decrypted data so that anyone having access to the backup copies has access to the sensitive plaintext data that had been encrypted. Examples for Oracle include backups made via the "Data Pump export utility (expdp)" or "explicit captures" made via Oracle streams. (See the section "Using Data Pump with TDE" for the former and "How Oracle Streams Works with Other Database Components" for details of the latter.) Similar issues are expected with Microsoft SQL Server backups but have not been verified. Therefore, this may require changes to the database backup procedures.
 
 ##Application Level Encryption
@@ -311,6 +311,9 @@ TODO
 
 ###Lifecycle of Encryption Keys
 TODO
+
+Diagram of "Key States and Transitions" from page 87 of [http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf](http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf "Recommendation for Key Management -- Part 1: General (Revision 3)")
+![NIST Key States and Transitions - NIST SP800-57 Part 1 (Rev 3)](file:images/NIST-crypto-key-lifecycle.png)
  
 ###Key Agreement / Key Exchange
 TODO
@@ -325,10 +328,11 @@ TODO
 
 ##References
 
-* http://www.keylength.com/
-* Alfred Menezes, Paul van Oorschot, Scott Vanstone, Handbook of Applied Cryptography, 1997, CRC Press, ISBN 0-8493-8523-7. (Online: http://cacr.uwaterloo.ca/hac/)
-* NIST Special Publications 800-57, Recommendation for Key Management – Part 1: General (Revision 3). (Online: http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf)
-* ENISA (editor: Nigel P. Smart), Algorithms, Key Sizes, and Parameters Report: 2013 Recommendations, (Online: http://www.enisa.europa.eu/activities/identity-and-trust/library/deliverables/algorithms-key-sizes-and-parameters-report)
+* [http://www.keylength.com/](http://www.keylength.com/)
+* Alfred Menezes, Paul van Oorschot, Scott Vanstone, Handbook of Applied Cryptography, 1997, CRC Press, ISBN 0-8493-8523-7. (Online: [http://cacr.uwaterloo.ca/hac/](http://cacr.uwaterloo.ca/hac/))
+* NIST Special Publications 800-57, Recommendation for Key Management – Part 1: General (Revision 3). (Online: [http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf](http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf))
+* ENISA (editor: Nigel P. Smart), Algorithms, Key Sizes, and Parameters Report: 2013 Recommendations, (Online: [http://www.enisa.europa.eu/activities/identity-and-trust/library/deliverables/algorithms-key-sizes-and-parameters-report](http://www.enisa.europa.eu/activities/identity-and-trust/library/deliverables/algorithms-key-sizes-and-parameters-report))
+* Neils Ferguson, Bruce Schneier, Tadayoshi Kohno, *Cryptography Engineering: Design Principles and Practical Applications*, 2010, Wiley Publishing Inc, ISBN 978-0=470-47424-2.
 
 ##Reviewers
 
@@ -340,3 +344,14 @@ Candidates:
 * Chris Tidball (volunteered)
 * Kevin Kenan? (ask)
 * Anthony J. Stiebler? (Wells Fargo, ask)
+
+##Endnotes
+[1] This is, after all to be a chapter on cryptography, and not a book about it. That and the fact that this chapter author is just running out of gas. If you are interested in such topics, check out the listed references.
+
+[2] Again, this is a *chapter* on cryptography, not a book. The interested reader should see Menezes, et al mentioned in the References section.
+
+[3] In fact, according to Cryptix co-author, David Hopwood (see [http://www.users.zetnet.co.uk/hopwood/crypto/scan/ca.html](http://www.users.zetnet.co.uk/hopwood/crypto/scan/ca.html)) suggests that other cipher modes may not even make sense for asymmetric ciphers. Hopwood states:
+
+> Where an asymmetric cipher requires an encoding method in order to be specified completely, the naming convention is "encryption-primitive/encryption-encoding". Some existing JCE providers will accept the use of a block cipher mode and padding with an asymmetric cipher (e.g. "RSA/CBC/PKCS#7"); this is not recommended, and new providers MUST reject this usage. An encryption primitive name on its own (e.g. "RSA", as opposed to a complete encryption scheme such as "DLIES-ISO(...)") SHOULD also be rejected.
+
+[4] There are three possible approaches to applying a MAC to ensure the authenticity of ciphertext. One is the MAC-and-encrypt, which the sender computes a MAC of the plaintext, encrypts the plaintext, and then appends the MAC to the IV and ciphertext. The second is MAC-then-encrypt, where the sender computes a MAC of the plaintext, then encrypts both the plaintext (and generally, the IV) and the MAC. And the third is the encrypt-then-MAC approach where the sender encrypts the plaintext, then appends a MAC of the IV plus ciphertext. Of these three mechanisms, only the encrypt-then-MAC has proven to resist known cryptographic attacks (when implemented correctly).
