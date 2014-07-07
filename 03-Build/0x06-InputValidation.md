@@ -26,7 +26,13 @@ Server-side code should perform its own validation. Client side validation code 
 
 Use client-side validation to help reduce the number of round trips to the server but do not rely on it for security. This is an example of defense in depth. 
 
-<H3></H3>
+<H3> Reject all known bad input </H3> - paraphrasing required
+Deny "bad" data; although do not rely completely on this approach. This approach is generally less effective than using the "allow" approach described earlier and it is best used in combination. To deny bad data assumes your application knows all the variations of malicious input. Remember that there are multiple ways to represent characters. This is another reason why "allow" is the preferred approach.
+
+While useful for applications that are already deployed and when you cannot afford to make significant changes, the "deny" approach is not as robust as the "allow" approach because bad data, such as patterns that can be used to identify common attacks, do not remain constant. Valid data remains constant while the range of bad data may change over time. 
+
+<H3>Encrypt sensitive cookie state </H3> - paraphrasing required and put good example from Apple documentation
+Cookies may contain sensitive data such as session identifiers or data that is used as part of the server-side authorization process. To protect this type of data from unauthorized manipulation, use cryptography to encrypt the contents of the cookie. Make sure that users do not bypass your checks. Make sure that users do not bypass your checks by manipulating parameters. URL parameters can be manipulated by end users through the browser address text box. For example, the URL http://www.<YourSite>/<YourApp>/sessionId=10 has a value of 10 that can be changed to some random number to receive different output. Make sure that you check this in server-side code, not in client-side JavaScript, which can be disabled in the browser. 
 
 
 
