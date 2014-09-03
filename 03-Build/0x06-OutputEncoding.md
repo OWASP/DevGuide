@@ -1,4 +1,6 @@
-# Input validation and output encoding
+# Output encoding
+
+Allocated to Viral
 
 ## Background
 
@@ -28,12 +30,6 @@ e.g. shared knowledge questions or answers, or dynamic SQL queries
 ## References
 
 ***
-
-## Positive input validation
-## Negative input validation
-## Sanitization
-## No input validation
-## Web service and REST input validation
 
 ## When and where to encode
 ### SQL
