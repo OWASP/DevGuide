@@ -89,7 +89,7 @@ Hash algorithms to avoid: MD2, MD4, MD5, SHA-0 (aka, SHA), and any hash algorith
 * Hash algorithms to avoid (except as required by legacy code): SHA-1
 * Recommended hash algorithms: SHA-2 (i.e., SHA-224, SHA-256, SHA-384, and SHA-512), SHA-3 (aka, Keccak)
 
-##Ciphers
+## Ciphers
 A cipher is an algorithm that performs encryption or decryption. Modern ciphers can be categorized in a couple of different ways. The most common distinctions between them are:
 
 * Whether they work on fixed size number of bits (block ciphers) or on a continuous stream of bits (stream ciphers).
@@ -109,7 +109,7 @@ Recommendations
 * Symmetric cipher algorithms to avoid (except as required by legacy code): RC4
 Recommended symmetric cipher algorithms: AES, 3-key Triple DES (aka, DESede), Salsa20
 
-###Cipher Modes
+#### Cipher Modes
 
 Block ciphers can function in different modes of operations known as "cipher modes".  This cipher mode algorithmically describes how a cipher operates to repeatedly apply its encryption or decryption mechanism to a given cipher block. Cipher modes are important to have an awareness of because they have an enormous impact on both the confidentiality and the message authenticity of the resulting ciphertext messages.
 
@@ -119,11 +119,11 @@ Almost all cryptographic libraries support the four original DES cipher modes of
 
 The discussion of all the nuances of cipher modes is beyond the scope of this document; however, some further comments will be discussed about cipher modes a bit later. [2]
 
-###Initialization Vectors
+#### Initialization Vectors
 
 In cryptography, an initialization vector (IV) is a fixed size input to a block cipher's encryption / decryption primitive. The IV is recommended (and in many cases, required) to be random or at least pseudo-random. We will discuss IVs and their related requirements later in this document.
 
-###Padding
+#### Padding
 
 Block ciphers generally operate on fixed size blocks (the exception is when they are operating in a "streaming" mode). However, these ciphers must also operate on messages of any sizes, not just those that are an integral multiple of the cipher's block size.
 
@@ -132,7 +132,11 @@ Asymmetric ciphers  encrypt and decrypt  with two different keys. One key genera
 
 Asymmetric ciphers are several orders of magnitude slower than symmetric ciphers. Because of that, they are used frequently in hybrid cryptosystems, which combine asymmetric and symmetric ciphers. In such hybrid cryptosystems, a random symmetric "session" key (i.e., a key only used for the duration of the encrypted communication) is generated. This random session key is then encrypted using an asymmetric cipher and the recipient's private key. The plaintext data itself is encrypted with the session key. Then the entire bundle (encrypted session key and encrypted message) is all sent together. Both TLS and S/MIME are common cryptosystems using hybrid cryptography.
 
-Cipher modes and padding are still pertinent to asymmetric ciphers, however the cipher mode is almost always ECB [3]. (This is not a problem when the data being encrypted is a random session key.) For padding, generally some form of OAEP is used. PKCS5 (or PKCS7) padding should generally be avoided with asymmetric encryption.
+#### Practices to avoid
+With all asymmetric ciphers, chosen plaintext attacks [3] are always a concern.  Because the public key is always considered as known to potential adversaries, attackers can always encrypt any arbitrary plaintext and observe the resulting ciphertext. Ordinarily, this is not a cause for concern because the plaintext that is to be encrypted with an asymmetric cipher is highly unpredictable (e.g., encrypting session keys or cryptographic hash values). However, chosen plaintext attacks become an issue when using public-key crypto to encrypt highly structured / regular plaintext, especially when that plaintext has a limited length to make encrypting of all possible plaintexts practical. Consider the ill-advised scenario where an application is using RSA encryption to encrypt plaintext social security numbers or bank account numbers and then storing the resulting ciphertext into the application's database. An inside attacker who as access to the database (but not the RSA private key) could use the RSA public key (which we assume is available) and use it to encrypt all possible SSNs, keeping a map of SSN to ciphertext. The attacker could then use the resulting ciphertexts to determine which plaintext SSN corresponds to which DB record by searching by the ciphertext SSN in the database.  Consequently, asymmetric encryption algorithms should generally be avoided when the plaintext follows some predictable format or it can largely be enumerated over all possible plaintext values. For such situations, one should use symmetric ciphers instead.
+
+### Cipher Modes and Padding for Asymmetric Ciphers
+Cipher modes and padding are still pertinent to asymmetric ciphers, however the cipher mode is almost always ECB [4]. (This is not a problem when the data being encrypted is a random session key.) For padding, generally some form of OAEP is used. PKCS5 (or PKCS7) padding should generally be avoided with asymmetric encryption.
 
 Note that encryption using asymmetric ciphers and OAEP has some limitation though. For example, when OAEP is used as a padding scheme for RSA (that is, RSAEP-OAEP is being used), PKCS1 v2 states that the maximum length of any message that may be encrypted using RSA is: 
 
@@ -143,7 +147,7 @@ Note that encryption using asymmetric ciphers and OAEP has some limitation thoug
 
 * Asymmetric cipher algorithms to avoid: TBD
 * Asymmetric cipher algorithms to avoid (except as required by legacy code): TBD
-* Recommended asymmetric cipher algorithms: RSA, Elliptic Curve (see NIST FIPS 186-3 for recommended curves)
+* Recommended asymmetric cipher algorithms: RSA with at modulus of at least 2048-bits, Elliptic Curve (see NIST FIPS 186-3 for recommended curves)
 
 ## Digital Signatures
 Digital signatures are a cryptographically unique data string that is used to ensure data integrity and prove the authenticity of some digital message. and that associates some input message with an originating entity. A digital signature generation algorithm is a cryptographically strong algorithm that is used to generate a digital signature.
@@ -179,7 +183,7 @@ Authenticated Encryption (AE) is any block cipher mode that provides confidentia
 
 In general, one should prefer authenticated encryption modes whenever there is a chance that an adversary may have a chance to alter or provide the IV and/or ciphertext that you are attempting to decrypt. (A good reason to develop a threat model before you design your encryption.)
 
-Recommended AE cipher modes are Counter with CBC-MAC (CCM) and Galois/Counter Mode (GCM). Both CCM and GCM are NIST approved and patents encumber neither. CCM is the simpler of the two and thus less likely to be fraught with side channels in its implementations. GCM is supposedly more parallelizable so may provide better throughput (at least when implemented in hardware), but it seems to make many cryptographers nervous because there are so many things to get exactly right.  [Note to Java developers: Oracle's JDK 7 now supports both CCM and GCM in the SunJCE. If you are using an earlier JDK release, you can use Bouncy Castle as your JCE provider.  In lieu of using an AE cipher mode, you can "wrap" an HMAC around the IV and ciphertext and check its validity before decrypting. (The so-called "encrypt-then-MAC" approach. [4]) This is the approach that OWASP ESAPI 2.x (Java) has taken when an AE cipher mode is not available; in fact, it is ESAPI 2.x's default mode for symmetric encryption. There is no standard supported AE mode in Microsoft's .NET Framework, however some members of the .NET security team have made a .NET assembly supporting both CCM and GCM modes available [here](http://blogs.msdn.com/b/shawnfa/archive/2009/03/17/authenticated-symmetric-encryption-in-net.aspx "Authenticated Symmetric Encryption in .NET").
+Recommended AE cipher modes are Counter with CBC-MAC (CCM) and Galois/Counter Mode (GCM). Both CCM and GCM are NIST approved and patents encumber neither. CCM is the simpler of the two and thus less likely to be fraught with side channels in its implementations. GCM is supposedly more parallelizable so may provide better throughput (at least when implemented in hardware), but it seems to make many cryptographers nervous because there are so many things to get exactly right.  [Note to Java developers: Oracle's JDK 7 now supports both CCM and GCM in the SunJCE. If you are using an earlier JDK release, you can use Bouncy Castle as your JCE provider.  In lieu of using an AE cipher mode, you can "wrap" an HMAC around the IV and ciphertext and check its validity before decrypting. (The so-called "encrypt-then-MAC" approach. [5]) This is the approach that OWASP ESAPI 2.x (Java) has taken when an AE cipher mode is not available; in fact, it is ESAPI 2.x's default mode for symmetric encryption. There is no standard supported AE mode in Microsoft's .NET Framework, however some members of the .NET security team have made a .NET assembly supporting both CCM and GCM modes available [here](http://blogs.msdn.com/b/shawnfa/archive/2009/03/17/authenticated-symmetric-encryption-in-net.aspx "Authenticated Symmetric Encryption in .NET"). A more complete list of authenticated encryption modes may be found on the [NIST Modes Development page](http://csrc.nist.gov/groups/ST/toolkit/BCM/modes_development.html).
 
 ###Cipher Padding
 
@@ -191,7 +195,7 @@ Recommended: Block ciphers using block mode – PKCS7 or PKCS5 padding; with RSA
 
 Using a cipher in its "raw" form is referred to as Electronic Code Book (ECB) mode. When encrypting using ECB, the plaintext message is divided into blocks (corresponding to the cipher algorithm's block size) and each block is encrypted individually with no interaction with any other blocks. Unfortunately, except when the plaintext message is less than the cipher's block size (typically 128 or 64 bits) or one is encrypting completely random data (e.g., using a asymmetric cipher to encrypt a key for a symmetric cipher). ECB mode should generally be avoided in all other cases because it has many cryptographic weaknesses. Normally, an AE cipher mode (see "Authenticated vs. Non-authenticated Encryption", above) should be used.  However, all cipher modes other than ECB require an "initialization vector" (IV). An IV usually is a random or pseudorandom bit stream that has the same length as the cipher block size. In any streaming cipher mode, it is important that for any given encryption key, the same IV never be used to encrypt multiple plaintext messages. 
 
-Therefore, either ensure you use a different IV or a different key whenever you use a stream cipher or a symmetric cipher in a streaming mode. Since it is generally easier to change the IV instead of the key (since the latter needs to be securely transmitted with the intended recipient of the ciphertext), it is recommended that you construct the IV in such cases by breaking it into two parts: one part being a timestamp in at least millisecond resolution and the other a counter. Figuring out how many bits to dedicate for the counter depends on what you think the maximum number of messages you can encrypt in a clock increment (millisecond, nanosecond, or whatever resolution you are using) combined with how long you will encrypt for with the same encryption key. With IVs that are 128-bits in length, you should have plenty of room for both. In general, it is highly recommended that you change the encryption key at least once a year. (PCI DSS requires at least this; but generally, more frequently is recommended.) Because of the way stream ciphers work (or block ciphers operating in a streaming cipher mode), if you do use the same encryption key / IV pair to encrypt multiple plaintext messages, an adversary can simply take the resulting ciphertext streams and XOR them together. The result of this operation leaves a bit stream of the two plaintext messages XOR'd together, which the adversary can then analyze using statistical frequency analyzing leading to the discovery of the two original plaintext messages.
+Therefore, either ensure you use a different IV or a different key whenever you use a stream cipher or a symmetric cipher in a streaming mode. Since it is generally easier to change the IV instead of the key (since the latter needs to be securely transmitted with the intended recipient of the ciphertext), it is recommended that you construct the IV in such cases by breaking it into two parts: one part being a time stamp in at least millisecond resolution and the other a counter. Figuring out how many bits to dedicate for the counter depends on what you think the maximum number of messages you can encrypt in a clock increment (millisecond, nanosecond, or whatever resolution you are using) combined with how long you will encrypt for with the same encryption key. With IVs that are 128-bits in length, you should have plenty of room for both. In general, it is highly recommended that you change the encryption key at least once a year. (PCI DSS requires at least this; but generally, more frequently is recommended.) Because of the way stream ciphers work (or block ciphers operating in a streaming cipher mode), if you do use the same encryption key / IV pair to encrypt multiple plaintext messages, an adversary can simply take the resulting ciphertext streams and XOR them together. The result of this operation leaves a bit stream of the two plaintext messages XOR'd together, which the adversary can then analyze using statistical frequency analyzing leading to the discovery of the two original plaintext messages. [6]
 
 Okay, okay, so that was more than a final word. How about this for a summary:
 
@@ -213,7 +217,8 @@ Digital signatures of course are also useful for signing other things, for insta
 
 * **For MIC:**	Because of the assumption that you are the only one that controls the bits and the hash signature, any secure one-way hash will do. SHA1 or MD5 are generally adequate because in this case the algorithms are really only acting as a checksum, much as a 32-bit CRC might be used. However, if there is concern that an adversary can attempt collisions but for some reason not change the hash signature (e.g., maybe it's built into some widely distributed software), then use a stronger hash algorithm such as SHA-256.
 
-* **For MAC:**	HMAC-SHA1 is acceptable. HMAC-SHA256 or HMAC-SHA3 is recommended for new applications and/or long term use.
+* **For MAC:**	HMAC-SHA1 is a
+* cceptable. HMAC-SHA256 or HMAC-SHA3 is recommended for new applications and/or long term use.
 
 * **For Digital Signatures:**	RSA. DSA may be used in a pinch but is should be avoided because it is much more sensitive to implementation flaws. 
 
@@ -272,7 +277,9 @@ At other times, while it is recommended as a very poor solution, it may be the o
 The disadvantages of the DB Engine TDE approach are great. They are:
 
 * Because the DB engine itself decrypts all the data transparently to clients, once the DB is provided the decrypted master key, any client having query access to the encrypted columns will have access to the decrypted data. If this is not the desired state, in order to keep the data secure, the database access model often needs to be significantly revamped to construct separate DB views for each different use case actor with legitimate access to at least portions of the database. 
-* Deterministic encryption is usually the preferred solution by both database administrators and application developers, but unfortunately it has numerous short-comings. With deterministic encryption, the same plaintext will always encrypt to the same ciphertext (at least until a key change operation is done to generate new DB key encryption keys). However, for the same reasons that we do not generally allow the reuse of IVs (even for CBC mode; in any other mode, it is a major disaster in the making), deterministic encryption is not considered secure. The details of these cryptographic attacks are beyond the scope of this document. However, using non-deterministic encryption with a unique IV (or "salt") per record results in stronger encryption but does not allow the DB engine to do indexed searching on that specific column. Speak to the author if you wish more details or attack scenarios. 
+* Deterministic encryption is usually the preferred solution by both database administrators and application developers, but unfortunately it has numerous short-comings. With deterministic encryption, the same plaintext will always encrypt to the same ciphertext (at least until a key change operation is done to generate new DB key encryption keys). However, for the same reasons that we do not generally allow the 
+* 
+*  of IVs (even for CBC mode; in any other mode, it is a major disaster in the making), deterministic encryption is not considered secure. The details of these cryptographic attacks are beyond the scope of this document. However, using non-deterministic encryption with a unique IV (or "salt") per record results in stronger encryption but does not allow the DB engine to do indexed searching on that specific column. Speak to the author if you wish more details or attack scenarios. 
 * When backup copies of an open / online database are made, certain types of these backups make copies of the decrypted data so that anyone having access to the backup copies has access to the sensitive plaintext data that had been encrypted. Examples for Oracle include backups made via the "Data Pump export utility (expdp)" or "explicit captures" made via Oracle streams. (See the section "Using Data Pump with TDE" for the former and "How Oracle Streams Works with Other Database Components" for details of the latter.) Similar issues are expected with Microsoft SQL Server backups but have not been verified. Therefore, this may require changes to the database backup procedures.
 
 ##Application Level Encryption
@@ -314,7 +321,10 @@ TODO
 
 Diagram of "Key States and Transitions" from page 87 of [http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf](http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf "Recommendation for Key Management -- Part 1: General (Revision 3)")
 ![NIST Key States and Transitions - NIST SP800-57 Part 1 (Rev 3)](file:images/NIST-crypto-key-lifecycle.png)
- 
+
+#### Re-keying Operations
+TODO: add reference to re-key, e.g., as per Steve Bellovin, 3DES in CBC mode at least every 2**32 * 64-bits of plaintext, in AES every 2**64 * 128-bits. See http://osdir.com/ml/encryption.general/2005-02/msg00005.html for details.
+
 ###Key Agreement / Key Exchange
 TODO
 
@@ -329,10 +339,15 @@ TODO
 ##References
 
 * [http://www.keylength.com/](http://www.keylength.com/)
-* Alfred Menezes, Paul van Oorschot, Scott Vanstone, Handbook of Applied Cryptography, 1997, CRC Press, ISBN 0-8493-8523-7. (Online: [http://cacr.uwaterloo.ca/hac/](http://cacr.uwaterloo.ca/hac/))
-* NIST Special Publications 800-57, Recommendation for Key Management – Part 1: General (Revision 3). (Online: [http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf](http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf))
+* Alfred Menezes, Paul van Oorschot, Scott Vanstone, *Handbook of Applied Cryptography*, 1997, CRC Press, ISBN 0-8493-8523-7. (Online: [http://ca
+* cr.uwaterloo.ca/hac/](http://cacr.uwaterloo.ca/hac/))
+* Neils Ferguson, Bruce Schneier, Tadayoshi Kohno, *Cryptography Engineering: Design Principles and Practical Applications*, Wiley Publishing, ISBN 978-0-470-47424-2.
+* NIST Special Publications 800-57, Recommendation for Key Management – 
+* 
+* Part 1: General (Revision 3). (Online: [http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf](http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf))
 * ENISA (editor: Nigel P. Smart), Algorithms, Key Sizes, and Parameters Report: 2013 Recommendations, (Online: [http://www.enisa.europa.eu/activities/identity-and-trust/library/deliverables/algorithms-key-sizes-and-parameters-report](http://www.enisa.europa.eu/activities/identity-and-trust/library/deliverables/algorithms-key-sizes-and-parameters-report))
 * Neils Ferguson, Bruce Schneier, Tadayoshi Kohno, *Cryptography Engineering: Design Principles and Practical Applications*, 2010, Wiley Publishing Inc, ISBN 978-0=470-47424-2.
+* [http://www.cryptopp.com/wiki/Authenticated_Encryption](http://www.cryptopp.com/wiki/Authenticated_Encryption)
 
 ##Reviewers
 
@@ -350,8 +365,14 @@ Candidates:
 
 [2] Again, this is a *chapter* on cryptography, not a book. The interested reader should see Menezes, et al mentioned in the References section.
 
-[3] In fact, according to Cryptix co-author, David Hopwood (see [http://www.users.zetnet.co.uk/hopwood/crypto/scan/ca.html](http://www.users.zetnet.co.uk/hopwood/crypto/scan/ca.html)) suggests that other cipher modes may not even make sense for asymmetric ciphers. Hopwood states:
+[3] A chosen plaintext attack (CPA) is a cryptoanalytic attack whereby an adversary has the ability to chose which plaintext he/she wishes to have encrypted along with the ability to observe the resulting ciphertexts. See the [Wikipedia "Chosen Plaintext Attack"](http://en.wikipedia.org/wiki/Chosen-plaintext_attack) article for further details. If you prefer something with more technical depth, try [CPA slide desk](http://cs.wellesley.edu/~cs310/lectures/CPA_slides_handouts.pdf) from the CS Dept of Wesley College.
 
-> Where an asymmetric cipher requires an encoding method in order to be specified completely, the naming convention is "encryption-primitive/encryption-encoding". Some existing JCE providers will accept the use of a block cipher mode and padding with an asymmetric cipher (e.g. "RSA/CBC/PKCS#7"); this is not recommended, and new providers MUST reject this usage. An encryption primitive name on its own (e.g. "RSA", as opposed to a complete encryption scheme such as "DLIES-ISO(...)") SHOULD also be rejected.
+[4] In fact, according to Cryptix co-author, David Hopwood (see [http://www.users.zetnet.co.uk/hopwood/crypto/scan/ca.html](http://www.users.zetnet.co.uk/hopwood/crypto/scan/ca.html)) suggests that other cipher modes may not even make sense for asymmetric ciphers. Hopwood states:
 
-[4] There are three possible approaches to applying a MAC to ensure the authenticity of ciphertext. One is the MAC-and-encrypt, which the sender computes a MAC of the plaintext, encrypts the plaintext, and then appends the MAC to the IV and ciphertext. The second is MAC-then-encrypt, where the sender computes a MAC of the plaintext, then encrypts both the plaintext (and generally, the IV) and the MAC. And the third is the encrypt-then-MAC approach where the sender encrypts the plaintext, then appends a MAC of the IV plus ciphertext. Of these three mechanisms, only the encrypt-then-MAC has proven to resist known cryptographic attacks (when implemented correctly).
+> Where an asymmetric cipher requires an encoding method in order to be specified completely, the naming convention is "encryption-primitive/encryption-encoding". Some existing JCE providers 
+> 
+> will accept the use of a block cipher mode and padding with an asymmetric cipher (e.g. "RSA/CBC/PKCS#7"); this is not recommended, and new providers MUST reject this usage. An encryption primitive name on its own (e.g. "RSA", as opposed to a complete encryption scheme such as "DLIES-ISO(...)") SHOULD also be rejected.
+
+[5] There are three possible approaches to applying a MAC to ensure the authenticity of ciphertext. One is the MAC-and-encrypt, which the sender computes a MAC of the plaintext, encrypts the plaintext, and then appends the MAC to the IV and ciphertext. The second is MAC-then-encrypt, where the sender computes a MAC of the plaintext, then encrypts both the plaintext (and generally, the IV) and the MAC. And the third is the encrypt-then-MAC approach where the sender encrypts the plaintext, then appends a MAC of the IV plus ciphertext. Of these three mechanisms, only the encrypt-then-MAC has proven to resist known cryptographic attacks (when implemented correctly).
+
+[6] See Dr. Rick Smith's course notes on key stream attacks (at [http://courseweb.stthomas.edu/resmith/c/csec/streamattack.html](http://courseweb.stthomas.edu/resmith/c/csec/streamattack.html)) for a discussion of what can happen if this advice is not heeded. Bottom line: Make sure that you do NOT repeat the key / IV pairs for stream ciphers or block ciphers operating in a streaming mode.
