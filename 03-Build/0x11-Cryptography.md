@@ -89,8 +89,7 @@ When used to provide data integrity, cryptographic functions come in two flavors
 Hash algorithms to avoid: MD2, MD4, MD5, SHA-0 (aka, SHA), and any hash algorithm based on Cyclic Redundancy Check (CRC).
 
 * Hash algorithms to avoid (except as required by legacy code): SHA-1
-* Recommended hash algorithms: SHA-2 (i.e., SHA-224, SHA-256, SHA-384, and SHA-512), SHA-3 (aka, K
-* ak)
+* Recommended hash algorithms: SHA-2 (i.e., SHA-224, SHA-256, SHA-384, and SHA-512), SHA-3 (aka, Kecak)
 
 ### Ciphers
 A cipher is an algorithm that performs encryption or decryption. Modern ciphers can be categorized in a couple of different ways. The most common distinctions between them are:
