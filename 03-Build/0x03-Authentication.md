@@ -93,7 +93,7 @@ C) Biometric authentication relies on trust of the biometric device, which unles
 D) The false positive rate within large user populations means that biometrics cannot be used as a single factor authentication mechanism.
 E) The cost of biometric devices is relatively high compared to secure alternatives, such as transaction signing tokens or SMS one time passwords.
 
-Biometric authentication can be a useful mechanism where the user has a device under their control, and the only enrolled user 
+Biometric authentication can be a useful mechanism where the user has a device under their control, and is the only enrolled user 
 
 ### Authentication Patterns ###
 
