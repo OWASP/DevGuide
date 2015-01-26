@@ -57,7 +57,7 @@ But the main point is that only one of these 'challenges' to the entity is used 
 
 As laws and regulations change regularly, the reader should be aware of the regulatory environments they operate in. OWASP is not a source of legal advice. That being said, the following may be used as starting points for further research.
 
-When protecting resources from the unauthorized, two-factor authentication is the bare minimum. Usual implementations employ an intangible secret with a real world factor like a physical key or palm print. It is rare to see multi-factor security above two-factor authentication outside of government, medical, and banking applications but not unheard of.
+When protecting resources from the unauthorized, two-factor authentication is the bare minimum. Usual implementations employ an intangible secret with a real world factor like a physical key or palm print. The most popular implementation is with YubiKey type token generators either with a physical real world generator device or software token generator. It is rare to see multi-factor authentication security with biometric and physical infrastructure outside of government, medical, and banking applications but not unheard of.
 
 For matters in the United States HIPAA for healthcare, Office of Management &amp; Budget Memorandum 07-16 for government, and Special Publication 800-63 Electronic Authentication Guideline from the National Institute of Standards and Technology all specify when two factor authentication is part of best practices if not required.
 
