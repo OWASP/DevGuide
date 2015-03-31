@@ -330,7 +330,7 @@ Diagram of "Key States and Transitions" from page 87 of [http://csrc.nist.gov/pu
 ![NIST Key States and Transitions - NIST SP800-57 Part 1 (Rev 3)](file:images/NIST-crypto-key-lifecycle.png)
 
 #### Re-keying Operations
-TODO: add reference to re-key, e.g., as per Steve Bellovin, 3DES in CBC mode at least every 2**32 * 64-bits of plaintext, in AES every 2**64 * 128-bits. See http://osdir.com/ml/encryption.general/2005-02/msg00005.html for details.
+TODO: add reference to re-key, e.g., as per Steve Bellovin, 3DES in CBC mode at least every 2<sup>32</sup> * 64-bits of plaintext, in AES every 2<sup>64</sup> * 128-bits. See [Bellovin email](http://osdir.com/ml/encryption.general/2005-02/msg00005.html) for details.
 
 ####Key Agreement / Key Exchange
 TODO
