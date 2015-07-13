@@ -38,5 +38,6 @@ We also discuss a fair amount about the OWASP Guide on [Google+](https://plus.go
 Please contact the **Project Leads: Steven van der Baan or Brad Chesney** for any queries about this edition. 
 
 [Steven van der Baan](mailto:steven.van.der.baan@owasp.org )
+
 [Brad Chesney](mailto:bradchesney79@gmail.com)
 
