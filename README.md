@@ -35,7 +35,9 @@ You can join in the conversation on the [mailing list](https://lists.owasp.org/m
 
 We also discuss a fair amount about the OWASP Guide on [Google+](https://plus.google.com/communities/105181517914716500346)
 
-Please contact the **Project Lead: Andrew van der Stock** for any queries about this edition. 
+Please contact the **Project Leads: Steven van der Baan or Brad Chesney** for any queries about this edition. 
 
-[vanderaj@owasp.org](mailto:vanderaj@owasp.org)
+[Steven van der Baan](mailto:steven.van.der.baan@owasp.org )
+
+[Brad Chesney](mailto:bradchesney79@gmail.com)
 
