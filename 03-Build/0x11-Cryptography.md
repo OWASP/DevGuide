@@ -79,8 +79,7 @@ To be useful in a cryptographic sense, a hash function H operating on input x su
 
 1.	They must be one-way functions. That is, given hash algorithm H and digest value d, it is computationally infeasible to compute input x.
 
-2.	Given input x such that d = H(x), it is computationally 
-3.	 to find a second input x', such that H(x') yields the same digest value d.
+2.	Given input x such that d = H(x), it is computationally infeasible to find a second input x', such that H(x') yields the same digest value d.
 
 3.	It is computationally infeasible to find two different inputs, x and x' such that both hash to the same value; that is, such that H(x) == H(x') where x != x'.
 Such cryptographic hash functions are used to provide data integrity (i.e., to detect intentional data tampering), to store passwords or pass phrases, and to provide digital signatures in a more efficient manner than using asymmetric ciphers.  Cryptographic hash functions are also used to extend a relatively small bit of entropy so that secure random number generators can be constructed.
