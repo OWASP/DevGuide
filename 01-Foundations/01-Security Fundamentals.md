@@ -1,6 +1,6 @@
 # Security Fundamentals
 
-In basis Security is simply about being in control. Control of who can interact your information, control over what they can do with your information and when then can interact with it. These characteristics of control are described through what is called the CIA triad.
+In basis Security is simply about being in control. Control of who can interact your information, control over what they can do with your information and when they can interact with it. These characteristics of control are described through what is called the CIA triad.
 
 ![CIA Triad][1]
 
