@@ -5,7 +5,7 @@ In basis Security is simply about being in control. Control of who can interact 
 ![CIA Triad][1]
 
 ##  CIA
-CIA is the acronym for Confidentiality, Integrity and Availability and are usually depicted in the form of a triangle that shows the strong bond between them. These three are considered the security pillars of an application. Often these are extended with Authorization and Authentication. The CIA is described as a property of data or of a process.
+CIA is the acronym for Confidentiality, Integrity and Availability and are usually depicted in the form of a triangle that shows the strong bond between them. These three are considered the security pillars of an application. Often these are extended with Authorization, Authentication and Auditing. The CIA is described as a property of data or of a process.
 
 ### Confidentiality
 Confidentiality is the protection of data against unauthorized disclosure, or otherwise put, to ensure that only those with the correct authorization can access the information. This concept applies to data in rest, but also to data in motion. This concept is related to the broader concept of data privacy.
@@ -19,7 +19,7 @@ A model that has the focus on data integrity through access control rules is the
 Availability is the protection of the presence of information or resources. This concept relies not just on the protection of the data itself -- for example by using replication of data -- but also on the protection of the services that provide the access to the data --for example by using load balancing.
 
 ## Additions
-The CIA is often extended with *Authentication* and *Authorisation* as these are closely linked to the concepts. Better put, the CIA has such a dependency to these concepts that the protection of the information can't be performed without them.
+The CIA is often extended with *Authentication* and *Authorization* as these are closely linked to the concepts. Better put, the CIA has such a dependency to these concepts that the protection of the information can't be performed without them.
 Auditing is added as it can provide the mechanism to ensure proof of any interaction with the system.
 
 ### Authentication
