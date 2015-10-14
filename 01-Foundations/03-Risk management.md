@@ -12,8 +12,4 @@ Or in other words, risk management can be split in two parts. First, determining
 
 4. __Elimination__; this is, for example, when the the system that is at risk is removed completely. The object with which the risk is associated is removed.
 
----
-### References:
-
 [1]: https://en.m.wikipedia.org/wiki/Risk_management
-
