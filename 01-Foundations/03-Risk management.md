@@ -15,5 +15,5 @@ Or in other words, risk management can be split in two parts. First, determining
 ---
 ### References:
 
-[1]: https://en.m.wikipedia.org/wiki/Risk_management
+[1](https://en.m.wikipedia.org/wiki/Risk_management)
 
