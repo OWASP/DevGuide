@@ -12,11 +12,11 @@ There are three major domains of security architecture:
 
 It is important to realise that although security is the single non-functional requirement (NFR) shared by all programs of any size, there is not a single security architecture that suits all applications.
 
-Each organization needs to define their own security policies, preferably based around global standards like ISO 27002 or COBIT, adopt security standards (such as the OWASP Application Security Verification Standard) and guidelines (such as this document), and secure software development lifecycle (SSDLC). 
+Each organization needs to define their own security policies, preferably based around global standards like ISO 27002 or COBIT, adopt security standards (such as the OWASP Application Security Verification Standard) and guidelines (such as this document), and secure software development life cycle (SSDLC). 
 
 Security is meaningless without two key intrinsic attributes:
 
-* Senior management support - without buy in from senior management, it is impossible to inculcate a security culture within the organisation, where security is an up front issue, and secure systems are not only expected, but are the norm.
+* Senior management support - without senior management involvement(support), it is impossible to inculcate a security culture within the organisation, where security is an up front issue, and secure systems are not only expected, but are the norm.
 * Data classification - It is possible to spend vast sums of money on useless security trinkets. If an organization does not understand where their critical assets lie, they cannot determine how best to protect them nor if they are spending too little (usually) or too much (not often, but this is a far worse outcome), or on the wrong assets.
 
 ## Enablement
