@@ -12,7 +12,7 @@ There are three major domains of security architecture:
 
 It is important to realise that although security is the single non-functional requirement (NFR) shared by all programs of any size, there is not a single security architecture that suits all applications.
 
-Each organization needs to define their own security policies, preferably based around global standards like ISO 27002 or COBIT, adopt security standards (such as the OWASP Application Security Verification Standard) and guidelines (such as this document), and secure software development life cycle (SSDLC). 
+Each organization needs to define their own security policies, preferably based around global standards like ISO 27002 or COBIT, adopt security standards (such as the OWASP Application Security Verification Standard) and guidelines (such as this document), and secure software development life-cycle (SSDLC). 
 
 Security is meaningless without two key intrinsic attributes:
 
