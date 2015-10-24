@@ -12,4 +12,4 @@ Architects and designers should digest the first section and use the remaining s
 
 Those who set policy are recommended to read as much as they can – only by knowledge of what can go wrong can organizations set policy to prevent the acquisition or development of insecure software. 
 
-It is far harder to write solid code than to destroy it. Necessarily, this book contains a great deal of information. Not every application will require every control, and thus it is necessary to 
+It is far harder to write solid code than to destroy it. Necessarily, this book contains a great deal of information. Not every application will require every control, and thus it is necessary to. 

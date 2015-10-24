@@ -1,4 +1,4 @@
-##About the Open Web Application Security Project
+#About the Open Web Application Security Project
 The Open Web Application Security Project (OWASP) is an open community dedicated to finding and fighting the causes of insecure software. All of the OWASP tools, documents, forums, and chapters are free and open to anyone interested in improving application security.
 
 https://www.owasp.org/
@@ -33,4 +33,4 @@ OWASP projects are broadly divided into two main categories, development project
 *	WebScarab - a web application vulnerability assessment suite including proxy tools
 *	Validation Filters – (Stinger for J2EE, filters for PHP) generic security boundary filters that developers can use in their own applications
 *	WebGoat - an interactive training and benchmarking tool that users can learn about web application security in a safe and legal environment
-*	DotNet – a variety of tools for securing .NET environments. 
+*	DotNet – a variety of tools for securing .NET environments.

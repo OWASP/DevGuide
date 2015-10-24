@@ -13,36 +13,40 @@ Following are a detailed list of vulnerabilities against which an application ca
 - Social Engineering
 
 ## Principles
-<H3> Assume every input field is vulnerable and user has malicious intention </H3>
-It is a good practice to assume that all the user input has malicious intention. Developer must develope a proper logic where an application can draw a boundry between malicious and trusted user input. For example, if you call an external Web service that returns strings, how do you know that malicious commands are not present? Also, if several applications write to a shared database, when you read data, how do you know whether it is safe? 
+###  Assume every input field is vulnerable and user has malicious intention
+It is a good practice to assume that all the user input has malicious intention. Developer must develope a proper logic where an application can draw a boundry between malicious and trusted user input. For example, if you call an external Web service that returns strings, how do you know that malicious commands are not present? Also, if several applications write to a shared database, when you read data, how do you know whether it is safe?
 
-<H3>Validation should be the core part of the application</H3>
-Developers should consider a centralized appraoch to validate every input area of an application. Input validation strategy should be a core element during the development process. 
+### Validation should be the core part of the application
+Developers should consider a centralized appraoch to validate every input area of an application. Input validation strategy should be a core element during the development process.
 
-Sometimes it is difficult to apply a common strategy application wide in such case individual fields of the forms of an application require a special validation, for example, with specifically developed regular expressions. However, you can frequently factor out common routines to validate regularly used fields such as e-mail addresses, titles, names, postal addresses including ZIP or postal codes, and so on. 
+Sometimes it is difficult to apply a common strategy application wide in such case individual fields of the forms of an application require a special validation, for example, with specifically developed regular expressions. However, you can frequently factor out common routines to validate regularly used fields such as e-mail addresses, titles, names, postal addresses including ZIP or postal codes, and so on.
 
-<H3>Client-side validation are easy to bypass</H3>
+### Client-side validation are easy to bypass
 Server-side code should perform its own validation. Client side validation code are easily seen by an attacker using view source facility in browsers and hence can be bypassed. Also, if the user has congifured their browser to not run JavaScript then in that case the validation will fail.
 
-Use client-side validation to help reduce the number of round trips to the server but do not rely on it for security. This is an example of defense in depth. 
+Use client-side validation to help reduce the number of round trips to the server but do not rely on it for security. This is an example of defense in depth.
 
-<H3> Reject all known bad input </H3> - paraphrasing required
+###  Reject all known bad input  - paraphrasing required
 Deny "bad" data; although do not rely completely on this approach. This approach is generally less effective than using the "allow" approach described earlier and it is best used in combination. To deny bad data assumes your application knows all the variations of malicious input. Remember that there are multiple ways to represent characters. This is another reason why "allow" is the preferred approach.
 
-While useful for applications that are already deployed and when you cannot afford to make significant changes, the "deny" approach is not as robust as the "allow" approach because bad data, such as patterns that can be used to identify common attacks, do not remain constant. Valid data remains constant while the range of bad data may change over time. 
+While useful for applications that are already deployed and when you cannot afford to make significant changes, the "deny" approach is not as robust as the "allow" approach because bad data, such as patterns that can be used to identify common attacks, do not remain constant. Valid data remains constant while the range of bad data may change over time.
 
-<H3>Encrypt sensitive cookie state </H3> - <Br>paraphrasing required and put good example from Apple documentation<Br>
-Cookies may contain sensitive data such as session identifiers or data that is used as part of the server-side authorization process. To protect this type of data from unauthorized manipulation, use cryptography to encrypt the contents of the cookie. Make sure that users do not bypass your checks. Make sure that users do not bypass your checks by manipulating parameters. URL parameters can be manipulated by end users through the browser address text box. For example, the URL http://www.<YourSite>/<YourApp>/sessionId=10 has a value of 10 that can be changed to some random number to receive different output. Make sure that you check this in server-side code, not in client-side JavaScript, which can be disabled in the browser. 
+### Encrypt sensitive cookie state  -
+paraphrasing required and put good example from Apple documentation
 
-<H3>Do not trust HTTP header information</H3><Br>
-HTTP headers are sent at the start of HTTP requests and HTTP responses. Your Web application should make sure it does not base any security decision on information in the HTTP headers because it is easy for an attacker to manipulate the header. For example, the referer field in the header contains the URL of the Web page from where the request originated. Do not make any security decisions based on the value of the referer field, for example, to check whether the request originated from a page generated by the Web application, because the field is easily falsified. 
+Cookies may contain sensitive data such as session identifiers or data that is used as part of the server-side authorization process. To protect this type of data from unauthorized manipulation, use cryptography to encrypt the contents of the cookie. Make sure that users do not bypass your checks. Make sure that users do not bypass your checks by manipulating parameters. URL parameters can be manipulated by end users through the browser address text box. For example, the URL http://www.<YourSite>/<YourApp>/sessionId=10 has a value of 10 that can be changed to some random number to receive different output. Make sure that you check this in server-side code, not in client-side JavaScript, which can be disabled in the browser.
 
-<H3> Validate Data for Type, Length, Format, and Range </H3><Br>
+### Do not trust HTTP header information
+
+HTTP headers are sent at the start of HTTP requests and HTTP responses. Your Web application should make sure it does not base any security decision on information in the HTTP headers because it is easy for an attacker to manipulate the header. For example, the referer field in the header contains the URL of the Web page from where the request originated. Do not make any security decisions based on the value of the referer field, for example, to check whether the request originated from a page generated by the Web application, because the field is easily falsified.
+
+###  Validate Data for Type, Length, Format, and Range
+
 Use strong type checking on input data wherever possible, for example, in the classes used to manipulate and process the input data and in data access routines. For example, use parameterized stored procedures for data access to benefit from strong type checking of input fields.
 
-String fields should also be length checked and in many cases checked for appropriate format. For example, ZIP codes, personal identification numbers, and so on have well defined formats that can be validated using regular expressions. Thorough checking is not only good programming practice; it makes it more difficult for an attacker to exploit your code. The attacker may get through your type check, but the length check may make executing his favorite attack more difficult. 
+String fields should also be length checked and in many cases checked for appropriate format. For example, ZIP codes, personal identification numbers, and so on have well defined formats that can be validated using regular expressions. Thorough checking is not only good programming practice; it makes it more difficult for an attacker to exploit your code. The attacker may get through your type check, but the length check may make executing his favorite attack more difficult.
 
-## Positive controls 
+## Positive controls
 
 ### Control
 How to build a secure <thing> using Control to help you, including (or even just) UML diagrams. I prefer swim lanes, but as long as it prints in landscape mode, I'm cool. I don't want portrait diagrams as this is impossible to reflow automatically using our tools.
@@ -70,4 +74,3 @@ e.g. shared knowledge questions or answers, or dynamic SQL queries
 ## Sanitization
 ## No input validation
 ## Web service and REST input validation
-
