@@ -18,7 +18,7 @@ The Guide would not be where it is today without the generous gift of volunteer 
 - Gabriel Pedro
 - Jerry Kickenson
 - Kevin W. Wall
-- Lukos
+- Luke Briner
 - Sean West
 - Steven van der Baan
 - Viral Maniar
@@ -48,8 +48,7 @@ The following authors are involved in this project:
 - Gabriel Pedro <gpedro831@gmail.com>
 - Jerry Kickenson <jerry.kickenson@gmail.com>
 - Kevin W. Wall <kevin.w.wall@gmail.com>
-- luke <luke@pixelpin.co.uk>
-- lukos <lukiebriner@gmail.com>
+- Luke Briner <luke@pixelpin.co.uk>
 - Sean E. West <sean.e.west@gmail.com>
 - Steven van der Baan <steven.van.der.baan@owasp.org>
 - Viral Maniar <maniar.viral@gmail.com>
