@@ -1,7 +1,7 @@
-﻿Assigned to LB
+Assigned to LB
 
 ## Overview
-Session management is required to track the state of a users journey through a web application. It is the role of a developer/designer to create or use a session management system in a way that is secure, avoiding the leaking of this
+Session management is required to track the state of a user's journey through a web application. It is the role of a developer/designer to create or use a session management system in a way that is secure, avoiding the leaking of this
 information to an attacker, leading to common attack vectors such as replay of state, forging state or intercepting the state of another user.
 
 ## Introduction
@@ -21,7 +21,7 @@ requests. This example can demonstrate the common types of attack vectors in ses
 with their target userid and a logged in flag and then visits a page on the site, they are immediately logged in to another user's account - a simple session hijack. Secondly, imagine the type of user was stored in this session cookie (user or administrator). An attacker can easily
 change their user type and get elevated privileges - a session forgery. In fact, it is common for session data to be stored on the server but there still needs to exist a link between this stored data and the user who is performing the request,
 which is most commonly achieved with a session cookie recording a single identity value which is then mapped onto the session data on the server. This identity will be sent in the cookie with each request but this in itself can lead to potential
-weaknesses including access of this session value via malicious Javascript or a man-in-the-middle who can read and then re-use the session ID in another browser.
+weaknesses including access of this session value via malicious JavaScript or a man-in-the-middle who can read and then re-use the session ID in another browser.
 
 ### Using a Framework
 In most cases, a web application will (and generally should) use a framework. These frameworks should all include their own session management system but in the world of security, we should not automatically trust that these systems are implemented
@@ -37,7 +37,7 @@ potential weaknesses.
 #### Cryptographically secure session identifier generation
 As mentioned previously, it is common to store session data on the server and to generate a session identifier to store in a cookie. If this session identifier is not cryptographically secure (such as just using the userid of the current user) or is not suitably
 random, such as incrementing a number, then the session identifier is easy to guess and the session easy to hijack by an attacker. A good session management system will generate a cryptographically secure value for a session identifier. For example, ASP.Net uses
-a 24 character alpanumeric identifier (which will be web safe, as opposed to a binary value).
+a 24 character alphanumeric identifier (which will be web safe, as opposed to a binary value).
 
 #### Where to store the session data
 Although it is possible to store almost any session data in a cookie, this is not recommended and for any authorization type information should never be done. Security is best handled on a server, not decided by the contents of a small text file which is easy
@@ -51,7 +51,7 @@ is neither secret or dangerous if it was tampered with. Certain data can also be
 on a page is actually visible to anyone who looks. If this data is secret, you should either keep it store in the session or in a related database table.
 
 #### HTTP Only Cookies
-A session cookie in any good framework should default to setting an HTTPOnly flag. This tells the browser that the cookie cannot be accessed by Javascript to read the session of another user who has somehow got malware script running in a site they are visiting.
+A session cookie in any good framework should default to setting an HTTPOnly flag. This tells the browser that the cookie cannot be accessed by JavaScript to read the session of another user who has somehow got malware script running in a site they are visiting.
 
 #### SSL Only Flag
 It is also possible and recommended, wherever possible, to set the Secure flag on the cookie which enforces that the cookie is only allowed to be downloaded via HTTPS. This will only work if your site implements SSL/TLS but prevents a man-in-the-middle being able to read the contents of the cookie.
@@ -243,7 +243,7 @@ Another mitigation is to use the userid or equivalent in a session authenticatio
 4.An attacker attempts to send back the correct users’ session cookie. The server attempts to generate the signature from the attacker’s use id and it doesn’t match. The request is denied.
 
 ### Modifying session data to elevate privileges
-As previously stated, any session data in the case of REST is exposed directly to and stored by the client. For this reason, by default, we should assume that people will attempt to modify that data to maliciously or otherwise alter the behaviour of the REST service. For this reason, the data should be protected with a MAC, such that tampering can easily be detected. This works since only the server should every change or set session data and by using a MAC based on a key only known to the server, the user could alter the session but the MAC would then not match and the server can take appropriate action. Since the client does not known the session MAC signing key, they cannot re-compute the MAC to match the altered data.
+As previously stated, any session data in the case of REST is exposed directly to and stored by the client. For this reason, by default, we should assume that people will attempt to modify that data to maliciously or otherwise alter the behaviour of the REST service. For this reason, the data should be protected with a MAC, such that tampering can easily be detected. This works since only the server should every change or set session data and by using a MAC based on a key only known to the server, the user could alter the session but the MAC would then not match and the server can take appropriate action. Since the client does not know the session MAC signing key, they cannot re-compute the MAC to match the altered data.
 
 As with all unshared secrets, the key should be of a suitably long length (256 bits or longer) and generated pseudo-randomly so that the chance of guessing or brute-forcing it is unfeasible. It can also be changed over a suitable period of time (every 3 months) since only the server needs to use this as the signing key.
 
