@@ -81,9 +81,9 @@ Mandatory access control ([MAC](http://en.wikipedia.org/wiki/Mandatory_access_co
 
 #### Capabilities Based Access Control ####
 
-[Capability based security](http://en.wikipedia.org/wiki/Capability-based_security) controls access on the basis of possession of a _capability_, defined to be a protected object reference which, by virtue of its possession by a user process, grants that process specifc access to the referenced object.  A capability is typically implemented as a privileged data structure that consists of a section that specifies access rights, and a section that uniquely identifies the object to be accessed.
+[Capability based security](http://en.wikipedia.org/wiki/Capability-based_security) controls access on the basis of possession of a _capability_, defined to be a protected object reference which, by virtue of its possession by a user process, grants that process specific access to the referenced object.  A capability is typically implemented as a privileged data structure that consists of a section that specifies access rights, and a section that uniquely identifies the object to be accessed.
 
-Capability based security and access control requires supporting infrastructure, typically the operating system, to provide secure capabilitiy generation and transmission.
+Capability based security and access control requires supporting infrastructure, typically the operating system, to provide secure capability generation and transmission.
 
 [Windows and .Net _claims_](http://msdn.microsoft.com/en-us/library/ff423674.aspx) are similar to capabilities.  Claims are tokens that make a claim (such as possession of a role or access privilege) that can be trusted by the resource owner (the claim token may be digitally signed by a truster issuer, for instance).  Claims based access control is used in [Microsoft Azure Access Control Service (ACS)](http://msdn.microsoft.com/en-us/library/hh446534.aspx).
 
@@ -142,7 +142,7 @@ Randomization is discussed in the Cryptography chapter of this guide.
 
 If developing in Java or JavaScript, consider using the [OWASP ESAPI](https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API) _User (resetCSRFToken method)_ interface to create anti-CSRF tokens, and the _HTTPUtilities (verifyCSRFToken method)_ interface to verify the token.
 
-Better yet, consider centalizing anti-CSRF token generation and verification by using the [OWASP ESAPI](https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API) _AccessController (assertAuthorizedForFunction method)_ interface to control access to functions, including anti-CSRF token verification.  Otherwise, use a similar interface to a centralized function access control decision point.
+Better yet, consider centralizing anti-CSRF token generation and verification by using the [OWASP ESAPI](https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API) _AccessController (assertAuthorizedForFunction method)_ interface to control access to functions, including anti-CSRF token verification.  Otherwise, use a similar interface to a centralized function access control decision point.
 
 #### Memory and objects ####
 
@@ -210,7 +210,7 @@ An example bearer token looks like the following JSON object:
        "expires_in":3600
      }
 
-Verification of the token is not specified.  It is entirely proprietary.  In the case where the authorization server and resource server are the same, or co-located, a local lookup of the presented access token can be done.   Otherwise, the authorization server provides a proprietary way to enquire as to the the legitimacy of the token (see Interoperability section following).
+Verification of the token is not specified.  It is entirely proprietary.  In the case where the authorization server and resource server are the same, or co-located, a local lookup of the presented access token can be done.   Otherwise, the authorization server provides a proprietary way to enquire as to the legitimacy of the token (see Interoperability section following).
 
 ##### Interoperability #####
 
