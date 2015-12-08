@@ -24,11 +24,11 @@ For more information, please see TBA below.
 
 Data stored in the cloud, or even bulk data collections require protection from interception and exfiltration. Generally, high value records should be protected, such as:
 
-Data that could be considered a private record under privacy legistlation, which may include (but is not limited to):
+Data that could be considered a private record under privacy legislation, which may include (but is not limited to):
 
 * Name, phone, e-mail and address (generally taken together, but refer to your local privacy laws)
 * Gender
-* Political affliations
+* Political affiliations
 * Health records or status
 * TBA (need to look at privacy legislation)
 
@@ -54,7 +54,7 @@ For more information, please see TBA below.
 
 ### Clear memory as soon as you're done with it
 
-One of the most common modern attack tecniques is to inject malware into an application, and scrape the application's memory for sensitive data. With a large virtual memory space, this can include the memory allocator's work pages, which are often not zeroed out. This means that if you create a sensitive string in memory, such as a password or a certificate, or a special value such as account roles or balances, an attacker can scrape your memory and obtain these values. 
+One of the most common modern attack techniques is to inject malware into an application, and scrape the application's memory for sensitive data. With a large virtual memory space, this can include the memory allocator's work pages, which are often not zeroed out. This means that if you create a sensitive string in memory, such as a password or a certificate, or a special value such as account roles or balances, an attacker can scrape your memory and obtain these values. 
 
 For more information, please see TBA below. 
 
@@ -62,7 +62,7 @@ For more information, please see TBA below.
 
 ### Use end to end encryption for data in transit
 
-The simplest and easiest method is to encrypt all communications to and from your application. As shown recently, this should also include connections to back end systems such as cloud data storage, application analytics, databases, data warehouses, and web services, as it can no longer be assumed that interception of backend traffic is unlikely. In fact, interception of data center traffic ais liekly
+The simplest and easiest method is to encrypt all communications to and from your application. As shown recently, this should also include connections to back end systems such as cloud data storage, application analytics, databases, data warehouses, and web services, as it can no longer be assumed that interception of backend traffic is unlikely. In fact, interception of data center traffic is likely
 
 Although there are numerous methods to encrypt traffic between systems, the most common is the use of Transport Layer Security (TLS), often called "SSL encryption" by the lay person. Your application framework or application server should contain instructions on TLS configuration, not only in the traditional sense to web and mobile clients, but also to back end systems such as database servers. 
 
@@ -85,18 +85,18 @@ For the highly sensitive data, encrypting within a hardware st
 
 With ASP.NET 2.0 and later, and with Java ???, it is possible to use secure string classes that protect against memory scraping attacks. 
 
-However, in most programming languages, it is not possible to keep memory safe from memory scraping attacks, so the best advice is to ensure sensitive data is zeroed as fast as posible once the use for the sensitive 
+However, in most programming languages, it is not possible to keep memory safe from memory scraping attacks, so the best advice is to ensure sensitive data is zeroed as fast as possible once the use for the sensitive 
 
 
 ### Use prepared statements, parameterized queries, Active Record, ORMs, or data bindings
 
-As a developer, you should be familiar with the concept of SQL injection (TBA: link to Testing Guide). You can completely avoid SQL injection via the use of prepared statements (also known as paraneterized queries), Active Record data access pattern, or Object Relational Mapping engines (ORMs). 
+As a developer, you should be familiar with the concept of SQL injection (TBA: link to Testing Guide). You can completely avoid SQL injection via the use of prepared statements (also known as parameterized queries), Active Record data access pattern, or Object Relational Mapping engines (ORMs). 
 
 All major platforms have support for one or more of these safer alternatives to dynamic queries. You should be using them unless you have a very specific requirement for dynamic queries, such as report writing. 
 
 If you have to use dynamic queries, you are responsible for escaping data provided by end users, as this data can be both hostile or accidentally damaging to your database. 
 
-NB: it is not possible to escape table names, SQL DDL (such as "ORDER BY", or "DESC" or "ASC", etc), and so on. If your dyanmic query relies upon user supplied input for this unescapable data, you should strongly validate that data, and review if you could use another data access mechanism, such as prepared statements or an ORM. 
+NB: it is not possible to escape table names, SQL DDL (such as "ORDER BY", or "DESC" or "ASC", etc), and so on. If your dynamic query relies upon user supplied input for this unescapable data, you should strongly validate that data, and review if you could use another data access mechanism, such as prepared statements or an ORM. 
 
 ## Unit or Integration Test Cases
 
