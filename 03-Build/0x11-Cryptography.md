@@ -29,7 +29,7 @@ Like most specialized technical areas, cryptography has its own specific jargon.
 * [http://www.cryptomuseum.com/crypto/glossary.htm](http://www.cryptomuseum.com/crypto/glossary.htm "Crypto Museum - Glossary of crypto terminology")
 * [http://www.ciphersbyritter.com/GLOSSARY.HTM](http://www.ciphersbyritter.com/GLOSSARY.HTM "Ritter's Crypto Glossary and Dictionary of Technical Cryptography")
 
-There is also more general Internet security glossaries here:
+There are also more general Internet security glossaries here:
 
 * [http://tools.ietf.org/html/rfc4949](http://tools.ietf.org/html/rfc4949 "RFC 4949 - Internet Security Glossary - Version 2")
 * [http://www.garlic.com/~lynn/secure.htm](http://www.garlic.com/~lynn/secure.htm "Ann and Lynn Wheeler's Security Taxonomy and Glossary") 
@@ -156,7 +156,7 @@ Digital signatures are a cryptographically unique data string that is used to en
 #### Key Exchange and Key Agreement Algorithms
 Key exchange algorithms (also referred to as key establishment algorithms) are protocols that are used to exchange secret cryptographic keys between a sender and receiver in a manner that meets certain security constraints. Key exchange algorithms attempt to address the problem of securely sharing a common secret key with two parties over an insecure communication channel in a manner that no other party can gain access to a copy of the secret key. Traditionally this has relied on two humans somehow securely exchanging keys out-of-band; e.g., via a direct face-to-face meeting or mailing an attachment as an encrypted zip file that is encrypted with a previously shared passphrase, etc. However, the traditional methods do not allow two unknown parties who have never met to exchange a secret key with each other. In fact, proof of (or at least, high confidence in) identity is a major unsaved problem in such cases.
 
-Key agreement protocols are protocols whereby N parties (usually two) can agree on a common key without actually exchanging the key. When designed and implemented properly, key agreement protocols are prevent adversaries from learning the key or forcing their own key choice on the participating parties.
+Key agreement protocols are protocols whereby N parties (usually two) can agree on a common key without actually exchanging the key. When designed and implemented properly, key agreement protocols are preventing adversaries from learning the key or forcing their own key choice on the participating parties.
 
 This Development Guide will discuss key exchange and key agreement algorithms later in the context of key management.
 
@@ -171,7 +171,7 @@ Using cryptography for encryption to prevent disclosure of data is one of its mo
 
 ####Choosing a Cipher Type: Streaming vs. Block Ciphers
 
-The first choice when encrypting is to decide whether a block cipher or a stream cipher (or equivalently, a block cipher operating in streaming mode) is the most appropriate. If the output is coming in as a continuous stream and you are simply forwarding on as an encrypted stream, then use a stream cipher or a cipher operating in streaming mode. If the input is chunked (e.g., reading blocks from a file) or you want to encrypt something and store the ciphertext for some period, then you probably should use a block cipher.`
+The first choice when encrypting is to decide whether a block cipher or a stream cipher (or equivalently, a block cipher operating in streaming mode) is the most appropriate. If the output is coming in as a continuous stream and you are simply forwarding on as an encrypted stream, then use a stream cipher or a cipher operating in streaming mode. If the input is chunked (e.g., reading blocks from a file) or you want to encrypt something and store the ciphertext for some period, then you probably should use a block cipher.
 
 ####Choosing a Cipher Specification: Algorithm, Cipher Mode, Padding, and Key Size
 #####Choosing an Algorithm
@@ -180,7 +180,7 @@ If you chose a block cipher, AES is your best choice. Don't use anything else un
 If you really must select a stream cipher, Salsa20 is a good choice, but using a streaming cipher mode with a block cipher such as AES will work just as well and is the recommended way to go, as that approach has options that are more flexible, especially since Salsa20 is not widely implemented outside of C, C++, and Python. RC4 is acceptable for legacy software where it is required for compatibility, but in general, you should avoid it because of known cryptographic weaknesses.
 
 #####Authenticated vs. Non-authenticated Encryption
-Authenticated Encryption (AE) is any block cipher mode that provides confidentiality, data integrity, and authenticity of the data. Specifically AE ensures the authenticity of the ciphertext (or more generally, the IV and ciphertext) in a manner that can guarantee that the IV and/or ciphertext has not been tampered with. This is important as it prevents chosen ciphertext attacks such as padding oracle attacks.
+Authenticated Encryption (AE) is any block cipher mode that provides confidentiality, data integrity, and authenticity of the data. Specifically, AE ensures the authenticity of the ciphertext (or more generally, the IV and ciphertext) in a manner that can guarantee that the IV and/or ciphertext has not been tampered with. This is important as it prevents chosen ciphertext attacks such as padding oracle attacks.
 
 In general, one should prefer authenticated encryption modes whenever there is a chance that an adversary may have a chance to alter or provide the IV and/or ciphertext that you are attempting to decrypt. (A good reason to develop a threat model before you design your encryption.)
 
@@ -188,7 +188,7 @@ Recommended AE cipher modes are Counter with CBC-MAC (CCM) and Galois/Counter Mo
 
 #####Cipher Padding
 
-A streaming cipher or a block cipher using a streaming mode such as OFB, CFB, CTR, etc. does not require padding. However, we recommend that you use padding with any block cipher that uses a block mode (e.g., CBC). For symmetric block ciphers, PKCS7 (RFC 5652) or PKCS5 padding are good choices as they are supported by almost all cryptographic libraries. For most practical purposes, PKCS5 padding is the same as PKCS7 padding, except that technically, PKCS5 padding can only be used to pad ciphers whose block size is 64 bits  (In fact, the standard SunJCE cryptographic provider in Java supports only PKCS5 padding, but not PKCS7 padding. On the other hand, the .NET Framework supports only PKCS7 padding, but not PKCS5 padding. Fortunately, in practice, these two padding schemes can generally used interchangeably.) For asymmetric ciphers, one needs to be more cautious in the choice of padding because of cryptographic weaknesses with some padding schemes used with such ciphers. For the RSA algorithm, we recommend the OAEP padding scheme OAEP with SHA-1 and MGF1 padding (OAEPWithSHA1andMGF1Padding)
+A streaming cipher or a block cipher using a streaming mode such as OFB, CFB, CTR, etc. does not require padding. However, we recommend that you use padding with any block cipher that uses a block mode (e.g., CBC). For symmetric block ciphers, PKCS7 (RFC 5652) or PKCS5 padding are good choices as they are supported by almost all cryptographic libraries. For most practical purposes, PKCS5 padding is the same as PKCS7 padding, except that technically, PKCS5 padding can only be used to pad ciphers whose block size is 64 bits  (In fact, the standard SunJCE cryptographic provider in Java supports only PKCS5 padding, but not PKCS7 padding. On the other hand, the .NET Framework supports only PKCS7 padding, but not PKCS5 padding. Fortunately, in practice, these two padding schemes can generally be used interchangeably.) For asymmetric ciphers, one needs to be more cautious in the choice of padding because of cryptographic weaknesses with some padding schemes used with such ciphers. For the RSA algorithm, we recommend the OAEP padding scheme OAEP with SHA-1 and MGF1 padding (OAEPWithSHA1andMGF1Padding)
 
 Recommended: Block ciphers using block mode – PKCS7 or PKCS5 padding; with RSA - OAEPWithSHA1andMGF1Padding
 
@@ -226,7 +226,7 @@ Digital signatures of course are also useful for signing other things, for insta
 
 We use cryptography for authentication in two different ways.  First, cryptographic protocols are used to securely authenticate entities over an insecure communication channel. Some of these more widely known communication protocols include Kerberos, RADIUS, and MS-CHAPv2. If, as a developer, you have need of authentication protocol, you are advised to either use a standard one known to be secure or work with a reputable professional cryptographer to develop one to suit your needs. History is replete with examples from broken authentication protocols even when they are developed by experts. A prime example is the original Needham-Schroeder protocol. Hire a professional cryptographer as this use of cryptography is much harder than it seems.
 
-The second way that cryptography is used for authentication is for storing a user's password. Unless the user's password must be later be replayed in a separate context to make the plaintext password available to some other downstream system (possibly when the user is no longer even authenticated to the present system), the recommended way to do this is to use a strong, one-way secure cryptographic hash along with "salting" (adding a nonce of sufficient length). 
+The second way that cryptography is used for authentication is for storing a user's password. Unless the user's password must later be replayed in a separate context to make the plaintext password available to some other downstream system (possibly when the user is no longer even authenticated to the present system), the recommended way to do this is to use a strong, one-way secure cryptographic hash along with "salting" (adding a nonce of sufficient length). 
 
 ##Using Cryptography to Solve Practical Problems
 
@@ -238,7 +238,7 @@ Among the two most common uses of cryptography securing data-at-rest (e.g., stor
 
 When it comes to stored data-at-rest so that it is encrypted in an SQL database, there are three commonly practiced approaches:
 
-* The SQL database engine itself handles the encryption and decryption. Examples of this are Oracle Database "Transparent Data Encryption" and Microsoft SQL Server "Transparent Data Encryption" . (We will refer to these as Oracle TDE and SQL Server TDE respectively, and just refer to the technology as TDE in general.) 
+* The SQL database engine itself handles the encryption and decryption. Examples of this are Oracle Database "Transparent Data Encryption" and Microsoft SQL Server "Transparent Data Encryption". (We will refer to these as Oracle TDE and SQL Server TDE respectively, and just refer to the technology as TDE in general.) 
 * The application code completely handles the encryption and decryption of the sensitive data before it is stored in and after it is retrieved from said database, as well as ensuring its authenticity.
 * An appropriate proxy (for example, MIT's CryptDB or a custom web service that clients start using to access the data rather than accessing it directly) between the application and the database handles all the encryption / decryption.
 
@@ -285,7 +285,7 @@ The disadvantages of the DB Engine TDE approach are great. The major ones are:
 ######How It Works (General Description)
 Application level encryption refers to encryption that is considered part of the application itself; it implies nothing about where in the application code the encryption is actually done. In a typical 3-tier web application, the encryption most often is done in the application server before being sent to the database. Thus--in this design--the database is only sent ciphertext, not the sensitive plaintext (compare that to the TDE case, above).
 
-An alternate approach is to do all the encryption / decryption as stored SQL procedures, possibly invoked via DB triggers. This design is very similar to the DB TDE approach discussed above with the biggest difference is that it as all the disadvantages and none of the advantages (such as minimal development costs). Because of this, for the rest of this section we assume encryption / decryption is handled in the application server and not done within the DB via stored procedures.
+An alternate approach is to do all the encryption / decryption as stored SQL procedures, possibly invoked via DB triggers. This design is very similar to the DB TDE approach discussed above with the biggest difference is that it has all the disadvantages and none of the advantages (such as minimal development costs). Because of this, for the rest of this section we assume encryption / decryption is handled in the application server and not done within the DB via stored procedures.
 
 ######General Threat Model
 It goes without saying (but we will say it otherwise), that for this approach the application developers are trusted in some sense. While they may not (and indeed, should not) be trusted with the encryption keys, the must be trusted to produce secure code to handle the encryption. (Contrast this to the implied threat model for TDE where the DB vendor is trusted to produce secure code and DBAs are considered trusted. While application developers also trusted not to leak sensitive information--either intentionally or unintentionally--they do not have to be trusted with writing the encryption code in the case of TDE.)
@@ -374,7 +374,7 @@ Candidates:
 
 [3] Again, this is a *chapter* on cryptography, not a book. The interested reader should see Menezes, et al mentioned in the References section.
 
-[4] A chosen plaintext attack (CPA) is a cryptoanalytic attack whereby an adversary has the ability to chose which plaintext he/she wishes to have encrypted along with the ability to observe the resulting ciphertexts. See the [Wikipedia "Chosen Plaintext Attack"](http://en.wikipedia.org/wiki/Chosen-plaintext_attack) article for further details. If you prefer something with more technical depth, try [CPA slide desk](http://cs.wellesley.edu/~cs310/lectures/CPA_slides_handouts.pdf) from the CS Dept of Wesley College.
+[4] A chosen plaintext attack (CPA) is a cryptoanalytic attack whereby an adversary has the ability to choose which plaintext he/she wishes to have encrypted along with the ability to observe the resulting ciphertexts. See the [Wikipedia "Chosen Plaintext Attack"](http://en.wikipedia.org/wiki/Chosen-plaintext_attack) article for further details. If you prefer something with more technical depth, try [CPA slide desk](http://cs.wellesley.edu/~cs310/lectures/CPA_slides_handouts.pdf) from the CS Dept of Wesley College.
 
 [5] In fact, according to Cryptix co-author, David Hopwood (see [http://www.users.zetnet.co.uk/hopwood/crypto/scan/ca.html](http://www.users.zetnet.co.uk/hopwood/crypto/scan/ca.html)) suggests that other cipher modes may not even make sense for asymmetric ciphers. Hopwood states:
 
