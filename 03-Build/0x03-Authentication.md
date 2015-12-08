@@ -17,7 +17,7 @@ Another misconception about evidence of identity is that it only applies during 
 
 #### Complete mediation ####
 
-The Principle of Complete Mediation requires all secured pages, functions and data to be protected by an authentication control. At it's simplest, complete mediation could be implemented by 
+The Principle of Complete Mediation requires all secured pages, functions and data to be protected by an authentication control. At its simplest, complete mediation could be implemented by 
 
 #### Enforce authentication ####
 
@@ -61,7 +61,7 @@ When protecting resources from the unauthorized, two-factor authentication is th
 
 For matters in the United States HIPAA for healthcare, Office of Management &amp; Budget Memorandum 07-16 for government, and Special Publication 800-63 Electronic Authentication Guideline from the National Institute of Standards and Technology all specify when two factor authentication is part of best practices if not required.
 
-Australian federal government departments must comply with the first four of the ASD Top 35 in addition to Australian Privacy Principles and Medicare Act if maintaning health records.
+Australian federal government departments must comply with the first four of the ASD Top 35 in addition to Australian Privacy Principles and Medicare Act if maintaining health records.
 
 Additionally, documents from ISO 2000x (specifically ISO 20007), ISO 31000 (derived from AS/NZS 4360), NZIM, Jericho Forum, ENISA IAF, BSI Germany, and BITS Shared Assessments - AUP / SIG may apply in regards to acceptable international security practices.
 
