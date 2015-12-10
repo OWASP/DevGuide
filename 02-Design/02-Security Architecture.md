@@ -29,7 +29,7 @@ Security is meaningless without two key intrinsic attributes:
 
 ### Evidence of identity
 
-### Shared authetnication services
+### Shared authentication services
 
 ### Multi-factor authentication
 
