@@ -1,6 +1,6 @@
 # Security Fundamentals
 
-Security is simply about being in control. Control over who can interact with your information, control over what they can do with your information, and when they can interact with it. These characteristics of control are described through what is called the CIA triad.
+Security is simply about controlling who can interact with your information, what they can do with it, and when they can interact with it. These characteristics of control are described through what is called the CIA triad.
 
 ![CIA Triad][1]
 
