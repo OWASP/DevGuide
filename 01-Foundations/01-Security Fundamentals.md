@@ -1,34 +1,34 @@
 # Security Fundamentals
 
-In basis Security is simply about being in control. Control of who can interact your information, control over what they can do with your information and when they can interact with it. These characteristics of control are described through what is called the CIA triad.
+Security is simply about being in control. Control over who can interact with your information, control over what they can do with your information, and when they can interact with it. These characteristics of control are described through what is called the CIA triad.
 
 ![CIA Triad][1]
 
 ##  CIA
-CIA is the acronym for Confidentiality, Integrity and Availability and are usually depicted in the form of a triangle that shows the strong bond between them. These three are considered the security pillars of an application. Often these are extended with Authorization, Authentication and Auditing. The CIA is described as a property of data or of a process.
+CIA stands for Confidentiality, Integrity and Availability, and it is usually depicted as a triangle representing the strong bonds between its three tenets. This trio are considered the pillars of application security. Often they are extended with Authorization, Authentication and Auditing. CIA is described as a property of some data or of a process.
 
 ### Confidentiality
-Confidentiality is the protection of data against unauthorized disclosure, or otherwise put, to ensure that only those with the correct authorization can access the information. This concept applies to data in rest, but also to data in motion. This concept is related to the broader concept of data privacy.
+Confidentiality is the protection of data against unauthorized disclosure, or otherwise put, it is about ensuring that only those with the correct authorization can access the data. Confidentiality applies to data at rest, but also to data in motion. It is related to the broader concept of data privacy.
 A model that has the focus on data confidentiality and controlled access is the *Bell-LaPaluda model*.
 
 ### Integrity
-Integrity is the protection against unauthorized modification of information, or the trustworthiness of the data. The concept contains the notion of *data integrity*, as in that data has not been changed by accident of deliberate. It also contains the notion of *source integrity*, as in that the data came or was changed by a legitimate source.
+Integrity is about protecting data against unauthorized modification, or assuring data trustworthiness. The concept contains the notion of *data integrity* (data has not been changed accidentally or deliberately) and the notion of *source integrity* (data came from or was changed by a legitimate source).
 A model that has the focus on data integrity through access control rules is the *Biba model*.
 
 ### Availability
-Availability is the protection of the presence of information or resources. This concept relies not just on the protection of the data itself -- for example by using replication of data -- but also on the protection of the services that provide the access to the data --for example by using load balancing.
+Availability is about ensuring the presence of information or resources. This concept relies not just on the protection of the data itself -- for example by using replication of data -- but also on the protection of the services that provide access to the data -- for example by using load balancing.
 
 ## Additions
-The CIA is often extended with *Authentication* and *Authorization* as these are closely linked to the concepts. Better put, the CIA has such a dependency to these concepts that the protection of the information can't be performed without them.
+CIA is often extended with *Authentication* and *Authorization* as these are closely linked to CIA concepts. Better put, CIA has such a strong dependency on Authentication and Authorization that the confidentiality of the data in question can't be assured without them.
 Auditing is added as it can provide the mechanism to ensure proof of any interaction with the system.
 
 ### Authentication
-This is about identifying the entity with whom you communicate, or that wants to communicate with you. It requires that the identity is irrefutably associated.
+Authentication is about confirming the identity of the entity that wants to interact with a secure system.
 
 ### Authorization
-This is about what rights an authenticated entity has within the environment. These rights describe the permissions regarding access of a resource or information.
+Authorization is about specifying access rights to secure resources (data, services, files, applications, etc.). These rights describe the privileges or access levels related to the resources in question. It is normally preceded by *Authentication*.
 
 ### Auditing (non-repudiation)
-This is about logging what interaction has taken place within the environment. Auditing can provide not only technical information of what happens within the application, but also proof that particular actions have been executed within the application.
+Auditing is about keeping track of implementation-level events, as well as domain-level events taking place in a system. It can provide not only technical information about the running system, but also proof that particular actions have been performed. The typical questions that are answered by auditing are "*Who* did *What*? *When*? And potentially *How*?"
 
 [1]: images/01x01-CIA_Triad.png
