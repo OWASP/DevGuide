@@ -22,6 +22,7 @@ The Guide would not be where it is today without the generous gift of volunteer 
 - Sean West
 - Steven van der Baan
 - Viral Maniar
+- Yagiz Erkan
 
 ## Revision History
 | Date | Version | Pages | Notes |
