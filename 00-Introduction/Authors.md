@@ -14,6 +14,7 @@ The Guide would not be where it is today without the generous gift of volunteer 
 - Andrew van der Stock
 - Brad Chesney
 - Dennis Groves
+- Don Lampert
 - Frenchi
 - Gabriel Pedro
 - Jerry Kickenson
