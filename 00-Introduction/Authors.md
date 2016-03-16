@@ -13,6 +13,7 @@ The Guide has had several editors, all of whom have contributed immensely as aut
 The Guide would not be where it is today without the generous gift of volunteer time and effort from many individuals. If you are one of them, and not on this list, please contact Steven van der Baan, vdbaan@owasp.org
 - Andrew van der Stock
 - Brad Chesney
+- Chris Madden
 - Dennis Groves
 - Don Lampert
 - Frenchi
