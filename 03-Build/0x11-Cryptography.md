@@ -4,7 +4,7 @@ Note: Email [me](mailto:kevin.w.wall@gmail) if you have questions.
 
 ## Objective
 
-This section will attempt to teach you how to use cryptography (colloquially referred to as crypto) correctly. It will not attempt to teach you how to design or implement cryptographic algorithms. In effect, it is about practical applied cryptography. Neither will it describe how to break cryptography (i.e., cryptanalysis).
+This section will attempt to teach you how to use cryptography (colloquially referred to as "crypto") correctly. The target audience is primarily software developers, not system administrators nor operations staff.
 
 Specifically, it will teach you:
 
@@ -14,7 +14,13 @@ Specifically, it will teach you:
 * About the basics about cryptographic key management.
 * How to avoid common errors when using cryptography.
 
-Also, we consider the topics X.509 certificates, SSL/TLS configuration, and cryptographically secure pseudo-random number generators to be out-of-scope. [1]
+It will not attempt to cover: [1]
+
+* How to break cryptography (i.e., cryptanalysis), but will point out the properties and limitations of the cryptographic tools, and the dangers to watch out for 
+* How to design or implement cryptographic algorithms or cryptographically secure pseudo-random number generators. Moreover, it discourages you from doing so yourself.
+* PKI and X.509 certificates
+* Configuration issues for point-to-point encryption involving SSL/TLS configuration, SSH configuration, or IPSec configuration.
+* Cryptographic protocols
 
 ## Platforms Affected 
 
@@ -37,39 +43,37 @@ There are also more general Internet security glossaries here:
 ## Description
 ### Uses of Cryptography
 
-Filler / introductory sentence – TBD.
-
 Initially primarily restricted to the military and the realm of academia, cryptography has become ubiquitous thanks to the Internet. Common every day uses of cryptography include mobile phones, passwords, SSL VPNs, smart cards, and DVDs. Cryptography has permeated through everyday life, and is heavily used by many web applications.
 
-Cryptography (or crypto) is one of the more advanced topics of information security, and one whose understanding requires the most schooling and experience. It is difficult to get right because there are many approaches to encryption, each with advantages and disadvantages that need to be thoroughly understood by web solution architects and developers. 
+Cryptography (aka, crypto) is one of the more advanced topics of information security, and one whose understanding requires the most schooling and experience. It is difficult to get right because there are many approaches to encryption, each with advantages and disadvantages that need to be thoroughly understood by web solution architects and developers. 
 
 The proper and accurate implementation of cryptography is extremely critical to its efficacy. 
 A small mistake in configuration or coding will result in removing most of the protection and rending the crypto implementation useless.
 
 A good understanding of crypto is required to be able to discern between solid products and snake oil. The inherent complexity of crypto makes it easy to fall for fantastic claims from vendors about their product. Typically, these are "a breakthrough in cryptography" or "unbreakable" or provide "military grade" security. If a vendor says "trust us, we have had experts look at this," chances are they weren't experts!
 
-### Confidentiality
+#### Confidentiality
 
 For the purposes of this OWASP Development Guide, we define "confidentiality" as "no unauthorized disclosure of information". Cryptography addresses this via encryption of either the data at rest or data en transit by protecting the information from all who do not hold the decryption key. We also use cryptographic hashes (i.e., secure, one way hashes) to prevent passwords from disclosure.
 
-### Authentication
+#### Authentication
 
 Authentication is the process of verifying a claim that a subject is who it says it is via some provided corroborating evidence. We use cryptography for authentication in several different ways. First, we use crypto to protect the provided corroborating evidence (e.g., hashing of passwords for subsequent storage as we just mentioned). Secondly, authentication protocols (e.g., challenge-response protocols, such as MS-CHAPv2) often use cryptography to either directly authenticate entities or to exchange credentials in a secure manner. Finally, cryptography is frequently used to verify the identity one or both parties in exchanging messages. Such is the case when cryptography is used with Transport Layer Security (TLS) and its predecessor, Secure Socket Layer (SSL).
 
-### Integrity
+#### Integrity
 
 We define "integrity" as ensuring that even authorized users have performed no accidental or malicious alternation of information. Cryptography can be used to prevent tampering by means of Message Authentication Codes (MACs) or Digital Signatures, both which will be discussed later. When you hear the term "message authenticity" being referred to, it is really referring to integrity. It sometimes is referred to as "authenticated encryption" as well, although in the case of symmetric encryption and shared keys, it really doesn't authenticate the sending party per se. (However, if asymmetric encryption is used, one can in fact use it to authenticate the sender.)
 
-### Non-repudiation
+#### Non-repudiation
 Non-repudiation comes in two flavors...non-repudiation of sender ensures that someone sending a message should not be able to deny later that he or she sent it. Non-repudiation of receiver means that the receiver of a message should not be able to deny that she received it. Cryptography can be used to provide non-repudiation by providing unforgeable messages or replies to messages.
 
 Non-repudiation is useful for financial, e-commerce, and contractual exchanges. Non-repudiation is accomplished by having the sender and/or recipient to digitally sign some unique transactional record.
 
-### Attestation
+#### Attestation
 
 Attestation is the act of "bearing witness" or certifying something for a particular use or purpose. (For example, Digital Rights Management is interested in attesting that your device or system hasn't been compromised with some back-door to allow someone to illegally copy DRM-protected content.) Cryptography can be used to provide a "chain of evidence" that everything is as it is expected to be to prove to challenger that everything is in accordance with the challenger's expectations. For example, remote attestation can be used to prove to a challenger that you are indeed running the software that you claim that you are running. Most often, attestation is done by providing a chain of digital signatures starting with a trusted (digitally signed) boot loader. An example of this is the secure boot loader that comes with Microsoft Windows 8 on computers supporting Unified Extensible Firmware Interface (UEFI).
 
-This OWASP Development Guide will not discuss the use of cryptography for attestation purposes further as it is not something with which most developers will have to deal. Attestation is generally discussed in the context of a Trusted Platform Module (TPM) and DRM.
+This OWASP Development Guide will not discuss the use of cryptography for attestation purposes further as it is not something with which most developers will have to deal. Attestation is generally discussed in the context of a Trusted Platform Module (TPM), Digital Rights Management (DRM), and UEFI Secure Boot.
 
 ## Cryptographic Primitives
 ### Cryptographic Hashes
@@ -107,7 +111,7 @@ Note that all block ciphers can also operating in "streaming mode" by selecting 
 Recommendations
 
 * Symmetric cipher algorithms to avoid: DES, using any algorithm with a key size of less than 80 bits
-* Symmetric cipher algorithms to avoid (except as required by legacy code): RC4
+* Symmetric cipher algorithms to avoid (except as required by legacy code): RC4 (Note: RC4 is very badly broken. It should be considered for replacement even for legacy use.)
 Recommended symmetric cipher algorithms: AES, 3-key Triple DES (aka, DESede[2]), Salsa20
 
 ##### Cipher Modes
@@ -302,7 +306,7 @@ It goes without saying (but we will say it otherwise), that for this approach th
 * In addition to the actual encryption / decryption solution, the application must also handle the ancillary functions of secure key management which is anything but trivial. This includes, but is not limited to key distribution and key change operations.
 
 #####Encryption By Proxy
-TODO
+TODO - mention CryptDB here, and any others.
 
 ######How It Works (General Description)
 TODO
@@ -314,49 +318,171 @@ TODO
 TODO
 
 ######Disadvantages
-TODO - These sections to be covered later, should the need arise.
+TODO - These sections to be covered later, should the need arise. Performance is a likely issue.
 
 ###Securing Data in Transit
 TODO
 
-###Key Management
-TODO
+## Key Management
+The following diagram shows standards relevant to key management:
 
-####Lifecycle of Encryption Keys
-TODO
+![KeyMgmt](images/KeyMgmt.png?raw=true)
 
-Diagram of "Key States and Transitions" from page 87 of [http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf](http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf "Recommendation for Key Management -- Part 1: General (Revision 3)")
-![NIST Key States and Transitions - NIST SP800-57 Part 1 (Rev 3)](file:images/NIST-crypto-key-lifecycle.png)
+[Oasis Cryptographic Key Management](http://xml.coverpages.org/keyManagement.html "http://xml.coverpages.org/keyManagement.html") provides a comprehensive list of bodies and standards for Key Management inclduding NIST SP 800-130 [A Framework for DesigningCryptographic Key ManagementSystems](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-130.pdf "http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-130.pdf")
 
-#### Re-keying Operations
-TODO: add reference to re-key, e.g., as per Steve Bellovin, 3DES in CBC mode at least every 2<sup>32</sup> * 64-bits of plaintext, in AES every 2<sup>64</sup> * 128-bits. See [Bellovin email](http://osdir.com/ml/encryption.general/2005-02/msg00005.html) for details.
+For the Financial Services industry the main standards and references are
 
-####Key Agreement / Key Exchange
-TODO
+1.  ANSI X9.24 Retail Financial Services Symmetric Key Management Part 1: Using Symmetric Techniques for the Distribution of Symmetric Keys
+2.  ANSI X9 X9.24-2-2006 Retail Financial Services Symmetric Key Management Part 2: Using Asymmetric Techniques for the Distribution of Symmetric Keys
+3.  [PCI PIN Security Requirements v2](https://www.pcisecuritystandards.org/documents/PCI_PIN_Security_Requirements_v2.pdf "https://www.pcisecuritystandards.org/documents/PCI_PIN_Security_Requirements_v2.pdf")
+
+### Key Derivation
+
+A [key derivation function](http://en.wikipedia.org/wiki/Key_derivation_function "http://en.wikipedia.org/wiki/Key_derivation_function") (KDF) is a deterministic algorithm to derive a key of a given size from some secret value. If two parties use the same shared secret value and the same KDF, they should always derive exactly the same key.
+
+[PBKDFs](http://en.wikipedia.org/wiki/PBKDF2 "http://en.wikipedia.org/wiki/PBKDF2") (Password Based Key Derivation Functions) are designed to encrypt data, typically keys, based on a password. The password is mixed with a salt (e.g. random 8 bytes) to form an intermediate key (Key Encryption Key) and this is used to encrypt the data/key.
+
+Passwords have a relatively small keyspace (limited by typeable characters on a keyboard and passwords that people can remember) compared to randomly generated data of the same length.Therefore, a salt is added to prevent dictionary attacks. The process is repeated many times (based on a count e.g. 1000) to deter brute force attacks (key stretching).
+
+[NIST SP 800-108 Recommendation for Key Derivation Using Pseudorandom Functions](http://csrc.nist.gov/publications/nistpubs/800-108/sp800-108.pdf "http://csrc.nist.gov/publications/nistpubs/800-108/sp800-108.pdf")and [NIST 800-56C Recommendation for Key Derivation through Extraction-then-Expansion](http://csrc.nist.gov/publications/nistpubs/800-56C/SP-800-56C.pdf "http://csrc.nist.gov/publications/nistpubs/800-56C/SP-800-56C.pdf") are NIST approved KDFs.
+
+[SP 800-135 Rev 1 Recommendation for Existing Application-Specific Key Derivation Functions](http://csrc.nist.gov/publications/nistpubs/800-135-rev1/sp800-135-rev1.pdf "http://csrc.nist.gov/publications/nistpubs/800-135-rev1/sp800-135-rev1.pdf") lists security requirements for other KDFs e.g. HKDF, IKE-v1-KDF and IKE-v2-KDF, X9.63-KDF.
+
+### Key Wrapping
+
+Key wrapping is a construction used with symmetric ciphers to protect cryptographic key material by encrypting it in a special manner. Key wrap algorithms are intended to protect keys while held in untrusted storage or while transmitting keys over insecure communications networks. NIST has defined a special [AES key wrap specification](http://csrc.nist.gov/groups/ST/toolkit/documents/kms/key-wrap.pdf "http://csrc.nist.gov/groups/ST/toolkit/documents/kms/key-wrap.pdf") which is supported in the Java Cryptography Extensions that is performed using Cipher.WRAP_MODE and Cipher.UNWRAP_MODE as the operation mode to Cipher.init(). (Althernately, in newer versions of the JDK, you can just call Cipher.wrap() and Cipher.unwrap() respectively.)
+
+### Key Exchange
+
+Key exchange algorithms (also referred to as key establishment algorithms) are protocols that are used to exchange secret cryptographic keys between a sender and receiver in a manner that meets certain security constraints. Key exchange algorithms attempt to address the problem of securely sharing a common secret key with two parties over an insecure communication channel in a manner that no other party can gain access to a copy of the secret key. Traditionally this has relied on two humans somehow securely exchanging keys out-of-band; e.g., via a direct face-to-face meeting or mailing an attachment as an encrypted zip file that is encrypted with a previously shared passphrase, etc. However, the traditional methods do not allow two unknown parties who have never met to exchange a secret key with each other. In fact, proof of (or at least, high confidence in) identity is a major unsolved problem in such cases.
+
+Key Agreement protocols are protocols whereby N parties (usually two) can agree on a common key with all parties contribute to the key value. When designed and implemented properly, key agreement protocols prevent adversaries from learning the key or forcing their own key choice on the participating parties.
 
 The most familiar key exchange algorithm is Diffie-Hellman Key Exchange. There are also password authenticated key exchange algorithms. RSA key exchange using PKI or webs-of-trust or trusted key servers are also commonly used.
 
-####Securely Storing Encryption Keys
-TODO
+Key Transport protocols are where one party generates the key and sends it securely to the recipient(s).
 
-####Securely Storing Passwords for Authentication Purposes
-TODO
+The selection of schemes specified in [NIST Special Publication 800-56A](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Ar2.pdf "http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Ar2.pdf")[Revision 2](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Ar2.pdf "http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Ar2.pdf")[Recommendation for Pair-Wise Key Establishment Schemes Using Discrete Logarithm Cryptography](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Ar2.pdf "http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Ar2.pdf")based on standards for key-establishment
+
+Key Exchange protocols based on different primitives are available:
+
+1.  X9.42 Public Key Cryptography for the Financial Services Industry: Agreement of Symmetric Keys Using Discrete Logarithm Cryptography:
+    1.  This standard, partially adapted from ISO 11770-3 (see [13]), specifies schemes for the agreement of symmetric keys using Diffie-Hellman and MQV algorithms. It covers methods of domain parameter generation, domain parameter validation, key pair generation, public key validation, shared secret value calculation, key derivation, and test message authentication code computation for discrete logarithm problem based key agreement schemes
+1.  X9.44 Key Establishment Using Integer Factorization Cryptography. 
+	1.  Key transport based on the RSA algorithm.
+2.  X9.63 Public Key Cryptography for the Financial Services Industry: Key Agreement and Key Transport Using Elliptic Curve Cryptography
+
+Key Transport protocols used in the financial industry:
+
+1.  ASC X9 TR-31-2005 - Interoperable Secure Key Exchange Key Block Specification for Symmetric Algorithms specified a scheme for transporting a key based on a pre-existing shared key.
+2.  ASC X9 TR-34 Interoperable Method for Distribution of Symmetric Keys using Asymmetric Techniques: Part 1 - Using Factoring-Based Public Key Cryptography Unilateral Key Transport is similar to X9 TR-31 but uses asymmetric ciphers (to avoid having to have a pre-existing symmetric key). It uses CMS EnvelopedData (X9.44 OAEP), and SignedData types (X9.44 RSASSA-PKCS-v1\_5).
+
+  
+### Key Lifecycle
+The following "Key States and Transitions" diagram is from page 87 of [http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf](http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf "Recommendation for Key Management -- Part 1: General (Revision 3)") It is relevant to the following discussion.
+
+![NIST Key States and Transitions - NIST SP800-57 Part 1 (Rev 3)](file:images/NIST-crypto-key-lifecycle-scaled.75.png)
+
+FIXME: The above diagram is OLD! There is a newer one in NIST SP800-57 Part 1 (Rev 4), section 7, figure 3. That and the NIST URL should be updated. (The figure will need to be shrunk down.)
+
+##### Generation
+
+Keys start out in the "pre-activation" state.
+
+[NIST SP 800-133 Recommendation for Cryptographic Key Generation](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-133.pdf "http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-133.pdf") discusses the generation of keys to be used with the approved cryptographic algorithms.
+
+ANSI X9.24 Part 1 provides details on what forms keys can exist outside the Secure Cryptographic Device (SCD) e.g. Hardware Security Module (HSM) that they were generated in.
+
+###### Symmetric Keys
+
+For symmetric keys (e.g. AES, DES), the highest level key is generated randomly e.g. 16 bytes from an RNG for an AES-128 key.
+
+If there is no prior trust with the receiving entity then the highest level symmetric key is generally split into multiple plaintext components for distribution to the other party via out-of-band manual means.
+
+Key operations that involve people generally require at least dual control split knowledge to ensure no one person has all the key material e.g. 2 parties have a key or password component that is only effective when combined with the other part.
+
+Further keys may be derived from this highest level key e.g. using a KDF with device identifier or serial number as input.
+
+In general a tag-and-bag scheme is used for these keys:
+
+1. tag: since the key is just random bytes the end user needs to know information about the key when they receive it e.g. what the key should be used for, the algorithm to use e.g. DES or AES , etc... This information is represented by additional information that is distributed with the key and is called a Key Block Header (KBH)
+2. bag: cryptographic schemes are applied to the key such that Confidentiality-Integrity-Authenticity is assured.
+
+Examples include:
+
+1. ANSI **X9 TR-31 2**010 Interoperable Secure Key Exchange Key Block Specification for Symmetric Algorithm
+2. [Key Management Interoperability Protocol Specification Version 1.1](http://docs.oasis-open.org/kmip/spec/v1.1/os/kmip-spec-v1.1-os.html "http://docs.oasis-open.org/kmip/spec/v1.1/os/kmip-spec-v1.1-os.html")
+3. CMS NamedKeyEncryptedData type (with additional authentication added via MAC or signature)
+
+
+
+###### Asymmetric Keys
+
+Asymmetric keys are generated based on the mathematical problem they are based on e.g. prime generation. This gives a public and private key pair.
+
+In general, the key pair is certified (the public key is signed) by a Certificate Authority to bind the key pair to some entity and convey that it is trustworthy.
+
+##### Distribution
+
+Key are distributed to their install locations.
+
+For asymmetric keys, it may be either the private key ( Confidentiality-Integrity-Authenticity required) or the public key (Integrity-Authenticity) that is being distributed.
+
+##### Usage
+
+Keys are now live and should be used per the Recommendations section above. See Data in Use section.
+
+##### Re-Keying Operations (aka, Rotation)
+
+Re-keying (that is "key change operations", commonly referred to as "key rotation") is done whenever a key is thought to be compromised (see key lifecycle diagram) or a key change is scheduled for compliance issues (e.g., because of PCI DSSv2) or the key has been used for too many encryption operations.
+
+Working keys (those that encrypt the actual payload) usage should be limited. According to Steven Bellovin, a security researcher and CS professor at Columbia University in a [post to a cryptography mailing list](http://osdir.com/ml/encryption.general/2005-02/msg00005.html "http://osdir.com/ml/encryption.general/2005-02/msg00005.html"):
+> When using CBC mode, one should not encrypt more than 2<sup>32</sup> 64-bit blocks under a given key. That comes to ~275G bits, which means that on a GigE link running flat out you need to rekey at least every 5 minutes, which is often impractical. Since I've seen Gigabit Ethernet cards for <US$25, this bears thinking about -- and while 10GigE is still too expensive for most people, its prices are dropping rapidly.  With 10GigE, you'd have to rekey every 27.5 seconds...
+> 
+> For reference purposes, with AES you'd be safe for 2<sup>64</sup>*128 bits.  That's a Big Number of seconds.
+
+
+Rotation can be done automatically as part of the protocol (or done separately):
+
+1.  For symmetric keys, in the Financial industry, [Derived Unique Key Per Transaction (DUKPT)](http://en.wikipedia.org/wiki/Derived_unique_key_per_transaction "http://en.wikipedia.org/wiki/Derived_unique_key_per_transaction") is a k[ey management](http://en.wikipedia.org/wiki/Key_management "http://en.wikipedia.org/wiki/Key_management") scheme in which a new key is derived for every transaction. However, there's a limitation of 1 million transactions per device, so a new key (IPEK) must be installed then.
+2.  For Asymmetric keys, [Ephemeral](http://en.wikipedia.org/wiki/Ephemeral_key "http://en.wikipedia.org/wiki/Ephemeral_key")modes where the asymmetric keys are changed per use; e.g. for TLS TLS\_DHE and TLS\_ECDHE.
+
+Generally, when performing re-keying operations, all new encryptions are done only with the new key, but the old key is retired and kept around for some amount of time to ensure that all previous data encrypted with that key can continue to be encrypted. If that data can then be re-encrypted using the old key, that old retired key can be destroyed, but for some off-line archived encrypted data, it may need to be kept indefinitely. Regardless of how long an old key is kept though, it should be marked in some manner to indicate that it henceforth should never be used for any new encryption operations.
+
+##### Backup and Recovery
+
+The highest level keys in a system should be backed up to allow for recovery in a Business Continuity or Disaster Recovery event.
+
+##### Revocation and Destruction
+
+Symmetric Keys are generally used by 2 parties only  so the revocation is generally done by changing to a new random key.
+
+A Public key Certificates could be used by many so each user needs to be informed of the revoked status. Public key Certificates can be revoked using Certification Revocation Lists or [Online Certificate Status Protocol](http://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol "http://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol") or can be permanently removed manually depending on the environment. This prevents another entity using this public key for encryption or authentication as the certificate is revoked.
+
+##### Archive
+
+Keys are no longer in active service but are retained for validation or until it is ensure the key is no longer needed.
 
 ##References
 
 * [http://www.keylength.com/](http://www.keylength.com/)
-* Alfred Menezes, Paul van Oorschot, Scott Vanstone, *Handbook of Applied Cryptography*, 1997, CRC Press, ISBN 0-8493-8523-7. (Online: [http://ca
-* cr.uwaterloo.ca/hac/](http://cacr.uwaterloo.ca/hac/))
-* Neils Ferguson, Bruce Schneier, Tadayoshi Kohno, *Cryptography Engineering: Design Principles and Practical Applications*, Wiley Publishing, ISBN 978-0-470-47424-2.
-* NIST Special Publications 800-57, Recommendation for Key Management – 
-* 
-* Part 1: General (Revision 3). (Online: [http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf](http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf))
+* Alfred Menezes, Paul van Oorschot, Scott Vanstone, *Handbook of Applied Cryptography*, 1997, CRC Press, ISBN 0-8493-8523-7. (Online: [http://cacr.uwaterloo.ca/hac/](http://cacr.uwaterloo.ca/hac/))
+* Neils Ferguson, Bruce Schneier, Tadayoshi Kohno, *Cryptography Engineering: Design Principles and Practical Applications*, Wiley Publishing, [ISBN 978-0-470-47424-2](http://www.amazon.com/exec/obidos/ASIN/9780470474242 "http://www.amazon.com/exec/obidos/ASIN/9780470474242")
+* NIST Special Publications 800-57, Recommendation for Key Management – Part 1: General (Revision 4). (Online: [http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r4.pdf](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r4.pdf))
+* NIST Special Publications 800-57, Recommendation for Key Management – Part 2: Best Practices for Key Management Organization. (Online: [http://csrc.nist.gov/publications/nistpubs/800-57/SP800-57-Part2.pdf](http://csrc.nist.gov/publications/nistpubs/800-57/SP800-57-Part2.pdf))
+* NIST Special Publications 800-57, Recommendation for Key Management – Part 3: Application-Specific Key Management Guidance (Revision 1). (Online: [http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57Pt3r1.pdf](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57Pt3r1.pdf))
 * ENISA (editor: Nigel P. Smart), Algorithms, Key Sizes, and Parameters Report: 2013 Recommendations, (Online: [http://www.enisa.europa.eu/activities/identity-and-trust/library/deliverables/algorithms-key-sizes-and-parameters-report](http://www.enisa.europa.eu/activities/identity-and-trust/library/deliverables/algorithms-key-sizes-and-parameters-report))
-* Neils Ferguson, Bruce Schneier, Tadayoshi Kohno, *Cryptography Engineering: Design Principles and Practical Applications*, 2010, Wiley Publishing Inc, ISBN 978-0=470-47424-2.
 * [http://www.cryptopp.com/wiki/Authenticated_Encryption](http://www.cryptopp.com/wiki/Authenticated_Encryption "Authenticated Encryption")
 * [https://cryptocoding.net/index.php/Coding_rules](https://cryptocoding.net/index.php/Coding_rules "Cryptography Coding Standards")
 
-##Reviewers
+##Contributors
+
+###Authors
+Kevin W. Wall /
+Chris Madden /
+Michael Howard
+
+###Reviewers
 
 Candidates: 
 
