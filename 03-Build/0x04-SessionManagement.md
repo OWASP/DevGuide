@@ -48,13 +48,13 @@ shared memory or a mechanism provided by your hosting provider for this purpose.
 #### What to store in the session
 One of the ways to reduce the burden on the session storage is to only keep the minimum amount of information in the session that you need to. For instance, a language choice might be kept in a cookie to keep it away from the server and based on the fact that it
 is neither secret or dangerous if it was tampered with. Certain data can also be stored in the URL e.g. the current ordering of a gridview since, again, it is generally not secret and should probably not be kept in a session. Anything that is kept in hidden fields
-on a page is actually visible to anyone who looks. If this data is secret, you should either keep it store in the session or in a related database table.
+on a page is actually visible to anyone who looks. If this data is secret, you should either keep it stored in the session or in a related database table.
 
 #### HTTP Only Cookies
 A session cookie in any good framework should default to setting an HTTPOnly flag. This tells the browser that the cookie cannot be accessed by JavaScript to read the session of another user who has somehow got malware script running in a site they are visiting.
 
 #### SSL Only Flag
-It is also possible and recommended, wherever possible, to set the Secure flag on the cookie which enforces that the cookie is only allowed to be downloaded via HTTPS. This will only work if your site implements SSL/TLS but prevents a man-in-the-middle being able to read the contents of the cookie.
+It is also recommended, wherever possible, to set the Secure flag on the cookie which enforces that the cookie is only allowed to be downloaded via HTTPS. This will only work if your site implements SSL/TLS but prevents a man-in-the-middle being able to read the contents of the cookie.
 
 #### CSRF Tokens
 One of the weaknesses inherent in most session systems is that tabs in a browser share session and it is therefore possible for an attacker to take a victim to a malicious site, which will then call an operation on a vulnerable target site. This visit to the target site will automatically send any relevant cookie/session data and if this in itself is enough to do something dangerous (transfer money, extract data etc.) then the attack has succeeded without the victim necessarily knowing. This is called a Cross-Site Request Forgery (CSRF).
@@ -211,11 +211,11 @@ Any system needs to consider encryption, hashing and message signatures to provi
 The following test cases relate to specific attack vectors on REST-based sessions.
 
 ### Simple session authentication with signing
-It is possible that your REST system does not require any particular session data and simply needs to authenticate each request to ensure that the client is authorised to use the service or endpoint. This requires at the very least a reliable way of obscuring login credentials, that must necessarily be passed in.
+It is possible that your REST system does not require any particular session data and simply needs to authenticate each request to ensure that the client is authorized to use the service or endpoint. This requires at the very least a reliable way of obscuring login credentials, that must necessarily be passed in.
 
 The password/secret should NEVER be passed in the query string, which can be exposed by caches, search engines and in the browser.
 
-At a minimum, SSL/TLS should be used to secure the endpoints. In most cases, if you do NOT use SSL/TLS, many authentication systems are vulnerable to network sniffing. Even if the password/secret is obscured in some way, an attacker can often easily replay the request with the obscured data and still achieve unauthorised access to the service.
+At a minimum, SSL/TLS should be used to secure the endpoints. In most cases, if you do NOT use SSL/TLS, many authentication systems are vulnerable to network sniffing. Even if the password/secret is obscured in some way, an attacker can often easily replay the request with the obscured data and still achieve unauthorized access to the service.
 
 The recommended way to pass the password or secret into the system is by using some kind of message authentication code (MAC) and instead of using the secret directly, using it to sign the remainder of the request. By doing this, the server can repeat the process without the secret actually being passed (it is pre-shared) and this will verify that the secret is correct and that the request has not been tampered with. If the date/time is also used in generating the signature, it will also reduce the replay window although you will have to account for slight differences in the time between client and server due to incorrect time settings and network latency.
 
