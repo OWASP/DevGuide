@@ -12,6 +12,9 @@ This repository is the current **development master: version 3.0.**
 
 See our [our wiki](https://github.com/OWASP/DevGuide/wiki), [FAQ page](https://github.com/OWASP/DevGuide/wiki/FAQs), and [Road Map](https://github.com/OWASP/DevGuide/wiki/Road-Map) for more information.
 
+## Gitbook integration
+
+For a pleasant reading experience, use [GitBook](https://github.com/GitbookIO/gitbook) to turn this document into a PDF, e-book, website, etc.
 
 ## Contributing
 
