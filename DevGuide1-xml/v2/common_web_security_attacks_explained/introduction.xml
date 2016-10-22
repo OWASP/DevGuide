@@ -1,6 +1,0 @@
-<sect1>
-	<title>What's in this chapter</title>
-	<para>This chapter describes the common attacks launched against web servers and web applications. For each attack we describe the attack technique along with any available tools that are commonly used by attackers. We then discuss mitigation techniques to ensure that your web application is not found to be vulnerable to these attacks. Finally, wherever possible, we provide preliminary detection techniques to determine if an attacker is trying to exploit these vulnerabilities. If an attacker is able to successfully launch these attacks, he may gain various levels of access ranging from discovering the web technologies being used, to execution of malicious SQL queries against the back-end database.
-	</para>
-</sect1>
-
