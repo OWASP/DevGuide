@@ -4,7 +4,7 @@
 * [Introduction](00-Introduction/Introduction.md)
   * [Authors](00-Introduction/Authors.md)
   * [Foreword](00-Introduction/00-Foreword.md)
-  * [About the Development Guild](00-Introduction/01-About the Development Guide.md)
+  * [About the Development Guide](00-Introduction/01-About the Development Guide.md)
   * [About the Open Web Application Security Project](00-Introduction/02-About the Open Web Application Security Project.md) 
 * Foundations
   * [Security Fundamentals](01-Foundations/01-Security Fundamentals.md)
