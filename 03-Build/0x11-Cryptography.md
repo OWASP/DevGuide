@@ -379,11 +379,10 @@ Key Transport protocols used in the financial industry:
 
   
 ### Key Lifecycle
-The following "Key States and Transitions" diagram is from page 87 of [http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf](http://csrc.nist.gov/publications/nistpubs/800-57/sp800-57_part1_rev3_general.pdf "Recommendation for Key Management -- Part 1: General (Revision 3)") It is relevant to the following discussion.
+The following "Key States and Transitions" diagram is from page 76 of [http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r4.pdf](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r4.pdf "Recommendation for Key Management: General (Revision 4)") It is relevant to the following discussion.
 
-![NIST Key States and Transitions - NIST SP800-57 Part 1 (Rev 3)](file:images/NIST-crypto-key-lifecycle-scaled.75.png)
-
-FIXME: The above diagram is OLD! There is a newer one in NIST SP800-57 Part 1 (Rev 4), section 7, figure 3. That and the NIST URL should be updated. (The figure will need to be shrunk down.)
+[<img width="50%" src="images/NIST-key-states-transitions.png" alt="NIST Key States and Transitions - NIST SP800-57 Part 1 (Rev 4)" />
+](images/NIST-key-states-transitions.png)
 
 ##### Generation
 
