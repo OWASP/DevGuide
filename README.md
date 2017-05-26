@@ -1,4 +1,4 @@
-# OWASP Developer Guide Reboot
+# OWASP Developer Guide
 
 ## Welcome
 
