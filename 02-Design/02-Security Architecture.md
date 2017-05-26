@@ -2,7 +2,7 @@
 
 Security architecture is not separate to the normal architecture of an application – it is an innate aspect of the architecture of even the simplest systems. Security architecture should be stable for at least two-three years in the average application. 
 
-This chapter cannot distil the enormity of the security architecture profession - there are excellent texts available which we highly recommend if you want to learn more.
+This chapter cannot distill the enormity of the security architecture profession - there are excellent texts available which we highly recommend if you want to learn more.
 
 There are three major domains of security architecture:
 
