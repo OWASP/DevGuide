@@ -4,7 +4,7 @@
 Most of the software used in a company can not be developed internally and have to be purchased from suppliers. Software acquisitions may represent a faster and/or custom response to company needs. Usually the process involves the evaluation of many possibilities, where options can be found within these categories:
 * Commercial off-the-shelf (COTS)
 * Made-to-order
-* Company acquisitions/merges
+* Company acquisitions/mergers
 * Open source
 
 ## The acquisition process
