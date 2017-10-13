@@ -462,7 +462,7 @@ A Public key Certificates could be used by many so each user needs to be informe
 
 Keys are no longer in active service but are retained for validation or until it is ensure the key is no longer needed.
 
-##References
+## References
 
 * [http://www.keylength.com/](http://www.keylength.com/)
 * Alfred Menezes, Paul van Oorschot, Scott Vanstone, *Handbook of Applied Cryptography*, 1997, CRC Press, ISBN 0-8493-8523-7. (Online: [http://cacr.uwaterloo.ca/hac/](http://cacr.uwaterloo.ca/hac/))
@@ -474,14 +474,14 @@ Keys are no longer in active service but are retained for validation or until it
 * [http://www.cryptopp.com/wiki/Authenticated_Encryption](http://www.cryptopp.com/wiki/Authenticated_Encryption "Authenticated Encryption")
 * [https://cryptocoding.net/index.php/Coding_rules](https://cryptocoding.net/index.php/Coding_rules "Cryptography Coding Standards")
 
-##Contributors
+## Contributors
 
-###Authors
+### Authors
 Kevin W. Wall /
 Chris Madden /
 Michael Howard
 
-###Reviewers
+### Reviewers
 
 Candidates: 
 
@@ -492,7 +492,7 @@ Candidates:
 * Kevin Kenan? (ask)
 * Anthony J. Stiebler? (Wells Fargo, ask)
 
-##Endnotes
+## Endnotes
 [1] This is, after all to be a *chapter* on cryptography, and not a book about it. That and the fact that this chapter author is just running out of gas. If you are interested in such topics, check out the listed references.
 
 [2] In Java, if you use DESede and do not specify a key size, you will end up with 2-key triple DES rather than 3-key triple DES. Note also to use 3-key triple DES in Java, you must have the Java JCE Unlimited Strength Jurisdiction Policy Files installed; otherwise, you will get an exception when you try to generate or use a 168-bit (i.e., 3-key) encryption key.
