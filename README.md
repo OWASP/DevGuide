@@ -22,7 +22,7 @@ For a pleasant reading experience, use [GitBook](https://github.com/GitbookIO/gi
 
 You do not have to be a security expert in order to contribute! 
 
-###**START HERE:** We recommend looking first at the [Open Issues](https://github.com/OWASP/DevGuide/issues) and trying to close them.
+### **START HERE:** We recommend looking first at the [Open Issues](https://github.com/OWASP/DevGuide/issues) and trying to close them.
 
 Some of the ways you can help:
 
