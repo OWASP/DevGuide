@@ -14,7 +14,7 @@ Following are a detailed list of vulnerabilities against which an application ca
 
 ## Principles
 ###  Assume every input field is vulnerable and user has malicious intention
-It is a good practice to assume that all the user input has malicious intention. Developer must develope a proper logic where an application can draw a boundry between malicious and trusted user input. For example, if you call an external Web service that returns strings, how do you know that malicious commands are not present? Also, if several applications write to a shared database, when you read data, how do you know whether it is safe?
+It is a good practice to assume that all the user input has malicious intention. Developer must develop a proper logic where an application can draw a boundry between malicious and trusted user input. For example, if you call an external Web service that returns strings, how do you know that malicious commands are not present? Also, if several applications write to a shared database, when you read data, how do you know whether it is safe?
 
 ### Validation should be the core part of the application
 Developers should consider a centralized approach to validate every input area of an application. Input validation strategy should be a core element during the development process.
