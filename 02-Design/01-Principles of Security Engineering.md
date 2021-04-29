@@ -6,7 +6,7 @@ Also known as layered defense, defense in depth is a security principle where si
 Have diverse defensive strategies, so that if one layer of defense turns out to be inadequate, another layer of defense will hopefully prevent a full breach.
 
 ## Fail Safe
-A security principle that aims to maintaining confidentiality, integrity and availability by defaulting to a secure state, rapid recovery of software resiliency upon design or implementation failure. In the context of software security, fail secure is commonly used interchangeably with fail safe, which comes from physical security terminology.
+A security principle that aims to maintain confidentiality, integrity and availability by defaulting to a secure state, rapidly recovering software resiliency upon design or implementation failure. In the context of software security, fail secure is commonly used interchangeably with fail safe, which comes from physical security terminology.
 
 Unless a subject is given explicit access to an object, it should be denied access to that object, aka *Fail Safe Defaults*.
 
@@ -18,22 +18,22 @@ Limits the damage in case of exploited vulnerability.
 In order to apply this principle, proper granularity of privileges and permissions should be established.
 
 ## Separation of Duties
-Also known as the [compartmentalization principle][1], or separation of privilege, separation of duties is a security principle which states that the successful completion of a single task is dependent upon two or more conditions that need to be met and just one of the conditions will be insufficient in completing the task by itself.
+Also known as the [compartmentalization principle][1], or separation of privilege, separation of duties is a security principle which states that the successful completion of a single task is dependent upon two or more conditions that are insufficient for completing the task by itself.
 
 ## Economy of Mechanism
-This in layman terms is the [Keep It Simple, Stupid][2] principle because the likelihood of a greater number of vulnerabilities increases with the complexity of the software architectural design and code.
+In layman terms, this is the [Keep It Simple, Stupid][2] principle because the likelihood of a greater number of vulnerabilities increases with the complexity of the software architectural design and code.
 
 By keeping the software design and implementation details simple, the attack-ability or attack surface of the software is reduced.
 
 ## Complete Mediation
 A security principle that ensures that authority is not circumvented in subsequent requests of an object by a subject, by checking for authorization (rights and privileges) upon every request for the object.
 
-In other words, the access requests by a subject for an object is completely mediated every time.
+In other words, the access requests by a subject for an object are completely mediated every time.
 
 “All accesses to objects must be checked to ensure that they are allowed.”
 
 Performance v/s Security issue:
-- Results of access check are often cached
+- Results of access checks are often cached
 - What if permissions have changed since the last check?
 - Mechanisms to invalidate or flush caches after a change are often missing
 
@@ -50,6 +50,15 @@ If the secrets are abstracted from the mechanism, e.g. inside a key, then leakag
 
 ## Least Common Mechanism
 The security principle of least common mechanisms disallows the sharing of mechanisms that are common to more than one user or process if the users and processes are at different levels of privilege. For example, the use of the same function to retrieve the bonus amount of an exempt employee and a non-exempt employee will not be allowed. In this case the calculation of the bonus is the common mechanism.
+
+According to Saltzer and Schroeder [Saltzer 75] in "Basic Principles of Information Protection" from pages 9-10:
+
+> Least common mechanism: Minimize the amount of mechanism common to more than one user and depended on by all users.1 Every shared mechanism (especially one involving shared
+> variables) represents a potential information path between users and must be designed with great care to be sure it does not unintentionally compromise security. Further, any
+> mechanism serving all users must be certified to the satisfaction of every user, a job presumably harder than satisfying only one or a few users. For example, given the choice
+> of implementing a new function as a supervisor procedure shared by all users or as a library procedure that can be handled as though it were the user's own, choose the latter
+> course. Then, if one or a few users are not satisfied with the level of certification of the function, they can provide a substitute or not use it at all. Either way, they can
+> avoid being harmed by a mistake in it.
 
 ## Psychological acceptability
 A security principle that aims at maximizing the usage and adoption of the security functionality in the software by ensuring that the security functionality is easy to use and at the same time transparent to the user. Ease of use and transparency are essential requirements for this security principle to be effective.
