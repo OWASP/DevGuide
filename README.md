@@ -1,3 +1,13 @@
+## Note that this repository is in the process of being migrated
+OWASP is moving to a 'web first' philosphy and moving away from downloads.
+We will still be providing PDF and ePub, but the emphasis will be on providing web page documents.
+
+Part of this migration will be the use of the [OWASP project page][owaspdevguide]
+as the source of the document.
+The draft version 3.0 of [this repo][this] is now work-in-progress under `draft` in the [OWASP project pages][owaspdevguide].
+
+When the migration is complete [this repo][this] will be archived as Read Only.
+
 # OWASP Developer Guide Reboot
 
 ## Welcome
@@ -44,3 +54,5 @@ Please contact the **Project Leads: Steven van der Baan or Brad Chesney** for an
 
 [Brad Chesney](mailto:bradchesney79@gmail.com)
 
+[owaspdevguide]: https://owasp.org/www-project-developer-guide/
+[this]: https://github.com/owasp/DevGuide
