@@ -1,12 +1,12 @@
-## Note that this repository is in the process of being migrated
+## This repository has been migrated to [OWASP/www-project-developer-guide][owaspdevguide]
+
 OWASP is moving to a 'web first' philosphy and moving away from downloads.
 We will still be providing PDF and ePub, but the emphasis will be on providing web page documents.
 
-Part of this migration will be the use of the [OWASP project page][owaspdevguide]
-as the source of the document.
+This means that [OWASP project page][owaspdevguide] is now the source of the document.
 The draft version 3.0 of [this repo][this] is now work-in-progress under `draft` in the [OWASP project pages][owaspdevguide].
 
-When the migration is complete [this repo][this] will be archived as Read Only.
+This migration _is now complete_ and [this repo][this] has been archived as Read Only.
 
 # OWASP Developer Guide Reboot
 
