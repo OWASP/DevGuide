@@ -1,1 +1,6 @@
-_book
+# uses allow-list, so ignore everything
+*
+
+# project files
+!*.md
+!license.txt
