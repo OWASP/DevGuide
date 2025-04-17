@@ -3,6 +3,10 @@
 
 # project files
 !*.md
+!license.txt
+!mkdocs.yaml
+!CNAME
+!docs/
 !docs/assets/
 !docs/assets/exports/
 !docs/assets/exports/*.epub
@@ -11,9 +15,7 @@
 !docs/assets/images/*.png
 !docs/assets/images/logos/
 !docs/assets/images/logos/*.png
-!license.txt
-!mkdocs.yaml
-!CNAME
+!docs/CNAME
 
 # allow github, workflows and templates
 !.github/
