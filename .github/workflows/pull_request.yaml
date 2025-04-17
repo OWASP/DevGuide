@@ -1,0 +1,43 @@
+name: CI pipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# for security reasons the github actions are pinned to specific release versions
+jobs:
+  deploy:
+    name: Deploy web doc
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout markdown
+        uses: actions/checkout@v4.2.0
+
+      - name: Install python
+        uses: actions/setup-python@v5.5.0
+        with:
+          python-version: 3.x
+
+      - name: Configure environment
+        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
+      - name: Cache mkdocs material
+        uses: actions/cache@v4.2.0
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+
+      - name: Install python packages
+        run: |
+          pip install mkdocs-material 
+          pip install mkdocs-open-in-new-tab
+
+      - name: Deploy
+        run: mkdocs gh-deploy --force

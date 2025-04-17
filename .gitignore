@@ -3,4 +3,44 @@
 
 # project files
 !*.md
+!assets/
+!assets/exports/
+!assets/exports/*.epub
+!assets/exports/*.pdf
+!assets/images/
+!assets/images/*.png
+!assets/images/logos/
+!assets/images/logos/*.png
 !license.txt
+mkdocs.yaml
+CNAME
+
+# allow github, workflows and templates
+!.github/
+!.github/*.yaml
+!.github/issue_template/
+!.github/issue_template/*.md
+!.github/workflows/
+!.github/workflows/*.yaml
+!.gitignore
+!.lintcheck.yaml
+!.lycheeignore
+!.markdownlint.yaml
+!.spellcheck*.yaml
+!.wordlist*.txt
+
+# release version
+!release/
+!release/title*.yaml
+!release/0*/
+!release/0*/*.md
+!release/0*/0*/
+!release/0*/0*/*.md
+!release/0*/1*/
+!release/0*/1*/*.md
+!release/1*/
+!release/1*/*.md
+!release/1*/0*/
+!release/1*/0*/*.md
+!release/1*/1*/
+!release/1*/1*/*.md
