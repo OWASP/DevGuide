@@ -77,7 +77,7 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue1021] or [edit on GitHub][edit1021].
 
 [edit1021]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/10-culture-process/02-security-champions/01-security-champions-program.md
-[issue1021]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2010-culture-process/02-security-champions/01-security-champions-program
+[issue1021]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2010-culture-process/02-security-champions/01-security-champions-program
 [sammgegoc]: https://owaspsamm.org/model/governance/education-and-guidance/stream-b/
 [scguide]: https://owasp.org/www-project-security-champions-guidebook/
 [scplaybook]: https://github.com/c0rdis/security-champions-playbook

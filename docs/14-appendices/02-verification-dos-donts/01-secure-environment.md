@@ -58,4 +58,4 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue140201] or [edit on GitHub][edit140201].
 
 [edit140201]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/14-appendices/02-verification-dos-donts/01-secure-environment.md
-[issue140201]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2014-appendices/02-verification-dos-donts/01-secure-environment
+[issue140201]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2014-appendices/02-verification-dos-donts/01-secure-environment

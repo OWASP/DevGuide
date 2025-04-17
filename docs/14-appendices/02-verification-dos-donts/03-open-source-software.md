@@ -100,4 +100,4 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue140203] or [edit on GitHub][edit140203].
 
 [edit140203]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/14-appendices/02-verification-dos-donts/03-open-source-software.md
-[issue140203]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2014-appendices/02-verification-dos-donts/03-open-source-software
+[issue140203]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2014-appendices/02-verification-dos-donts/03-open-source-software

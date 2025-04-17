@@ -59,6 +59,6 @@ then [submit an issue][issue060205] or [edit on GitHub][edit060205].
 [control3]: https://top10proactive.owasp.org/the-top-10/c3-validate-input-and-handle-exceptions/
 [ivcs]: https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet
 [edit060205]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/06-design/02-web-app-checklist/05-validate-inputs.md
-[issue060205]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-design/02-web-app-checklist/05-validate-inputs
+[issue060205]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-design/02-web-app-checklist/05-validate-inputs
 [proactive10]: https://top10proactive.owasp.org
 [sanitizer]: https://www.owasp.org/index.php/OWASP_Java_HTML_Sanitizer

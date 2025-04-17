@@ -26,7 +26,7 @@ In summary, security requirements exist to prevent the repeat of past security f
 
 The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue0500].
 
-[issue0500]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-requirements/00-toc
+[issue0500]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-requirements/00-toc
 [samm]: https://owaspsamm.org/about/
 [sammd]: https://owaspsamm.org/model/design/
 [sammdsr]: https://owaspsamm.org/model/design/security-requirements/

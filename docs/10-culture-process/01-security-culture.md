@@ -65,7 +65,7 @@ Metrics will provide the justification for investment and nurturing of a good se
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue1001] or [edit on GitHub][edit1001].
 
-[issue1001]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2010-culture-process/01-security-culture
+[issue1001]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2010-culture-process/01-security-culture
 [edit1001]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/10-culture-process/01-security-culture.md
 [culture]: https://owasp.org/www-project-security-culture/
 [cultureacts]: https://owasp.org/www-project-security-culture/stable/5-Activities/

@@ -16,6 +16,6 @@ Given the breadth of techniques and knowledge required, guides are an important 
 
 The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue0810].
 
-[issue0810]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2008-verification/01-guides/00-toc
+[issue0810]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2008-verification/01-guides/00-toc
 [samm]: https://owaspsamm.org/about/
 [sammv]: https://owaspsamm.org/model/verification/

@@ -88,5 +88,5 @@ then [submit an issue][issue060202] or [edit on GitHub][edit060202].
 [control4]: https://top10proactive.owasp.org/the-top-10/c4-secure-architecture/
 [dependency]: https://owasp.org/www-project-dependency-check/
 [edit060202]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/06-design/02-web-app-checklist/02-frameworks-libraries.md
-[issue060202]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-design/02-web-app-checklist/02-frameworks-libraries
+[issue060202]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-design/02-web-app-checklist/02-frameworks-libraries
 [proactive10]: https://top10proactive.owasp.org/

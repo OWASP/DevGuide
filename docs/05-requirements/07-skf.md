@@ -66,7 +66,7 @@ then [submit an issue][issue0507] or [edit on GitHub][edit0507].
 
 [asvs]: https://owasp.org/www-project-application-security-verification-standard/
 [edit0507]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/05-requirements/07-skf.md
-[issue0507]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-requirements/07-skf
+[issue0507]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-requirements/07-skf
 [skf]: https://www.securityknowledgeframework.org/
 [skfdemo]: https://secureby.design/
 [skfdocs]: https://skf.readme.io/docs/introduction

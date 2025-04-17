@@ -68,7 +68,7 @@ and will help to sustain the existing program.
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue1022] or [edit on GitHub][edit1022].
 
-[issue1022]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2010-culture-process/02-security-champions/02-security-champions-guide
+[issue1022]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2010-culture-process/02-security-champions/02-security-champions-guide
 [edit1022]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/10-culture-process/02-security-champions/02-security-champions-guide.md
 [scguide]: https://owasp.org/www-project-security-champions-guidebook/
 [scguidedoc]: https://owasp.org/www-project-security-champions-guidebook/#div-principles

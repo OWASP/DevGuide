@@ -57,4 +57,4 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue140103] or [edit on GitHub][edit140103].
 
 [edit140103]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/14-appendices/01-implementation-dos-donts/03-cryptographic-practices.md
-[issue140103]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%20/14-appendices/01-implementation-dos-donts/03-cryptographic-practices
+[issue140103]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%20/14-appendices/01-implementation-dos-donts/03-cryptographic-practices

@@ -26,7 +26,7 @@ Having an SBOM provides the ability to quickly find out which applications are a
 The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue0720].
 
 [cve]: https://cve.mitre.org/
-[issue0720]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2007-implementation/02-dependencies/00-toc
+[issue0720]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2007-implementation/02-dependencies/00-toc
 [sammi]: https://owaspsamm.org/model/implementation/
 [sammisb]: https://owaspsamm.org/model/implementation/secure-build/
 [sammisbsd]: https://owaspsamm.org/model/implementation/secure-build/stream-b/

@@ -101,7 +101,7 @@ then [submit an issue][issue0501] or [edit on GitHub][edit0501].
 
 [asvs]: https://owasp.org/www-project-application-security-verification-standard/
 [csabuse]: https://cheatsheetseries.owasp.org/cheatsheets/Abuse_Case_Cheat_Sheet
-[issue0501]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-requirements/01-requirements
+[issue0501]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-requirements/01-requirements
 [mas]: https://mas.owasp.org/
 [edit0501]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/05-requirements/01-requirements.md
 [proactive10]: https://owasp.org/www-project-proactive-controls/

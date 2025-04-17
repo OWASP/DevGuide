@@ -45,5 +45,5 @@ then [submit an issue][issue060204] or [edit on GitHub][edit060204].
 [edit060204]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/06-design/02-web-app-checklist/04-encode-escape-data.md
 [encoder]: https://www.owasp.org/index.php/OWASP_Java_Encoder_Project
 [ipcs]: https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet
-[issue060204]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-design/02-web-app-checklist/04-encode-escape-data
+[issue060204]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-design/02-web-app-checklist/04-encode-escape-data
 [proactive10]: https://top10proactive.owasp.org/

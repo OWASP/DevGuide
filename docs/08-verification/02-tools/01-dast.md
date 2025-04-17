@@ -44,5 +44,5 @@ then [submit an issue][issue080201] or [edit on GitHub][edit080201].
 [benchmark]: https://owasp.org/www-project-benchmark/
 [dast]: https://owasp.org/www-community/Vulnerability_Scanning_Tools
 [edit080201]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/08-verification/02-tools/01-dast.md
-[issue080201]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=content&template=request.md&title=Update:%2008-verification/02-tools/01-dast
+[issue080201]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2008-verification/02-tools/01-dast
 [wikipedia]: https://en.wikipedia.org/wiki/Dynamic_application_security_testing

@@ -49,4 +49,4 @@ then [submit an issue][issue0907] or [edit on GitHub][edit0907].
 [apisec-doc]: https://owasp.org/API-Security/editions/2023/en/0x00-header/
 [apisec-project]: https://owasp.org/www-project-api-security/
 [edit0907]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/09-training-education/07-api-top-ten.md
-[issue0907]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=content&template=request.md&title=Update:%2009-training-education/07-api-top-ten
+[issue0907]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2009-training-education/07-api-top-ten

@@ -86,7 +86,7 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue0502] or [edit on GitHub][edit0502].
 
 [cvss]: https://www.first.org/cvss/
-[issue0502]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-requirements/02-risk
+[issue0502]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-requirements/02-risk
 [nist]: https://csrc.nist.gov/publications/detail/sp/800-30/rev-1/final
 [edit0502]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/05-requirements/02-risk.md
 [rra]: https://infosec.mozilla.org/guidelines/risk/rapid_risk_assessment.html

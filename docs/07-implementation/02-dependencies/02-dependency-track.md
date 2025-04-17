@@ -59,5 +59,5 @@ then [submit an issue][issue070202] or [edit on GitHub][edit070202].
 [deptrack-docs]: https://docs.dependencytrack.org/
 [deptrack-project]: https://owasp.org/www-project-dependency-track/
 [edit070202]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/07-implementation/02-dependencies/02-dependency-track.md
-[issue070202]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=content&template=request.md&title=Update:%2007-implementation/02-dependencies/02-dependency-track
+[issue070202]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-implementation/02-dependencies/02-dependency-track
 [spotlight15]: https://youtu.be/irnZuLq4MDM

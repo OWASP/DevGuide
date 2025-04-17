@@ -40,7 +40,7 @@ then [submit an issue][issue1103] or [edit on GitHub][edit1103].
 [crs]: https://coreruleset.org/
 [cscloud]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Cloud_Architecture_Cheat_Sheet
 [edit1103]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/11-operations/03-modsecurity.md
-[issue1103]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=content&template=request.md&title=Update:%2011-operations/03-modsecurity
+[issue1103]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2011-operations/03-modsecurity
 [modsec]: https://owasp.org/www-project-modsecurity/
 [modsec-docs]: https://www.modsecurity.org/
 [modsec-press]: https://owasp.org/blog/2024/01/09/ModSecurity.html

@@ -323,6 +323,6 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue140102] or [edit on GitHub][edit140102].
 
 [edit140102]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/14-appendices/01-implementation-dos-donts/02-secure-coding.md
-[issue140102]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%20/14-appendices/01-implementation-dos-donts/02-secure-coding
+[issue140102]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%20/14-appendices/01-implementation-dos-donts/02-secure-coding
 [rfc7518]: https://www.rfc-editor.org/rfc/rfc7518
 [trace]: https://www.blackhillsinfosec.com/three-minutes-with-the-http-trace-method/

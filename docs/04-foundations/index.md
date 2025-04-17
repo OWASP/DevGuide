@@ -23,4 +23,4 @@ The OWASP Developer Guide is a community effort; if there is something that need
 
 [cbok]: https://www.cybok.org/
 [culturegoal]: https://owasp.org/www-project-security-culture/stable/3-Goal_Setting_and_Security_Team_Collaboration/
-[issue0400]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-foundations/00-toc
+[issue0400]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-foundations/00-toc

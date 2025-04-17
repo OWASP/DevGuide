@@ -11,6 +11,6 @@ contained in these Do's and Dont's.
 
 The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue1402].
 
-[issue1402]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2014-appendices/02-verification-dos-donts/00-toc
+[issue1402]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2014-appendices/02-verification-dos-donts/00-toc
 [samm]: https://owaspsamm.org/about/
 [sammv]: https://owaspsamm.org/model/verification/

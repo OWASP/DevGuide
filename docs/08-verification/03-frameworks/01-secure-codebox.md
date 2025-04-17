@@ -84,5 +84,5 @@ then [submit an issue][issue080301] or [edit on GitHub][edit080301].
 [codebox-docs]: https://www.securecodebox.io/docs/getting-started/installation
 [edit080301]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/08-verification/03-frameworks/01-secure-codebox.md
 [helm]: https://helm.sh/
-[issue080301]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=content&template=request.md&title=Update:%2008-verification/03-frameworks/01-secure-codebox
+[issue080301]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2008-verification/03-frameworks/01-secure-codebox
 [kube]: https://kubernetes.io/

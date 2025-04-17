@@ -70,7 +70,7 @@ then [submit an issue][issue0906] or [edit on GitHub][edit0906].
 
 [edit0906]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/09-training-education/06-mobile-top-ten.md
 [enisa]: https://www.enisa.europa.eu/
-[issue0906]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=content&template=request.md&title=Update:%2009-training-education/06-mobile-top-ten
+[issue0906]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2009-training-education/06-mobile-top-ten
 [m01]: https://owasp.org/www-project-mobile-top-10/2023-risks/m1-improper-credential-usage.html
 [m02]: https://owasp.org/www-project-mobile-top-10/2023-risks/m2-inadequate-supply-chain-security.html
 [m03]: https://owasp.org/www-project-mobile-top-10/2023-risks/m3-insecure-authentication-authorization.html

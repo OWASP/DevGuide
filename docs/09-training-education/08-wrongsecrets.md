@@ -57,7 +57,7 @@ then [submit an issue][issue0908] or [edit on GitHub][edit0908].
 [ctf]: https://github.com/OWASP/wrongsecrets/blob/master/ctf-instructions.md
 [edit0908]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/09-training-education/08-wrongsecrets.md
 [wsheroku]: https://wrongsecrets.herokuapp.com/
-[issue0908]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=content&template=request.md&title=Update:%2009-training-education/08-wrongsecrets
+[issue0908]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2009-training-education/08-wrongsecrets
 [readme]: https://github.com/OWASP/wrongsecrets/blob/master/README.md
 [wrongsecrets]: https://github.com/OWASP/wrongsecrets
 [wrongsecrets-helm]: https://owasp.org/wrongsecrets-ctf-party/

@@ -48,7 +48,7 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue080204] or [edit on GitHub][edit080204].
 
 [edit080204]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/08-verification/02-tools/04-nettacker.md
-[issue080204]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=content&template=request.md&title=Update:%2008-verification/02-tools/04-nettacker
+[issue080204]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2008-verification/02-tools/04-nettacker
 [nettacker-brute]: https://github.com/OWASP/Nettacker/wiki/Modules#brute-modules
 [nettacker-install]: https://github.com/OWASP/Nettacker/wiki/Installation
 [nettacker-intro]: https://github.com/OWASP/Nettacker/wiki#introduction

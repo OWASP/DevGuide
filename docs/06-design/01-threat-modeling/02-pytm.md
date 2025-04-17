@@ -94,7 +94,7 @@ then [submit an issue][issue060102] or [edit on GitHub][edit060102].
 
 [graphviz]: https://graphviz.org/
 [graphvizdot]: https://graphviz.org/download/
-[issue060102]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-design/01-threat-modeling/02-pytm
+[issue060102]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-design/01-threat-modeling/02-pytm
 [pandoc]: https://pandoc.org/installing.html
 [plantuml]: https://plantuml.com/
 [plantumljar]: https://plantuml.com/download

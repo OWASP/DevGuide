@@ -36,7 +36,7 @@ in addition to their existing one, and it is important that support is provided 
 
 The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue1020].
 
-[issue1020]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2010-culture-process/02-security-champions/00-toc
+[issue1020]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2010-culture-process/02-security-champions/00-toc
 [sammg]: https://owaspsamm.org/model/governance/
 [sammgeg]: https://owaspsamm.org/model/governance/education-and-guidance/
 [sammgegtb]: https://owaspsamm.org/model/governance/education-and-guidance/stream-b/

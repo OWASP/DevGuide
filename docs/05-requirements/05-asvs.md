@@ -98,6 +98,6 @@ then [submit an issue][issue0505] or [edit on GitHub][edit0505].
 [asvsV14]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x22-V14-Config.md#v14-configuration
 [csasvs]: https://cheatsheetseries.owasp.org/IndexASVS.html
 [edit0505]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/05-requirements/05-asvs.md
-[issue0505]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=content&template=request.md&title=Update:%2005-requirements/05-asvs
+[issue0505]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2005-requirements/05-asvs
 [spotlight19]: https://youtu.be/3puIavsZfAk
 [srat]: https://owasp.org/www-project-securityrat/

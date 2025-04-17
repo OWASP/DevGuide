@@ -69,7 +69,7 @@ then [submit an issue][issue090101] or [edit on GitHub][edit090101].
 
 [dockerinstall]: https://docs.docker.com/engine/install/
 [edit090101]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/09-training-education/01-vulnerable-apps/01-juice-shop.md
-[issue090101]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2009-training-education/01-vulnerable-apps/01-juice-shop
+[issue090101]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2009-training-education/01-vulnerable-apps/01-juice-shop
 [juice]: https://owasp.org/www-project-juice-shop/
 [juicectf]: https://owasp.org/www-project-juice-shop/#div-ctf
 [juicedocker]: https://hub.docker.com/r/bkimminich/juice-shop

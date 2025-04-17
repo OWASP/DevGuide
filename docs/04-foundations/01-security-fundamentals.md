@@ -166,7 +166,7 @@ then [submit an issue][issue0401] or [edit on GitHub][edit0401].
 [csxxe]: https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet
 [edit0401]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/04-foundations/01-security-fundamentals.md
 [htmlliving]: https://html.spec.whatwg.org/multipage/
-[issue0401]: https://github.com/OWASP/www-project-developer-guide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-foundations/01-security-fundamentals
+[issue0401]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-foundations/01-security-fundamentals
 [nistvuln]: https://csrc.nist.gov/glossary/term/vulnerability
 [samm]: https://owaspsamm.org/about/
 [sammd]: https://owaspsamm.org/model/design/
