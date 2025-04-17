@@ -1,6 +1,6 @@
 # Contributor Covenant Code of Conduct
 
-<img src="assets/images/dg_logo_di.png" alt="DevGuide logo" height="220px"/>
+<img src="docs/assets/images/dg_logo_di.png" alt="DevGuide logo" height="220px"/>
 
 ## Our Pledge
 
