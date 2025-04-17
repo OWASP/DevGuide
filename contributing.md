@@ -1,6 +1,6 @@
-<img src="assets/images/dg_alt.png" alt="DevGuide logo" height="220px"/>
+<img src="docs assets/images/dg_alt.png" alt="DevGuide logo" height="220px"/>
 
-### Contributing
+## Contributing
 
 The Developer Guide has been updated for the modern security landscape,
 concentrating less on covering everything in one document and more on introducing a subject/project
@@ -169,6 +169,8 @@ To generate site content for deployment build the web document with:
 * `mkdocs build`
 
 ----
+
+OWASP DevGuide: _accessible security for developers_
 
 [asvs]: https://owasp.org/www-project-application-security-verification-standard/
 [conduct]: code_of_conduct.md

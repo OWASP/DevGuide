@@ -1,6 +1,6 @@
-# Contributor Covenant Code of Conduct
-
 <img src="docs/assets/images/dg_logo_di.png" alt="DevGuide logo" height="220px"/>
+
+# Contributor Covenant Code of Conduct
 
 ## Our Pledge
 
@@ -123,6 +123,10 @@ Community Impact Guidelines were inspired by [Mozilla's code of conduct enforcem
 
 See the [FAQ][faq] for answers to common questions about this code of conduct,
 and translations are available of this [contributor covenant][translate].
+
+----
+
+OWASP DevGuide: _accessible security for developers_
 
 [cofc]: https://www.contributor-covenant.org/version/2/0/code_of_conduct.html
 [diversity]: https://github.com/mozilla/diversity
