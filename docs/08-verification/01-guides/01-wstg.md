@@ -77,7 +77,7 @@ and the tests should be tailored to provide at least the minimum test coverage w
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue080101] or [edit on GitHub][edit080101].
 
-[edit080101]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/08-verification/01-guides/01-wstg.md
+[edit080101]: https://github.com/OWASP/DevGuide/blob/main/draft/08-verification/01-guides/01-wstg.md
 [issue080101]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2008-verification/01-guides/01-wstg
 [spotlight01]: https://youtu.be/bxQPePVDbQk
 [wstg]: https://owasp.org/www-project-web-security-testing-guide/

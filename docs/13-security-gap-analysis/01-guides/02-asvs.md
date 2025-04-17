@@ -64,6 +64,6 @@ then [submit an issue][issue130102] or [edit on GitHub][edit130102].
 [asvsV13]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x21-V13-API.md#v13-api-and-web-service
 [asvsV14]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x22-V14-Config.md#v14-configuration
 [csasvs]: https://cheatsheetseries.owasp.org/IndexASVS.html
-[edit130102]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/13-security-gap-analysis/01-guides/02-asvs.md
+[edit130102]: https://github.com/OWASP/DevGuide/blob/main/draft/13-security-gap-analysis/01-guides/02-asvs.md
 [issue130102]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2013-security-gap-analysis/01-guides/02-asvs
 [spotlight19]: https://youtu.be/3puIavsZfAk

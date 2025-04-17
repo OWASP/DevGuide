@@ -93,7 +93,7 @@ then [submit an issue][issue1004] or [edit on GitHub][edit1004].
 [asvsV13]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x21-V13-API.md#v13-api-and-web-service
 [asvsV14]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x22-V14-Config.md#v14-configuration
 [csasvs]: https://cheatsheetseries.owasp.org/IndexASVS.html
-[edit1004]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/10-culture-process/04-asvs.md
+[edit1004]: https://github.com/OWASP/DevGuide/blob/main/draft/10-culture-process/04-asvs.md
 [issue1004]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2010-culture-process/04-asvs
 [spotlight19]: https://youtu.be/3puIavsZfAk
 [srat]: https://owasp.org/www-project-securityrat/

@@ -44,7 +44,7 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue090104] or [edit on GitHub][edit090104].
 
 [csmas]: https://cheatsheetseries.owasp.org/cheatsheets/Mobile_Application_Security_Cheat_Sheet
-[edit090104]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/09-training-education/01-vulnerable-apps/04-security-shepherd.md
+[edit090104]: https://github.com/OWASP/DevGuide/blob/main/draft/09-training-education/01-vulnerable-apps/04-security-shepherd.md
 [issue090104]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2009-training-education/01-vulnerable-apps/04-security-shepherd
 [sec-shep]: https://owasp.org/www-project-security-shepherd/
 [sec-shep-docker]: https://github.com/OWASP/SecurityShepherd/wiki/Docker-Environment-Setup

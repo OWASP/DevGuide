@@ -58,7 +58,7 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue060105] or [edit on GitHub][edit060105].
 
 [cornucopia]: https://owasp.org/www-project-cornucopia/
-[edit060105]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/06-design/01-threat-modeling/05-linddun-go.md
+[edit060105]: https://github.com/OWASP/DevGuide/blob/main/draft/06-design/01-threat-modeling/05-linddun-go.md
 [issue060105]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2006-design/01-threat-modeling/05-linddun-go
 [linddun]: https://linddun.org/
 [linddun-go]: https://linddun.org/go/

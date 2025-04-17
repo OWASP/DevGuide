@@ -68,7 +68,7 @@ This was then revised during 2016, released in February 2017, to inform the late
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue0906] or [edit on GitHub][edit0906].
 
-[edit0906]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/09-training-education/06-mobile-top-ten.md
+[edit0906]: https://github.com/OWASP/DevGuide/blob/main/draft/09-training-education/06-mobile-top-ten.md
 [enisa]: https://www.enisa.europa.eu/
 [issue0906]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2009-training-education/06-mobile-top-ten
 [m01]: https://owasp.org/www-project-mobile-top-10/2023-risks/m1-improper-credential-usage.html

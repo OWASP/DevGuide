@@ -58,7 +58,7 @@ then [submit an issue][issue070301] or [edit on GitHub][edit070301].
 [bean]: http://beanvalidation.org/
 [csrfguard]: https://owasp.org/www-project-csrfguard/
 [cscsrf]: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet
-[edit070301]: https://github.com/OWASP/www-project-developer-guide/blob/main/draft/07-implementation/03-secure-libraries/01-esapi.md
+[edit070301]: https://github.com/OWASP/DevGuide/blob/main/draft/07-implementation/03-secure-libraries/01-esapi.md
 [esapi-docs]: https://www.javadoc.io/doc/org.owasp.esapi/esapi/latest/index.html
 [esapi-java]: https://mvnrepository.com/artifact/org.owasp.esapi/esapi
 [esapi-project]: https://owasp.org/www-project-enterprise-security-api/

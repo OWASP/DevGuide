@@ -1,4 +1,4 @@
-![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){height=180px}
+![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){: style="height:180px;float:right" }
 
 ## 11. Security gap analysis
 
