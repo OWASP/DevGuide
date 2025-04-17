@@ -1,6 +1,6 @@
 ## This repository has been migrated to [OWASP/www-project-developer-guide][owaspdevguide]
 
-OWASP has moved to a 'web first' philosphy and moving away from downloads.
+OWASP has moved to a 'web first' philosophy and moving away from downloads.
 We will still be providing PDF and ePub, but the emphasis will be on providing web page documents.
 
 The [OWASP project page][owaspdevguide] is at present the source of the OWASP Developer Guide document.

@@ -1,0 +1,44 @@
+site_name: OWASP Developer Guide
+site_description: OWASP Foundation Developer Guide project
+site_author: OWASP Developer Guide team
+site_url: https://devguide.owasp.org/
+
+copyright: Licensed under the <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International license</a>.
+
+repo_name: OWASP/DevGuide
+repo_url: https://github.com/OWASP/DevGuide
+
+theme:
+  name: material
+  language: en
+  logo: assets/images/dg_logo_solid.png
+  favicon: assets/images/favicon.png
+
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+markdown_extensions:
+  - def_list
+  - attr_list
+
+plugins:
+  - open-in-new-tab  
+
+nav:
+  - Introduction: index.md

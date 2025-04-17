@@ -1,1 +1,48 @@
-_book
+# uses allow-list, so ignore everything
+*
+
+# project files
+!*.md
+!license.txt
+!mkdocs.yaml
+!CNAME
+!docs/
+!docs/assets/
+!docs/assets/exports/
+!docs/assets/exports/*.epub
+!docs/assets/exports/*.pdf
+!docs/assets/images/
+!docs/assets/images/*.png
+!docs/assets/images/logos/
+!docs/assets/images/logos/*.png
+!docs/CNAME
+
+# allow github, workflows and templates
+!.github/
+!.github/*.yaml
+!.github/issue_template/
+!.github/issue_template/*.md
+!.github/workflows/
+!.github/workflows/*.yaml
+!.gitignore
+!.lintcheck.yaml
+!.lycheeignore
+!.markdownlint.yaml
+!.spellcheck*.yaml
+!.wordlist*.txt
+
+# release version
+!docs/release/
+!docs/release/title*.yaml
+!docs/release/0*/
+!docs/release/0*/*.md
+!docs/release/0*/0*/
+!docs/release/0*/0*/*.md
+!docs/release/0*/1*/
+!docs/release/0*/1*/*.md
+!docs/release/1*/
+!docs/release/1*/*.md
+!docs/release/1*/0*/
+!docs/release/1*/0*/*.md
+!docs/release/1*/1*/
+!docs/release/1*/1*/*.md
