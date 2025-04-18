@@ -55,7 +55,7 @@ for practical guidance on secure coding using Go.
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue070102] or [edit on GitHub][edit070102].
 
-[edit070102]: https://github.com/OWASP/DevGuide/blob/main/draft/07-implementation/01-documentation/02-go-scp.md
+[edit070102]: https://github.com/OWASP/DevGuide/blob/main/docs/07-implementation/01-documentation/02-go-scp.md
 [go-scp-download]: https://github.com/OWASP/Go-SCP/tree/master/dist
 [go-scp-project]: https://owasp.org/www-project-go-secure-coding-practices-guide/
 [issue070102]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-implementation/01-documentation/02-go-scp

@@ -47,6 +47,6 @@ then [submit an issue][issue060203] or [edit on GitHub][edit060203].
 [control3]: https://top10proactive.owasp.org/the-top-10/c3-validate-input-and-handle-exceptions/
 [csdb]: https://cheatsheetseries.owasp.org/cheatsheets/Database_Security_Cheat_Sheet
 [csquery]: https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet
-[edit060203]: https://github.com/OWASP/DevGuide/blob/main/draft/06-design/02-web-app-checklist/03-secure-database-access.md
+[edit060203]: https://github.com/OWASP/DevGuide/blob/main/docs/06-design/02-web-app-checklist/03-secure-database-access.md
 [issue060203]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-design/02-web-app-checklist/03-secure-database-access
 [proactive10]: https://top10proactive.owasp.org/

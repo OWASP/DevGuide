@@ -41,7 +41,7 @@ The OSHP also lists [various tools][oshp-tools] useful for inspection, analysis 
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue070303] or [edit on GitHub][edit070303].
 
-[edit070303]: https://github.com/OWASP/DevGuide/blob/main/draft/07-implementation/03-secure-libraries/03-secure-headers.md
+[edit070303]: https://github.com/OWASP/DevGuide/blob/main/docs/07-implementation/03-secure-libraries/03-secure-headers.md
 [issue070303]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-implementation/03-secure-libraries/03-secure-headers
 [oshp]: https://owasp.org/www-project-secure-headers/
 [oshp-libs]: https://owasp.org/www-project-secure-headers/#development-libraries

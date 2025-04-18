@@ -188,7 +188,7 @@ then [submit an issue][issue0402] or [edit on GitHub][edit0402].
 [deptrack]: https://dependencytrack.org/
 [devsecops]: https://owasp.org/www-project-devsecops-guideline/
 [defectdojo]: https://www.defectdojo.org/
-[edit0402]: https://github.com/OWASP/DevGuide/blob/main/draft/04-foundations/02-secure-development.md
+[edit0402]: https://github.com/OWASP/DevGuide/blob/main/docs/04-foundations/02-secure-development.md
 [esapi-project]: https://owasp.org/www-project-enterprise-security-api/
 [github]: https://github.com/
 [gitlab]: https://about.gitlab.com/

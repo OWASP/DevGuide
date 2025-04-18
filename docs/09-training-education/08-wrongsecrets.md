@@ -55,7 +55,7 @@ then [submit an issue][issue0908] or [edit on GitHub][edit0908].
 
 [cscloud]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Cloud_Architecture_Cheat_Sheet
 [ctf]: https://github.com/OWASP/wrongsecrets/blob/master/ctf-instructions.md
-[edit0908]: https://github.com/OWASP/DevGuide/blob/main/draft/09-training-education/08-wrongsecrets.md
+[edit0908]: https://github.com/OWASP/DevGuide/blob/main/docs/09-training-education/08-wrongsecrets.md
 [wsheroku]: https://wrongsecrets.herokuapp.com/
 [issue0908]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2009-training-education/08-wrongsecrets
 [readme]: https://github.com/OWASP/wrongsecrets/blob/master/README.md

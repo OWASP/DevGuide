@@ -63,6 +63,6 @@ How can it be addressed:
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue140104] or [edit on GitHub][edit140104].
 
-[edit140104]: https://github.com/OWASP/DevGuide/blob/main/draft/14-appendices/01-implementation-dos-donts/04-application-spoofing.md
+[edit140104]: https://github.com/OWASP/DevGuide/blob/main/docs/14-appendices/01-implementation-dos-donts/04-application-spoofing.md
 [issue140104]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%20/14-appendices/01-implementation-dos-donts/04-application-spoofing
 [urdp]: https://www.icann.org/resources/pages/help/dndr/udrp-en

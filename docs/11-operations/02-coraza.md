@@ -58,7 +58,7 @@ then [submit an issue][issue1102] or [edit on GitHub][edit1102].
 [coraza-tutorial]: https://coraza.io/docs/tutorials/quick-start/
 [coraza-wasm]: https://github.com/corazawaf/coraza-proxy-wasm
 [cscloud]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Cloud_Architecture_Cheat_Sheet
-[edit1102]: https://github.com/OWASP/DevGuide/blob/main/draft/11-operations/02-coraza.md
+[edit1102]: https://github.com/OWASP/DevGuide/blob/main/docs/11-operations/02-coraza.md
 [issue1102]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2011-operations/02-coraza
 [crs]: https://coreruleset.org/
 [modsec]: https://owasp.org/www-project-modsecurity/

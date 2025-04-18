@@ -38,7 +38,7 @@ then [submit an issue][issue060210] or [edit on GitHub][edit060210].
 [cserror]: https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet
 [csproactive-c10]: https://cheatsheetseries.owasp.org/IndexProactiveControls.html#c10-handle-all-errors-and-exceptions
 [control3]: https://top10proactive.owasp.org/the-top-10/c3-validate-input-and-handle-exceptions/
-[edit060210]: https://github.com/OWASP/DevGuide/blob/main/draft/06-design/02-web-app-checklist/10-handle-errors-exceptions.md
+[edit060210]: https://github.com/OWASP/DevGuide/blob/main/docs/06-design/02-web-app-checklist/10-handle-errors-exceptions.md
 [handle]: https://owasp.org/www-community/Improper_Error_Handling
 [issue060210]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-design/02-web-app-checklist/10-handle-errors-exceptions
 [proactive10]: https://top10proactive.owasp.org/

@@ -62,7 +62,7 @@ then [submit an issue][issue060201] or [edit on GitHub][edit060201].
 [asvs]: https://owasp.org/www-project-application-security-verification-standard/
 [csproactive-c1]: https://cheatsheetseries.owasp.org/IndexProactiveControls.html#c1-define-security-requirements
 [control4]: https://top10proactive.owasp.org/the-top-10/c4-secure-architecture/
-[edit060201]: https://github.com/OWASP/DevGuide/blob/main/draft/06-design/02-web-app-checklist/01-define-security-requirements.md
+[edit060201]: https://github.com/OWASP/DevGuide/blob/main/docs/06-design/02-web-app-checklist/01-define-security-requirements.md
 [issue060201]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-design/02-web-app-checklist/01-define-security-requirements
 [mas]: https://mas.owasp.org/
 [proactive10]: https://top10proactive.owasp.org/

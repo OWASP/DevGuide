@@ -64,7 +64,7 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue0704] or [edit on GitHub][edit0704].
 
 [cwe]: https://cwe.mitre.org/
-[edit0704]: https://github.com/OWASP/DevGuide/blob/main/draft/07-implementation/04-maswe.md
+[edit0704]: https://github.com/OWASP/DevGuide/blob/main/docs/07-implementation/04-maswe.md
 [issue0704]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2007-implementation/04-maswe
 [masproject]: https://owasp.org/www-project-mobile-app-security/
 [masc]: https://mas.owasp.org/checklists/

@@ -200,7 +200,7 @@ then [submit an issue][issue0405] or [edit on GitHub][edit0405].
 [issue0405]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-foundations/05-top-ten
 [lcnc10]: https://owasp.org/www-project-top-10-low-code-no-code-security-risks/
 [mobile10]: https://owasp.org/www-project-mobile-top-10/
-[edit0405]: https://github.com/OWASP/DevGuide/blob/main/draft/04-foundations/05-top-ten.md
+[edit0405]: https://github.com/OWASP/DevGuide/blob/main/docs/04-foundations/05-top-ten.md
 [privacy10]: https://owasp.org/www-project-top-10-privacy-risks/
 [proactive10]: https://owasp.org/www-project-proactive-controls/
 [samm]: https://owaspsamm.org/about/

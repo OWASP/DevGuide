@@ -66,7 +66,7 @@ then [submit an issue][issue0909] or [edit on GitHub][edit0909].
 
 [cornucopia]: https://owasp.org/www-project-cornucopia/
 [csmas]: https://cheatsheetseries.owasp.org/cheatsheets/Mobile_Application_Security_Cheat_Sheet
-[edit0909]: https://github.com/OWASP/DevGuide/blob/main/draft/09-training-education/09-snakes-ladders.md
+[edit0909]: https://github.com/OWASP/DevGuide/blob/main/docs/09-training-education/09-snakes-ladders.md
 [issue0909]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2009-training-education/09-snakes-ladders
 [mobile10-2014]: https://owasp.org/www-project-mobile-top-10/2014-risks/
 [mobile10controls]: https://owasp.org/www-project-mobile-top-10/#div-controls

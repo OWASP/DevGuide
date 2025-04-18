@@ -63,7 +63,7 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue03] or [edit on GitHub][edit03].
 
 [about]: https://owasp.org/about/
-[edit03]: https://github.com/OWASP/DevGuide/blob/main/draft/03-introduction.md
+[edit03]: https://github.com/OWASP/DevGuide/blob/main/docs/03-introduction.md
 [intstand]: https://owasp.org/www-project-integration-standards/
 [issue03]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2003-introduction
 [opencrechat]: https://www.opencre.org/chatbot

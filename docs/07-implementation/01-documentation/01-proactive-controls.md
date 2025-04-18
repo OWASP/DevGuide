@@ -101,7 +101,7 @@ then [submit an issue][issue070101] or [edit on GitHub][edit070101].
 [control8]: https://top10proactive.owasp.org/the-top-10/c8-help-the-browser-defend-the-user/
 [control9]: https://top10proactive.owasp.org/the-top-10/c9-security-logging-and-monitoring/
 [control10]: https://top10proactive.owasp.org/the-top-10/c10-stop-server-side-request-forgery/
-[edit070101]: https://github.com/OWASP/DevGuide/blob/main/draft/07-implementation/01-documentation/01-proactive-controls.md
+[edit070101]: https://github.com/OWASP/DevGuide/blob/main/docs/07-implementation/01-documentation/01-proactive-controls.md
 [issue070101]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-implementation/01-documentation/01-proactive-controls
 [proactive10]: https://top10proactive.owasp.org/
 [spotlight08]: https://youtu.be/HRtYDCWOSc0

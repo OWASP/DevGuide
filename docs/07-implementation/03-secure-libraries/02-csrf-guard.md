@@ -42,5 +42,5 @@ then [submit an issue][issue070302] or [edit on GitHub][edit070302].
 [csrfguard-nexus]: https://oss.sonatype.org/#nexus-search;gav~~csrfguard~~~
 [csrfguard-maven]: https://central.sonatype.com/search?q=csrfguard&smo=true
 [cscsrf]: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet
-[edit070302]: https://github.com/OWASP/DevGuide/blob/main/draft/07-implementation/03-secure-libraries/02-csrf-guard.md
+[edit070302]: https://github.com/OWASP/DevGuide/blob/main/docs/07-implementation/03-secure-libraries/02-csrf-guard.md
 [issue070302]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-implementation/03-secure-libraries/02-csrf-guard
