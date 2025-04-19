@@ -36,24 +36,24 @@ Developers should use this OWASP Developer Guide to help write applications that
 The guide has been written by the security community to help software developers write solid,
 safe and secure applications.
 Most of the contributors to this guide are also software developers as well as security engineers,
-and this helps to keep the focus developer centric.
+and this helps to keep the focus developer-centric.
 
 If you are in a hurry and want information on a specific subject then
 try the [OpenCRE chat][opencrechat] LLM for immediate answers.
 
 #### What is the Developer Guide?
 
-You can think of this guide as a cross-reference source to the many tools and documents that OWASP provide for developers.
+You can think of this guide as a cross-reference source to the many tools and documents that OWASP provides for developers.
 
-Or you can regard the purpose of this guide as answering the question:
+_Or_ you can regard the purpose of this guide as answering the question:
 “I am a developer and I need a reference guide to navigate the numerous security tools
-and security activities that I know I should be doing.
+and security activities that I know I should be doing."
 
-Or think of it as a collection of articles that introduce developers to the wide domain of application security.
+_Or_ think of it as a collection of articles that introduce developers to the wide domain of application security.
 
-Or you can regard this guide as a companion document to the OWASP [Integration Standards][intstand] project:
+_Or_ you can regard this guide as a companion document to the OWASP [Integration Standards][intstand] project:
 the Application Security Wayfinder maps out the many tools,
-projects and documents within OWASP and the Developer Guide provides some 'wordy' context.
+projects and documents within OWASP and the Developer Guide provides some 'wordy' context for this.
 
 [![AppSec Wayfinder](assets/images/owasp-wayfinder.png "OWASP Application Security Wayfinder")][intstand]
 
