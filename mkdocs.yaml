@@ -163,7 +163,7 @@ nav:
       - MAS gap analysis: 13-security-gap-analysis/01-guides/03-mas.md
     - BLT: 13-security-gap-analysis/02-blt.md
   - Appendices:
-    - Implementation Do\'s and Don\'ts:
+    - Implementation Do's and Don'ts:
       - Overview: 14-appendices/01-implementation-dos-donts/index.md
       - Container security: 14-appendices/01-implementation-dos-donts/01-container-security.md
       - Secure coding: 14-appendices/01-implementation-dos-donts/02-secure-coding.md

@@ -1,4 +1,4 @@
-<img src="docs assets/images/dg_alt.png" alt="DevGuide logo" height="220px"/>
+<img src="docs/assets/images/dg_alt.png" alt="DevGuide logo" height="220px"/>
 
 ## Contributing
 
