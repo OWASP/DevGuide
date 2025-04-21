@@ -1,17 +1,30 @@
-## This repository has been migrated to [OWASP/www-project-developer-guide][owaspdevguide]
+## OWASP Foundation Developer Guide
 
-OWASP has moved to a 'web first' philosophy and moving away from downloads.
-We will still be providing PDF and ePub, but the emphasis will be on providing web page documents.
+The Developer Guide is one of the original documents from OWASP and so has a long history.
+The original DevGuide repository has many of the [previous versions][versions]
+going back to the [very first version 1.0][original] release from 2002.
 
-The [OWASP project page][owaspdevguide] is at present the source of the OWASP Developer Guide document.
+This is the content for the Developer Guide document, the [DevGuide repository][devguide],
+the latest version of this guide is accessible as a [web document][latest].
 
-If you have forked this repo, note that [the default branch has been renamed][FAQ1] to `main`.
+The content for the OWASP Developer Guide [project pages][project-pages] is in its own [repo][project-repo].
 
-## Contributing
+### Contributing
+
+Contributions and suggestions for the Developer Guide are all welcome;
+make a start by reading the [contributing guidelines][guide] and follow the [contributing code of conduct][conduct].
+
+For other contributions to these pages please [create an issue][issues] or open a [pull request][request].
+
+The easiest way to get in contact with the development community for this documentation project
+is via the OWASP Slack [#project-developer-guide][project] project channel
+(you may need to [subscribe](https://owasp.org/slack/invite) first).
 
 [The wiki][wiki] contains more information about the project's background and purpose.
 
-## Contact
+If you have forked this repo, note that [the default branch has been renamed][FAQ1] to `main`.
+
+### Project leaders / editors
 
 The DevGuide leaders are:
 
@@ -21,6 +34,20 @@ The DevGuide leaders are:
 * [Harold Blankenship](mailto:harold.blankenship@owasp.org)
 * [Jon Gadsden](mailto:jon.gadsden@owasp.org)
 
+----
+
+OWASP DevGuide: _accessible security for developers_
+
 [FAQ1]: https://github.com/OWASP/DevGuide/wiki/FAQs#the-default-branch-has-been-renamed
-[owaspdevguide]: https://owasp.org/www-project-developer-guide/
+[conduct]: https://github.com/OWASP/DevGuide/blob/main/code_of_conduct.md
+[devguide]: https://github.com/OWASP/DevGuide
+[guide]: https://github.com/OWASP/DevGuide/blob/main/contributing.md
+[issues]: https://github.com/OWASP/DevGuide/issues/new/choose
+[latest]: https://devguide.owasp.org/
+[original]: https://github.com/OWASP/DevGuide/blob/1d24d140de3724b6f95655e53b8d0cc6689fbfd8/DevGuide1.0/OWASPBuildingSecureWebApplicationsAndWebServices-V1.0.pdf
+[project]: https://owasp.slack.com/messages/C04QN6CMNAC
+[project-pages]: https://owasp.org/www-project-developer-guide/
+[project-repo]: https://github.com/OWASP/www-project-developer-guide
+[request]: https://github.com/OWASP/DevGuide/pulls
+[versions]: https://github.com/OWASP/DevGuide/wiki#old-versions
 [wiki]: https://github.com/OWASP/DevGuide/wiki

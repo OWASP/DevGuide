@@ -16,10 +16,6 @@ Contributors can [make suggestions][issues] and provide changes via a [pull requ
 
 Feel free to discuss topics in the [project wiki][wiki] and create new discussions.
 
-Note that the [draft][draft] version provides the content for the released version of Developer Guide,
-in the ['release'][release] directory, promoted during the automated release process.
-Therefore any manual changes under the release directory are likely to be over-written.
-
 ### Ground rules
 
 * follow our [Code of Conduct](code_of_conduct.md)
@@ -96,9 +92,8 @@ The pull requests have checks applied to them:
 
 1. Link checker for any broken links; if there is an imperative for a broken link then add it to `.lycheeignore`
 2. Markdown lint that ensures the markdown is consistent and valid
-3. Spell checker; new words that are not recognized can be added to `/.wordlist.txt`
+3. Spell checker; new words that are not recognized should be added to `/.wordlist.txt`
 
-if all these checks pass then both the PDF and ePub versions of the guide are provided as github artifacts.
 
 ### Running checks locally
 
@@ -108,24 +103,6 @@ To run these checks locally before pushing a commit, run these commands from the
 1. Link checker: `lychee --max-retries 5 --exclude-path './_includes/*.html' './**/*.md'`
 2. Markdown linter: `markdownlint-cli2  **/*.md`
 3. Spell checker: `pyspelling --config .spellcheck-en.yaml` (for english)
-4. commands to set up the environment for PDF and ePub export
-
-```text
-mkdir draft/temp
-mkdir assets/images/logos/publish
-export RESOURCE_PATH="draft/assets/images:draft/assets:draft:assets/images/logos:assets/images:assets/images/logos/publish"
-```
-
-and the commands to create PDF and ePub outputs:
-
-```text
-tail -n +14 -q $(find draft -name "*[0-9]*.md" | sort) > draft/temp/draft.markdown
-sed -i "s/{: .image-right }/{height=180px}/g" draft/temp/draft.markdown
-pandoc -f markdown -o draft.pdf --resource-path="$RESOURCE_PATH" \
--fmarkdown-implicit_figures draft/title.pdf.yaml draft/temp/draft.markdown
-pandoc -f markdown -o draft.epub --resource-path="$RESOURCE_PATH" \
--fmarkdown-implicit_figures draft/title.yaml draft/temp/draft.markdown
-```
 
 Follow instructions to install the command line [lychee][lychee-install] and [pandoc][pandoc-install].
 
@@ -174,13 +151,11 @@ OWASP DevGuide: _accessible security for developers_
 
 [asvs]: https://owasp.org/www-project-application-security-verification-standard/
 [conduct]: code_of_conduct.md
-[draft]: draft
 [issues]: https://github.com/OWASP/DevGuide/issues/new/choose
 [lychee-install]: https://lychee.cli.rs/
 [media]: https://drive.google.com/drive/folders/1Ft8Ll0cgw0TIoub6aXTIJDmy0sk1RarU
 [pandoc-install]: https://pandoc.org/installing.html
 [project]: https://owasp.org/www-project-developer-guide/
-[release]: release
 [request]: https://github.com/OWASP/DevGuide/pulls
 [wiki]: https://github.com/OWASP/DevGuide/wiki
 [wstg]: https://owasp.org/www-project-web-security-testing-guide/
