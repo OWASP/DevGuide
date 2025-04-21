@@ -1,3 +1,9 @@
+<a href="https://devguide.owasp.org/"><img src="docs/assets/images/dg_logo_di.png" alt="DevGuide logo" height="180px"/></a>
+
+[![CC BY-SA 4.0 license](https://img.shields.io/github/license/owasp/DevGuide.svg)](license.txt)
+[![OWASP Lab project](https://img.shields.io/badge/owasp-lab%20project-f7b73c.svg)](https://www.owasp.org/projects)
+[![Build status](https://github.com/OWASP/DevGuide/actions/workflows/ci.yaml/badge.svg?event=push)][build]
+
 ## OWASP Foundation Developer Guide
 
 The Developer Guide is one of the original documents from OWASP and so has a long history.
@@ -22,7 +28,7 @@ is via the OWASP Slack [#project-developer-guide][project] project channel
 
 [The wiki][wiki] contains more information about the project's background and purpose.
 
-If you have forked this repo, note that [the default branch has been renamed][FAQ1] to `main`.
+If you have forked this repo, note that [the default branch has been renamed][faq1] to `main`.
 
 ### Project leaders / editors
 
@@ -38,9 +44,10 @@ The DevGuide leaders are:
 
 OWASP DevGuide: _accessible security for developers_
 
-[FAQ1]: https://github.com/OWASP/DevGuide/wiki/FAQs#the-default-branch-has-been-renamed
+[build]: https://github.com/OWASP/www-project-developer-guide/actions/workflows/ci.yaml
 [conduct]: https://github.com/OWASP/DevGuide/blob/main/code_of_conduct.md
 [devguide]: https://github.com/OWASP/DevGuide
+[faq1]: https://github.com/OWASP/DevGuide/wiki/FAQs#the-default-branch-has-been-renamed
 [guide]: https://github.com/OWASP/DevGuide/blob/main/contributing.md
 [issues]: https://github.com/OWASP/DevGuide/issues/new/choose
 [latest]: https://devguide.owasp.org/
