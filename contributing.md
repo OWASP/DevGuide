@@ -94,7 +94,6 @@ The pull requests have checks applied to them:
 2. Markdown lint that ensures the markdown is consistent and valid
 3. Spell checker; new words that are not recognized should be added to `/.wordlist.txt`
 
-
 ### Running checks locally
 
 The pipeline will apply checks to all pull-requests, and will fail on any error.

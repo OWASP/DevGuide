@@ -6,7 +6,7 @@ OWASP [CycloneDX][cyclonedx] is a full-stack Bill of Materials (BOM) standard
 that provides advanced supply chain capabilities for cyber risk reduction.
 This [project][cyclonedx-project] is one of the OWASP flagship projects.
 
-#### What is CycloneDX?
+### What is CycloneDX?
 
 CycloneDX is a widely used standard for various types of [Bills of Materials][cyclonedx-spec].
 It provides an organization's [supply chain][cschain] with software security risk reduction.
