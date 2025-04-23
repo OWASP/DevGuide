@@ -1,4 +1,4 @@
-![WrongSecrets logo](../assets/images/logos/wrongsecrets.png "OWASP WrongSecrets"){: style="height:180px;float:right" }
+![WrongSecrets logo](../assets/images/logos/wrongsecrets.png "OWASP WrongSecrets"){ align=right height=180 }
 
 ### 7.8 WrongSecrets
 
@@ -32,20 +32,24 @@ For others, you would need knowledge of [cloud security][cscloud] or reverse eng
 If you, your team or your organization want to learn about secrets management and potential pitfalls,
 you can do so with WrongSecrets' challenges.
 
-Alternatively, you can use WrongSecrets as a secret detector testbed/benchmark.
+Alternatively you can use WrongSecrets as a testbed/benchmark for testing secret detector tools;
+the tool _should_ be able to detect the secrets wrongly managed in the WrongSecrets applications.
 
 #### How to use it
+
+The demo is availble on [Heroku][wsheroku].
 
 You can set WrongSecrets up in standalone or in capture the flag (CTF) mode on Docker, Kubernetes, AWS, GCP or Azure.
 
 Set-up guides for the standalone version are available in the [project README][readme].
 
-For the CTF, the project also provides [set-up guides][ctf] and a [Helm chart][wrongsecrets-helm].
+For the setting up a CTF project, WrongSecrets provides the [set-up guides][ctf]
+and an example [Helm chart][wrongsecrets-helm].
 
 #### References
 
 * OWASP [WrongSecrets][wrongsecrets-project]
-* [Secure_Cloud_Architecture][cscloud] cheat sheet
+* [Secure Cloud Architecture][cscloud] cheat sheet
 * [WrongSecrets demo][wsheroku]
 
 ---

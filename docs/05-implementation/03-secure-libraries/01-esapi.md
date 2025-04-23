@@ -1,4 +1,4 @@
-![ESAPI logo](../../assets/images/logos/esapi.png "OWASP ESAPI"){: style="height:180px;float:right" }
+![ESAPI logo](../../assets/images/logos/esapi.png "OWASP ESAPI"){ align=right height=180 }
 
 ### 5.3.1 ESAPI
 

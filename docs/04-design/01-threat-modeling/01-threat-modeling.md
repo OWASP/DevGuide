@@ -6,7 +6,7 @@ Threat modeling is part of the [Threat Assessment][sammdta] security practice in
 Much of the material in this section is drawn from the OWASP [Threat Model project][tmproject],
 and the philosophy of this section tries to follow the [Threat Modeling Manifesto][tmmanifesto].
 
-![TMM logo](../../assets/images/logos/tmmanifesto.png "OWASP TM Manifesto"){: height="60px" }
+![TMM logo](../../assets/images/logos/tmmanifesto.png "OWASP TM Manifesto"){ height=60 }
 
 #### Overview
 

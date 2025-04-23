@@ -1,4 +1,4 @@
-![Cheat sheets logo](../../assets/images/logos/cheatsheets.png "OWASP Cheat Sheets"){: style="height:180px;float:right" }
+![Cheat sheets logo](../../assets/images/logos/cheatsheets.png "OWASP Cheat Sheets"){ align=right height=180 }
 
 ### 5.1.3 Cheat Sheet Series
 

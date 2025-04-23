@@ -1,4 +1,4 @@
-![Nettacker logo](../../assets/images/logos/nettacker.png "OWASP Nettacker"){: style="height:180px;float:right" }
+![Nettacker logo](../../assets/images/logos/nettacker.png "OWASP Nettacker"){ align=right height=180 }
 
 ### 6.2.4 Nettacker
 

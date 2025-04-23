@@ -1,4 +1,4 @@
-![CRS logo](../assets/images/logos/crs.png "OWASP CRS"){: style="height:180px;float:right" }
+![CRS logo](../assets/images/logos/crs.png "OWASP CRS"){ align=right height=180 }
 
 ### 9.4 OWASP CRS
 

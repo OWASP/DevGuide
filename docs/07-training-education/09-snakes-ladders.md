@@ -1,4 +1,4 @@
-![Snakes & Ladders logo](../assets/images/logos/snakes_ladders.png "OWASP Snakes & Ladders"){: style="height:180px;float:right" }
+![Snakes & Ladders logo](../assets/images/logos/snakes_ladders.png "OWASP Snakes & Ladders"){ align=right height=180 }
 
 ### 7.9 OWASP Snakes and Ladders
 

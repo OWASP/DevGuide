@@ -1,4 +1,4 @@
-![SAMM logo](../assets/images/logos/samm.png "OWASP SAMM"){: style="height:26px;float:right" }
+![SAMM logo](../assets/images/logos/samm.png "OWASP SAMM"){ align=right height=26 }
 
 ### 8.3 SAMM
 

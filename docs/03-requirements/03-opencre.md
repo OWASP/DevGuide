@@ -1,4 +1,4 @@
-![OpenCRE logo](../assets/images/logos/opencre.png "OWASP OpenCRE"){: height="180px" }
+![OpenCRE logo](../assets/images/logos/opencre.png "OWASP OpenCRE"){ height=180 }
 
 ### 3.3 OpenCRE
 

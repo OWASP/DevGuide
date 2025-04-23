@@ -1,4 +1,4 @@
-![Coraza logo](../assets/images/logos/coraza.png "OWASP Coraza"){: height="160px" }
+![Coraza logo](../assets/images/logos/coraza.png "OWASP Coraza"){ height=160 }
 
 ### 9.2 Coraza WAF
 

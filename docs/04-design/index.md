@@ -1,4 +1,4 @@
-![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){: style="height:180px;float:right" }
+![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right height=180 }
 
 ## 4. Design
 

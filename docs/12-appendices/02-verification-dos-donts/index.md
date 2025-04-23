@@ -1,4 +1,4 @@
-![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){: style="height:180px;float:right" }
+![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right height=180 }
 
 ### 12.2 Verification Do's and Don'ts
 

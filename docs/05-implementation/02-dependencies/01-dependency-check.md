@@ -1,4 +1,4 @@
-![DepCheck logo](../../assets/images/logos/depcheck.png "OWASP Dependency-Check"){: height="150px" }
+![DepCheck logo](../../assets/images/logos/depcheck.png "OWASP Dependency-Check"){ height=150 }
 
 ### 5.2.1 Dependency-Check
 

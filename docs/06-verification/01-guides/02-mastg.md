@@ -1,4 +1,4 @@
-![MAS logo](../../assets/images/logos/mas.png "OWASP MAS"){: style="height:180px;float:right" }
+![MAS logo](../../assets/images/logos/mas.png "OWASP MAS"){ align=right height=180 }
 
 ### 6.1.2 MASTG
 

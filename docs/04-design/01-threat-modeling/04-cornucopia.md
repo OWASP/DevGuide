@@ -1,4 +1,4 @@
-![Cornucopia logo](../../assets/images/logos/cornucopia.png "OWASP Cornucopia"){: style="height:180px;float:right" }
+![Cornucopia logo](../../assets/images/logos/cornucopia.png "OWASP Cornucopia"){ align=right height=180 }
 
 ### 4.1.4 Cornucopia
 

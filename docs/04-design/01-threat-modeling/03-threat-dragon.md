@@ -1,4 +1,4 @@
-![Threat dragon logo](../../assets/images/logos/threat_dragon.png "OWASP Threat Dragon"){: style="height:180px;float:right" }
+![Threat dragon logo](../../assets/images/logos/threat_dragon.png "OWASP Threat Dragon"){ align=right height=180 }
 
 ### 4.1.3 Threat Dragon
 

@@ -5,7 +5,7 @@ This section aims to provide an introduction to fundamental principles that any 
 
 #### Software Assurance Maturity Model
 
-![SAMM logo](../assets/images/logos/samm.png "OWASP SAMM"){: style="height:26px;float:right" }
+![SAMM logo](../assets/images/logos/samm.png "OWASP SAMM"){ align=right height=26 }
 
 The Software Assurance Maturity Model ([SAMM][samm]) provides context for the scope of software security
 and the foundations of good security practice:

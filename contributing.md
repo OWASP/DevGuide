@@ -1,4 +1,4 @@
-<img src="docs/assets/images/dg_alt.png" alt="DevGuide logo" height="220px"/>
+<a href="https://devguide.owasp.org/"><img src="docs/assets/images/dg_alt.png" alt="DevGuide logo" height="220px"/></a>
 
 ## Contributing
 

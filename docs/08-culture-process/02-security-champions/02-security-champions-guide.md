@@ -1,4 +1,4 @@
-![Guide logo](../../assets/images/logos/secchampsguide.png "Security Champions Guide"){: style="height:180px;float:right" }
+![Guide logo](../../assets/images/logos/secchampsguide.png "Security Champions Guide"){ align=right height=180 }
 
 ### 8.2.2 Security Champions Guide
 
