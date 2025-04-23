@@ -43,7 +43,7 @@ plugins:
       output_path: OWASP_Developer_Guide.pdf
       cover_title: Developer Guide
       cover_subtitle: A Guide to Building Secure Web Applications and Web Services
-      cover_logo: assets/logos/dg_logo.png
+      cover_logo: docs/assets/logos/dg_logo.png
       author: Open Worldwide Application Security Project (OWASP)
       copyright: Creative Commons Attribution ShareAlike 4.0 International (CC BY-SA 4.0)
 
