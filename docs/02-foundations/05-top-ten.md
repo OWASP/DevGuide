@@ -1,4 +1,4 @@
-![Top 10 logo](../assets/images/logos/top10.png "OWASP Top 10"){ align=right height=180 }
+![Top 10 logo](../assets/images/logos/top10.png "OWASP Top 10"){ align=right width=180 }
 
 ### 2.5 OWASP Top Ten
 

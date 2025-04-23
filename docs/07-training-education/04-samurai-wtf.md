@@ -1,4 +1,4 @@
-![SamuraiWTF logo](../assets/images/logos/samuraiwtf.png "OWASP DefectDojo"){ height=160 }
+![SamuraiWTF logo](../assets/images/logos/samuraiwtf.png "OWASP Samuri WTF"){ align=right width=250 }
 
 ### 7.4 SamuraiWTF
 
@@ -49,7 +49,7 @@ Getting started with SamuraiWTF is described in the [github README][samuraiwtf-d
 Run the Samurai Web Training Framework and login as the super-user 'samurai'.
 From a command prompt run 'katana' to start configuring SamuraiWTF for your training purposes, for example 'katana list'.
 
-![SamuraiWTF logo](../assets/images/logos/samurai_wtf.png "OWASP SamuraiWTF"){ align=right height=180 }
+![SamuraiWTF logo](../assets/images/logos/samurai_wtf.png "OWASP SamuraiWTF"){ align=right width=180 }
 
 #### References
 

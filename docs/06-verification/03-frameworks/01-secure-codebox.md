@@ -1,4 +1,4 @@
-![SecureCodeBox logo](../../assets/images/logos/securecodebox.png "OWASP SecureCodeBox"){ height=180 }
+![SecureCodeBox logo](../../assets/images/logos/securecodebox.png "OWASP SecureCodeBox"){ align=right width=250 }
 
 #### 6.3.1 secureCodeBox
 

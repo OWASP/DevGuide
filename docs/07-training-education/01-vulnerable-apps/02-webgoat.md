@@ -1,4 +1,4 @@
-![WebGoat logo](../../assets/images/logos/webgoat.png "OWASP WebGoat"){ align=right height=180 }
+![WebGoat logo](../../assets/images/logos/webgoat.png "OWASP WebGoat"){ align=right width=180 }
 
 ### 7.1.2 WebGoat
 
@@ -60,7 +60,7 @@ The browser should now be displaying the WebGoat lessons, such as 'Hijack a sess
 
 #### How to use WebWolf
 
-![WebWolf logo](../../assets/images/logos/webwolf.png "OWASP WebWolf"){ align=right height=180 }
+![WebWolf logo](../../assets/images/logos/webwolf.png "OWASP WebWolf"){ align=right width=180 }
 
 WebWolf is provided alongside both the WebGoat docker images and the WebGoat JAR file.
 WebWolf is accessed using port 9090 on the Docker container,

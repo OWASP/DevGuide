@@ -1,4 +1,4 @@
-[Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right height=180 }
+[Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right width=180 }
 
 ## 8. Culture building and Process maturing
 

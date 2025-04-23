@@ -1,4 +1,4 @@
-![WrongSecrets logo](../assets/images/logos/wrongsecrets.png "OWASP WrongSecrets"){ align=right height=180 }
+![WrongSecrets logo](../assets/images/logos/wrongsecrets.png "OWASP WrongSecrets"){ align=right width=180 }
 
 ### 7.8 WrongSecrets
 

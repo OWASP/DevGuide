@@ -1,4 +1,4 @@
-![Juice Shop logo](../../assets/images/logos/juiceshop.png "OWASP Juice Shop"){ align=right height=180 }
+![Juice Shop logo](../../assets/images/logos/juiceshop.png "OWASP Juice Shop"){ align=right width=180 }
 
 ### 7.1.1 Juice Shop
 

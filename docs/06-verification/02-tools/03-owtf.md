@@ -1,4 +1,4 @@
-![OWTF logo](../../assets/images/logos/owtf.png "OWASP OWTF"){ align=right height=180 }
+![OWTF logo](../../assets/images/logos/owtf.png "OWASP OWTF"){ align=right width=180 }
 
 ### 6.2.3 OWTF
 

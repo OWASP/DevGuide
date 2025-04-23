@@ -1,4 +1,4 @@
-![Secure Headers logo](../../assets/images/logos/secure_headers.png "OWASP Secure Headers"){ align=right height=180 }
+![Secure Headers logo](../../assets/images/logos/secure_headers.png "OWASP Secure Headers"){ align=right width=180 }
 
 ### 5.3.3 OSHP
 

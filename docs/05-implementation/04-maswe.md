@@ -1,4 +1,4 @@
-![MAS checklist logo](../assets/images/logos/mas.png "OWASP MASWE"){ align=right height=180 }
+![MAS checklist logo](../assets/images/logos/mas.png "OWASP MASWE"){ align=right width=180 }
 
 ### 5.4 MASWE
 

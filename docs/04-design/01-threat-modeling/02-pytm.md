@@ -1,4 +1,4 @@
-![pytm logo](../../assets/images/logos/pytm.png "OWASP pytm"){ align=right height=180 }
+![pytm logo](../../assets/images/logos/pytm.png "OWASP pytm"){ align=right width=180 }
 
 ### 4.1.2 pytm
 

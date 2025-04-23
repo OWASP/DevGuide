@@ -22,7 +22,7 @@ These phases are revisited in a cyclic manner throughout the lifetime of the app
 A notional Software Development LifeCycle (SDLC) is shown below, in practice there may be more or less phases
 according to the processes adopted by the organization.
 
-![SDLC Lifecycle](../assets/images/sdlc_diag.png "notional SDLC lifecycle"){ align=right height=180 }
+![SDLC Lifecycle](../assets/images/sdlc_diag.png "notional SDLC lifecycle"){ align=right width=180 }
 
 With the increasing number and sophistication of exploits against almost every application or business system,
 most companies have adopted a secure Software Development LifeCycle (SDLC).

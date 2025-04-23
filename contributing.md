@@ -1,4 +1,4 @@
-<a href="https://devguide.owasp.org/"><img src="docs/assets/images/dg_alt.png" alt="DevGuide logo" height="220px"/></a>
+<a href="https://devguide.owasp.org/"><img src="docs/assets/images/dg_alt.png" alt="DevGuide logo" height="180px"/></a>
 
 ## Contributing
 
@@ -84,7 +84,7 @@ the Developer Guide should strive to be a ' TL;DR ' for the project running to o
 ### Media kit
 
 The OWASP projects have [media kits][media] that contain biographies of the project leaders and other project media.
-This can be used for images and marketing material.
+This can be used for logos and marketing material.
 
 ### Pull requests
 
@@ -101,7 +101,7 @@ To run these checks locally before pushing a commit, run these commands from the
 
 1. Link checker: `lychee --max-retries 5 --exclude-path './_includes/*.html' './**/*.md'`
 2. Markdown linter: `markdownlint-cli2  **/*.md`
-3. Spell checker: `pyspelling --config .spellcheck-en.yaml` (for english)
+3. Spell checker: `pyspelling --config .spellcheck-en.yaml` (for English language version)
 
 Follow instructions to install the command line [lychee][lychee-install] and [pandoc][pandoc-install].
 
@@ -132,17 +132,24 @@ To generate site content for deployment build the web document with:
 
 On Linux or MacOS install the packages using python's pip:
 
-* `pip install mkdocs-open-in-new-tab`
-* `pip install mkdocs-material`
-* `pip install mkdocs`
+```text
+pip install mkdocs
+pip install mkdocs-material
+pip install mkdocs-open-in-new-tab
+pip install mkdocs-with-pdf
+```
 
 Run the docs server and observe the document at `http://127.0.0.1:8000/` :
 
 * `mkdocs serve`
 
-To generate site content for deployment build the web document with:
+Any changes to the markdown files are detected by the server and the site will rebuild.
+
+To generate site content build the web document with:
 
 * `mkdocs build`
+
+This will also create the PDF export at `site/OWASP_Developer_Guide.pdf`.
 
 ----
 

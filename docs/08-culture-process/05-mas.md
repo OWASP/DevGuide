@@ -1,4 +1,4 @@
-![MAS logo](../assets/images/logos/mas.png "OWASP MAS"){ align=right height=180 }
+![MAS logo](../assets/images/logos/mas.png "OWASP MAS"){ align=right width=180 }
 
 ### 8.5 MAS process
 
