@@ -37,7 +37,7 @@ the tool _should_ be able to detect the secrets wrongly managed in the WrongSecr
 
 #### How to use it
 
-The demo is availble on [Heroku][wsheroku].
+The demo is available on [Heroku][wsheroku].
 
 You can set WrongSecrets up in standalone or in capture the flag (CTF) mode on Docker, Kubernetes, AWS, GCP or Azure.
 
