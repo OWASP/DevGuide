@@ -1,6 +1,4 @@
-![SamuraiWTF logo](../assets/images/logos/samuraiwtf.png "OWASP DefectDojo"){ height=160 }
-
-### 7.4 SamuraiWTF
+![SamuraiWTF logo](../assets/images/logos/samuraiwtf.png "OWASP Samuri WTF"){ align=right width=250 }
 
 The OWASP [SamuraiWTF][samurai-wtf] (Web Training and Testing Framework) is a linux desktop distribution
 that is intended for application security training.
@@ -26,6 +24,8 @@ This allows instructors to set up a classroom lab, for example, that can be dist
 
 #### Why use it?
 
+![SamuraiWTF logo](../assets/images/logos/samurai_wtf.png "OWASP SamuraiWTF"){ align=right width=180 }
+
 SamuraiWTF is easy to use and comes as a virtual machine, which makes it ideal in a teaching environment
 or as an attack tool targeted specifically against web applications.
 The teaching environment can be tailored for a particular set of lessons using the command line tool 'katana'.
@@ -48,8 +48,6 @@ Getting started with SamuraiWTF is described in the [github README][samuraiwtf-d
 
 Run the Samurai Web Training Framework and login as the super-user 'samurai'.
 From a command prompt run 'katana' to start configuring SamuraiWTF for your training purposes, for example 'katana list'.
-
-![SamuraiWTF logo](../assets/images/logos/samurai_wtf.png "OWASP SamuraiWTF"){ align=right height=180 }
 
 #### References
 

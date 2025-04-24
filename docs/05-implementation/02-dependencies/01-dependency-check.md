@@ -1,6 +1,4 @@
-![DepCheck logo](../../assets/images/logos/depcheck.png "OWASP Dependency-Check"){ height=150 }
-
-### 5.2.1 Dependency-Check
+![DepCheck logo](../../assets/images/logos/depcheck.png "OWASP Dependency-Check"){ width=250 }
 
 OWASP [Dependency-Check][depcheck] is a tool that provides Software Composition Analysis (SCA) from the command line.
 It identifies the third party libraries in a web application project

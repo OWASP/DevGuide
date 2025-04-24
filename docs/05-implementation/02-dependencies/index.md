@@ -1,6 +1,4 @@
-![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right height=180 }
-
-### 5.2 Dependencies
+![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right width=180 }
 
 Management of software dependencies is described by the SAMM [Software Dependencies][sammisbsd] activity,
 which in turn is part of the SAMM [Secure Build][sammisb] security practice

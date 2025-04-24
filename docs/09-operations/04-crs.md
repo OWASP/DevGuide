@@ -1,6 +1,4 @@
-![CRS logo](../assets/images/logos/crs.png "OWASP CRS"){ align=right height=180 }
-
-### 9.4 OWASP CRS
+![CRS logo](../assets/images/logos/crs.png "OWASP CRS"){ align=right width=180 }
 
 The [OWASP CRS][crs-project] project, formerly known as Core Rule Set, is a set of generic attack detection rules
 for use with [ModSecurity][modsec] compatible web application firewalls such as [OWASP Coraza][coraza].

@@ -1,5 +1,3 @@
-### 8.2.3 Security Champions Playbook
-
 The [Security Champions Playbook][sec-champs] is a project that describes the process of establishing
 a Security Champions program within an organization.
 

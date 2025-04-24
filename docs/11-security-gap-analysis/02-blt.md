@@ -1,5 +1,3 @@
-### 11.2 BLT
-
 The OWASP [Bug Logging Tool][blt] (BLT) is a community database of bugs found in an organization's web site or application.
 BLT is an OWASP Production tool project and has its own [bug recording site][bltsite].
 

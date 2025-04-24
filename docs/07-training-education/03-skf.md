@@ -1,5 +1,3 @@
-### 7.3 SKF education
-
 The [Security Knowledge Framework][skf] (SKF) is an expert system application that uses various open source projects
 to support development teams and security architects in building secure applications.
 The Security Knowledge Framework uses the OWASP [Application Security Verification Standard][asvs] (ASVS) with code examples

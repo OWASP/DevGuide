@@ -1,6 +1,4 @@
-![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right height=180 }
-
-## 4.1 Threat modeling
+![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right width=180 }
 
 Referring to the [Threat Modeling Cheat Sheet][cstm],
 threat modeling is a structured approach to identifying and prioritizing potential threats to a system.

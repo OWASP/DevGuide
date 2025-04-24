@@ -4,8 +4,6 @@ application involves human intervention to identify security flaws which might s
 business logic errors, race condition checks, and certain zero-day vulnerabilities can only be identified using manual
 assessments.
 
-### 6.2.1 DAST tools
-
 DAST tools are programs which communicates with a web application through the web front-end in order to identify potential
 security vulnerabilities in the web application and architectural weaknesses. It performs a black-box test. Unlike static
 application security testing tools, DAST tools do not have access to the source code and therefore detect vulnerabilities

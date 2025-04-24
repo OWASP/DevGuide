@@ -1,6 +1,4 @@
-![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right height=180 }
-
-## 2. Foundations
+![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right width=180 }
 
 There are various foundational concepts and terminology that are commonly used in software security.
 Although many of these concepts are complex to implement and are based on heavy-duty theory,

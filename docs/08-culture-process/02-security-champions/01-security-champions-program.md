@@ -1,5 +1,3 @@
-### 8.2.1 Security champions program
-
 A Security Champion program is a commonly used way of helping development teams successfully run a development lifecycle
 that is secure, and this is achieved by selecting members of teams to become Security Champions.
 The role of Security Champion is described by the OWASP Software Assurance Maturity Model [(SAMM)][sammgegoc]

@@ -1,5 +1,3 @@
-### 7.1.3 PyGoat
-
 The OWASP [PyGoat project][pygoat] is an intentionally insecure web application,
 and is written in python using the Django framework.
 PyGoat is used to practice attacking a python-based web application in an isolated and secure environment

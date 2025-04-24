@@ -1,5 +1,3 @@
-### 4.2.3 Checklist: Secure Database Access
-
 Ensure that access to all data stores is secure, including both relational databases and NoSQL databases.
 
 Refer to proactive control [C3: Validate all Input & Handle Exceptions][control3] and its [cheatsheets][csproactive-c3]

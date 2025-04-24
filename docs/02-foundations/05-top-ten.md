@@ -1,6 +1,4 @@
-![Top 10 logo](../assets/images/logos/top10.png "OWASP Top 10"){ align=right height=180 }
-
-### 2.5 OWASP Top Ten
+![Top 10 logo](../assets/images/logos/top10.png "OWASP Top 10"){ align=right width=180 }
 
 The OWASP Top Ten is a very well known list of web application security risks,
 and is included by the OWASP Software Assurance Maturity Model [(SAMM)][samm]

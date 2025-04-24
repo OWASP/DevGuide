@@ -1,5 +1,3 @@
-### 3.4 SecurityRAT
-
 The [OWASP SecurityRAT][srat] (Requirement Automation Tool) is used to generate and manage security requirements
 using information from the [OWASP ASVS][asvs] project.
 It also provides an automated approach to requirements management

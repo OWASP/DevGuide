@@ -1,5 +1,3 @@
-### 12.1.8 Memory Management
-
 Here is a collection of Do's and Don'ts when it comes to memory management, gathered from practical experiences.
 
 * Check that the buffer is as large as specified

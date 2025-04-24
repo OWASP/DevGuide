@@ -1,5 +1,3 @@
-### 5.3.2 CSRFGuard
-
 OWASP [CSRFGuard][csrfguard] is a security control that helps protect Java applications
 against [Cross-Site Request Forgery][cscsrf] (CSRF) attacks.
 

@@ -1,6 +1,4 @@
-![SAMM logo](../../assets/images/logos/samm.png "OWASP SAMM"){ align=right height=26 }
-
-### 11.1.1 SAMM gap analysis
+![SAMM logo](../../assets/images/logos/samm.png "OWASP SAMM"){ align=right width=250 }
 
 The [Software Assurance Maturity Model][samm] (SAMM) project provides an effective and measurable way for
 an organization to analyze their secure development lifecycle, and identify any gaps or improvements.

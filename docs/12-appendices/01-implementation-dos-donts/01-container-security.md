@@ -1,5 +1,3 @@
-### 12.1.1 Container security
-
 This is a collection of Do's and Don'ts when it comes to container security, gathered from practical experiences.
 Some of these are language specific and others have more general applicability.
 

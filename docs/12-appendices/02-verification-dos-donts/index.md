@@ -1,6 +1,4 @@
-![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right height=180 }
-
-### 12.2 Verification Do's and Don'ts
+![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right width=180 }
 
 [Verification][sammv] is one of the business functions described by the [OWASP SAMM][samm].
 

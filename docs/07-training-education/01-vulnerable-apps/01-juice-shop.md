@@ -1,6 +1,4 @@
-![Juice Shop logo](../../assets/images/logos/juiceshop.png "OWASP Juice Shop"){ align=right height=180 }
-
-### 7.1.1 Juice Shop
+![Juice Shop logo](../../assets/images/logos/juiceshop.png "OWASP Juice Shop"){ align=right width=180 }
 
 The OWASP flagship project [Juice Shop][juice] is a deliberately insecure web application.
 Juice Shop encompasses vulnerabilities from the entire OWASP Top Ten

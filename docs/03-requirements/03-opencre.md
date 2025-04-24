@@ -1,6 +1,4 @@
-![OpenCRE logo](../assets/images/logos/opencre.png "OWASP OpenCRE"){ height=180 }
-
-### 3.3 OpenCRE
+![OpenCRE logo](../assets/images/logos/opencre.png "OWASP OpenCRE"){ width=300 }
 
 The [Open Common Requirement Enumeration][opencre] (OpenCRE) is a catalog of security requirements:
 enumerating security topics and providing links to various standards, cheat sheets and guides.

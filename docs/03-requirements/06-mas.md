@@ -1,6 +1,4 @@
-![MAS logo](../assets/images/logos/mas.png "OWASP MAS"){ align=right height=180 }
-
-### 3.6 MAS requirements
+![MAS logo](../assets/images/logos/mas.png "OWASP MAS"){ align=right width=180 }
 
 The OWASP [Mobile Application Security][masproject] (MAS) flagship project provides
 industry standards for mobile application security.

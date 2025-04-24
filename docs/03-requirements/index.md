@@ -1,6 +1,4 @@
-![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right height=180 }
-
-## 3. Requirements
+![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right width=180 }
 
 Security requirements are statements of
 security functionality that ensure the different security properties of a software application are being satisfied.

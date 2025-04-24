@@ -1,6 +1,4 @@
-![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right height=180 }
-
-### 8.2 Security Champions
+![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right width=180 }
 
 A 'Security Champion' is a member of a software development team who is
 the liaison between Information Security and developers.

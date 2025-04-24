@@ -1,5 +1,3 @@
-### 4.1.5 LINDDUN GO
-
 LINNDUN GO is a card game used to help derive privacy requirements during the software development life cycle.
 The LINNDUN GO card set can be [downloaded][linddun-go-cards] as a PDF and then printed out.
 

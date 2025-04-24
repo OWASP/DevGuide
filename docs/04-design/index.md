@@ -1,6 +1,5 @@
-![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right height=180 }
 
-## 4. Design
+![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right width=180 }
 
 Referring to the [Secure Product Design Cheat Sheet][spdcs], the purpose of secure architecture and design is to ensure
 that all products meet or exceed the security requirements laid down by the organization,

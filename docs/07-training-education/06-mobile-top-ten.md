@@ -1,5 +1,3 @@
-### 7.6 Mobile Top 10
-
 The OWASP [Mobile Top 10][mobile10] is a list of the most prevalent vulnerabilities found in mobile applications.
 In addition to the list of risks it also includes a list of security controls used to counter these vulnerabilities.
 

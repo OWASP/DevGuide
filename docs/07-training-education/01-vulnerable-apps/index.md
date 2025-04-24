@@ -1,6 +1,4 @@
-![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right height=180 }
-
-### 7.1 Vulnerable Applications
+![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right width=180 }
 
 Vulnerable applications are useful for the Training and Education activities
 described in the SAMM [Training and Awareness][sammgegta] section,

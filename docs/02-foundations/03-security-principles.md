@@ -1,5 +1,3 @@
-### 2.3 Principles of security
-
 This section is a very brief introduction to some concepts used within the software security domain,
 as these may not be familiar to many application developers.
 The OWASP [Cheat Sheet Series][csproject] provides more in depth explanations for these security principles,

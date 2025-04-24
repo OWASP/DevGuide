@@ -1,5 +1,3 @@
-### 3.2 Risk profile
-
 This section discusses the Application Risk Profile,
 an activity in the OWASP Software Assurance Maturity Model ([SAMM][samm]).
 The risk profile activity is part of the Threat Assessment security practice in the Design business function.

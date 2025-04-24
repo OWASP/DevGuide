@@ -1,6 +1,4 @@
-![pytm logo](../../assets/images/logos/pytm.png "OWASP pytm"){ align=right height=180 }
-
-### 4.1.2 pytm
+![pytm logo](../../assets/images/logos/pytm.png "OWASP pytm"){ align=right width=180 }
 
 The OWASP [pytm (Pythonic Threat Modeling)][pytmproject] project is a framework for threat modeling and its automation.
 The goal of pytm is to shift threat modeling to the left, making threat modeling more automated and developer-centric.
@@ -101,7 +99,7 @@ then [submit an issue][issue060102] or [edit on GitHub][edit060102].
 [edit060102]: https://github.com/OWASP/DevGuide/blob/main/docs/04-design/01-threat-modeling/02-pytm.md
 [pytmrepo]: https://github.com/OWASP/pytm/
 [pytmproject]: https://owasp.org/www-project-pytm/
-[pytmexample]:https://github.com/OWASP/pytm/blob/master/tm.py
-[pytmreleases]:https://github.com/OWASP/pytm/releases
+[pytmexample]: https://github.com/OWASP/pytm/blob/master/tm.py
+[pytmreleases]: https://github.com/OWASP/pytm/releases
 [spotlight06]: https://youtu.be/oTqkPaEbTnE
 [TMchap4]: https://www.oreilly.com/library/view/threat-modeling/9781492056546/ch04.html

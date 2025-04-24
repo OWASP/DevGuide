@@ -1,7 +1,7 @@
 ## Security Policy
 
 This project is built on markdown which is used to create binary files,
-such as `.pdf` and `.epub,` and the site itself.
+such as `.pdf` and the site itself.
 It is not impossible that a malicious actor could somehow embed malware
 in the markdown or subvert the document creation process.
 If you find anything suspicious in either the markdown or pipeline scripts

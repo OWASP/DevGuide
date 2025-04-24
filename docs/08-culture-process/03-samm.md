@@ -1,6 +1,4 @@
-![SAMM logo](../assets/images/logos/samm.png "OWASP SAMM"){ align=right height=26 }
-
-### 8.3 SAMM
+![SAMM logo](../assets/images/logos/samm.png "OWASP SAMM"){ align=right width=250 }
 
 The [Software Assurance Maturity Model][samm] (SAMM) project provides an effective and measurable way for
 an organization to analyze and improve their secure development lifecycle processes.

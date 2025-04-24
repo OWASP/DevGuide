@@ -1,6 +1,4 @@
-![SecureCodeBox logo](../../assets/images/logos/securecodebox.png "OWASP SecureCodeBox"){ height=180 }
-
-#### 6.3.1 secureCodeBox
+![SecureCodeBox logo](../../assets/images/logos/securecodebox.png "OWASP SecureCodeBox"){ align=right width=250 }
 
 OWASP [secureCodeBox][codebox] is a kubernetes based modularized toolchain
 that provides continuous security scans of an organizations' projects and web applications.

@@ -1,5 +1,3 @@
-### 12.1.4 Application Spoofing
-
 Here is a collection of Do's and Don'ts when it comes to application spoofing, gathered from practical experiences.
 Some of these are language specific and others have more general applicability.
 

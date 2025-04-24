@@ -1,5 +1,3 @@
-### 4.2.8 Checklist: Protect Data Everywhere
-
 Sensitive data such as passwords, credit card numbers, health records, personal information and business secrets
 require extra protection, particularly if that data falls under privacy laws (EU General Data Protection Regulation GDPR),
 financial data protection rules such as PCI Data Security Standard (PCI DSS) or other regulations.

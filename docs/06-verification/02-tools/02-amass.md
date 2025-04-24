@@ -1,5 +1,3 @@
-### 6.2.2 Amass
-
 The OWASP Amass is a tool that provides  attack surface management for an organization's web sites and applications.
 It used during penetration testing for network mapping of attack surfaces
 and external asset discovery by integrating various existing security tools.

@@ -1,6 +1,4 @@
-![Threat dragon logo](../../assets/images/logos/threat_dragon.png "OWASP Threat Dragon"){ align=right height=180 }
-
-### 4.1.3 Threat Dragon
+![Threat dragon logo](../../assets/images/logos/threat_dragon.png "OWASP Threat Dragon"){ align=right width=180 }
 
 The OWASP [Threat Dragon][tdtm] project provides a diagrammatic tool for threat modeling
 applications, APIs and software systems.

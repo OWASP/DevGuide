@@ -1,5 +1,3 @@
-### 9.1 DevSecOps Guideline
-
 The OWASP [DevSecOps Guideline][devsecops] project explains how to best implement a secure pipeline,
 using best practices and introducing automation tools to help 'shift-left' security issues.
 

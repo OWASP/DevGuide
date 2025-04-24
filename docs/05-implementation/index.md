@@ -1,6 +1,4 @@
-![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right height=180 }
-
-## 5. Implementation
+![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right width=180 }
 
 The [Implementation][sammi] business function is described by the OWASP [Software Assurance Maturity Model][sammm] (SAMM).
 Implementation is focused on the processes and activities related to how an organization

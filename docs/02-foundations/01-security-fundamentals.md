@@ -1,11 +1,9 @@
-### 2.1 Security fundamentals
-
 The fundamental principles of application security rely on the security concepts referenced in this developer guide.
 This section aims to provide an introduction to fundamental principles that any development team must be familiar with.
 
 #### Software Assurance Maturity Model
 
-![SAMM logo](../assets/images/logos/samm.png "OWASP SAMM"){ align=right height=26 }
+![SAMM logo](../assets/images/logos/samm.png "OWASP SAMM"){ align=right width=250 }
 
 The Software Assurance Maturity Model ([SAMM][samm]) provides context for the scope of software security
 and the foundations of good security practice:

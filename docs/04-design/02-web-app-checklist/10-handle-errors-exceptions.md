@@ -1,5 +1,3 @@
-### 4.2.10 Checklist: Handle all Errors and Exceptions
-
 Handling [exceptions and errors][cserror] correctly is critical to making your code reliable and secure.
 Error and exception handling occurs in all areas of an application including critical business logic
 as well as security features and framework code.

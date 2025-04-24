@@ -1,5 +1,3 @@
-### 5.1.2 Go Secure Coding Practices
-
 The OWASP Go Secure Coding Practices (Go-SCP) is a set of software secure coding practices for the Go programming language.
 
 The Go-SCP [documentation project][go-scp-project] is an OWASP Incubator Project

@@ -1,5 +1,3 @@
-### 3.5 ASVS requirements
-
 The [Application Security Verification Standard][asvs] (ASVS) is a long established OWASP flagship project,
 and is widely used to suggest security requirements as well as the core verification of web applications.
 

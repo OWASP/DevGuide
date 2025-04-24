@@ -1,5 +1,3 @@
-### 2.2 Secure development and integration
-
 Secure development is described in the OWASP Software Assurance Maturity Model [(SAMM)][samm]
 [Design][sammd], [Implementation][sammi] and [Verification][sammv] business functions.
 Also refer to the [Security Culture][culturewhy] for a good explanation
@@ -22,7 +20,7 @@ These phases are revisited in a cyclic manner throughout the lifetime of the app
 A notional Software Development LifeCycle (SDLC) is shown below, in practice there may be more or less phases
 according to the processes adopted by the organization.
 
-![SDLC Lifecycle](../assets/images/sdlc_diag.png "notional SDLC lifecycle"){ align=right height=180 }
+![SDLC Lifecycle](../assets/images/sdlc_diag.png "notional SDLC lifecycle"){ align=right width=180 }
 
 With the increasing number and sophistication of exploits against almost every application or business system,
 most companies have adopted a secure Software Development LifeCycle (SDLC).
