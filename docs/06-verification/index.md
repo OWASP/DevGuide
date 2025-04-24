@@ -1,6 +1,6 @@
 ![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right width=180 }
 
-## 6. Verification
+### 6. Verification
 
 [Verification][sammv] is one of the business functions described by the [OWASP SAMM][samm].
 

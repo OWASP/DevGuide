@@ -1,6 +1,6 @@
-![MAS checklist logo](../assets/images/logos/mas.png "OWASP MAS checklist"){ align=right width=180 }
-
 ### 4.3 MAS checklist
+
+![MAS checklist logo](../assets/images/logos/mas.png "OWASP MAS checklist"){ align=right width=180 }
 
 The OWASP [Mobile Application Security][masproject] (MAS) flagship project provides
 industry standards for mobile application security.

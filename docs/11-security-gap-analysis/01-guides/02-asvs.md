@@ -1,4 +1,4 @@
-### 11.1.2 ASVS gap analysis
+### 11.1.2 ASVS
 
 The [Application Security Verification Standard][asvs] (ASVS) is a long established OWASP flagship project,
 and is widely used to identify gaps in security as well as the verification of web applications.

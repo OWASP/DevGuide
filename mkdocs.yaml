@@ -152,8 +152,8 @@ nav:
       - Security Champions Guide: 08-culture-process/02-security-champions/02-security-champions-guide.md
       - Security Champions Playbook: 08-culture-process/02-security-champions/03-security-champions-playbook.md
     - SAMM: 08-culture-process/03-samm.md
-    - ASVS process: 08-culture-process/04-asvs.md
-    - MAS process: 08-culture-process/05-mas.md
+    - ASVS: 08-culture-process/04-asvs.md
+    - MAS: 08-culture-process/05-mas.md
   - Operations:
     - Overview: 09-operations/index.md
     - DevSecOps Guideline: 09-operations/01-devsecops.md
@@ -166,9 +166,9 @@ nav:
     - Overview: 11-security-gap-analysis/index.md
     - Guides:
       - Overview: 11-security-gap-analysis/01-guides/index.md
-      - SAMM gap analysis: 11-security-gap-analysis/01-guides/01-samm.md
-      - ASVS gap analysis: 11-security-gap-analysis/01-guides/02-asvs.md
-      - MAS gap analysis: 11-security-gap-analysis/01-guides/03-mas.md
+      - SAMM: 11-security-gap-analysis/01-guides/01-samm.md
+      - ASVS: 11-security-gap-analysis/01-guides/02-asvs.md
+      - MAS: 11-security-gap-analysis/01-guides/03-mas.md
     - BLT: 11-security-gap-analysis/02-blt.md
   - Appendices:
     - Implementation Do's and Don'ts:

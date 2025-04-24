@@ -1,5 +1,4 @@
-![Developer guide logo](assets/images/dg_logo.png#only-light "OWASP Developer Guide"){ align=right width="180" }
-![Developer guide logo](assets/images/dg_logo.png#only-dark "OWASP Developer Guide"){ align=right width="180" }
+![Developer guide logo](assets/images/dg_logo.png "OWASP Developer Guide"){ align=right width="180" }
 
 ### 1. Introduction
 

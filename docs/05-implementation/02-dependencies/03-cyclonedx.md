@@ -1,4 +1,4 @@
-## 5.2.3 CycloneDX
+### 5.2.3 CycloneDX
 
 ![CycloneDX logo](../../assets/images/logos/cyclonedx.png "OWASP CycloneDX"){ align=right width=180 }
 
