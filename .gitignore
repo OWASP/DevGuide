@@ -9,7 +9,6 @@
 !docs/
 !docs/assets/
 !docs/assets/exports/
-!docs/assets/exports/*.epub
 !docs/assets/exports/*.pdf
 !docs/assets/images/
 !docs/assets/images/*.png
