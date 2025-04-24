@@ -1,5 +1,3 @@
-### 8.2.2 Security Champions Guide
-
 ![Guide logo](../../assets/images/logos/secchampsguide.png "Security Champions Guide"){ align=right width=180 }
 
 The OWASP [Security Champions Guide][scguide] is a guidebook that helps organizations build

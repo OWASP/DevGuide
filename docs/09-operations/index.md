@@ -1,7 +1,5 @@
 ![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right width=180 }
 
-### 9. Operations
-
 Operations are those activities necessary to ensure that confidentiality, integrity, and availability
 are maintained throughout the operational lifetime of an application and its associated data.
 The aim of Operations is to provide greater assurance that the organization is resilient

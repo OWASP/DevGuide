@@ -1,7 +1,5 @@
 ![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right width=180 }
 
-### 4.2 Web application checklist
-
 Checklists are a valuable resource for development teams.
 They provide structure for establishing good practices and processes
 and are also useful during code reviews and design activities.

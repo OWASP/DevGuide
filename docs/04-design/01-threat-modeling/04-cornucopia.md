@@ -1,7 +1,5 @@
 ![Cornucopia logo](../../assets/images/logos/cornucopia.png "OWASP Cornucopia"){ align=right width=180 }
 
-### 4.1.4 Cornucopia
-
 OWASP Cornucopia is a card game used to help derive application security requirements
 during the software development life cycle.
 [Cornucopia][cornucopia] is an OWASP Lab project, and can be [downloaded][cornucopia-cards] from its project page.

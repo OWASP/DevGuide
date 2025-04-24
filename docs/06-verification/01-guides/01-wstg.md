@@ -1,5 +1,3 @@
-### 6.1.1 WSTG
-
 The OWASP [Web Security Testing Guide][wstg] (WSTG) is a comprehensive guide to testing the security of
 web applications and web services.
 

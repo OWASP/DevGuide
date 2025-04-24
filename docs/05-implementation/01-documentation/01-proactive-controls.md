@@ -1,5 +1,3 @@
-### 5.1.1 Top 10 Proactive Controls
-
 The OWASP [Top 10 Proactive Controls][proactive10] describes the most important controls and control categories
 that security architects and development teams should consider in web application projects.
 

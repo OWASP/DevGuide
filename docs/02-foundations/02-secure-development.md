@@ -1,5 +1,3 @@
-### 2.2 Secure development and integration
-
 Secure development is described in the OWASP Software Assurance Maturity Model [(SAMM)][samm]
 [Design][sammd], [Implementation][sammi] and [Verification][sammv] business functions.
 Also refer to the [Security Culture][culturewhy] for a good explanation

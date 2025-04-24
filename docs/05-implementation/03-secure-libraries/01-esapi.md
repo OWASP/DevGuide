@@ -1,7 +1,5 @@
 ![ESAPI logo](../../assets/images/logos/esapi.png "OWASP ESAPI"){ align=right width=180 }
 
-### 5.3.1 ESAPI
-
 The OWASP Enterprise Security API (ESAPI) [library][esapi-docs] is a security control library
 for web applications written in Java.
 

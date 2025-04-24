@@ -1,7 +1,3 @@
-![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right width=180 }
-
-### 10. Metrics
-
 Metrics are important in an organization for various reasons, and in software security they can be used to:
 
 * measure the effectiveness of security controls

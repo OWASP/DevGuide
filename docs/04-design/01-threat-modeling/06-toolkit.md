@@ -1,5 +1,3 @@
-### 4.1.6 Threat Modeling toolkit
-
 There is no one technique or tool that fits every threat modeling process.
 The process can be tactical or architectural, subjective or automated, attack tree or data flow diagram,
 all are perfectly valid for different organizations, teams and situations.

@@ -1,5 +1,3 @@
-### 5.2.2 Dependency-Track
-
 OWASP Dependency-Track is an intelligent platform for Component Analysis including Third Party Software.
 It allows organizations to identify and reduce risk in the [software supply chain][cschain]
 using its ability to analyze a Software Bill of Materials (SBOM).

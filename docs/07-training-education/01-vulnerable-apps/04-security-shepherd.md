@@ -1,5 +1,3 @@
-### 7.1.4 Security Shepherd
-
 OWASP Security Shepherd is a web and [mobile application security][csmas] training platform
 that helps to foster and improve security awareness for development teams.
 

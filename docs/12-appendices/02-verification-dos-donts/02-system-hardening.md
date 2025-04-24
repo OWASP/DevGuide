@@ -1,5 +1,3 @@
-### 12.2.2 System hardening
-
 Here is a collection of Do's and Don'ts when it comes to system hardening, gathered from practical experiences.
 Some of these are language specific and others have more general applicability.
 

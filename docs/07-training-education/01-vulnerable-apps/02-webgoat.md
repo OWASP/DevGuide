@@ -1,7 +1,5 @@
 ![WebGoat logo](../../assets/images/logos/webgoat.png "OWASP WebGoat"){ align=right width=180 }
 
-### 7.1.2 WebGoat
-
 The OWASP [WebGoat][webgoat] project is a deliberately insecure web application that can be
 used to attack common application vulnerabilities in a safe environment.
 It can also be used to exercise application security tools to practice

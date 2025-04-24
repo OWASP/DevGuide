@@ -1,7 +1,5 @@
 ![MAS logo](../assets/images/logos/mas.png "OWASP MAS"){ align=right width=180 }
 
-### 8.5 MAS
-
 The [MAS Verification Standard][masvs] (MASVS) explains the processes, techniques
 and tools used for security testing a mobile application.
 

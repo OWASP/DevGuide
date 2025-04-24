@@ -1,5 +1,3 @@
-### 3.1 Requirements in practice
-
 This section deals with Security Requirements, which is a security practice in the Design business function
 section of the OWASP Software Assurance Maturity Model ([SAMM][samm]).
 This security requirements practice has two activities, Software Requirements and Supplier Security,

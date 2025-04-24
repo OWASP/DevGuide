@@ -1,5 +1,3 @@
-### 4.2.6 Checklist: Implement Digital Identity
-
 [Authentication][csauthn] is the process of verifying that an individual or entity is who they claim to be.
 Session management is a process by which a server maintains the state of the users authentication
 so that the user may continue to use the system without re-authenticating.

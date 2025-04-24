@@ -1,5 +1,3 @@
-### 4.2.1 Checklist: Define Security Requirements
-
 A security requirement is a statement of security functionality that ensures software security is being satisfied.
 Security requirements are derived from industry standards, applicable laws, and a history of past vulnerabilities.
 

@@ -1,6 +1,4 @@
-![OWTF logo](../../assets/images/logos/owtf.png "OWASP OWTF"){ align=right width=180 }
-
-### 6.2.3 OWTF
+![OWTF logo](../../assets/images/logos/owtf.png "OWASP OWTF"){ align=right width=80 }
 
 OWASP Offensive Web Testing Framework ([OWTF][owtf]) is a penetration test tool
 that provides pen-testers with a framework for organizing and running security test suites.

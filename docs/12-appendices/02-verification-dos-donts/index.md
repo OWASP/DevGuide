@@ -1,7 +1,5 @@
 ![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right width=180 }
 
-### 12.2 Verification Do's and Don'ts
-
 [Verification][sammv] is one of the business functions described by the [OWASP SAMM][samm].
 
 Verification takes skill and knowledge, so it is important to build on the existing experience

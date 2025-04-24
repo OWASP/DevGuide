@@ -1,5 +1,3 @@
-### 12.1.2 Secure coding
-
 Here is a collection of Do's and Don'ts when it comes to secure coding, gathered from practical experiences.
 Some of these are language specific and others have more general applicability.
 

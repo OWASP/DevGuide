@@ -1,5 +1,3 @@
-### 4.2.7 Checklist: Enforce Access Controls
-
 Access Control or [Authorization][csauthz] is the process of granting or denying specific requests
 from a user, program, or process.
 

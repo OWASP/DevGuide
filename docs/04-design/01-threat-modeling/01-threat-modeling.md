@@ -1,5 +1,3 @@
-### 4.1.1 Threat modeling in practice
-
 This section discusses Threat Modeling, an activity described in the OWASP Software Assurance Maturity Model ([SAMM][samm]).
 Threat modeling is part of the [Threat Assessment][sammdta] security practice in the [Design][sammd] business function.
 

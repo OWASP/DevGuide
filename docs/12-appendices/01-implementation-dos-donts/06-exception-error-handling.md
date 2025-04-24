@@ -1,5 +1,3 @@
-### 12.1.6 Exception and Error Handling
-
 Here is a collection of Do's and Don'ts when it comes to exception and error handling, gathered from practical experiences.
 Some of these are language specific and others have more general applicability.
 

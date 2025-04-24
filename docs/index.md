@@ -1,7 +1,5 @@
 ![Developer guide logo](assets/images/dg_logo.png "OWASP Developer Guide"){ align=right width="180" }
 
-### 1. Introduction
-
 Welcome to the OWASP Development Guide.
 
 The Open Worldwide Application Security Project ([OWASP][about]) is a nonprofit foundation

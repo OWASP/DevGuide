@@ -1,5 +1,3 @@
-### 8.1 Security Culture
-
 Most organizations have an application development lifecycle in place with security activities built into it,
 this goes a long way to reducing the security issues present in applications and systems.
 The OWASP [Security Culture project][culture] is a guide that considers security

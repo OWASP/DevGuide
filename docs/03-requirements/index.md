@@ -1,7 +1,5 @@
 ![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right width=180 }
 
-### 3. Requirements
-
 Security requirements are statements of
 security functionality that ensure the different security properties of a software application are being satisfied.
 Security requirements are derived from industry standards, applicable laws, and a history of past vulnerabilities.

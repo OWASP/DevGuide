@@ -1,5 +1,3 @@
-### 12.2.3 Open Source software
-
 Here is a collection of Do's and Don'ts when it comes to Open Source software, gathered from practical experiences.
 Some of these are language specific and others have more general applicability.
 

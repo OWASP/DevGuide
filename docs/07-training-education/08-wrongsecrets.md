@@ -1,7 +1,5 @@
 ![WrongSecrets logo](../assets/images/logos/wrongsecrets.png "OWASP WrongSecrets"){ align=right width=180 }
 
-### 7.8 WrongSecrets
-
 OWASP [WrongSecrets][wrongsecrets-project] is a production status project
 and provides challenges focused on secrets management using an intentionally vulnerable application and environment.
 The project offers standalone and Capture-the-flag modes, with a demo on [Heroku][wsheroku].
@@ -40,11 +38,9 @@ the tool _should_ be able to detect the secrets wrongly managed in the WrongSecr
 The demo is available on [Heroku][wsheroku].
 
 You can set WrongSecrets up in standalone or in capture the flag (CTF) mode on Docker, Kubernetes, AWS, GCP or Azure.
-
-Set-up guides for the standalone version are available in the [project README][readme].
-
 For the setting up a CTF project, WrongSecrets provides the [set-up guides][ctf]
 and an example [Helm chart][wrongsecrets-helm].
+Set-up guides for the standalone version are available in the [project README][readme].
 
 #### References
 

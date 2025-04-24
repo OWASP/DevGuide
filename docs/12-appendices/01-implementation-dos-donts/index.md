@@ -1,7 +1,5 @@
 [Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right width=180 }
 
-### 12.1 Implementation Do's and Don'ts
-
 Implementation demands technical knowledge, skill and experience.
 There is no substitute for experience, but learning from past mistakes and the experience of others can go a long way.
 This section of the Developer Guide is a collection of Do's and Don'ts,

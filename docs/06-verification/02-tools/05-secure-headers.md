@@ -1,5 +1,3 @@
-### 6.2.5 OSHP verification
-
 The OWASP Secure Headers Project ([OSHP][oshp]) provides information on HTTP response headers
 to increase the security of a web application.
 

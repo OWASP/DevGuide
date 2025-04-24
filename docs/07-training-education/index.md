@@ -1,7 +1,5 @@
 ![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right width=180 }
 
-### 7. Training and Education
-
 Training and Education activities are described by in the SAMM [Training and Awareness][sammgegta] section,
 which in turn is part of the SAMM [Education & Guidance][sammgeg] security practice
 within the [Governance][sammg] business function.

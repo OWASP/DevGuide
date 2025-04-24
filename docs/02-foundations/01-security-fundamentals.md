@@ -1,5 +1,3 @@
-### 2.1 Security fundamentals
-
 The fundamental principles of application security rely on the security concepts referenced in this developer guide.
 This section aims to provide an introduction to fundamental principles that any development team must be familiar with.
 

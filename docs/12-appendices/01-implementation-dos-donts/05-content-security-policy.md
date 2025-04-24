@@ -1,5 +1,3 @@
-### 12.1.5 Content Security Policy
-
 Here is a collection of Do's and Don'ts when it comes to Content Security Policy, gathered from practical experiences.
 Some of these are language specific and others have more general applicability.
 

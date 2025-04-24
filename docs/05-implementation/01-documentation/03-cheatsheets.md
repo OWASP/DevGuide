@@ -1,7 +1,5 @@
 ![Cheat sheets logo](../../assets/images/logos/cheatsheets.png "OWASP Cheat Sheets"){ align=right width=180 }
 
-### 5.1.3 Cheat Sheet Series
-
 The [OWASP Cheat Sheet Series][cheatsheets] provide a concise collection of high value information
 on a wide range of specific application security topics.
 The cheat sheets have been created by a community of application security professionals

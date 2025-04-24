@@ -1,5 +1,3 @@
-### 9.3 ModSecurity WAF
-
 [ModSecurity][modsec] is an open source Web Application Firewall (WAF) widely deployed on web servers
 that has been in continuous development and widespread use since 2002.
 

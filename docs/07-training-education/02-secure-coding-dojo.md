@@ -1,5 +1,3 @@
-### 7.2 Secure Coding Dojo
-
 The OWASP [Secure Coding Dojo][codedojo-project] is a platform for delivering
 secure coding training to software development teams.
 Secure Coding Dojo is an OWASP Lab project and has been continuously supported and developed since 2017.

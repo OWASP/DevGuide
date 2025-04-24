@@ -1,5 +1,3 @@
-### 6.1.3 ASVS
-
 The [Application Security Verification Standard][asvs] (ASVS) is a long established OWASP flagship project,
 and is widely used as a guide during the verification of web applications.
 

@@ -1,7 +1,5 @@
 ![Snakes & Ladders logo](../assets/images/logos/snakes_ladders.png "OWASP Snakes & Ladders"){ align=right width=180 }
 
-### 7.9 OWASP Snakes and Ladders
-
 OWASP [Snakes & Ladders][snakes] is an educational project based on the popular board game.
 It uses gamification to promote awareness of application security controls and risks,
 and in particular knowledge of other OWASP documents and tools.

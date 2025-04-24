@@ -1,7 +1,5 @@
 ![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right width=180 }
 
-### 6.2 Verification tools
-
 [Verification][sammv] is one of the business functions described by the [OWASP SAMM][samm].
 
 The SAMM [Security Testing][sammvst] activity describes the use of both

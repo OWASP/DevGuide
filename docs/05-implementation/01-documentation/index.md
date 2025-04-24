@@ -1,7 +1,5 @@
 ![Developer guide logo](../../assets/images/dg_logo_bbd.png "OWASP Developer Guide"){ align=right width=180 }
 
-### 5.1 Documentation
-
 Documentation is used here as part of the SAMM [Training and Awareness][sammgegta] activity,
 which in turn is part of the SAMM [Education & Guidance][sammgeg] security practice
 within the [Governance][sammg] business function.

@@ -1,5 +1,3 @@
-### 12.2.1 Secure environment
-
 Here is a collection of Do's and Don'ts when it comes to creating a secure environment, gathered from practical experiences.
 Some of these are language specific and others have more general applicability.
 

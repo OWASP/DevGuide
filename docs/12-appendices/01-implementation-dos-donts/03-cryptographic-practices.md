@@ -1,5 +1,3 @@
-### 12.1.3 Cryptographic practices
-
 Here is a collection of Do's and Don'ts when it comes to cryptographic practices, gathered from practical experiences.
 
 * The basis for usage of PKI is to address (using encryption and hashing)
