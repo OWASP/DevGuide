@@ -10,53 +10,9 @@ on:
 
 # for security reasons the github actions are pinned to specific release versions
 jobs:
-  link_checker:
-    name: Link checker
-    runs-on: ubuntu-24.04
-    steps:
-      - name: Checkout markdown
-        uses: actions/checkout@v4.2.0
-
-      - name: Link Checker
-        uses: lycheeverse/lychee-action@v2.3.0
-        with:
-          args: >-
-            --no-progress
-            --max-retries 5
-            './docs/**/*.md'
-          fail: true
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-  md_linter:
-    name: Lint markdown
-    runs-on: ubuntu-24.04
-    steps:
-      - name: Checkout markdown
-        uses: actions/checkout@v4.2.0
-
-      - name: Lint markdown
-        uses: DavidAnson/markdownlint-cli2-action@v19.1.0
-        with:
-          config: '.markdownlint.yaml'
-          globs: 'docs/**/*.md'
-
-  spell_checker:
-    name: Check spelling
-    runs-on: ubuntu-24.04
-    steps:
-      - name: Checkout markdown
-        uses: actions/checkout@v4.2.0
-
-      - name: Spell check EN language
-        uses: rojopolis/spellcheck-github-actions@0.47.0
-        with:
-          config_path: .spellcheck-en.yaml
-
   export_pdf:
     name: Export PDF
     runs-on: ubuntu-24.04
-    needs: [link_checker, md_linter, spell_checker]
     steps:
       - name: Checkout markdown
         uses: actions/checkout@v4.2.0
@@ -86,7 +42,7 @@ jobs:
   draft_release:
     name: Create draft release
     runs-on: ubuntu-24.04
-    needs: [link_checker, md_linter, spell_checker]
+    needs: [export_pdf]
     steps:
       - name: Check out
         uses: actions/checkout@v4.2.0

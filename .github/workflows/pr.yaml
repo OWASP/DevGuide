@@ -20,7 +20,7 @@ jobs:
         with:
           args: >-
             --no-progress
-            --max-retries 5
+            --max-retries 2
             './docs/**/*.md'
           fail: true
         env:
