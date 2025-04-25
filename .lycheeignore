@@ -1,0 +1,27 @@
+# ignore these false positives from the link checker housekeeper
+
+# some sites that are examples only, no intention of being real
+myfriend.site.com/
+
+# Lockheed Martin has trouble with SSL certificates, temporarily ignore
+https://www.lockheedmartin.com
+
+# github gets upset if too many requests are made to create new issues
+https://github.com/OWASP/www-project-developer-guide/issues/new
+https://github.com/OWASP/www-project-developer-guide/pulls
+
+# ignore LINDDUN site because it occasionally times out
+https://www.linddun.org/
+
+# automated access to esapi is forbidden
+https://mvnrepository.com/artifact/org.owasp.esapi/esapi
+
+# do not harass dockerhub
+https://hub.docker.com/r/owasp/threat-dragon/tags
+https://hub.docker.com/r/webgoat/webgoat
+
+# Google drive tends to need permissions that the link checker does not have
+https://drive.google.com/
+
+# SAMM training site blocks automated access
+https://owaspsamm.thinkific.com/courses/samm
