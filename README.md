@@ -15,6 +15,9 @@ the latest version of this guide is accessible as a [web document][latest].
 
 The content for the OWASP Developer Guide [project pages][project-pages] is in its own [repo][project-repo].
 
+OWASP has a podcast on [The History of the OWASP Developer Guide][history]
+which discusses the history and future of the project.
+
 ### Contributing
 
 Contributions and suggestions for the Developer Guide are all welcome;
@@ -49,6 +52,7 @@ OWASP DevGuide: _accessible security for developers_
 [devguide]: https://github.com/OWASP/DevGuide
 [faq1]: https://github.com/OWASP/DevGuide/wiki/FAQs#the-default-branch-has-been-renamed
 [guide]: https://github.com/OWASP/DevGuide/blob/main/contributing.md
+[history]: https://www.youtube.com/watch?v=niqV55vPTfw
 [issues]: https://github.com/OWASP/DevGuide/issues/new/choose
 [latest]: https://devguide.owasp.org/
 [original]: https://github.com/OWASP/DevGuide/blob/1d24d140de3724b6f95655e53b8d0cc6689fbfd8/DevGuide1.0/OWASPBuildingSecureWebApplicationsAndWebServices-V1.0.pdf
