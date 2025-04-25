@@ -7,8 +7,8 @@ myfriend.site.com/
 https://www.lockheedmartin.com
 
 # github gets upset if too many requests are made to create new issues
-https://github.com/OWASP/www-project-developer-guide/issues/new
-https://github.com/OWASP/www-project-developer-guide/pulls
+https://github.com/OWASP/DevGuide/issues/new
+https://github.com/OWASP/DevGuide/pulls
 
 # ignore LINDDUN site because it occasionally times out
 https://www.linddun.org/
@@ -17,7 +17,10 @@ https://www.linddun.org/
 https://mvnrepository.com/artifact/org.owasp.esapi/esapi
 
 # do not harass dockerhub
+https://hub.docker.com/r/bkimminich/juice-shop
+https://hub.docker.com/r/pygoat/pygoat
 https://hub.docker.com/r/owasp/threat-dragon/tags
+https://hub.docker.com/r/securityrat/securityrat
 https://hub.docker.com/r/webgoat/webgoat
 
 # Google drive tends to need permissions that the link checker does not have
