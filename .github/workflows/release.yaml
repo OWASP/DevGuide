@@ -1,0 +1,114 @@
+name: Release docs
+# checks are only on the draft directory because the release directory will be overwritten
+
+on:
+  push:
+    # tagged x.x.x releases as well as release candidates
+    tags:
+      - ?.?.?*
+  workflow_dispatch:
+
+# for security reasons the github actions are pinned to specific release versions
+jobs:
+  link_checker:
+    name: Link checker
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout markdown
+        uses: actions/checkout@v4.2.0
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v2.3.0
+        with:
+          args: >-
+            --no-progress
+            --max-retries 5
+            './docs/**/*.md'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+  md_linter:
+    name: Lint markdown
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout markdown
+        uses: actions/checkout@v4.2.0
+
+      - name: Lint markdown
+        uses: DavidAnson/markdownlint-cli2-action@v19.1.0
+        with:
+          config: '.markdownlint.yaml'
+          globs: 'docs/**/*.md'
+
+  spell_checker:
+    name: Check spelling
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout markdown
+        uses: actions/checkout@v4.2.0
+
+      - name: Spell check EN language
+        uses: rojopolis/spellcheck-github-actions@0.47.0
+        with:
+          config_path: .spellcheck-en.yaml
+
+  export_pdf:
+    name: Export PDF
+    runs-on: ubuntu-24.04
+    needs: [link_checker, md_linter, spell_checker]
+    steps:
+      - name: Checkout markdown
+        uses: actions/checkout@v4.2.0
+
+      - name: Install python
+        uses: actions/setup-python@v5.5.0
+        with:
+          python-version: 3.x
+
+      - name: Install python packages
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          pip install mkdocs
+          pip install mkdocs-material 
+          pip install mkdocs-open-in-new-tab
+          pip install mkdocs-with-pdf
+
+      - name: Build
+        run: mkdocs build
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4.6.0
+        with:
+          name: 'pdf-export'
+          path: 'site/OWASP_Developer_Guide.pdf'
+
+  draft_release:
+    name: Create draft release
+    runs-on: ubuntu-24.04
+    needs: [link_checker, md_linter, spell_checker]
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4.2.0
+
+      - name: Fetch prepared SBOM artifacts
+        uses: actions/download-artifact@v4.2.1
+        with:
+          name: 'pdf-export'
+          path: 'site/OWASP_Developer_Guide.pdf'
+
+      - name: Prepare release notes
+        run: |
+          releaseVersion=${{ github.ref_name }}
+          sed -e s/x.x.x/${releaseVersion:1}/g .release-note-template.md > ./release-notes.txt
+
+      - name: Create release notes
+        uses: softprops/action-gh-release@v2.2.0
+        with:
+          draft: true
+          name: "${releaseVersion:1}"
+          append_body: true
+          body_path: ./release-notes.txt
+          generate_release_notes: true
+          files: |
+            site/OWASP_Developer_Guide.pdf
