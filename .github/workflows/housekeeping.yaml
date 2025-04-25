@@ -1,0 +1,72 @@
+name: Housekeeping
+# checks are on all directories
+
+on:
+  # Run daily at 7:00
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+# for security reasons the github actions are pinned to specific release versions
+jobs:
+  chores:
+    name: Tidy workflows
+    runs-on: ubuntu-24.04
+    permissions:
+      actions: write
+
+    steps:
+      - name: Delete stale workflow runs
+        uses: Mattraks/delete-workflow-runs@v2.0.6
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 28
+          keep_minimum_runs: 10
+
+      - name: Delete unused workflows
+        uses: otto-de/purge-deprecated-workflow-runs@v3.0.1
+        with:
+          token: ${{ github.token }}
+
+  link_checker:
+    name: Link checker
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout markdown
+        uses: actions/checkout@v4.2.0
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v2.4.0
+        with:
+          # skip the jekyll files under '_includes' directory, check all other directories
+          args: >-
+            --no-progress
+            --max-retries 5
+            --exclude-path './_includes/*.html'
+            '**/*.md'
+            '*.md'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+  stale:
+    name: Tidy pull requests
+    runs-on: ubuntu-24.04
+    permissions:
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Tidy stale PRs and issues
+        uses: actions/stale@v9
+        with:
+          days-before-issue-stale: 182
+          days-before-issue-close: -1
+          stale-issue-message: 'This issue is stale because it has been open for 6 months with no activity.'
+          stale-issue-label: stale
+          remove-issue-stale-when-updated: true
+          days-before-pr-stale: 42
+          days-before-pr-close: 7
+          stale-pr-message: 'This PR is stale because it has been open 42 days with no activity. Remove stale label, or add a comment, otherwise it will be closed in 7 days.'
+          close-pr-message: 'This PR was closed because it has been stalled for 7 weeks with no activity.'
