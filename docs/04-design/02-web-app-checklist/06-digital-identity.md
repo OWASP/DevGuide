@@ -31,7 +31,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 12. Utilize authentication for connections to external systems that involve sensitive information or functions
 13. Authentication credentials for accessing services external to the application should be stored in a secure store
 14. Use only HTTP POST requests to transmit authentication credentials
-15. Only send non-temporary passwords over an encrypted connection or as encrypted data
+15. Always send non-temporary passwords over an encrypted connection or as encrypted data
 16. Enforce password complexity and length requirements established by policy or regulation
 17. Enforce account disabling after an established number of invalid login attempts
 18. Password reset and changing operations require the same level of controls as account creation and authentication
