@@ -8,8 +8,6 @@
 !CNAME
 !docs/
 !docs/assets/
-!docs/assets/exports/
-!docs/assets/exports/*.pdf
 !docs/assets/images/
 !docs/assets/images/*.png
 !docs/assets/images/logos/
