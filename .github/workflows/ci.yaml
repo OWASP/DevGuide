@@ -35,5 +35,14 @@ jobs:
           pip install mkdocs-open-in-new-tab
           pip install mkdocs-with-pdf
 
+      - name: Build check
+        run: mkdocs build
+
       - name: Deploy
         run: mkdocs gh-deploy --force --verbose
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4.6.0
+        with:
+          name: pdf-export
+          path: site/OWASP_Developer_Guide.pdf
