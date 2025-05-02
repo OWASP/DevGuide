@@ -2,9 +2,9 @@ name: Housekeeping
 # checks are on all directories
 
 on:
-  # Run daily at 7:00
+  # Run daily at 6:15
   schedule:
-    - cron: '0 7 * * *'
+    - cron: '15 6 * * *'
   workflow_dispatch:
 
 # for security reasons the github actions are pinned to specific release versions
