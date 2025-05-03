@@ -26,10 +26,11 @@ make a start by reading the [contributing guidelines][guide] and follow the [con
 For other contributions to these pages please [create an issue][issues] or open a [pull request][request].
 
 The easiest way to get in contact with the development community for this documentation project
-is via the OWASP Slack [#project-developer-guide][project] project channel
-(you may need to [subscribe](https://owasp.org/slack/invite) first).
+is via the OWASP Slack [#project-developer-guide][project] project channel (you may [need to subscribe][subscribe] first).
 
-[The wiki][wiki] contains more information about the project's background and purpose.
+You can follow the DevGuide on [Bluesky][bluesky].
+
+The [project wiki][wiki] contains more information about the project's background and purpose.
 
 If you have forked this repo, note that [the default branch has been renamed][faq1] to `main`.
 
@@ -47,6 +48,7 @@ The DevGuide leaders are:
 
 OWASP DevGuide: _accessible security for developers_
 
+[bluesky]: https://bsky.app/profile/devguide.bsky.social
 [build]: https://github.com/OWASP/www-project-developer-guide/actions/workflows/ci.yaml
 [conduct]: https://github.com/OWASP/DevGuide/blob/main/code_of_conduct.md
 [devguide]: https://github.com/OWASP/DevGuide
@@ -60,5 +62,6 @@ OWASP DevGuide: _accessible security for developers_
 [project-pages]: https://owasp.org/www-project-developer-guide/
 [project-repo]: https://github.com/OWASP/www-project-developer-guide
 [request]: https://github.com/OWASP/DevGuide/pulls
+[subscribe]: https://owasp.org/slack/invite
 [versions]: https://github.com/OWASP/DevGuide/wiki#old-versions
 [wiki]: https://github.com/OWASP/DevGuide/wiki
