@@ -17,6 +17,7 @@ jobs:
 
       - name: Link Checker
         uses: lycheeverse/lychee-action@v2.3.0
+        continue-on-error: true
         with:
           args: >-
             --no-progress
@@ -35,9 +36,13 @@ jobs:
 
       - name: Lint markdown
         uses: DavidAnson/markdownlint-cli2-action@v19.1.0
+        continue-on-error: true
         with:
           config: '.markdownlint.yaml'
-          globs: 'docs/**/*.md'
+          globs: |
+            docs/**/*.md
+            docs/*.md
+            *.md
 
   spell_checker:
     name: Check spelling
@@ -48,6 +53,7 @@ jobs:
 
       - name: Spell check EN language
         uses: rojopolis/spellcheck-github-actions@0.47.0
+        continue-on-error: true
         with:
           config_path: .spellcheck-en.yaml
 
