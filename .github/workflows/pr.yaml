@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4.2.0
 
       - name: Link Checker
-        uses: lycheeverse/lychee-action@v2.3.0
+        uses: lycheeverse/lychee-action@v2.4.0
         continue-on-error: true
         with:
           args: >-
@@ -52,7 +52,7 @@ jobs:
         uses: actions/checkout@v4.2.0
 
       - name: Spell check EN language
-        uses: rojopolis/spellcheck-github-actions@0.47.0
+        uses: rojopolis/spellcheck-github-actions@0.48.0
         continue-on-error: true
         with:
           config_path: .spellcheck-en.yaml
