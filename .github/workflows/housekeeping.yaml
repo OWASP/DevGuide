@@ -42,7 +42,7 @@ jobs:
           # skip the jekyll files under '_includes' directory, check all other directories
           args: >-
             --no-progress
-            --max-retries 2
+            --max-retries 1
             --exclude-path './_includes/*.html'
             '**/*.md'
             '*.md'
@@ -61,7 +61,7 @@ jobs:
       - name: Tidy stale PRs and issues
         uses: actions/stale@v9
         with:
-          days-before-issue-stale: 182
+          days-before-issue-stale: 183
           days-before-issue-close: -1
           stale-issue-message: 'This issue is stale because it has been open for 6 months with no activity.'
           stale-issue-label: stale
@@ -69,4 +69,4 @@ jobs:
           days-before-pr-stale: 42
           days-before-pr-close: 7
           stale-pr-message: 'This PR is stale because it has been open 42 days with no activity. Remove stale label, or add a comment, otherwise it will be closed in 7 days.'
-          close-pr-message: 'This PR was closed because it has been stalled for 7 weeks with no activity.'
+          close-pr-message: 'This PR was closed because it has been stalled for 8 weeks with no activity.'

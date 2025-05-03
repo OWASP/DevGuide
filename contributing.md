@@ -99,7 +99,7 @@ The pull requests have checks applied to them:
 The pipeline will apply checks to all pull-requests, and will fail on any error.
 To run these checks locally before pushing a commit, run these commands from the top directory:
 
-1. Link checker: `lychee --max-retries 5 './**/*.md'`
+1. Link checker: `lychee --max-retries 1 './**/*.md'`
 2. Markdown linter: `markdownlint-cli2  **/*.md`
 3. Spell checker: `pyspelling --config .spellcheck-en.yaml` (for English language version)
 
