@@ -16,11 +16,10 @@ To do this:
 8. Upload this PDF file to the draft release
 9. Ensure 'Set as the latest release' is selected
 10. Apply 'Publish release'
-11. Announce on Slack channel
-12. Announce on Blue Sky channel
+11. Announce on the #project-developer-guide [Slack channel][slack]
+12. Announce on the [Blue Sky channel][bluesky]
 
-
-```
+```text
 Contact the current [leaders][leaders] for any queries about this version.
 
 The [PDF][pdf-guide] version of the [web document][devguide] can be downloaded for version 4.1.8 .
@@ -34,7 +33,9 @@ The [PDF][pdf-guide] version of the [web document][devguide] can be downloaded f
 
 OWASP DevGuide: _accessible security for developers_
 
+[bluesky]: https://bsky.app/profile/devguide.bsky.social
 [commits]: https://github.com/OWASP/DevGuide/actions/workflows/ci.yaml
 [latest]: https://devguide.owasp.org/
 [new-release]: https://github.com/OWASP/DevGuide/releases/new
 [release]: https://github.com/OWASP/DevGuide/releases
+[slack]: https://owasp.slack.com/messages/C04QN6CMNAC
