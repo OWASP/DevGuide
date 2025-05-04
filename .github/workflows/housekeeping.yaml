@@ -43,7 +43,8 @@ jobs:
           args: >-
             --no-progress
             --max-retries 1
-            --exclude-path './_includes/*.html'
+            --retry-wait-time 10
+            --max-concurrency 2
             '**/*.md'
             '*.md'
           fail: true

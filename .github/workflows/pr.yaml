@@ -21,7 +21,10 @@ jobs:
           args: >-
             --no-progress
             --max-retries 1
-            './docs/**/*.md'
+            --retry-wait-time 10
+            --max-concurrency 2
+            '**/*.md'
+            '*.md'
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
