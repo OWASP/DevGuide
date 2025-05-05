@@ -4,30 +4,30 @@
 myfriend.site.com/
 
 # Lockheed Martin has trouble with SSL certificates, temporarily ignore
-https://www.lockheedmartin.com
+www.lockheedmartin.com
 
 # github gets upset if too many requests are made to create new issues
-https://github.com/OWASP/DevGuide/issues/new
-https://github.com/OWASP/DevGuide/pulls
+github.com/OWASP/DevGuide/issues/new
+github.com/OWASP/DevGuide/pulls
 
 # at times github gets upset full stop
-https://github.com/OWASP/DevGuide
+github.com
 
 # ignore LINDDUN site because it occasionally times out
-https://www.linddun.org/
+www.linddun.org/
 
 # automated access to esapi is forbidden
-https://mvnrepository.com/artifact/org.owasp.esapi/esapi
+mvnrepository.com/artifact/org.owasp.esapi/esapi
 
 # do not harass dockerhub
-https://hub.docker.com/r/bkimminich/juice-shop
-https://hub.docker.com/r/pygoat/pygoat
-https://hub.docker.com/r/owasp/threat-dragon/tags
-https://hub.docker.com/r/securityrat/securityrat
-https://hub.docker.com/r/webgoat/webgoat
+hub.docker.com/r/bkimminich/juice-shop
+hub.docker.com/r/pygoat/pygoat
+hub.docker.com/r/owasp/threat-dragon/tags
+hub.docker.com/r/securityrat/securityrat
+hub.docker.com/r/webgoat/webgoat
 
 # Google drive tends to need permissions that the link checker does not have
-https://drive.google.com/
+drive.google.com/
 
 # SAMM training site blocks automated access
-https://owaspsamm.thinkific.com/courses/samm
+owaspsamm.thinkific.com/courses/samm
