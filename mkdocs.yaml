@@ -47,6 +47,7 @@ plugins:
       cover_logo: assets/images/dg_logo.png
       author: Open Worldwide Application Security Project (OWASP)
       copyright: Creative Commons Attribution ShareAlike 4.0 International (CC BY-SA 4.0)
+  - search
 
 nav:
   - Introduction: index.md
