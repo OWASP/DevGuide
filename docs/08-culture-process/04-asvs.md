@@ -70,6 +70,12 @@ requirements and incorporate them into the process and culture of the organizati
 To help navigate the ASVS, the OWASP Cheat Sheets have been indexed specifically
 for [each section of the ASVS][csasvs] which can be used to explain and expand on each requirements category.
 
+#### References
+
+* OWASP [Application Security Verification Standard][asvs] (ASVS)
+* OWASP [Cheat Sheets for ASVS][csasvs]
+* OWASP [SecurityRAT][srat]
+
 ----
 
 The OWASP Developer Guide is a community effort; if there is something that needs changing
