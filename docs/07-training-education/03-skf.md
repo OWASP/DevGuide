@@ -1,7 +1,5 @@
-The [Security Knowledge Framework][skf] (SKF) is an expert system application that uses various open source projects
+The [Security Knowledge Framework][skf] (SKF) is a training system that draws on various open source projects
 to support development teams and security architects in building secure applications.
-The Security Knowledge Framework uses the OWASP [Application Security Verification Standard][asvs] (ASVS) with code examples
-to help developers in pre-development and post-development phases and create applications that are secure by design.
 
 Having been an OWASP flagship project for many years the SKF is now no longer within the OWASP organization;
 it will continue to be referenced in the OWASP Wayfinder and other OWASP projects
@@ -9,16 +7,19 @@ because it is certainly a flagship project for any organization.
 
 #### What is the Security Knowledge Framework?
 
-The [SKF][skf] is a web application that is available from the [github repo][skfinstall].
-There is [a demo version][skfdemo] of SKF that is useful for exploring the multiple benefits of the SKF.
-Note that SKF is in a process of migrating to a [new repository][skfrepo] so the download link may change.
+The [SKF][skf] is a web application that provides training and education for development teams.
+As their website puts it: "Training and guidance for doing AppSec right!"
 
-The SKF provides training and guidance for application security:
+For example the SKF uses the OWASP [Application Security Verification Standard][asvs] (ASVS) with code examples
+to help developers in pre-development and post-development phases and create applications that are secure by design.
+
+The SKF provides training and guidance in several ways:
 
 * Requirements [organizer][skfreqs]
 * Learning [courses][skfdemo]
 * Practice [labs][skflabs]
-* Documentation on [installing and using][skfdocs] the SKF
+
+Note that SKF is in a process of migrating to a [new repository][skfrepo] so the download link may change.
 
 #### Why use the SKF?
 
@@ -41,6 +42,17 @@ In addition to the training courses there are a wide range of practice labs (64 
 The easiest way to get started with the SKF training is to [try the online demo][skfdemo].
 This will provide access to the practice labs, the training courses and also to the requirements tool.
 
+Follow the documentation on [installing and using][skfdocs] the SKF.
+
+The OWASP Spotlight series provides an overview of the SKF: 'Project 7 - [Security Knowledge Framework (SKF)][spotlight07]'.
+
+#### References
+
+* [Security Knowledge Framework][skf] (SKF)
+* [SKF courses and labs][skfdemo]
+* [SKF requirements][skfreqs]
+* OWASP [Application Security Verification Standard][asvs] (ASVS)
+
 ----
 
 The OWASP Developer Guide is a community effort; if there is something that needs changing
@@ -53,7 +65,7 @@ then [submit an issue][issue0903] or [edit on GitHub][edit0903].
 [skf]: https://www.securityknowledgeframework.org/
 [skfdemo]: https://secureby.design/
 [skfdocs]: https://skf.readme.io/docs/introduction
-[skfinstall]: https://github.com/blabla1337/skf-flask/releases
 [skflabs]: https://secureby.design/labs
 [skfrepo]: https://github.com/Security-Knowledge-Framework
-[skfreqs]: https://starfish-app-kd3eo.ondigitalocean.app/
+[skfreqs]: https://github.com/Security-Knowledge-Framework/SKF-requirements-tool
+[spotlight07]: https://youtu.be/TFX_ZBy6lNY
