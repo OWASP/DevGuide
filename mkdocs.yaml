@@ -64,9 +64,9 @@ nav:
     - Risk profile: 03-requirements/02-risk.md
     - OpenCRE: 03-requirements/03-opencre.md
     - SecurityRAT: 03-requirements/04-security-rat.md
-    - ASVS requirements: 03-requirements/05-asvs.md
-    - MAS requirements: 03-requirements/06-mas.md
-    - SKF requirements: 03-requirements/07-skf.md
+    - ASVS: 03-requirements/05-asvs.md
+    - MAS: 03-requirements/06-mas.md
+    - SKF: 03-requirements/07-skf.md
   - Design:
     - Overview: 04-design/index.md
     - Threat modeling:
@@ -137,7 +137,7 @@ nav:
       - PyGoat: 07-training-education/01-vulnerable-apps/03-pygoat.md
       - Security Shepherd: 07-training-education/01-vulnerable-apps/04-security-shepherd.md
     - Secure Coding Dojo: 07-training-education/02-secure-coding-dojo.md
-    - SKF education: 07-training-education/03-skf.md
+    - SKF: 07-training-education/03-skf.md
     - SamuraiWTF: 07-training-education/04-samurai-wtf.md
     - OWASP Top 10 project: 07-training-education/05-top-ten.md
     - Mobile Top 10: 07-training-education/06-mobile-top-ten.md
