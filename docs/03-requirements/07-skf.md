@@ -1,4 +1,4 @@
-![MAS logo](../assets/images/logos/skf.png "OWASP MAS"){ align=right width=180 }
+![SKF logo](../assets/images/logos/skf.png "OWASP SKF"){ align=right width=180 }
 
 The [Security Knowledge Framework][skf] (SKF) is a system that uses draws on the material in various
 open source projects to support development teams and security architects in building secure applications.
