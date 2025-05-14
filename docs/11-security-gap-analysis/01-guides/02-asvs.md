@@ -1,3 +1,5 @@
+![ASVS logo](../../assets/images/logos/asvs.png "OWASP ASVS"){ align=right width=180 }
+
 The [Application Security Verification Standard][asvs] (ASVS) is a long established OWASP flagship project,
 and is widely used to identify gaps in security as well as the verification of web applications.
 

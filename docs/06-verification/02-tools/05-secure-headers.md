@@ -1,3 +1,5 @@
+![OSHP logo](../../assets/images/logos/oshp.png "OSHP"){ align=right width=140 }
+
 The OWASP Secure Headers Project ([OSHP][oshp]) provides information on HTTP response headers
 to increase the security of a web application.
 

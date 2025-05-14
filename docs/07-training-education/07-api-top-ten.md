@@ -1,3 +1,5 @@
+![API Top10 logo](../assets/images/logos/top10_api.png "API Top 10"){ align=right width=180 }
+
 The OWASP [API Security Project][apisec] (API Top 10) explains strategies and solutions to help the understanding
 and mitigation of the unique vulnerabilities and security risks of Application Programming Interfaces (APIs).
 

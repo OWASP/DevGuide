@@ -28,7 +28,6 @@
 !docs/assets/images/*.png
 !docs/assets/images/logos/
 !docs/assets/images/logos/*.png
-!docs/assets/images/logos/*.jpeg
 !docs/title*.yaml
 !docs/0*/
 !docs/0*/*.md
