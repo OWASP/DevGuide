@@ -13,6 +13,9 @@ theme:
   language: en
   logo: assets/images/dg_logo_solid.png
   favicon: assets/images/favicon.png
+  features:
+    - search.highlight
+    - search.suggest
 
   palette:
     # Palette toggle for automatic mode
