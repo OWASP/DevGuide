@@ -1,3 +1,5 @@
+![MAS logo](../assets/images/logos/blt.png "OWASP MAS"){ align=right width=180 }
+
 The OWASP [Bug Logging Tool][blt] (BLT) is a community database of bugs found in an organization's web site or application.
 BLT is an OWASP Production tool project and has its own [bug recording site][bltsite].
 
