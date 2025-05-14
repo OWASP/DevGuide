@@ -1,3 +1,5 @@
+![Top10 Proactive](../../assets/images/logos/top10_proactive.png "OWASP Top10 Proactive Controls"){ align=right width=140 }
+
 The OWASP [Top 10 Proactive Controls][proactive10] describes the most important controls and control categories
 that security architects and development teams should consider in web application projects.
 

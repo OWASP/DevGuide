@@ -1,4 +1,4 @@
-![Cheat sheets logo](../../assets/images/logos/cheatsheets.png "OWASP Cheat Sheets"){ align=right width=180 }
+![Cheat sheets logo](../../assets/images/logos/cheatsheets.png "OWASP Cheat Sheets"){ align=right width=200 }
 
 The [OWASP Cheat Sheet Series][cheatsheets] provide a concise collection of high value information
 on a wide range of specific application security topics.
