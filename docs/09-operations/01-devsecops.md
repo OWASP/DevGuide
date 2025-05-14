@@ -20,8 +20,8 @@ It then explains and illustrates various vulnerability scanning steps commonly u
 * Dynamic Application Security Testing ([DAST][dsodast])
 * Interactive Application Security Testing ([IAST][dsoiast])
 * Software Composition Analysis ([SCA][dsosca])
-* [Infrastructure Vulnerability Scanning][dsocvs]
-* [Container Vulnerability Scanning][dsoivs]
+* [Infrastructure Vulnerability Scanning][dsoivs]
+* [Container Vulnerability Scanning][dsocvs]
 
 The DevSecOps Guideline is a concise guide that provides the foundational knowledge to implement DevSecOps.
 
