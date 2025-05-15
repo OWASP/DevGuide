@@ -194,11 +194,11 @@ then [submit an issue][issue0405] or [edit on GitHub][edit0405].
 [cstm]: https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet
 [cwe284]: https://cwe.mitre.org/data/definitions/284.html
 [data10]: https://owasp.org/www-project-data-security-top-10/
+[edit0405]: https://github.com/OWASP/DevGuide/blob/main/docs/en/02-foundations/05-top-ten.md
 [exploit]: https://www.exploit-db.com/
 [issue0405]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2002-foundations/05-top-ten
 [lcnc10]: https://owasp.org/www-project-top-10-low-code-no-code-security-risks/
 [mobile10]: https://owasp.org/www-project-mobile-top-10/
-[edit0405]: https://github.com/OWASP/DevGuide/blob/main/docs/en/02-foundations/05-top-ten.md
 [privacy10]: https://owasp.org/www-project-top-10-privacy-risks/
 [proactive10]: https://owasp.org/www-project-proactive-controls/
 [samm]: https://owaspsamm.org/about/

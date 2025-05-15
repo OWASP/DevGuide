@@ -243,9 +243,9 @@ then [submit an issue][issue0404] or [edit on GitHub][edit0404].
 [csoauth]: https://cheatsheetseries.owasp.org/cheatsheets/OAuth2_Cheat_Sheet
 [csproject]: https://owasp.org/www-project-cheat-sheets/
 [cscs]: https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet
+[edit0404]: https://github.com/OWASP/DevGuide/blob/main/docs/en/02-foundations/04-crypto-principles.md
 [issue0404]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2002-foundations/04-crypto-principles
 [kmcs]: https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet
-[edit0404]: https://github.com/OWASP/DevGuide/blob/main/docs/en/02-foundations/04-crypto-principles.md
 [sscs]: https://cheatsheetseries.owasp.org/cheatsheets/SAML_Security_Cheat_Sheet
 [spdcs]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet
 [tls]: https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet

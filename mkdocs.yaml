@@ -196,3 +196,10 @@ nav:
         - Open Source software: en/12-appendices/02-verification-dos-donts/03-open-source-software.md
   - 'Guía del Desarrollador':
     - Introducción: es/index.md
+    - Fundamentos:
+      - Descripción: es/02-foundations/index.md
+      - Fundamentos de seguridad: es/02-foundations/01-security-fundamentals.md
+      - Desarrollo e integración segura: es/02-foundations/02-secure-development.md
+      - Principios de seguridad: es/02-foundations/03-security-principles.md
+      - Principios de criptografía: es/02-foundations/04-crypto-principles.md
+      - OWASP Top 10: es/02-foundations/05-top-ten.md

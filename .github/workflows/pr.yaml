@@ -70,9 +70,9 @@ jobs:
           config_path: .spellcheck-es.yaml
 
   export_pdf:
-    name: Export PDF
+    name: Export PDFs
     runs-on: ubuntu-24.04
-    needs: [md_linter, spell_checker_en, spell_checker_es]
+    needs: [link_checker, md_linter, spell_checker_en, spell_checker_es]
     steps:
       - name: Checkout markdown
         uses: actions/checkout@v4.2.0
