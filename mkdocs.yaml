@@ -46,6 +46,8 @@ plugins:
   - open-in-new-tab  
   - with-pdf:  # https://github.com/orzih/mkdocs-with-pdf
       output_path: OWASP_Developer_Guide.pdf
+      exclude_pages:
+        - 'es/'
       cover_title: OWASP Developer Guide
       cover_subtitle: A guide to building secure Web Applications and Web Services
       cover_logo: assets/images/dg_logo.png

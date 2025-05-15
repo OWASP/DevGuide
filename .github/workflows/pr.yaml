@@ -72,7 +72,7 @@ jobs:
   export_pdf:
     name: Export PDF
     runs-on: ubuntu-24.04
-    needs: [md_linter, spell_checker]
+    needs: [md_linter, spell_checker_en, spell_checker_es]
     steps:
       - name: Checkout markdown
         uses: actions/checkout@v4.2.0
@@ -90,5 +90,5 @@ jobs:
           pip install mkdocs-open-in-new-tab
           pip install mkdocs-with-pdf
 
-      - name: Build check
+      - name: Build check for EN
         run: mkdocs build
