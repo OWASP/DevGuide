@@ -89,5 +89,5 @@ or a technical standpoint;
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue140106] or [edit on GitHub][edit140106].
 
-[edit140106]: https://github.com/OWASP/DevGuide/blob/main/docs/12-appendices/01-implementation-dos-donts/06-exception-error-handling.md
+[edit140106]: https://github.com/OWASP/DevGuide/blob/main/docs/en/12-appendices/01-implementation-dos-donts/06-exception-error-handling.md
 [issue140106]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%20/12-appendices/01-implementation-dos-donts/06-exception-error-handling

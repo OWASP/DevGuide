@@ -58,7 +58,7 @@ then [submit an issue][issue0506] or [edit on GitHub][edit0506].
 
 [csmas]: https://cheatsheetseries.owasp.org/cheatsheets/Mobile_Application_Security_Cheat_Sheet
 [csmasvs]: https://cheatsheetseries.owasp.org/IndexMASVS
-[edit0506]: https://github.com/OWASP/DevGuide/blob/main/docs/03-requirements/06-mas.md
+[edit0506]: https://github.com/OWASP/DevGuide/blob/main/docs/en/03-requirements/06-mas.md
 [issue0506]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2003-requirements/06-mas
 [mas]: https://mas.owasp.org/
 [masc]: https://mas.owasp.org/checklists/

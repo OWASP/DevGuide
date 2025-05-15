@@ -41,4 +41,8 @@
 !docs/1*/0*/*.md
 !docs/1*/1*/
 !docs/1*/1*/*.md
+!docs/es/
+!docs/es/*.md
+!docs/es/**/
+!docs/es/**/*.md
 !docs/CNAME

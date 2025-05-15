@@ -97,7 +97,7 @@ then [submit an issue][issue0505] or [edit on GitHub][edit0505].
 [asvsV13]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x21-V13-API.md#v13-api-and-web-service
 [asvsV14]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x22-V14-Config.md#v14-configuration
 [csasvs]: https://cheatsheetseries.owasp.org/IndexASVS.html
-[edit0505]: https://github.com/OWASP/DevGuide/blob/main/docs/03-requirements/05-asvs.md
+[edit0505]: https://github.com/OWASP/DevGuide/blob/main/docs/en/03-requirements/05-asvs.md
 [issue0505]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2003-requirements/05-asvs
 [spotlight19]: https://youtu.be/3puIavsZfAk
 [srat]: https://owasp.org/www-project-securityrat/

@@ -255,7 +255,7 @@ then [submit an issue][issue060101] or [edit on GitHub][edit060101].
 [cstm]: https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet
 [culturetm]: https://owasp.org/www-project-security-culture/stable/6-Threat_Modelling/
 [eop]: https://shostack.org/games/elevation-of-privilege
-[edit060101]: https://github.com/OWASP/DevGuide/blob/main/docs/04-design/01-threat-modeling/01-threat-modeling.md
+[edit060101]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/01-threat-modeling/01-threat-modeling.md
 [issue060101]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/01-threat-modeling/01-threat-modeling
 [linddun]: https://linddun.org/
 [nist-cvss]: https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator

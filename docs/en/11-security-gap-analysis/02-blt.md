@@ -43,5 +43,5 @@ then [submit an issue][issue1302] or [edit on GitHub][edit1302].
 [bltapp]: https://github.com/OWASP/BLT-Flutter
 [bltsite]: https://blt.owasp.org/
 [csdisclose]: https://cheatsheetseries.owasp.org/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet
-[edit1302]: https://github.com/OWASP/DevGuide/blob/main/docs/11-security-gap-analysis/02-blt.md
+[edit1302]: https://github.com/OWASP/DevGuide/blob/main/docs/en/11-security-gap-analysis/02-blt.md
 [issue1302]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2011-security-gap-analysis/02-blt

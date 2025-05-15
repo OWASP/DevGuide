@@ -98,7 +98,7 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue0504] or [edit on GitHub][edit0504].
 
 [asvs]: https://owasp.org/www-project-application-security-verification-standard/
-[edit0504]: https://github.com/OWASP/DevGuide/blob/main/docs/03-requirements/04-security-rat.md
+[edit0504]: https://github.com/OWASP/DevGuide/blob/main/docs/en/03-requirements/04-security-rat.md
 [issue0504]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2003-requirements/04-security-rat
 [spotlight05]: https://youtu.be/HiaHXtzJ3DE
 [scat]: https://securityrat.github.io/int_securitycat.html#securitycat

@@ -64,7 +64,7 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue060103] or [edit on GitHub][edit060103].
 
 [issue060103]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/01-threat-modeling/03-threat-dragon
-[edit060103]: https://github.com/OWASP/DevGuide/blob/main/docs/04-design/01-threat-modeling/03-threat-dragon.md
+[edit060103]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/01-threat-modeling/03-threat-dragon.md
 [tddemo]: https://www.threatdragon.com/#/
 [tdcode]: https://github.com/OWASP/threat-dragon
 [tddocker]: https://hub.docker.com/r/owasp/threat-dragon/tags

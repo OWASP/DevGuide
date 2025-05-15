@@ -72,7 +72,7 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue0507] or [edit on GitHub][edit0507].
 
 [asvs]: https://owasp.org/www-project-application-security-verification-standard/
-[edit0507]: https://github.com/OWASP/DevGuide/blob/main/docs/03-requirements/07-skf.md
+[edit0507]: https://github.com/OWASP/DevGuide/blob/main/docs/en/03-requirements/07-skf.md
 [issue0507]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2003-requirements/07-skf
 [skf]: https://www.securityknowledgeframework.org/
 [skfdemo]: https://secureby.design/

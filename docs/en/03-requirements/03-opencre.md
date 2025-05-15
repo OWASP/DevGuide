@@ -93,7 +93,7 @@ then [submit an issue][issue0503] or [edit on GitHub][edit0503].
 [cweocre]: https://opencre.org/search/CWE
 [cwe]: https://cwe.mitre.org/
 [cwe1002]: https://www.opencre.org/node/standard/CWE/sectionid/1002
-[edit0503]: https://github.com/OWASP/DevGuide/blob/main/docs/03-requirements/03-opencre.md
+[edit0503]: https://github.com/OWASP/DevGuide/blob/main/docs/en/03-requirements/03-opencre.md
 [intstand]: https://owasp.org/www-project-integration-standards/
 [issue0503]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2003-requirements/03-opencre
 [nist]: https://csrc.nist.gov/

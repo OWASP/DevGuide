@@ -101,6 +101,6 @@ then [submit an issue][issue090102] or [edit on GitHub][edit090102].
 [goatgithub]: https://github.com/WebGoat/WebGoat
 [goatreleases]: https://github.com/WebGoat/WebGoat/releases
 [dockerinstall]: https://docs.docker.com/engine/install/
-[edit090102]: https://github.com/OWASP/DevGuide/blob/main/docs/07-training-education/01-vulnerable-apps/02-webgoat.md
+[edit090102]: https://github.com/OWASP/DevGuide/blob/main/docs/en/07-training-education/01-vulnerable-apps/02-webgoat.md
 [issue090102]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2007-training-education/01-vulnerable-apps/02-webgoat
 [webgoat]: https://owasp.org/www-project-webgoat/

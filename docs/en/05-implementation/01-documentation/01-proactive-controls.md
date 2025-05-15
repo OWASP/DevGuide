@@ -1,4 +1,4 @@
-![Top10 Proactive](../../../assets/images/logos/top10_proactive.png "OWASP Top10 Proactive Controls"){ align=right width=140 }
+![Top10 Proactive](../../../assets/images/logos/top10_proactive.png "Top10 Proactive Controls"){ align=right width=140 }
 
 The OWASP [Top 10 Proactive Controls][proactive10] describes the most important controls and control categories
 that security architects and development teams should consider in web application projects.
@@ -101,7 +101,7 @@ then [submit an issue][issue070101] or [edit on GitHub][edit070101].
 [control8]: https://top10proactive.owasp.org/the-top-10/c8-help-the-browser-defend-the-user/
 [control9]: https://top10proactive.owasp.org/the-top-10/c9-security-logging-and-monitoring/
 [control10]: https://top10proactive.owasp.org/the-top-10/c10-stop-server-side-request-forgery/
-[edit070101]: https://github.com/OWASP/DevGuide/blob/main/docs/05-implementation/01-documentation/01-proactive-controls.md
+[edit070101]: https://github.com/OWASP/DevGuide/blob/main/docs/en/05-implementation/01-documentation/01-proactive-controls.md
 [issue070101]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2005-implementation/01-documentation/01-proactive-controls
 [proactive10]: https://top10proactive.owasp.org/
 [spotlight08]: https://youtu.be/HRtYDCWOSc0

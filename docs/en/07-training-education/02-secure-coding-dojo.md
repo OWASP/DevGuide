@@ -50,6 +50,6 @@ then [submit an issue][issue0902] or [edit on GitHub][edit0902].
 [codedojo-insecure]: https://github.com/OWASP/SecureCodingDojo/wiki/Running-Insecure.Inc
 [codedojo-install]: https://github.com/OWASP/SecureCodingDojo/wiki/Deploying-with-Docker
 [codedojo-project]: https://owasp.org/www-project-secure-coding-dojo/
-[edit0902]: https://github.com/OWASP/DevGuide/blob/main/docs/07-training-education/02-secure-coding-dojo.md
+[edit0902]: https://github.com/OWASP/DevGuide/blob/main/docs/en/07-training-education/02-secure-coding-dojo.md
 [issue0902]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-training-education/02-secure-coding-dojo
 [spotlight14]: https://youtu.be/7nVkDkL9cyE

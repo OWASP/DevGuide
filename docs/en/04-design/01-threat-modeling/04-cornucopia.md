@@ -125,7 +125,7 @@ then [submit an issue][issue060104] or [edit on GitHub][edit060104].
 [cornucopia-cards]: https://owasp.org/www-project-cornucopia#div-cards
 [cornucopia-score]: https://owasp.org/www-project-cornucopia/assets/files/Cornucopia-scoresheet.pdf
 [cornucopia-play]: https://owasp.org/www-project-cornucopia#div-play
-[edit060104]: https://github.com/OWASP/DevGuide/blob/main/docs/04-design/01-threat-modeling/04-cornucopia.md
+[edit060104]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/01-threat-modeling/04-cornucopia.md
 [issue060104]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2004-design/01-threat-modeling/04-cornucopia
 [mastg]: https://mas.owasp.org/MASTG/
 [masvs]: https://mas.owasp.org/MASVS/

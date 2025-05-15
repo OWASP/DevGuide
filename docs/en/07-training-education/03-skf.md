@@ -61,7 +61,7 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue0903] or [edit on GitHub][edit0903].
 
 [asvs]: https://owasp.org/www-project-application-security-verification-standard/
-[edit0903]: https://github.com/OWASP/DevGuide/blob/main/docs/07-training-education/03-skf.md
+[edit0903]: https://github.com/OWASP/DevGuide/blob/main/docs/en/07-training-education/03-skf.md
 [issue0903]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2007-training-education/03-security-knowledge-framework
 [linuxtraining]: https://training.linuxfoundation.org/full-catalog/
 [skf]: https://www.securityknowledgeframework.org/

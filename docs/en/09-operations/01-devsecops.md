@@ -60,5 +60,5 @@ then [submit an issue][issue1101] or [edit on GitHub][edit1101].
 [dsopdf]: https://github.com/OWASP/DevSecOpsGuideline/releases
 [dsosast]: https://owasp.org/www-project-devsecops-guideline/latest/02a-Static-Application-Security-Testing
 [dsosca]: https://owasp.org/www-project-devsecops-guideline/latest/02d-Software-Composition-Analysis
-[edit1101]: https://github.com/OWASP/DevGuide/blob/main/docs/09-operations/01-devsecops.md
+[edit1101]: https://github.com/OWASP/DevGuide/blob/main/docs/en/09-operations/01-devsecops.md
 [issue1101]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2009-operations/01-devsecops

@@ -74,7 +74,7 @@ increase the effectiveness of the application security team and improve the secu
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue1021] or [edit on GitHub][edit1021].
 
-[edit1021]: https://github.com/OWASP/DevGuide/blob/main/docs/08-culture-process/02-security-champions/01-security-champions-program.md
+[edit1021]: https://github.com/OWASP/DevGuide/blob/main/docs/en/08-culture-process/02-security-champions/01-security-champions-program.md
 [issue1021]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2008-culture-process/02-security-champions/01-security-champions-program
 [sammgegoc]: https://owaspsamm.org/model/governance/education-and-guidance/stream-b/
 [scguide]: https://owasp.org/www-project-security-champions-guidebook/

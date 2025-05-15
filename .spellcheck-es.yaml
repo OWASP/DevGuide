@@ -1,11 +1,10 @@
 matrix:
 - name: Markdown
   aspell:
-    lang: en
-    d: en_US
+    lang: es
   dictionary:
     wordlists:
-    - .wordlist-en.txt
+    - .wordlist-es.txt
     output: wordlist.dic
     encoding: utf-8
   pipeline:
@@ -16,7 +15,6 @@ matrix:
       - code
       - pre
   sources:
-  - 'docs/en/**/*.md'
-  - 'docs/*.md'
-  - '*.md'
+  - 'docs/es/**/*.md'
+  - 'docs/es/*.md'
   default_encoding: utf-8

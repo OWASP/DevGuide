@@ -60,7 +60,7 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue090103] or [edit on GitHub][edit090103].
 
 [dockerinstall]: https://docs.docker.com/engine/install/
-[edit090103]: https://github.com/OWASP/DevGuide/blob/main/docs/07-training-education/01-vulnerable-apps/03-pygoat.md
+[edit090103]: https://github.com/OWASP/DevGuide/blob/main/docs/en/07-training-education/01-vulnerable-apps/03-pygoat.md
 [issue090103]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2007-training-education/01-vulnerable-apps/03-pygoat
 [pygoat]: https://owasp.org/www-project-pygoat/
 [pygoatdocker]: https://github.com/adeyosemanputra/pygoat/blob/master/README.md#from-docker-compose

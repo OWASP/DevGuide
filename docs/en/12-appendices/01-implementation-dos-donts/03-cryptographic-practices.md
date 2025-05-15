@@ -54,5 +54,5 @@ Here is a collection of Do's and Don'ts when it comes to cryptographic practices
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue140103] or [edit on GitHub][edit140103].
 
-[edit140103]: https://github.com/OWASP/DevGuide/blob/main/docs/12-appendices/01-implementation-dos-donts/03-cryptographic-practices.md
+[edit140103]: https://github.com/OWASP/DevGuide/blob/main/docs/en/12-appendices/01-implementation-dos-donts/03-cryptographic-practices.md
 [issue140103]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%20/12-appendices/01-implementation-dos-donts/03-cryptographic-practices

@@ -47,6 +47,6 @@ then [submit an issue][issue060208] or [edit on GitHub][edit060208].
 [control2]: https://top10proactive.owasp.org/the-top-10/c2-crypto/
 [cscs]: https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet
 [cssm]: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet
-[edit060208]: https://github.com/OWASP/DevGuide/blob/main/docs/04-design/02-web-app-checklist/08-protect-data.md
+[edit060208]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/02-web-app-checklist/08-protect-data.md
 [issue060208]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/02-web-app-checklist/08-protect-data
 [proactive10]: https://top10proactive.owasp.org/

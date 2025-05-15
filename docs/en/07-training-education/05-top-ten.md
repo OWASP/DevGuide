@@ -73,7 +73,7 @@ then [submit an issue][issue0905] or [edit on GitHub][edit0905].
 [a08]: https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/
 [a09]: https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/
 [a10]: https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/
-[edit0905]: https://github.com/OWASP/DevGuide/blob/main/docs/07-training-education/05-top-ten.md
+[edit0905]: https://github.com/OWASP/DevGuide/blob/main/docs/en/07-training-education/05-top-ten.md
 [issue0905]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-training-education/05-top-ten
 [spotlight10]: https://youtu.be/RMkoIrpz8ug
 [top10project]: https://owasp.org/www-project-top-ten/
