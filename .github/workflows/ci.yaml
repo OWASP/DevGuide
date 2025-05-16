@@ -52,8 +52,8 @@ jobs:
             docs/*.md
             *.md
 
-  spell_checker:
-    name: Check spelling
+  spell_checker_en:
+    name: Check EN spelling
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout markdown
@@ -64,10 +64,22 @@ jobs:
         with:
           config_path: .spellcheck-en.yaml
 
+  spell_checker_es:
+    name: Check ES spelling
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout markdown
+        uses: actions/checkout@v4.2.0
+
+      - name: Spell check ES language
+        uses: rojopolis/spellcheck-github-actions@0.48.0
+        with:
+          config_path: .spellcheck-es.yaml
+
   deploy:
     name: Deploy web doc
     runs-on: ubuntu-latest
-    needs: [link_checker, md_linter, spell_checker]
+    needs: [md_linter, spell_checker_en, spell_checker_es]
     steps:
       - name: Checkout markdown
         uses: actions/checkout@v4.2.0
