@@ -104,8 +104,8 @@ entonces [cree un issue][issue080103] o [edítelo en GitHub][edit080103].
 [asvsV13]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x21-V13-API.md#v13-api-and-web-service
 [asvsV14]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x22-V14-Config.md#v14-configuration
 [csasvs]: https://cheatsheetseries.owasp.org/IndexASVS.html
-[edit080103]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2006-verification/01-guides/05-asvs.md
-[en080103]: https://devguide.owasp.org/en/06-verification/01-guides/05-asvs/
+[edit080103]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2006-verification/01-guides/03-asvs.md
+[en080103]: https://devguide.owasp.org/en/06-verification/01-guides/03-asvs/
 [issue080103]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-verification/01-guides/03-asvs
 [spotlight19]: https://youtu.be/3puIavsZfAk
 [srat]: https://owasp.org/www-project-securityrat/

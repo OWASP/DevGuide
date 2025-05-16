@@ -1,4 +1,4 @@
-![logo de la Guía del Desarrollador](../../assets/images/dg_logo_bbd.png "Guía del Desarrollador"){ align=right width=180 }
+![logo la Guía del Desarrollador](../../../assets/images/dg_logo_bbd.png "Guía del Desarrollador"){ align=right width=180 }
 
 ### 4.2 Lista de verificación para aplicaciones web
 

@@ -1,4 +1,4 @@
-![WIP logo](../../../../assets/images/dg_wip.png "Trabajo en curso"){ align=right width=180 }
+![WIP logo](../../../assets/images/dg_wip.png "Trabajo en curso"){ align=right width=180 }
 
 No hay traducción de esta página, consulte [versión original en inglés][release060106].
 

@@ -43,5 +43,5 @@ La Guía para Desarrolladores de OWASP es un esfuerzo comunitario; si hay algo q
 [csrfguard-maven]: https://central.sonatype.com/search?q=csrfguard&smo=true
 [cscsrf]: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet
 [edit070302]: https://github.com/OWASP/DevGuide/blob/main/docs/es/05-implementation/03-secure-libraries/02-csrf-guard.md
-[en070302]: https://devguide.owasp.org/en/07-implementation/03-secure-libraries/02-csrf-guard/
+[en070302]: https://devguide.owasp.org/en/05-implementation/03-secure-libraries/02-csrf-guard/
 [issue070302]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2005-implementation/03-secure-libraries/02-csrf-guard

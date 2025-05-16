@@ -1,4 +1,4 @@
-![Logo de lista de verificación MAS](../../../assets/images/logos/mas.png "OWASP MASWE"){ align=right width=180 }
+![Logo de lista de verificación MAS](../../assets/images/logos/mas.png "OWASP MASWE"){ align=right width=180 }
 
 El proyecto insignia de OWASP [Seguridad de Aplicaciones Móviles][masproject] (MAS)
 proporciona estándares de la industria para la seguridad de aplicaciones móviles.

@@ -62,13 +62,13 @@ si hay algo que necesita cambiarse, [cree un issue][issue070301] o [edítelo en 
 [csrfguard]: https://owasp.org/www-project-csrfguard/
 [cscsrf]: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet
 [edit070301]: https://github.com/OWASP/DevGuide/blob/main/docs/es/05-implementation/03-secure-libraries/01-esapi.md
+[en070301]: https://devguide.owasp.org/en/05-implementation/03-secure-libraries/01-esapi/
 [esapi-docs]: https://www.javadoc.io/doc/org.owasp.esapi/esapi/latest/index.html
 [esapi-java]: https://mvnrepository.com/artifact/org.owasp.esapi/esapi
 [esapi-project]: https://owasp.org/www-project-enterprise-security-api/
 [esapi-question]: https://owasp.org/www-project-enterprise-security-api/#div-shouldiuseesapi
 [google-keyczar]: https://github.com/google/keyczar
 [google-tink]: https://github.com/google/tink
-[en070301]: https://devguide.owasp.org/en/07-implementation/03-secure-libraries/01-esapi/
 [issue070301]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2005-implementation/03-secure-libraries/01-esapi
 [java-encoder]: https://owasp.org/www-project-java-encoder
 [java-sanitizer]: https://owasp.org/www-project-java-html-sanitizer

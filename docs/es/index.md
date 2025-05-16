@@ -66,7 +66,7 @@ entonces [cree un issue][issue03] o [edítelo en GitHub][edit03].
 
 [about]: https://owasp.org/about/
 [edit03]: https://github.com/OWASP/DevGuide/blob/main/docs/es/index.md
-[en03]: https://devguide.owasp.org/en/
+[en03]: https://devguide.owasp.org/
 [issue03]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2001-introduction
 [samm]: https://owaspsamm.org/about/
 [versions]: https://github.com/OWASP/DevGuide/wiki#old-versions

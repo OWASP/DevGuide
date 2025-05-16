@@ -1,4 +1,4 @@
-![logo de la Guía del Desarrollador](../../assets/images/dg_logo_bbd.png "Guía del Desarrollador"){ align=right width=180 }
+![logo la Guía del Desarrollador](../../../assets/images/dg_logo_bbd.png "Guía del Desarrollador"){ align=right width=180 }
 
 Según la [Hoja de Referencia de Modelado de Amenazas][cstm],
 el modelado de amenazas es un enfoque estructurado para identificar y priorizar amenazas potenciales a un sistema.

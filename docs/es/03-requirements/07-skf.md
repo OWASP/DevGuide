@@ -82,5 +82,5 @@ entonces [cree un issue][issue0507] o [edítelo en GitHub][edit0507].
 [skfinstall]: https://github.com/blabla1337/skf-flask/releases
 [skflabs]: https://secureby.design/labs
 [skfrepo]: https://github.com/Security-Knowledge-Framework
-[skfreqs]: https://starfish-app-kd3eo.ondigitalocean.app/
+[skfreqs]: https://github.com/Security-Knowledge-Framework/SKF-requirements-tool
 [spotlight07]: https://youtu.be/TFX_ZBy6lNY
