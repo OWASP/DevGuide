@@ -184,6 +184,8 @@ Otros Top 10 de OWASP son proyectos 'incubadora', que están en progreso, por lo
 
 ----
 
+Traducción de versión [original en inglés][en0405].
+
 La Guía del Desarrollador de OWASP es un esfuerzo comunitario;
 si ve algo que necesita cambios, entonces [cree un issue][issue0405] o [edítelo en GitHub][edit0405].
 
@@ -215,6 +217,7 @@ si ve algo que necesita cambios, entonces [cree un issue][issue0405] o [edítelo
 [data10]: https://owasp.org/www-project-data-security-top-10/
 [edit0405]: https://github.com/OWASP/DevGuide/blob/main/docs/es/02-foundations/05-top-ten.md
 [exploit]: https://www.exploit-db.com/
+[en0405]: https://devguide.owasp.org/en/02-foundations/05-top-ten/
 [issue0405]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2002-foundations/05-top-ten
 [lcnc10]: https://owasp.org/www-project-top-10-low-code-no-code-security-risks/
 [mobile10]: https://owasp.org/www-project-mobile-top-10/

@@ -12,9 +12,11 @@ whereas manual security testing of high-risk components requires good knowledge 
 
 ----
 
-The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue0820].
+The OWASP Developer Guide is a community effort; if there is something that needs changing
+then [submit an issue][issue0820] or [edit on GitHub][edit0820].
 
-[issue0820]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-verification/02-tools/00-toc
+[edit0820]: https://github.com/OWASP/DevGuide/blob/main/docs/en/08-verification/02-tools/index.md
+[issue0820]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2008-verification/02-tools/index
 [samm]: https://owaspsamm.org/about/
 [sammv]: https://owaspsamm.org/model/verification/
 [sammvst]: https://owaspsamm.org/model/verification/security-testing/

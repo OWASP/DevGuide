@@ -15,7 +15,9 @@ The outcomes from the threat modeling activities generally include:
 
 ----
 
-The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue0601].
+The OWASP Developer Guide is a community effort; if there is something that needs changing
+then [submit an issue][issue0601] or [edit on GitHub][edit0601].
 
 [cstm]: https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet
-[issue0601]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/01-threat-modeling/00-toc
+[edit0601]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/01-threat-modeling/index.md
+[issue0601]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/01-threat-modeling/index

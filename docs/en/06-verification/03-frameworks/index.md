@@ -13,9 +13,11 @@ Use of a framework can provide:
 
 ----
 
-The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue0830].
+The OWASP Developer Guide is a community effort; if there is something that needs changing
+then [submit an issue][issue0830] or [edit on GitHub][edit0830].
 
-[issue0830]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-verification/03-frameworks/00-toc
+[edit0830]: https://github.com/OWASP/DevGuide/blob/main/docs/es/08-verification/03-frameworks/index.md
+[issue0830]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2008-verification/03-frameworks/index
 [samm]: https://owaspsamm.org/about/
 [sammv]: https://owaspsamm.org/model/verification/
 [sammvrt]: https://owaspsamm.org/model/verification/requirements-driven-testing/

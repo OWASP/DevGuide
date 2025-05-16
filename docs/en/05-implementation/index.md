@@ -24,8 +24,10 @@ of secure development is an important knowledge activity in itself.
 
 ----
 
-The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue0700].
+The OWASP Developer Guide is a community effort; if there is something that needs changing
+then [submit an issue][issue0700] or [edit on GitHub][edit0700].
 
-[issue0700]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-implementation/00-toc
+[edit0700]: https://github.com/OWASP/DevGuide/blob/main/docs/es/05-implementation/index.md
+[issue0700]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-implementation/index
 [sammm]: https://owaspsamm.org/model/
 [sammi]: https://owaspsamm.org/model/implementation/

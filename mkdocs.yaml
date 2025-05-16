@@ -203,3 +203,74 @@ nav:
       - Principios de seguridad: es/02-foundations/03-security-principles.md
       - Principios de criptografía: es/02-foundations/04-crypto-principles.md
       - OWASP Top 10: es/02-foundations/05-top-ten.md
+    - Requisitos:
+      - Descripción: es/03-requirements/index.md
+      - Requisitos en la práctica: es/03-requirements/01-requirements.md
+      - Perfil de riesgo: es/03-requirements/02-risk.md
+      - OpenCRE: es/03-requirements/03-opencre.md
+      - SecurityRAT: es/03-requirements/04-security-rat.md
+      - ASVS: es/03-requirements/05-asvs.md
+      - MAS: es/03-requirements/06-mas.md
+      - SKF: es/03-requirements/07-skf.md
+    - Diseño:
+      - Descripción: es/04-design/index.md
+      - Modelado de amenazas:
+        - Descripción: es/04-design/01-threat-modeling/index.md
+        - Modelado de amenazas en la práctica: es/04-design/01-threat-modeling/01-threat-modeling.md
+        - pytm: es/04-design/01-threat-modeling/02-pytm.md
+        - Threat Dragon: es/04-design/01-threat-modeling/03-threat-dragon.md
+        - Cornucopia: es/04-design/01-threat-modeling/04-cornucopia.md
+        - LINDDUN GO: es/04-design/01-threat-modeling/05-linddun-go.md
+        - Threat Modeling toolkit: es/04-design/01-threat-modeling/06-toolkit.md
+      - Lista de verificación para aplicaciones web:
+        - Descripción: es/04-design/02-web-app-checklist/index.md
+        - Definir Requisitos de Seguridad: es/04-design/02-web-app-checklist/01-define-security-requirements.md
+        - Aprovechar Marcos y Bibliotecas de Seguridad: es/04-design/02-web-app-checklist/02-frameworks-libraries.md
+        - Acceso Seguro a Bases de Datos: es/04-design/02-web-app-checklist/03-secure-database-access.md
+        - Codificar y Escapar Datos: es/04-design/02-web-app-checklist/04-encode-escape-data.md
+        - Validar Todas las Entradas: es/04-design/02-web-app-checklist/05-validate-inputs.md
+        - Implementar Identidad Digital: es/04-design/02-web-app-checklist/06-digital-identity.md
+        - Aplicar Controles de Acceso: es/04-design/02-web-app-checklist/07-access-controls.md
+        - Proteger Datos en Todas Partes: es/04-design/02-web-app-checklist/08-protect-data.md
+        - Implementar Registro y Monitoreo de Seguridad: es/04-design/02-web-app-checklist/09-logging-monitoring.md
+        - Manejar todos los Errores y Excepciones: es/04-design/02-web-app-checklist/10-handle-errors-exceptions.md
+      - Lista de verificación MAS: es/04-design/03-mas-checklist.md 
+    - Implementación:
+      - Descripción: es/05-implementation/index.md
+      - Documentation:
+        - Descripción: es/05-implementation/01-documentation/index.md
+        - Top 10 Proactive Controls: es/05-implementation/01-documentation/01-proactive-controls.md
+        - Go Secure Coding Practices: es/05-implementation/01-documentation/02-go-scp.md
+        - Cheatsheet Series: es/05-implementation/01-documentation/03-cheatsheets.md
+      - Dependencias:
+        - Descripción: es/05-implementation/02-dependencies/index.md
+        - Dependency-Check: es/05-implementation/02-dependencies/01-dependency-check.md
+        - Dependency-Track: es/05-implementation/02-dependencies/02-dependency-track.md
+        - CycloneDX: es/05-implementation/02-dependencies/03-cyclonedx.md
+      - Bibliotecas seguras:
+        - Descripción: es/05-implementation/03-secure-libraries/index.md
+        - ESAPI: es/05-implementation/03-secure-libraries/01-esapi.md
+        - CSRFGuard: es/05-implementation/03-secure-libraries/02-csrf-guard.md
+        - OSHP: es/05-implementation/03-secure-libraries/03-secure-headers.md
+      - MASWE: es/05-implementation/04-maswe.md
+    - Verificación:
+      - Descripción: es/06-verification/index.md
+      - Guías:
+        - Descripción: es/06-verification/01-guides/index.md
+        - WSTG: es/06-verification/01-guides/01-wstg.md
+        - MASTG: es/06-verification/01-guides/02-mastg.md
+        - ASVS: es/06-verification/01-guides/03-asvs.md
+      - Herramientas:
+        - Descripción: es/06-verification/02-tools/index.md
+        - DAST tools: es/06-verification/02-tools/01-dast.md
+        - Amass: es/06-verification/02-tools/02-amass.md
+        - OWTF: es/06-verification/02-tools/03-owtf.md
+        - Nettacker: es/06-verification/02-tools/04-nettacker.md
+        - OSHP verification: es/06-verification/02-tools/05-secure-headers.md
+      - Marcos de verificación:
+        - Descripción: es/06-verification/03-frameworks/index.md
+        - secureCodeBox: es/06-verification/03-frameworks/01-secure-codebox.md
+      - Gestión de vulnerabilidades:
+        - Descripción: es/06-verification/04-vulnerability-management/index.md
+        - DefectDojo: es/06-verification/04-vulnerability-management/01-defectdojo.md
+      

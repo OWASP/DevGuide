@@ -10,9 +10,11 @@ which in turn is part of the [Design][sammd] business function.
 
 ----
 
-The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue0703].
+The OWASP Developer Guide is a community effort; if there is something that needs changing
+then [submit an issue][issue0703] or [edit on GitHub][edit0703].
 
-[issue0703]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-implementation/03-secure-libraries/00-toc
+[edit0703]: https://github.com/OWASP/DevGuide/blob/main/docs/en/05-implementation/03-secure-libraries/index.md
+[issue0703]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2005-implementation/03-secure-libraries/index
 [sammd]: https://owaspsamm.org/model/design/
 [sammdsa]: https://owaspsamm.org/model/design/secure-architecture/
 [sammdsatm]: https://owaspsamm.org/model/design/secure-architecture/stream-b/

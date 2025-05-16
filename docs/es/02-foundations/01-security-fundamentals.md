@@ -145,8 +145,10 @@ la información necesario para producir software seguro:
 
 ----
 
-La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que necesita cambiarse,
-[envía un problema][issue0401] o [edita en GitHub][edit0401].
+Traducción de versión [original en inglés][en0401].
+
+La Guía del Desarrollador de OWASP es un esfuerzo comunitario;
+si ve algo que necesita cambios, entonces [cree un issue][issue0401] o [edítelo en GitHub][edit0401].
 
 [cheatsheets]: https://cheatsheetseries.owasp.org/
 [csclick]: https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet
@@ -179,6 +181,7 @@ La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que 
 [csxxe]: https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet
 [edit0401]: https://github.com/OWASP/DevGuide/blob/main/docs/es/02-foundations/01-security-fundamentals.md
 [htmlliving]: https://html.spec.whatwg.org/multipage/
+[en0401]: https://devguide.owasp.org/en/02-foundations/01-security-fundamentals/
 [issue0401]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2002-foundations/01-security-fundamentals
 [nistvuln]: https://csrc.nist.gov/glossary/term/vulnerability
 [samm]: https://owaspsamm.org/about/

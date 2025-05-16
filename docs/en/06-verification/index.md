@@ -27,9 +27,11 @@ Refer to the [Security Culture][culturetest] project section for the various typ
 
 ----
 
-The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue0800].
+The OWASP Developer Guide is a community effort; if there is something that needs changing
+then [submit an issue][issue0800] or [edit on GitHub][edit0800].
 
 [culturetest]: https://owasp.org/www-project-security-culture/stable/7-Security_Testing/
-[issue0800]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-verification/00-toc
+[edit0800]: https://github.com/OWASP/DevGuide/blob/main/docs/en/06-verification/index.md
+[issue0800]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2006-verification/index
 [samm]: https://owaspsamm.org/about/
 [sammv]: https://owaspsamm.org/model/verification/

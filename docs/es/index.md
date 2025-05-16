@@ -59,11 +59,14 @@ proyectos y documentos con la Guía del Desarrollador que proporciona algo de co
 
 ----
 
+Traducción de versión [original en inglés][en03].
+
 La Guía para desarrolladores de OWASP es un esfuerzo comunitario; si hay algo que necesita cambio
 entonces [cree un issue][issue03] o [edítelo en GitHub][edit03].
 
 [about]: https://owasp.org/about/
 [edit03]: https://github.com/OWASP/DevGuide/blob/main/docs/es/index.md
+[en03]: https://devguide.owasp.org/en/
 [issue03]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2001-introduction
 [samm]: https://owaspsamm.org/about/
 [versions]: https://github.com/OWASP/DevGuide/wiki#old-versions

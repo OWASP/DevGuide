@@ -10,9 +10,11 @@ and provides guidance on building security into applications and systems.
 
 ----
 
-The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue0710].
+The OWASP Developer Guide is a community effort; if there is something that needs changing
+then [submit an issue][issue0710] or [edit on GitHub][edit0710].
 
-[issue0710]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-implementation/01-documentation/00-toc
+[edit0710]: https://github.com/OWASP/DevGuide/blob/main/docs/es/07-implementation/01-documentation/index.md
+[issue0710]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2007-implementation/01-documentation/index
 [sammg]: https://owaspsamm.org/model/governance/
 [sammgeg]: https://owaspsamm.org/model/governance/education-and-guidance/
 [sammgegta]: https://owaspsamm.org/model/governance/education-and-guidance/stream-a/

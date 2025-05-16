@@ -99,9 +99,9 @@ then [submit an issue][issue0501] or [edit on GitHub][edit0501].
 
 [asvs]: https://owasp.org/www-project-application-security-verification-standard/
 [csabuse]: https://cheatsheetseries.owasp.org/cheatsheets/Abuse_Case_Cheat_Sheet
+[edit0501]: https://github.com/OWASP/DevGuide/blob/main/docs/en/03-requirements/01-requirements.md
 [issue0501]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2003-requirements/01-requirements
 [mas]: https://mas.owasp.org/
-[edit0501]: https://github.com/OWASP/DevGuide/blob/main/docs/en/03-requirements/01-requirements.md
 [proactive10]: https://owasp.org/www-project-proactive-controls/
 [samm]: https://owaspsamm.org/about/
 [sammdsr]: https://owaspsamm.org/model/design/security-requirements/

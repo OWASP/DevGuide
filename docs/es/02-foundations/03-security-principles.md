@@ -194,6 +194,8 @@ de 'muchos ojos' y por lo tanto es probable que sean aún más seguros.
 
 ----
 
+Traducción de versión [original en inglés][en0403].
+
 La Guía del Desarrollador de OWASP es un esfuerzo comunitario;
 si ve algo que necesita cambios, entonces [cree un issue][issue0403] o [edítelo en GitHub][edit0403].
 
@@ -205,6 +207,7 @@ si ve algo que necesita cambios, entonces [cree un issue][issue0403] o [edítelo
 [did]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html#2-the-principle-of-defense-in-depth
 [edit0403]: https://github.com/OWASP/DevGuide/blob/main/docs/es/02-foundations/03-security-principles.md
 [elp]: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html#enforce-least-privileges
+[en0403]: https://devguide.owasp.org/en/02-foundations/03-security-principles/
 [issue0403]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2002-foundations/03-security-principles
 
 [sop]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html#1-the-principle-of-least-privilege-and-separation-of-duties

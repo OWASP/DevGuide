@@ -34,9 +34,11 @@ the [Software Assurance Maturity Model (SAMM)][samm], and includes security prac
 
 ----
 
-The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue0600].
+The OWASP Developer Guide is a community effort; if there is something that needs changing
+then [submit an issue][issue0600] or [edit on GitHub][edit0600].
 
-[issue0600]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/00-toc
+[edit0600]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/index.md
+[issue0600]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2004-design/index
 [samm]: https://owaspsamm.org/about/
 [sammd]: https://owaspsamm.org/model/design/
 [sammdsa]: https://owaspsamm.org/model/design/secure-architecture/

@@ -182,8 +182,10 @@ y proporcionan retroalimentación instantánea sobre las pruebas mientras se eje
 
 ----
 
-La Guía para Desarrolladores de OWASP es un esfuerzo comunitario; si hay algo que necesita cambiarse,
-[cree un issue][issue0402] o [edítelo en GitHub][edit0402].
+Traducción de versión [original en inglés][en0402].
+
+La Guía del Desarrollador de OWASP es un esfuerzo comunitario;
+si ve algo que necesita cambios, entonces [cree un issue][issue0402] o [edítelo en GitHub][edit0402].
 
 [amass]: https://owasp.org/www-project-amass/
 [apisec]: https://owasp.org/API-Security
@@ -205,6 +207,7 @@ La Guía para Desarrolladores de OWASP es un esfuerzo comunitario; si hay algo q
 [esapi-project]: https://owasp.org/www-project-enterprise-security-api/
 [github]: https://github.com/
 [gitlab]: https://about.gitlab.com/
+[en0402]: https://devguide.owasp.org/en/02-foundations/02-secure-development/
 [issue0402]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2002-foundations/02-secure-development
 [juice]: https://owasp.org/www-project-juice-shop/
 [mas]: https://mas.owasp.org/

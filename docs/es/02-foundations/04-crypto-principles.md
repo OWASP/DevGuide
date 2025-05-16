@@ -259,6 +259,8 @@ Referencias
 
 ----
 
+Traducción de versión [original en inglés][en0404].
+
 La Guía del Desarrollador de OWASP es un esfuerzo comunitario;
 si ve algo que necesita cambios, entonces [cree un issue][issue0404] o [edítelo en GitHub][edit0404].
 
@@ -269,6 +271,7 @@ si ve algo que necesita cambios, entonces [cree un issue][issue0404] o [edítelo
 [cscs]: https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet
 [kmcs]: https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet
 [edit0404]: https://github.com/OWASP/DevGuide/blob/main/docs/es/02-foundations/04-crypto-principles.md
+[en0404]: https://devguide.owasp.org/en/02-foundations/04-crypto-principles/
 [issue0404]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2002-foundations/04-crypto-principles
 [sscs]: https://cheatsheetseries.owasp.org/cheatsheets/SAML_Security_Cheat_Sheet
 [spdcs]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet

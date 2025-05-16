@@ -15,8 +15,10 @@ and this initial ASVS checklist can then be expanded using the following checkli
 
 ----
 
-The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue0602].
+The OWASP Developer Guide is a community effort; if there is something that needs changing
+then [submit an issue][issue0602] or [edit on GitHub][edit0602].
 
 [asvs]: https://owasp.org/www-project-application-security-verification-standard/
-[issue0602]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/02-web-app-checklist/00-toc
+[edit0602]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/02-web-app-checklist/index.md
+[issue0602]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2004-design/02-web-app-checklist/index
 [proactive10]: https://owasp.org/www-project-proactive-controls/
