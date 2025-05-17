@@ -1,4 +1,4 @@
-![Developer guide logo](../../../assets/images/dg_logo_bbd.png "Guía del Desarrollador"){ align=right width=180 }
+![logo la guía del desarrollador](../../../assets/images/dg_logo_bbd.png "Guía del Desarrollador"){ align=right width=180 }
 
 La [Verificación][sammv] es una de las funciones de negocio descritas por [OWASP SAMM][samm]
 y tanto las [Pruebas de Seguridad][sammvst] como las [Pruebas Basadas en Requisitos][sammvrt]

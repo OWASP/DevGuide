@@ -1,0 +1,176 @@
+site_name: La Guía del Desarrollador OWASP
+site_description: Un Proyecto abierto de seguridad de aplicaciones a nivel mundial
+site_author: La comunidad de la Guía del Desarrollador OWASP
+site_url: https://devguide.owasp.org/
+
+copyright: <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International license</a>.
+
+repo_name: OWASP/DevGuide
+repo_url: https://github.com/OWASP/DevGuide
+
+theme:
+  name: material
+  language: es
+  logo: assets/images/dg_logo_solid.png
+  favicon: assets/images/favicon.png
+
+markdown_extensions:
+  - def_list
+  - attr_list
+  - md_in_html
+
+plugins: 
+  - with-pdf:  # https://github.com/orzih/mkdocs-with-pdf
+      output_path: OWASP_Developer_Guide-ES.pdf
+      exclude_pages:
+        - 'index.md'
+        - 'en/02-foundations/'
+        - 'en/03-requirements/'
+        - 'en/04-design/'
+        - 'en/05-implementation/'
+        - 'en/06-verification/'
+        - 'pt-br/'
+      cover_title: La Guía del Desarrollador OWASP
+      cover_subtitle: Un Proyecto abierto de seguridad de aplicaciones a nivel mundial
+      cover_logo: assets/images/dg_logo.png
+      author: Open Worldwide Application Security Project (OWASP)
+      copyright: Creative Commons Attribution ShareAlike 4.0 International (CC BY-SA 4.0)
+
+nav:
+  - Guía del Desarrollador: es/index.md
+  - Fundamentos:
+    - Descripción: es/02-foundations/index.md
+    - Fundamentos de seguridad: es/02-foundations/01-security-fundamentals.md
+    - Desarrollo e integración segura: es/02-foundations/02-secure-development.md
+    - Principios de seguridad: es/02-foundations/03-security-principles.md
+    - Principios de criptografía: es/02-foundations/04-crypto-principles.md
+    - OWASP Top 10: es/02-foundations/05-top-ten.md
+  - Requisitos:
+    - Descripción: es/03-requirements/index.md
+    - Requisitos en la práctica: es/03-requirements/01-requirements.md
+    - Perfil de riesgo: es/03-requirements/02-risk.md
+    - OpenCRE: es/03-requirements/03-opencre.md
+    - SecurityRAT: es/03-requirements/04-security-rat.md
+    - ASVS: es/03-requirements/05-asvs.md
+    - MAS: es/03-requirements/06-mas.md
+    - SKF: es/03-requirements/07-skf.md
+  - Diseño:
+    - Descripción: es/04-design/index.md
+    - Modelado de amenazas:
+      - Descripción: es/04-design/01-threat-modeling/index.md
+      - Modelado de amenazas en la práctica: es/04-design/01-threat-modeling/01-threat-modeling.md
+      - pytm: es/04-design/01-threat-modeling/02-pytm.md
+      - Threat Dragon: es/04-design/01-threat-modeling/03-threat-dragon.md
+      - Cornucopia: es/04-design/01-threat-modeling/04-cornucopia.md
+      - LINDDUN GO: es/04-design/01-threat-modeling/05-linddun-go.md
+      - Threat Modeling toolkit: es/04-design/01-threat-modeling/06-toolkit.md
+    - Lista de verificación para aplicaciones web:
+      - Descripción: es/04-design/02-web-app-checklist/index.md
+      - Definir Requisitos de Seguridad: es/04-design/02-web-app-checklist/01-define-security-requirements.md
+      - Aprovechar Marcos y Bibliotecas de Seguridad: es/04-design/02-web-app-checklist/02-frameworks-libraries.md
+      - Acceso Seguro a Bases de Datos: es/04-design/02-web-app-checklist/03-secure-database-access.md
+      - Codificar y Escapar Datos: es/04-design/02-web-app-checklist/04-encode-escape-data.md
+      - Validar Todas las Entradas: es/04-design/02-web-app-checklist/05-validate-inputs.md
+      - Implementar Identidad Digital: es/04-design/02-web-app-checklist/06-digital-identity.md
+      - Aplicar Controles de Acceso: es/04-design/02-web-app-checklist/07-access-controls.md
+      - Proteger Datos en Todas Partes: es/04-design/02-web-app-checklist/08-protect-data.md
+      - Implementar Registro y Monitoreo de Seguridad: es/04-design/02-web-app-checklist/09-logging-monitoring.md
+      - Manejar todos los Errores y Excepciones: es/04-design/02-web-app-checklist/10-handle-errors-exceptions.md
+    - Lista de verificación MAS: es/04-design/03-mas-checklist.md 
+  - Implementación:
+    - Descripción: es/05-implementation/index.md
+    - Documentation:
+      - Descripción: es/05-implementation/01-documentation/index.md
+      - Top 10 Proactive Controls: es/05-implementation/01-documentation/01-proactive-controls.md
+      - Go Secure Coding Practices: es/05-implementation/01-documentation/02-go-scp.md
+      - Cheatsheet Series: es/05-implementation/01-documentation/03-cheatsheets.md
+    - Dependencias:
+      - Descripción: es/05-implementation/02-dependencies/index.md
+      - Dependency-Check: es/05-implementation/02-dependencies/01-dependency-check.md
+      - Dependency-Track: es/05-implementation/02-dependencies/02-dependency-track.md
+      - CycloneDX: es/05-implementation/02-dependencies/03-cyclonedx.md
+    - Bibliotecas seguras:
+      - Descripción: es/05-implementation/03-secure-libraries/index.md
+      - ESAPI: es/05-implementation/03-secure-libraries/01-esapi.md
+      - CSRFGuard: es/05-implementation/03-secure-libraries/02-csrf-guard.md
+      - OSHP: es/05-implementation/03-secure-libraries/03-secure-headers.md
+    - MASWE: es/05-implementation/04-maswe.md
+  - Verificación:
+    - Descripción: es/06-verification/index.md
+    - Guías:
+      - Descripción: es/06-verification/01-guides/index.md
+      - WSTG: es/06-verification/01-guides/01-wstg.md
+      - MASTG: es/06-verification/01-guides/02-mastg.md
+      - ASVS: es/06-verification/01-guides/03-asvs.md
+    - Herramientas:
+      - Descripción: es/06-verification/02-tools/index.md
+      - DAST tools: es/06-verification/02-tools/01-dast.md
+      - Amass: es/06-verification/02-tools/02-amass.md
+      - OWTF: es/06-verification/02-tools/03-owtf.md
+      - Nettacker: es/06-verification/02-tools/04-nettacker.md
+      - OSHP verification: es/06-verification/02-tools/05-secure-headers.md
+    - Marcos de verificación:
+      - Descripción: es/06-verification/03-frameworks/index.md
+      - secureCodeBox: es/06-verification/03-frameworks/01-secure-codebox.md
+    - Gestión de vulnerabilidades:
+      - Descripción: es/06-verification/04-vulnerability-management/index.md
+      - DefectDojo: es/06-verification/04-vulnerability-management/01-defectdojo.md
+  - Training and Education:
+    - Overview: en/07-training-education/index.md
+    - Vulnerable Applications:
+      - Overview: en/07-training-education/01-vulnerable-apps/index.md
+      - Juice Shop: en/07-training-education/01-vulnerable-apps/01-juice-shop.md
+      - WebGoat: en/07-training-education/01-vulnerable-apps/02-webgoat.md
+      - PyGoat: en/07-training-education/01-vulnerable-apps/03-pygoat.md
+      - Security Shepherd: en/07-training-education/01-vulnerable-apps/04-security-shepherd.md
+    - Secure Coding Dojo: en/07-training-education/02-secure-coding-dojo.md
+    - SKF: en/07-training-education/03-skf.md
+    - SamuraiWTF: en/07-training-education/04-samurai-wtf.md
+    - OWASP Top 10: en/07-training-education/05-top-ten.md
+    - Mobile Top 10: en/07-training-education/06-mobile-top-ten.md
+    - API Top 10: en/07-training-education/07-api-top-ten.md
+    - WrongSecrets: en/07-training-education/08-wrongsecrets.md
+    - OWASP Snakes and Ladders: en/07-training-education/09-snakes-ladders.md
+  - Culture building and Process maturing:
+    - Overview: en/08-culture-process/index.md
+    - Security Culture: en/08-culture-process/01-security-culture.md
+    - Security Champions:
+      - Overview: en/08-culture-process/02-security-champions/index.md
+      - Security champions program: en/08-culture-process/02-security-champions/01-security-champions-program.md
+      - Security Champions Guide: en/08-culture-process/02-security-champions/02-security-champions-guide.md
+      - Security Champions Playbook: en/08-culture-process/02-security-champions/03-security-champions-playbook.md
+    - SAMM: en/08-culture-process/03-samm.md
+    - ASVS: en/08-culture-process/04-asvs.md
+    - MAS: en/08-culture-process/05-mas.md
+  - Operations:
+    - Overview: en/09-operations/index.md
+    - DevSecOps Guideline: en/09-operations/01-devsecops.md
+    - Coraza WAF: en/09-operations/02-coraza.md
+    - ModSecurity WAF: en/09-operations/03-modsecurity.md
+    - OWASP CRS: en/09-operations/04-crs.md
+  - Metrics:
+    - Overview: en/10-metrics/index.md
+  - Security gap analysis:
+    - Overview: en/11-security-gap-analysis/index.md
+    - Guides:
+      - Overview: en/11-security-gap-analysis/01-guides/index.md
+      - SAMM: en/11-security-gap-analysis/01-guides/01-samm.md
+      - ASVS: en/11-security-gap-analysis/01-guides/02-asvs.md
+      - MAS: en/11-security-gap-analysis/01-guides/03-mas.md
+    - BLT: en/11-security-gap-analysis/02-blt.md
+  - Appendices:
+    - Implementation Do's and Don'ts:
+      - Overview: en/12-appendices/01-implementation-dos-donts/index.md
+      - Container security: en/12-appendices/01-implementation-dos-donts/01-container-security.md
+      - Secure coding: en/12-appendices/01-implementation-dos-donts/02-secure-coding.md
+      - Cryptographic practices: en/12-appendices/01-implementation-dos-donts/03-cryptographic-practices.md
+      - Application spoofing: en/12-appendices/01-implementation-dos-donts/04-application-spoofing.md
+      - Content Security Policy (CSP): en/12-appendices/01-implementation-dos-donts/05-content-security-policy.md
+      - Exception and error handling: en/12-appendices/01-implementation-dos-donts/06-exception-error-handling.md
+      - File management: en/12-appendices/01-implementation-dos-donts/07-file-management.md
+      - Memory management: en/12-appendices/01-implementation-dos-donts/08-memory-management.md
+    - Verification Do's and Don'ts:
+      - Overview: en/12-appendices/02-verification-dos-donts/index.md
+      - Secure environment: en/12-appendices/02-verification-dos-donts/01-secure-environment.md
+      - System hardening: en/12-appendices/02-verification-dos-donts/02-system-hardening.md
+      - Open Source software: en/12-appendices/02-verification-dos-donts/03-open-source-software.md

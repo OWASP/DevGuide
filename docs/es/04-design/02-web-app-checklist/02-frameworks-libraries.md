@@ -33,7 +33,7 @@ y utilícelas como punto de partida para una lista de verificación adaptada a l
 
 Además, considere las siguientes comprobaciones adicionales para marcos y bibliotecas.
 
-#### 1. Marcos y Bibliotecas de Seguridad
+### Marcos y Bibliotecas de Seguridad
 
 1. Asegurar que los servidores, marcos y componentes del sistema ejecuten las últimas versiones y parches aprobados
 2. Utilizar bibliotecas y marcos de fuentes confiables que se mantengan activamente y sean ampliamente utilizados

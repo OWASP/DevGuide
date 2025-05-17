@@ -4,8 +4,6 @@
 # project files
 !*.md
 !license.txt
-!mkdocs.yaml
-!CNAME
 
 # allow github, workflows and templates
 !.github/
@@ -20,6 +18,8 @@
 !.markdownlint.yaml
 !.spellcheck*.yaml
 !.wordlist*.txt
+!mkdocs*.yaml
+!CNAME
 
 # docs site
 !docs/

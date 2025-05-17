@@ -69,6 +69,30 @@ jobs:
         with:
           config_path: .spellcheck-es.yaml
 
+  build_check:
+    name: Build check
+    runs-on: ubuntu-24.04
+    needs: [md_linter, spell_checker_en, spell_checker_es]
+    steps:
+      - name: Checkout markdown
+        uses: actions/checkout@v4.2.0
+
+      - name: Install python
+        uses: actions/setup-python@v5.5.0
+        with:
+          python-version: 3.x
+
+      - name: Install python packages
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          pip install mkdocs
+          pip install mkdocs-material 
+          pip install mkdocs-open-in-new-tab
+          pip install mkdocs-with-pdf
+
+      - name: Build docs
+        run: mkdocs build
+
   export_pdf:
     name: Export PDFs
     runs-on: ubuntu-24.04
@@ -90,5 +114,8 @@ jobs:
           pip install mkdocs-open-in-new-tab
           pip install mkdocs-with-pdf
 
-      - name: Build check for EN
-        run: mkdocs build
+      - name: Build pdf for EN
+        run: mkdocs build --config-file mkdocs-pdf-en.yaml
+
+      - name: Build pdf for ES
+        run: mkdocs build --config-file mkdocs-pdf-es.yaml

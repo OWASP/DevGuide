@@ -44,15 +44,6 @@ markdown_extensions:
 
 plugins:
   - open-in-new-tab  
-  - with-pdf:  # https://github.com/orzih/mkdocs-with-pdf
-      output_path: OWASP_Developer_Guide.pdf
-      exclude_pages:
-        - 'es/'
-      cover_title: OWASP Developer Guide
-      cover_subtitle: A guide to building secure Web Applications and Web Services
-      cover_logo: assets/images/dg_logo.png
-      author: Open Worldwide Application Security Project (OWASP)
-      copyright: Creative Commons Attribution ShareAlike 4.0 International (CC BY-SA 4.0)
   - search
 
 nav:
@@ -273,4 +264,3 @@ nav:
       - Gestión de vulnerabilidades:
         - Descripción: es/06-verification/04-vulnerability-management/index.md
         - DefectDojo: es/06-verification/04-vulnerability-management/01-defectdojo.md
-      
