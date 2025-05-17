@@ -1,3 +1,4 @@
+![Logo a guía del desarrollador](../../../assets/images/dg_logo_bbd.png "Guía del Desarrollador"){ align=right width=180 }
 
 [Verificación][sammv] es una de las funciones de negocio descritas por [OWASP SAMM][samm].
 

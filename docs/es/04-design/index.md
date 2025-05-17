@@ -1,3 +1,5 @@
+![logo la Guía del Desarrollador](../../assets/images/dg_logo.png "Guía del Desarrollador"){ align=right width=180 }
+
 Refiriéndose a la [Hoja de Referencia de Diseño de Producto Seguro][spdcs],
 el propósito de la arquitectura y diseño seguros es garantizar
 que todos los productos cumplan o excedan los requisitos de seguridad establecidos por la organización,
