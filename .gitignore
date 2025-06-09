@@ -41,6 +41,10 @@
 !docs/pt-br/index.md
 !docs/pt-br/**/
 !docs/pt-br/**/*.md
+!docs/fa/
+!docs/fa/index.md
+!docs/fa/**/
+!docs/fa/**/*.md
 !docs/CNAME
 
 # ignore symbolic links
