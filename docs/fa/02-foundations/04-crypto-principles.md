@@ -105,9 +105,9 @@ OpenID Connect به طور گسترده به عنوان یک لایه هویتی
 روش مختلف دسته‌بندی کرد. رایج‌ترین تمایز بین آنها عبارتند از:
 
 * اینکه آیا روی تعداد ثابتی از بیت‌ها کار می‌کنند (رمزهای قالبی یا block ciphers) یا روی یک جریان
-پیوسته از بیت‌ها (رمزهای جریانی یا stream ciphers).
+  پیوسته از بیت‌ها (رمزهای جریانی یا stream ciphers).
 * اینکه آیا از کلید یکسانی برای رمزگذاری و رمزگشایی استفاده می‌شود (رمزهای متقارن یا symmetric ciphers)
-یا از کلیدهای جداگانه برای رمزگذاری و رمزگشایی (رمزهای نامتقارن یا asymmetric ciphers).
+  یا از کلیدهای جداگانه برای رمزگذاری و رمزگشایی (رمزهای نامتقارن یا asymmetric cifere).
 
 #### رمزهای متقارن (Symmetric Ciphers)
 
@@ -115,10 +115,11 @@ OpenID Connect به طور گسترده به عنوان یک لایه هویتی
 داده‌ها را رمزگذاری کند و طرف دیگر باید آن را رمزگشایی کند، آن دو طرف باید یک کلید مشترک داشته باشند.
 
 رمزهای متقارن دو نوع اصلی دارند:
+
 ۱. رمزهای قالبی (Block ciphers)، که هر بار روی یک بلوک از کاراکترها (معمولاً ۸ یا ۱۶ اکتت) عمل می‌کنند.
-نمونه‌ای از رمز قالبی، AES است.
+   نمونه‌ای از رمز قالبی، AES است.
 ۲. رمزهای جریانی (Stream ciphers)، که هر بار روی یک بیت (یا گاهی یک بایت) عمل می‌کنند. نمونه‌هایی از
-رمزهای جریانی RC4 (معروف به ARC4) و Salsa20 هستند.
+   رمزهای جریانی RC4 (معروف به ARC4) و Salsa20 هستند.
 
 توجه داشته باشید که تمام رمزهای قالبی با انتخاب حالت رمز مناسب می‌توانند در «حالت جریانی» نیز عمل کنند.
 
@@ -213,15 +214,15 @@ OFB (بازخورد خروجی) و CFB (بازخورد رمز) پشتیبانی 
 
 #### منابع (References)
 
-* مجموعه Cheat Sheetهای OWASP
-    * [Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
-    * [Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
-    * [Cryptographic Storage](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
-    * [Key Management](https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html)
-    * [OAuth 2.0 Protocol](https://cheatsheetseries.owasp.org/cheatsheets/OAuth_2.0_Cheat_Sheet.html)
-    * [SAML Security](https://cheatsheetseries.owasp.org/cheatsheets/SAML_Security_Cheat_Sheet.html)
-    * [Secure Product Design](https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html)
-    * [User Privacy Protection](https://cheatsheetseries.owasp.org/cheatsheets/User_Privacy_Protection_Cheat_Sheet.html)
+- مجموعه Cheat Sheetهای OWASP
+  - [Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
+  - [Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
+  - [Cryptographic Storage](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
+  - [Key Management](https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html)
+  - [OAuth 2.0 Protocol](https://cheatsheetseries.owasp.org/cheatsheets/OAuth_2.0_Cheat_Sheet.html)
+  - [SAML Security](https://cheatsheetseries.owasp.org/cheatsheets/SAML_Security_Cheat_Sheet.html)
+  - [Secure Product Design](https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html)
+  - [User Privacy Protection](https://cheatsheetseries.owasp.org/cheatsheets/User_Privacy_Protection_Cheat_Sheet.html)
 
 ---
 

@@ -163,16 +163,16 @@ Defaults) یا «امنیت به صورت پیش‌فرض» (Secure by Default) 
 #### منابع (References)
 
 - مجموعه Cheat Sheetهای OWASP
-    - [Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
-    - [Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
-    - [Secure Product Design Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html)
+  - [Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
+  - [Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
+  - [Secure Product Design Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html)
 - کنترل‌های پیشگیرانه ۱۰گانه برتر OWASP
-    - [C5: Secure by Default Configurations](https://top10proactive.owasp.org/the-top-10/c5-secure-by-default/)
+  - [C5: Secure by Default Configurations](https://top10proactive.owasp.org/the-top-10/c5-secure-by-default/)
 - سایر موارد
-    - [Compartmentalization (information security)](https://en.wikipedia.org/wiki/Compartmentalization_(information_security)), (Wikipedia)
-    - [Least Functionality](https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-7/), (NIST)
-    - [Security by Design](https://pubs.opengroup.org/security/o-esa/#_Toc291061712), (Open Group)
-    - [Usability and Manageability](https://pubs.opengroup.org/security/o-esa/#_Toc291061714), (Open Group)
+  - [Compartmentalization (information security)](https://en.wikipedia.org/wiki/Compartmentalization_(information_security)), (Wikipedia)
+  - [Least Functionality](https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-7/), (NIST)
+  - [Security by Design](https://pubs.opengroup.org/security/o-esa/#_Toc291061712), (Open Group)
+  - [Usability and Manageability](https://pubs.opengroup.org/security/o-esa/#_Toc291061714), (Open Group)
 
 ---
 

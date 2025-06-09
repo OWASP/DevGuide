@@ -134,7 +134,7 @@ NIST یک [آسیب‌پذیری][nistvuln] را اینگونه تعریف می�
 
 #### منابع
 
-- [استاندارد زنده HTML][htmlliving] [[WHATWG]](https://whatwg.org/)
+- [استاندارد زنده HTML][htmlliving] [WHATWG]
 - OWASP [مجموعه برگه‌های تقلب](https://cheatsheetseries.owasp.org/)
 - OWASP [مدل بلوغ تضمین نرم‌افزار][samm] (SAMM)
 
@@ -161,4 +161,4 @@ NIST یک [آسیب‌پذیری][nistvuln] را اینگونه تعریف می�
 [sammv]: https://owaspsamm.org/model/verification/
 [w3consortium]: https://www.w3.org/
 [w3schools]: https://www.w3schools.com/html/
-[whatwg]: https://whatwg.org/
+[whatwg]: <https://whatwg.org/>
