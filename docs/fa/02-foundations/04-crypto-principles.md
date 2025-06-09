@@ -41,10 +41,10 @@
 احراز هویت فرآیند تأیید ادعای یک فاعل (subject) مبنی بر اینکه او همان کسی است که می‌گوید، از طریق
 شواهد تأییدکننده ارائه شده است. رمزنگاری در احراز هویت نقش محوری دارد:
 
-۱. برای محافظت از شواهد تأییدکننده ارائه شده (به عنوان مثال، هش کردن رمزهای عبور برای ذخیره‌سازی بعدی).
-۲. در پروتکل‌های احراز هویت که اغلب از رمزنگاری برای احراز هویت مستقیم موجودیت‌ها یا تبادل امن اعتبارنامه‌ها
-استفاده می‌کنند.
-۳. برای تأیید هویت یک یا هر دو طرف در تبادل پیام‌ها, به عنوان مثال تأیید هویت در امنیت لایه انتقال (TLS).
+1.  برای محافظت از شواهد تأییدکننده ارائه شده (به عنوان مثال، هش کردن رمزهای عبور برای ذخیره‌سازی بعدی).
+2.  در پروتکل‌های احراز هویت که اغلب از رمزنگاری برای احراز هویت مستقیم موجودیت‌ها یا تبادل امن اعتبارنامه‌ها
+    استفاده می‌کنند.
+3.  برای تأیید هویت یک یا هر دو طرف در تبادل پیام‌ها, به عنوان مثال تأیید هویت در امنیت لایه انتقال (TLS).
 
 OpenID Connect به طور گسترده به عنوان یک لایه هویتی بر روی پروتکل OAuth 2.0 استفاده می‌شود. به
 [برگه تقلب پروتکل OAuth 2.0](https://cheatsheetseries.owasp.org/cheatsheets/OAuth_2.0_Cheat_Sheet.html) مراجعه کنید.
@@ -107,7 +107,7 @@ OpenID Connect به طور گسترده به عنوان یک لایه هویتی
 * اینکه آیا روی تعداد ثابتی از بیت‌ها کار می‌کنند (رمزهای قالبی یا block ciphers) یا روی یک جریان
   پیوسته از بیت‌ها (رمزهای جریانی یا stream ciphers).
 * اینکه آیا از کلید یکسانی برای رمزگذاری و رمزگشایی استفاده می‌شود (رمزهای متقارن یا symmetric ciphers)
-  یا از کلیدهای جداگانه برای رمزگذاری و رمزگشایی (رمزهای نامتقارن یا asymmetric cifere).
+  یا از کلیدهای جداگانه برای رمزگذاری و رمزگشایی (رمزهای نامتقارن یا asymmetric ciphers).
 
 #### رمزهای متقارن (Symmetric Ciphers)
 
@@ -116,10 +116,10 @@ OpenID Connect به طور گسترده به عنوان یک لایه هویتی
 
 رمزهای متقارن دو نوع اصلی دارند:
 
-۱. رمزهای قالبی (Block ciphers)، که هر بار روی یک بلوک از کاراکترها (معمولاً ۸ یا ۱۶ اکتت) عمل می‌کنند.
-   نمونه‌ای از رمز قالبی، AES است.
-۲. رمزهای جریانی (Stream ciphers)، که هر بار روی یک بیت (یا گاهی یک بایت) عمل می‌کنند. نمونه‌هایی از
-   رمزهای جریانی RC4 (معروف به ARC4) و Salsa20 هستند.
+1.  رمزهای قالبی (Block ciphers)، که هر بار روی یک بلوک از کاراکترها (معمولاً ۸ یا ۱۶ اکتت) عمل می‌کنند.
+    نمونه‌ای از رمز قالبی، AES است.
+2.  رمزهای جریانی (Stream ciphers)، که هر بار روی یک بیت (یا گاهی یک بایت) عمل می‌کنند. نمونه‌هایی از
+    رمزهای جریانی RC4 (معروف به ARC4) و Salsa20 هستند.
 
 توجه داشته باشید که تمام رمزهای قالبی با انتخاب حالت رمز مناسب می‌توانند در «حالت جریانی» نیز عمل کنند.
 
@@ -214,15 +214,15 @@ OFB (بازخورد خروجی) و CFB (بازخورد رمز) پشتیبانی 
 
 #### منابع (References)
 
-- مجموعه Cheat Sheetهای OWASP
-  - [Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
-  - [Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
-  - [Cryptographic Storage](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
-  - [Key Management](https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html)
-  - [OAuth 2.0 Protocol](https://cheatsheetseries.owasp.org/cheatsheets/OAuth_2.0_Cheat_Sheet.html)
-  - [SAML Security](https://cheatsheetseries.owasp.org/cheatsheets/SAML_Security_Cheat_Sheet.html)
-  - [Secure Product Design](https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html)
-  - [User Privacy Protection](https://cheatsheetseries.owasp.org/cheatsheets/User_Privacy_Protection_Cheat_Sheet.html)
+* مجموعه Cheat Sheetهای OWASP
+  * [Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
+  * [Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
+  * [Cryptographic Storage](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
+  * [Key Management](https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html)
+  * [OAuth 2.0 Protocol](https://cheatsheetseries.owasp.org/cheatsheets/OAuth_2.0_Cheat_Sheet.html)
+  * [SAML Security](https://cheatsheetseries.owasp.org/cheatsheets/SAML_Security_Cheat_Sheet.html)
+  * [Secure Product Design](https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html)
+  * [User Privacy Protection](https://cheatsheetseries.owasp.org/cheatsheets/User_Privacy_Protection_Cheat_Sheet.html)
 
 ---
 
