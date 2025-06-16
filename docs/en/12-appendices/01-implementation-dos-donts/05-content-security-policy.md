@@ -43,8 +43,6 @@ For web applications, the source of all content is set to self.
 
 - `default-src` 'self'
 - `script-src` 'self';
-- `script-src` `unsafe-inline` `unsafe-eval` https:; (I am fairly sure this is used to block unsafe inline scripts
-    and `eval` but to be checked) - Have checked now and `unsafe-inline` should not be used
 - `connect-src` 'self';
 - `img-src` 'self';
 - `style-src` 'self'
