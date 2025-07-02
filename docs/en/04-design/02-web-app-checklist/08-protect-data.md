@@ -20,6 +20,8 @@ and use the list below as suggestions for a checklist that has been tailored for
 10. Implement least privilege, restricting access to functionality, data and system information
 11. Protect all cached or temporary copies of sensitive data from unauthorized access
 12. Purge those temporary copies of sensitive data as soon as they are no longer required
+13. Do not include sensitive information in the URL or query string, such as an API key or session token
+14. Disable client side caching on pages containing sensitive information (e.g. Cache-Control: no-store)
 
 #### 2. Memory management
 
