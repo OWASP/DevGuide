@@ -12,6 +12,11 @@ and use the list below as suggestions for a checklist that has been tailored for
 3. Deny by default; if a request is not specifically allowed then it is denied
 4. Apply least privilege, providing the least access as is necessary
 5. Log all authorization events
+6. Create unit and integration test to document and verify an application's business rules, data types and access
+   authorization criteria and/or processes so that access can be properly provisioned and controlled for restricting
+   function-level, data-specific, and field-level access based on consumer permissions and resource attributes
+7. Access Control criteria and/or processes not testable through automated tests should be documented so that they
+   can be manually tested
 
 #### 2. Access control
 
@@ -26,6 +31,17 @@ and use the list below as suggestions for a checklist that has been tailored for
 8. If long authenticated sessions are allowed, periodically re-validate a user's authorization
 9. Implement account auditing and enforce the disabling of unused accounts
 10. The application must support termination of sessions when authorization ceases
+11. Restrict function-level access to consumers with explicit permissions
+12. Restrict direct object references to only authorized users with explicit permissions to specific data items  
+    to mitigate insecure direct object reference (IDOR) and broken object level authorization (BOLA)
+13. Restrict access to user and data attributes to consumers with explicit permissions to specific fields to mitigate broken
+    object property level authorization (BOPLA)
+14. Restrict access security-relevant configuration information to only authorized users who have been allowed access through
+    multiple layers of security, including continuous consumer identity verification, device security posture assessment, and
+    contextual risk analysis
+15. Server side implementation and presentation layer representations of access control rules should not differ in such a way
+    that they allow for business functionality and rules to be compromised
+16. Enforce application logic flows to comply with business rules
 
 #### References
 
