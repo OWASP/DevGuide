@@ -33,6 +33,12 @@ and use the list below as suggestions for a checklist that has been tailored for
 8. All logging controls should be implemented on a trusted system
 9. Ensure that a mechanism exists to conduct log analysis
 
+#### 3. Monitoring
+
+1. Effective monitoring and alerting should be established to detect and respond to suspicious activities quickly
+2. Account for attack patterns that bypass standard lockouts, like using the same passwords against multiple user accounts
+   while rotating IP addresses
+
 #### References
 
 * OWASP [Cheat Sheet: Logging][cslogging]
