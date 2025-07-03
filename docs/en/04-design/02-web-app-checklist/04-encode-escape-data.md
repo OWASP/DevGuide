@@ -18,6 +18,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 5. Apply canonicalization to convert unicode data into a standard form
 6. Ensure the output encoding is safe for all target systems
 7. In particular sanitize all output used for operating system commands
+8. Sanitize potentially dangerous characters before using the data to call another service
 
 #### 2. Contextual output encoding
 
