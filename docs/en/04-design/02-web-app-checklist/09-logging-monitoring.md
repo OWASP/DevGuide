@@ -7,14 +7,19 @@ and use the list below as suggestions for a checklist that has been tailored for
 
 #### 1. Security logging
 
-1. Log submitted data that is outside of an expected numeric range.
-2. Log submitted data that involves changes to data that should not be modifiable
+1. Log submitted data that is outside of an expected numeric range
+2. Log all apparent tampering events, that involves changes to data and state that should not be modifiable
 3. Log requests that violate server-side access control rules
 4. Encode and validate any dangerous characters before logging to prevent log injection attacks
-5. Do not log sensitive information
+5. Do not log sensitive information, including unnecessary system details, session identifiers or passwords
 6. Logging controls should support both success and failure of specified security events
-7. Do not store sensitive information in logs, including unnecessary system details, session identifiers or passwords
-8. Use a cryptographic hash function to validate log entry integrity
+7. Use a cryptographic hash function to validate log entry integrity
+8. Log attempts to authenticate with invalid or expired credentials
+9. Log all input validation failures
+10. Log all system exceptions
+11. Log all administrative functions, including changes to the security configuration settings
+12. Log all backend TLS connection failures
+13. Log cryptographic module failures
 
 #### 2. Security logging design
 
