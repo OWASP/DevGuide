@@ -13,6 +13,12 @@ and use the list below as suggestions for a checklist that has been tailored for
 3. Do not hard code access controls that are role based
 4. Log all access control events
 5. Use [Multi-Factor Authentication][csmfa] (MFA) for sensitive or high value transactional accounts
+6. Authentication failure responses should not indicate which part of the authentication data was incorrect.
+   E.g. Through giving different textual response or HTTP response codes
+7. Authentication failure responses should not give away the existent of user accounts allowing the response time to differ,
+   depending on whether a username exist or not. Use a DB transaction that looks for a fake user profile in case the username
+   doesn't exist
+8. Add a random tunable delay for authentication failures to defer brute force attacks and protect against timing attacks
 
 #### 2. Passwords
 
@@ -47,6 +53,10 @@ and use the list below as suggestions for a checklist that has been tailored for
 27. Re-authenticate users prior to performing critical operations
 28. If using third party code for authentication inspect the code carefully
     to ensure it is not affected by any malicious code
+29. Password entry should be masked (e.g., on web forms use the input type "password") on the user's screen unless
+    temporarily made viewable by the user
+30. Ensure that no credentials are stored in clear text or are easily retrievable in encoded or encrypted forms in the
+    browser's storage mechanisms
 
 #### 3. Cryptographic based authentication
 
@@ -72,6 +82,13 @@ and use the list below as suggestions for a checklist that has been tailored for
 16. Set the `secure` attribute for cookies transmitted over an [TLS][tls] connection
 17. Set cookies with the `HttpOnly` attribute,
     unless you specifically require client-side scripts within your application to read or set a cookie value
+
+#### 4. Session Management
+
+1. All active sessions must be terminated when a user account is disabled or deleted
+2. After a successful change or removal of any authentication factor give the option to terminate all other active sessions
+3. Supplement standard session management for sensitive server-side operations, like account management, by requiring and
+   validating anti-forgery tokens (CSRF tokens) for each request that may change application state or execute an action
 
 #### References
 
