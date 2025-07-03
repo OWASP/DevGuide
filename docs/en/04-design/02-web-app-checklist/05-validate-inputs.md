@@ -20,6 +20,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 8. Validate data range and also data length
 9. Utilize canonicalization to address obfuscation attacks
 10. All validation failures should result in input rejection
+11. Validate all input against an allowlist of characters, whenever possible
 
 #### 2. Libraries and frameworks
 
