@@ -48,6 +48,7 @@ In addition consider the following extra checks for frameworks and libraries.
 11. Use checksums or hashes to verify the integrity of interpreted code, libraries, executables, and configuration files
 12. Restrict users from generating new code or altering existing code
 13. Implement safe updates using encrypted channels
+14. Use cryptographic signatures when updating your code and ensure the package manager verify those signatures
 
 #### References
 
