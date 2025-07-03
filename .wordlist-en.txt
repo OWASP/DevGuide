@@ -536,3 +536,6 @@ BOLA
 WebDAV
 tunable
 allowlist
+printf
+strcat
+strcpy
