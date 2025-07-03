@@ -539,3 +539,4 @@ allowlist
 printf
 strcat
 strcpy
+unencrypted
