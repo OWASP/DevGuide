@@ -9,53 +9,52 @@ and use the list below as suggestions for a checklist that has been tailored for
 #### 1. Authentication
 
 1. Design access control authentication thoroughly up-front
-2. Force all requests to go through access control checks unless public
-3. Do not hard code access controls that are role based
-4. Log all access control events
-5. Use [Multi-Factor Authentication][csmfa] (MFA) for sensitive or high value transactional accounts
-6. Authentication failure responses should not indicate which part of the authentication data was incorrect.
+2. Require authentication for all pages and resources, except those specifically intended to be public
+3. All authentication controls must be enforced on a trusted system
+4. All authentication controls should fail securely
+5. Establish and utilize standard, tested, authentication services whenever possible
+6. If using third party code for authentication inspect the code carefully
+    to ensure it is not affected by any malicious code
+7. Use a centralized implementation for all authentication controls
+8. Segregate authentication logic from the resource being requested and
+    use redirection to and from the centralized authentication control
+9. Administrative and account management must be at least as secure as the primary authentication mechanism
+10. Use [Multi-Factor Authentication][csmfa] (MFA) for sensitive or high value transactional accounts
+11. Re-authenticate users prior to performing critical operations
+12. Enforce account disabling after an established number of invalid login attempts
+13. Utilize authentication for connections to external systems that involve sensitive information or functions
+14. Authentication credentials for accessing services external to the application should be stored in a secure store
+15. Use only HTTP POST requests to transmit authentication credentials
+16. Force all requests to go through access control checks unless public
+17. Do not hard code access controls that are role based
+18. Log all access control events
+19. Validate the authentication data only on completion of all data input
+20. Authentication failure responses should not indicate which part of the authentication data was incorrect.
    E.g. Through giving different textual response or HTTP response codes
-7. Authentication failure responses should not give away the existent of user accounts allowing the response time to differ,
+21. Authentication failure responses should not give away the existent of user accounts allowing the response time to differ,
    depending on whether a username exist or not. Use a DB transaction that looks for a fake user profile in case the username
    doesn't exist
-8. Add a random tunable delay for authentication failures to defer brute force attacks and protect against timing attacks
+22. Add a random tunable delay for authentication failures to defer brute force attacks and protect against timing attacks
 
 #### 2. Passwords
 
-1. Require authentication for all pages and resources, except those specifically intended to be public
-2. All authentication controls must be enforced on a trusted system
-3. Establish and utilize standard, tested, authentication services whenever possible
-4. Use a centralized implementation for all authentication controls
-5. Segregate authentication logic from the resource being requested and
-    use redirection to and from the centralized authentication control
-6. All authentication controls should fail securely
-7. Administrative and account management must be at least as secure as the primary authentication mechanism
-8. If your application manages a credential store, use cryptographically strong one-way salted hashes
-9. Password hashing must be implemented on a trusted system
-10. Validate the authentication data only on completion of all data input
-11. Authentication failure responses should not indicate which part of the authentication data was incorrect
-12. Utilize authentication for connections to external systems that involve sensitive information or functions
-13. Authentication credentials for accessing services external to the application should be stored in a secure store
-14. Use only HTTP POST requests to transmit authentication credentials
-15. Always send non-temporary passwords over an encrypted connection or as encrypted data
-16. Enforce password complexity and length requirements established by policy or regulation
-17. Enforce account disabling after an established number of invalid login attempts
-18. Password reset and changing operations require the same level of controls as account creation and authentication
-19. Password reset questions are deprecated, see [Choosing and Using Security Questions Cheat Sheet][csquestions] as to why
-20. If using email based resets, only send email to a pre-registered address with a temporary link/password
-21. Temporary passwords and links should have a short expiration time
-22. Enforce the changing of temporary passwords on the next use
-23. Notify users when a password reset occurs
-24. Prevent password re-use
-25. The last use (successful or unsuccessful) of a user account should be reported to the user
+1. If your application manages a credential store, use cryptographically strong one-way salted hashes
+2. Password hashing must be implemented on a trusted system
+3. Always send non-temporary passwords over an encrypted connection or as encrypted data
+4. Enforce password complexity and length requirements established by policy or regulation
+5. Password reset and changing operations require the same level of controls as account creation and authentication
+6. Password reset questions are deprecated, see [Choosing and Using Security Questions Cheat Sheet][csquestions] as to why
+7. If using email based resets, only send email to a pre-registered address with a temporary link/password
+8. Temporary passwords and links should have a short expiration time
+9. Enforce the changing of temporary passwords on the next use
+10. Notify users when a password reset occurs
+11. Prevent password re-use
+12. The last use (successful or unsuccessful) of a user account should be reported to the user
     at their next successful login
-26. Change all vendor-supplied default passwords and user IDs or disable the associated accounts
-27. Re-authenticate users prior to performing critical operations
-28. If using third party code for authentication inspect the code carefully
-    to ensure it is not affected by any malicious code
-29. Password entry should be masked (e.g., on web forms use the input type "password") on the user's screen unless
+13. Change all vendor-supplied default passwords and user IDs or disable the associated accounts
+14. Password entry should be masked (e.g., on web forms use the input type "password") on the user's screen unless
     temporarily made viewable by the user
-30. Ensure that no credentials are stored in clear text or are easily retrievable in encoded or encrypted forms in the
+15. Ensure that no credentials are stored in clear text or are easily retrievable in encoded or encrypted forms in the
     browser's storage mechanisms
 
 #### 3. Cryptographic based authentication
