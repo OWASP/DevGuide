@@ -22,6 +22,8 @@ and use the list below as suggestions for a checklist that has been tailored for
 12. Purge those temporary copies of sensitive data as soon as they are no longer required
 13. Do not include sensitive information in the URL or query string, such as an API key or session token
 14. Disable client side caching on pages containing sensitive information (e.g. Cache-Control: no-store)
+15. Set a referrer policy to prevent leakage of sensitive data to third-party services via the 'Referer' HTTP request header
+    field. This can be done using the Referrer-Policy HTTP response header field or via HTML element attributes
 
 #### 2. Memory management
 
@@ -33,11 +35,21 @@ and use the list below as suggestions for a checklist that has been tailored for
 6. Properly free allocated memory upon the completion of functions and at all exit points
 7. Overwrite any sensitive information stored in allocated memory at all exit points from the function
 8. Protect shared variables and resources from inappropriate concurrent access
+9. Avoid the use of known vulnerable functions (e.g., printf, strcat, strcpy etc.)
+
+#### 3. Encrypting Data in Transit
+
+1. Utilize TLS connections for all connectivity between a client and external-facing, HTTP-based services
+2. Ensure the TLS connections do not fall back to insecure or unencrypted communication
+3. Utilize a single standard TLS implementation with (preferably the latest) secure version of TLS
+4. Ensure the TLS connections are configured appropriately to validate certificates received before communicating and
+   checking revocation status
 
 #### References
 
 * OWASP [Cheat Sheet: Cryptographic Storage][cscs]
 * OWASP [Cheat Sheet: Secrets Management][cssm]
+* OWASP [Cheat Sheet: Transport Layer Security][cstls]
 * OWASP [Top 10 Proactive Controls][proactive10]
 
 ----
@@ -49,6 +61,7 @@ then [submit an issue][issue060208] or [edit on GitHub][edit060208].
 [control2]: https://top10proactive.owasp.org/the-top-10/c2-crypto/
 [cscs]: https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet
 [cssm]: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet
+[cstls]: https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet.html
 [edit060208]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/02-web-app-checklist/08-protect-data.md
 [issue060208]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/02-web-app-checklist/08-protect-data
 [proactive10]: https://top10proactive.owasp.org/
