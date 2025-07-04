@@ -8,7 +8,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 #### 1. Security logging
 
 1. Log submitted data that is outside of an expected numeric range
-2. Log all apparent tampering events, that involves changes to data and state that should not be modifiable
+2. Log all apparent tampering events, that involve changes to data and state that should not be modifiable
 3. Log requests that violate server-side access control rules
 4. Encode and validate any dangerous characters before logging to prevent log injection attacks
 5. Do not log sensitive information, including unnecessary system details, session identifiers or passwords
@@ -36,7 +36,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 #### 3. Monitoring
 
 1. Effective monitoring and alerting should be established to detect and respond to suspicious activities quickly
-2. Account for attack patterns that bypass standard lockouts, like using the same passwords against multiple user accounts
+2. Account for attack patterns that bypass standard lockouts, such as using the same passwords against multiple user accounts
    while rotating IP addresses
 
 #### References
