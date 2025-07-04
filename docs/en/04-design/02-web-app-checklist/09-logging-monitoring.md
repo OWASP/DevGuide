@@ -11,7 +11,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 2. Log all apparent tampering events, that involve changes to data and state that should not be modifiable
 3. Log requests that violate server-side access control rules
 4. Encode and validate any dangerous characters before logging to prevent log injection attacks
-5. Do not log sensitive information, including unnecessary system details, session identifiers or passwords
+5. Do not log sensitive information such as unnecessary system details, session identifiers or passwords
 6. Logging controls should support both success and failure of specified security events
 7. Use a cryptographic hash function to validate log entry integrity
 8. Log attempts to authenticate with invalid or expired credentials
