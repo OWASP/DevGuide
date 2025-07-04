@@ -31,9 +31,9 @@ and use the list below as suggestions for a checklist that has been tailored for
 19. Validate the authentication data only on completion of all data input
 20. Authentication failure responses should not indicate which part of the authentication data was incorrect.
    E.g. Through giving different textual response or HTTP response codes
-21. Authentication failure responses should not give away the existent of user accounts allowing the response time to differ,
-   depending on whether a username exist or not. Use a DB transaction that looks for a fake user profile in case the username
-   doesn't exist
+21. Authentication failure responses should not give away the existent of user accounts by allowing the response time to
+   differ, depending on whether a username exist or not. Use a DB transaction that looks for a fake user profile in case the 
+   username doesn't exist
 22. Add a random tunable delay for authentication failures to defer brute force attacks and protect against timing attacks
 
 #### 2. Passwords
