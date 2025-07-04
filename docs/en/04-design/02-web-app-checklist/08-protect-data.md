@@ -3,10 +3,7 @@ require extra protection, particularly if that data falls under privacy laws (EU
 financial data protection rules such as PCI Data Security Standard (PCI DSS) or other regulations.
 
 Refer to proactive control [C2: Use Cryptography the proper way][control2] and its [cheatsheets][csproactive-c8]
-for memory management, especially in relation to mobile development, refer to
-[Secret Management Cheat Sheet][secretmanagement] and MASTG on testing [Mobile App Code Quality][mobilecodequality].
-
-more context from the OWASP Top 10 Proactive Controls project,
+for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
 #### 1. Data protection
@@ -54,8 +51,6 @@ and use the list below as suggestions for a checklist that has been tailored for
 * OWASP [Cheat Sheet: Secrets Management][cssm]
 * OWASP [Cheat Sheet: Transport Layer Security][cstls]
 * OWASP [Top 10 Proactive Controls][proactive10]
-* OWASP [Secret Management Cheat Sheet][secretmanagement]
-* OWASP [MASTG: Mobile App Code Quality][mobilecodequality]
 
 ----
 
@@ -70,5 +65,3 @@ then [submit an issue][issue060208] or [edit on GitHub][edit060208].
 [edit060208]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/02-web-app-checklist/08-protect-data.md
 [issue060208]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/02-web-app-checklist/08-protect-data
 [proactive10]: https://top10proactive.owasp.org/
-[secretmanagement]: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html#25-handling-secrets-in-memory
-[mobilecodequality]: https://mas.owasp.org/MASTG/0x04h-Testing-Code-Quality
