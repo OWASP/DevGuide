@@ -62,7 +62,7 @@ nav:
       - Threat Modeling toolkit: en/04-design/01-threat-modeling/06-toolkit.md
     - Web application checklist:
       - Overview: en/04-design/02-web-app-checklist/index.md
-      - Define Security Requirements: en/04-design/02-web-app-checklist/01-define-security-requirements.md
+      - Secure by Default: en/04-design/02-web-app-checklist/01-secure-by-default.md
       - Leverage Security Frameworks and Libraries: en/04-design/02-web-app-checklist/02-frameworks-libraries.md
       - Secure Database Access: en/04-design/02-web-app-checklist/03-secure-database-access.md
       - Encode and Escape Data: en/04-design/02-web-app-checklist/04-encode-escape-data.md
