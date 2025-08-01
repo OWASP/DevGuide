@@ -59,7 +59,7 @@ jobs:
           sed -e s/x.x.x/${releaseVersion:1}/g .release-note-template.md > ./release-notes.txt
 
       - name: Create release notes
-        uses: softprops/action-gh-release@v2.2.2
+        uses: softprops/action-gh-release@v2.3.2
         with:
           draft: true
           name: "${releaseVersion:1}"
