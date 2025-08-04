@@ -27,26 +27,23 @@ and use the list below as suggestions for a checklist that has been tailored for
 15. Server side implementation and presentation layer representations of access control rules should not differ in such a way
     that they allow for business functionality and rules to be compromised
 
-#### 2. Session- and Access control Management
+#### 2. Access control Management
 
 1. Limit the number of transactions a single user or device can perform in a given period of time,
     low enough to deter automated attacks but above the actual business requirement
-2. If long authenticated sessions are allowed, periodically re-validate a user's authorization
-3. Implement account auditing and enforce the disabling of unused accounts
-4. A new account should have minimal or no access by default
-5. For highly sensitive accounts implement Just in Time (JIT), Just Enough Access (JEA) management and avoid the use
+2. Implement account auditing and enforce the disabling of unused accounts
+3. A new account should have minimal or no access by default
+4. For highly sensitive accounts implement Just in Time (JIT), Just Enough Access (JEA) management and avoid the use
     of admin accounts with global access
-6. The application must support termination of sessions when authorization ceases
-7. Restrict function-level access to consumers with explicit permissions
-8. Restrict direct object references to only authorized users with explicit permissions to specific data items  
+5. Restrict function-level access to consumers with explicit permissions
+6. Restrict direct object references to only authorized users with explicit permissions to specific data items  
     to mitigate insecure direct object reference (IDOR) and broken object level authorization (BOLA)
-9. Restrict access to user and data attributes to consumers with explicit permissions to specific fields to mitigate broken
+7. Restrict access to user and data attributes to consumers with explicit permissions to specific fields to mitigate broken
     object property level authorization (BOPLA)
-10. Restrict access security-relevant configuration information to only authorized users who have been allowed access through
+8. Restrict access security-relevant configuration information to only authorized users who have been allowed access through
     multiple layers of security, including continuous consumer identity verification, device security posture assessment, and
     contextual risk analysis
-11. If the application must run with elevated privileges, raise privileges as late as possible, and drop as soon as possible
-12. Application administrators should be able to terminate active sessions and authentication codes and -tokens and users should be able to terminate their active sessions
+9. If the application must run with elevated privileges, raise privileges as late as possible, and drop as soon as possible
 
 #### References
 
