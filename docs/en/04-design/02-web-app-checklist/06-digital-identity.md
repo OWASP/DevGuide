@@ -81,7 +81,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 17. Set cookies with the `HttpOnly` attribute,
     unless you specifically require client-side scripts within your application to read or set a cookie value
 
-#### 4. Session Generation and Expiration
+#### 4. Session Management
 
 1. Ensure that the session id is long, unique and random, i.e., is of high entropy
 2. Generate a new session during authentication and re-authentication
@@ -91,6 +91,9 @@ and use the list below as suggestions for a checklist that has been tailored for
     which users must re-authenticate
 6. Supplement standard session management for sensitive server-side operations, like account management, by requiring and
    validating anti-forgery tokens (CSRF tokens) for each request that may change application state or execute an action
+7. If long authenticated sessions are allowed, periodically re-validate a user's authorization
+8. The application must support termination of sessions when authorization ceases
+9. Application administrators should be able to terminate active sessions and authentication codes and -tokens and users should be able to terminate their active sessions
 
 #### References
 
