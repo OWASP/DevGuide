@@ -93,7 +93,7 @@ and use the list below as suggestions for a checklist that has been tailored for
    validating anti-forgery tokens (CSRF tokens) for each request that may change application state or execute an action
 7. If long authenticated sessions are allowed, periodically re-validate a user's authorization
 8. The application must support termination of sessions when authorization ceases
-9. Application administrators should be able to terminate active sessions and authentication codes and -tokens and users
+9. Application administrators should be able to terminate active sessions and authentication codes and -tokens, and users
    should be able to terminate their active sessions
 
 #### References
