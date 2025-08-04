@@ -27,7 +27,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 15. Server side implementation and presentation layer representations of access control rules should not differ in such a way
     that they allow for business functionality and rules to be compromised
 
-#### 2. Access control Management
+#### 2. Session- and Access control Management
 
 1. Limit the number of transactions a single user or device can perform in a given period of time,
     low enough to deter automated attacks but above the actual business requirement
@@ -46,6 +46,7 @@ and use the list below as suggestions for a checklist that has been tailored for
     multiple layers of security, including continuous consumer identity verification, device security posture assessment, and
     contextual risk analysis
 11. If the application must run with elevated privileges, raise privileges as late as possible, and drop as soon as possible
+12. Application administrators should be able to terminate active sessions and authentication codes and -tokens and users should be able to terminate their active sessions
 
 #### References
 
