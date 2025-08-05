@@ -58,7 +58,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 3. Protect all cached or temporary copies of sensitive data from unauthorized access
 4. Purge those temporary copies of sensitive data as soon as they are no longer required
 
-#### 5. Protect Data in Transit
+#### 6. Protect Data in Transit
 
 1. Encrypt data in transit
 2. Ensure secure communication channels are properly configured
