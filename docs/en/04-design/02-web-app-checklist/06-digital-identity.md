@@ -56,7 +56,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 15. Ensure that no credentials are stored in clear text or are easily retrievable in encoded or encrypted forms in the
     browser's storage mechanisms
 
-#### 3. Cryptographic based authentication
+#### 3. Session Management
 
 1. Use the server or framework's session management controls
 2. Session identifier creation must always be done on a trusted system
@@ -80,20 +80,17 @@ and use the list below as suggestions for a checklist that has been tailored for
 16. Set the `secure` attribute for cookies transmitted over an [TLS][tls] connection
 17. Set cookies with the `HttpOnly` attribute,
     unless you specifically require client-side scripts within your application to read or set a cookie value
-
-#### 4. Session Management
-
-1. Ensure that the session id is long, unique and random, i.e., is of high entropy
-2. Generate a new session during authentication and re-authentication
-3. All active sessions must be terminated when a user account is disabled or deleted
-4. After a successful change or removal of any authentication factor give the option to terminate all other active sessions
-5. Implement an idle timeout after a period of inactivity and an absolute maximum lifetime for each session, after
+18. Ensure that the session id is long, unique and random, i.e., is of high entropy
+19. Generate a new session during authentication and re-authentication
+20. All active sessions must be terminated when a user account is disabled or deleted
+21. After a successful change or removal of any authentication factor give the option to terminate all other active sessions
+22. Implement an idle timeout after a period of inactivity and an absolute maximum lifetime for each session, after
     which users must re-authenticate
-6. Supplement standard session management for sensitive server-side operations, like account management, by requiring and
+23. Supplement standard session management for sensitive server-side operations, like account management, by requiring and
    validating anti-forgery tokens (CSRF tokens) for each request that may change application state or execute an action
-7. If long authenticated sessions are allowed, periodically re-validate a user's authorization
-8. The application must support termination of sessions when authorization ceases
-9. Application administrators should be able to terminate active sessions and authentication codes and -tokens, and users
+24. If long authenticated sessions are allowed, periodically re-validate a user's authorization
+25. The application must support termination of sessions when authorization ceases
+26. Application administrators should be able to terminate active sessions and authentication codes and -tokens, and users
    should be able to terminate their active sessions
 
 #### References
