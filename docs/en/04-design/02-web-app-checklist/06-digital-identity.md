@@ -70,26 +70,26 @@ and use the list below as suggestions for a checklist that has been tailored for
 8. Disallow persistent logins and enforce periodic session terminations, even when the session is active
 9. If a session was established before login, close that session and establish a new session after a successful login
 10. Generate a new session identifier on any re-authentication
-12. Do not expose session identifiers in URLs, error messages or logs
-13. Implement appropriate access controls to protect server side session data
+11. Do not expose session identifiers in URLs, error messages or logs
+12. Implement appropriate access controls to protect server side session data
     from unauthorized access from other users of the server
-14. Generate a new session identifier and deactivate the old one periodically
-15. Generate a new session identifier if the connection security changes from HTTP to HTTPS,
+13. Generate a new session identifier and deactivate the old one periodically
+14. Generate a new session identifier if the connection security changes from HTTP to HTTPS,
     as can occur during authentication
-16. Set the `secure` attribute for cookies transmitted over an [TLS][tls] connection
-17. Set cookies with the `HttpOnly` attribute,
+15. Set the `secure` attribute for cookies transmitted over an [TLS][tls] connection
+16. Set cookies with the `HttpOnly` attribute,
     unless you specifically require client-side scripts within your application to read or set a cookie value
-18. Ensure that the session id is long, unique and random, i.e., is of high entropy
-19. Generate a new session during authentication and re-authentication
-20. All active sessions must be terminated when a user account is disabled or deleted
-21. After a successful change or removal of any authentication factor give the option to terminate all other active sessions
-22. Implement an idle timeout after a period of inactivity and an absolute maximum lifetime for each session, after
+17. Ensure that the session id is long, unique and random, i.e., is of high entropy
+18. Generate a new session during authentication and re-authentication
+19. All active sessions must be terminated when a user account is disabled or deleted
+20. After a successful change or removal of any authentication factor give the option to terminate all other active sessions
+21. Implement an idle timeout after a period of inactivity and an absolute maximum lifetime for each session, after
     which users must re-authenticate
-23. Supplement standard session management for sensitive server-side operations, like account management, by requiring and
+22. Supplement standard session management for sensitive server-side operations, like account management, by requiring and
    validating anti-forgery tokens (CSRF tokens) for each request that may change application state or execute an action
-24. If long authenticated sessions are allowed, periodically re-validate a user's authorization
-25. The application must support termination of sessions when authorization ceases
-26. Application administrators should be able to terminate active sessions and authentication codes and -tokens, and users
+23. If long authenticated sessions are allowed, periodically re-validate a user's authorization
+24. The application must support termination of sessions when authorization ceases
+25. Application administrators should be able to terminate active sessions and authentication codes and -tokens, and users
    should be able to terminate their active sessions
 
 #### References
