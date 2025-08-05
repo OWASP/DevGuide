@@ -70,7 +70,6 @@ and use the list below as suggestions for a checklist that has been tailored for
 8. Disallow persistent logins and enforce periodic session terminations, even when the session is active
 9. If a session was established before login, close that session and establish a new session after a successful login
 10. Generate a new session identifier on any re-authentication
-11. Do not allow concurrent logins with the same session ID
 12. Do not expose session identifiers in URLs, error messages or logs
 13. Implement appropriate access controls to protect server side session data
     from unauthorized access from other users of the server
