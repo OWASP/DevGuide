@@ -49,7 +49,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 6. Properly free allocated memory upon the completion of functions and at all exit points
 7. Overwrite any sensitive information stored in allocated memory at all exit points from the function
 8. Protect shared variables and resources from inappropriate concurrent access
-9. Avoid the use of known vulnerable functions (e.g., printf, strcat, strcpy etc.)
+9. Avoid the use of known vulnerable functions
 
 #### 5. Protect Data at Rest
 
