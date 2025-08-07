@@ -35,7 +35,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 10. Log entries must includes necessary metadata (such as when, where, who, what) that would allow for a detailed
   investigation of the timeline when an event happens such as time stamp, severity, tagging of security events,
   identity of the account holder, trace id and span id that can be correlated against the end user's ip, event outcome,
-  event description 
+  event description
 
 #### 3. Monitoring
 
