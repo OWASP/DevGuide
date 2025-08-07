@@ -5,7 +5,7 @@ Refer to proactive control [C1: Implement Access Controls][control1] and its [ch
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
-#### 1. Implement access control (AC)
+#### 1. Access control (AC)
 
 1. Design access control / authorization thoroughly up-front
 2. Force all requests to go through access control checks unless public
