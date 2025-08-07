@@ -32,8 +32,9 @@ and use the list below as suggestions for a checklist that has been tailored for
 7. Synchronize across nodes to ensure that timestamps are consistent
 8. All logging controls should be implemented on a trusted system
 9. Ensure that a mechanism exists to conduct log analysis
-10. Log entries must includes necessary metadata (such as when, where, who, what) that would allow for a detailed
-  investigation of the timeline when an event happens such as time stamp, severity, tagging of security events,
+10. Each log entry must includes necessary metadata (such as when, where, who, what) that would allow for a detailed
+  investigation of the timeline when an event happens
+11. Each log entry must include a time stamp, severity, tagging of security events,
   identity of the account holder, trace id and span id that can be correlated against the end user's ip, event outcome,
   event description
 
