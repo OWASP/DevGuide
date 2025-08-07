@@ -5,7 +5,7 @@ Refer to proactive control [C9: Implement Security Logging and Monitoring][contr
 and its [cheatsheets][csproactive-c9] for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
-#### 1. Security logging
+#### 1. Security logging (SL)
 
 1. Log submitted data that is outside of an expected numeric range
 2. Log all apparent tampering events, that involve changes to data and state that should not be modifiable
@@ -21,7 +21,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 12. Log all backend TLS connection failures
 13. Log cryptographic module failures
 
-#### 2. Security logging design
+#### 2. Security logging design (SLD)
 
 1. Protect log integrity
 2. Ensure log entries that include untrusted data will not execute as code in the intended log viewing interface or software
@@ -38,7 +38,7 @@ and use the list below as suggestions for a checklist that has been tailored for
   identity of the account holder, trace id and span id that can be correlated against the end user's ip, event outcome,
   event description
 
-#### 3. Monitoring
+#### 3. Monitoring (M)
 
 1. Effective monitoring and alerting should be established to detect and respond to suspicious activities quickly
 2. Account for attack patterns that bypass standard lockouts, such as using the same passwords against multiple user accounts
