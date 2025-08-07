@@ -539,6 +539,7 @@ WebDAV
 tunable
 allowlist
 printf
+ip
 strcat
 strcpy
 unencrypted
