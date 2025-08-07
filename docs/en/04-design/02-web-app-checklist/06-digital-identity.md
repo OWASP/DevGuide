@@ -21,7 +21,8 @@ and use the list below as suggestions for a checklist that has been tailored for
 9. Administrative and account management must be at least as secure as the primary authentication mechanism
 10. Use [Multi-Factor Authentication][csmfa] (MFA) for sensitive or high value transactional accounts
 11. Re-authenticate users prior to performing critical operations
-12. Enforce account disabling after an established number of invalid login attempts
+12. Enforce account disabling after an established number of invalid login attempts, or add a random tunable
+  delay for authentication failures to defer brute force attacks and protect against timing attacks
 13. Utilize authentication for connections to external systems that involve sensitive information or functions
 14. Authentication credentials for accessing services external to the application should be stored in a secure store
 15. Use only HTTP POST requests to transmit authentication credentials
@@ -33,7 +34,6 @@ and use the list below as suggestions for a checklist that has been tailored for
 20. Authentication failure responses should not give away the existent of user accounts by allowing the response time to
    differ, depending on whether a username exist or not. Use a DB transaction that looks for a fake user profile in case the
    username doesn't exist
-21. Add a random tunable delay for authentication failures to defer brute force attacks and protect against timing attacks
 
 #### 2. Passwords
 
