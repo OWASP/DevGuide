@@ -30,7 +30,8 @@ Some of these are language specific and others have more general applicability.
     This setting is particularly important using “Anonymous User” role.
     For example, in Java, remove all `<http-method>` elements from `web.xml` files.
   
-* Prevent disclosure of your directory structure in the robots.txt file by placing directories not intended for public indexing, AI bots, and search engine crawlers into an isolated parent directory. Then Disallow that entire parent directory in the robots.txt file rather than disallowing each individual directory.
+* Prevent disclosure of your directory structure in the robots.txt file by placing directories not intended for public indexing, AI bots, and search engine crawlers into an isolated parent directory.
+   Then Disallow that entire parent directory in the robots.txt file rather than disallowing each individual directory.
 
   
 * Configure web and application server to disallow HEAD requests entirely.
