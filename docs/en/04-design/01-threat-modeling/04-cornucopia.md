@@ -127,7 +127,6 @@ as well as having a good time.
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue060104] or [edit on GitHub][edit060104].
 
-[appsensor]: https://owasp.org/www-project-appsensor/
 [asvs]: https://owasp.org/www-project-application-security-verification-standard/
 [capec]: https://capec.mitre.org/
 [cornucopia]: https://cornucopia.owasp.org
@@ -136,10 +135,13 @@ then [submit an issue][issue060104] or [edit on GitHub][edit060104].
 [cornucopia-score]: https://owasp.org/www-project-cornucopia/assets/files/Cornucopia-scoresheet.pdf
 [cornucopia-play]: https://cornucopia.owasp.org/how-to-play
 [copi]: https://copi.owasp.org
+[cumulus]: https://github.com/OWASP/cumulus
+[eop]: https://github.com/adamshostack/eop
 [edit060104]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/01-threat-modeling/04-cornucopia.md
 [issue060104]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2004-design/01-threat-modeling/04-cornucopia
 [mastg]: https://mas.owasp.org/MASTG/
 [masvs]: https://mas.owasp.org/MASVS/
+[mlsec]: https://github.com/kantega/elevation-of-mlsec
 [online]: https://cornucopia.owasp.org/webshop
 [safecode]: https://safecode.org/
 [devguide]: https://devguide.owasp.org/en/04-design/02-web-app-checklist/docs/OWASP_SCP_Quick_Reference_Guide_v21.pdf
