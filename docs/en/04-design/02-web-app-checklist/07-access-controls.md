@@ -5,7 +5,7 @@ Refer to proactive control [C1: Implement Access Controls][control1] and its [ch
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
-#### 1. Implement Access Control
+#### 1. Access control (AC)
 
 1. Design access control / authorization thoroughly up-front
 2. Force all requests to go through access control checks unless public
@@ -27,7 +27,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 15. Server side implementation and presentation layer representations of access control rules should not differ in such a way
     that they allow for business functionality and rules to be compromised
 
-#### 2. Access control Management
+#### 2. Access control management (ACM)
 
 1. Limit the number of transactions a single user or device can perform in a given period of time,
     low enough to deter automated attacks but above the actual business requirement

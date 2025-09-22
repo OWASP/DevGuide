@@ -6,7 +6,7 @@ Refer to proactive control [C3: Validate all Input & Handle Exceptions][control3
 and its [cheatsheets][csproactive-c10] for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
-#### 1. Errors and exceptions
+#### 1. Errors and exceptions (EE)
 
 1. Manage exceptions in a centralized manner to avoid duplicated try/catch blocks in the code
 2. Ensure that all unexpected behavior is correctly handled inside the application

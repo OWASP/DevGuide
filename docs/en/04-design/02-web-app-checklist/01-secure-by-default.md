@@ -7,7 +7,7 @@ Refer to proactive control [C5: Secure By Default Configurations][control5] and 
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the lists below as suggestions for a checklist that has been tailored for the individual project.
 
-#### 1. System configuration
+#### 1. System configuration (SC)
 
 1. Restrict applications, processes and service accounts to the least privileges possible
 2. Code which defines the infrastructure should follow the principle of least privilege.
@@ -31,7 +31,7 @@ the
 13. Remove or restrict access to internal application and system documentation (such as for internal APIs) as this can
     reveal backend system or other useful information to attackers
 
-#### 2. File Management
+#### 2. File management (FM)
 
 1. Turn off directory listings
 2. Do not save files in the same web context as the application
@@ -40,7 +40,7 @@ the
 5. Restrict access to files or other resources, including those outside the application's direct control using an allow list
     or the equivalent thereof.
 
-#### 3. Cloud security
+#### 3. Cloud security (CS)
 
 1. Enforce JIT (Just-In-Time) access management
 2. Use security vetted container images that is scanned for package and component vulnerabilities and pulled from a private

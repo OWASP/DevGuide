@@ -33,7 +33,7 @@ and use them as the starting point for a checklist that is tailored for the tech
 
 In addition consider the following extra checks for frameworks and libraries.
 
-#### 1. Security Frameworks and Libraries
+#### 1. Security frameworks and libraries (SFL)
 
 1. Ensure servers, frameworks and system components are running the latest approved versions and patches
 2. Use libraries and frameworks from trusted sources that are actively maintained and widely used

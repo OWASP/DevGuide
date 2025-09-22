@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
 
       - name: Install python
         uses: actions/setup-python@v5.6.0
@@ -45,10 +45,10 @@ jobs:
     needs: [export_pdf]
     steps:
       - name: Check out
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
 
       - name: Fetch prepared SBOM artifacts
-        uses: actions/download-artifact@v4.3.0
+        uses: actions/download-artifact@v5.0.0
         with:
           name: 'pdf-export'
           path: 'site/OWASP_Developer_Guide.pdf'

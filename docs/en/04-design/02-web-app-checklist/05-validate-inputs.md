@@ -8,7 +8,7 @@ Refer to proactive control [C3: Validate All Input & Handle Exceptions][control3
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
-#### 1. Syntax and semantic validity
+#### 1. Syntax and semantic validity (SSV)
 
 1. Identify all data sources and classify them into trusted and untrusted
 2. Validate all input data from untrusted sources such as client provided data
@@ -21,7 +21,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 9. All validation failures should result in input rejection
 10. Validate all input against an allowlist of characters, whenever possible
 
-#### 2. Libraries and frameworks
+#### 2. Libraries and frameworks (LF)
 
 1. Conduct all input validation on a trusted system [^SCP1]
 2. Use a centralized input validation library or framework for the whole application
@@ -30,7 +30,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 5. Validate for expected data types using an allow-list rather than a deny-list
 6. Do not allow the application to issue commands directly to the Operating System
 
-#### 3. Validate serialized data
+#### 3. Validate serialized data (VSD)
 
 1. Implement integrity checks or encryption of the serialized objects
     to prevent hostile object creation or data tampering
@@ -41,7 +41,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 5. Restrict or monitor incoming and outgoing network connectivity from containers or servers that deserialize
 6. Monitor deserialization, for example alerting if a user agent constantly deserializes
 
-#### 4. File validation
+#### 4. File validation (FV)
 
 1. Do not pass user supplied data directly to any dynamic include function
 2. Limit the type of files that can be uploaded to only those types that are needed for business purposes
