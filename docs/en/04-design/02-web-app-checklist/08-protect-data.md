@@ -6,7 +6,7 @@ Refer to proactive control [C2: Use Cryptography to Protect Data][control2] and 
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
-#### 1. Cryptographic practices
+#### 1. Cryptographic practices (CP)
 
 1. Use peer reviewed and open solution cryptographic modules
 2. All cryptographic functions used to protect secrets from the application user must be implemented on a trusted system
@@ -17,7 +17,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 6. Cryptographic modules used by the application are compliant to FIPS 140-2 or an equivalent standard
 7. Don't implement your own cryptographic protocols or routines. Use existing security vetted library and frameworks
 
-#### 2. Data protection
+#### 2. Data protection (DP)
 
 1. Classify data according to the level of sensitivity
 2. Implement appropriate access controls for sensitive data
@@ -28,7 +28,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 7. Set a referrer policy to prevent leakage of sensitive data to third-party services via the 'Referer' HTTP request header
     field. This can be done using the Referrer-Policy HTTP response header field or via HTML element attributes
 
-#### 3. Secret Management
+#### 3. Secret and credential management (SCM)
 
 1. Establish and utilize a policy and process for how cryptographic keys will be managed
 2. Ensure that any secret key is protected from unauthorized access
@@ -39,7 +39,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 7. Scan code repositories to detect accidentally added secrets and credentials
 8. Log all authorized access to a secret key for forensic purposes
 
-#### 4. Memory management
+#### 4. Memory management (MM)
 
 1. Explicitly initialize all variables and data stores
 2. Check that any buffers are as large as specified
@@ -51,14 +51,14 @@ and use the list below as suggestions for a checklist that has been tailored for
 8. Protect shared variables and resources from inappropriate concurrent access
 9. Avoid the use of known vulnerable functions
 
-#### 5. Protect Data at Rest
+#### 5. Protect Data at Rest (PDR)
 
 1. Ensure sensitive data at rest is cryptographically protected to avoid unauthorized disclosure and modification
 2. Purge sensitive data when that data is no longer required
 3. Protect all cached or temporary copies of sensitive data from unauthorized access
 4. Purge those temporary copies of sensitive data as soon as they are no longer required
 
-#### 6. Protect Data in Transit
+#### 6. Protect Data in Transit (PDT)
 
 1. Encrypt data in transit
 2. Ensure secure communication channels are properly configured

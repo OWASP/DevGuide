@@ -11,7 +11,7 @@ Refer to proactive control [C3: Validate all Input & Handle Exceptions][control3
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
-#### 1. Character encoding and canonicalization
+#### 1. Character encoding and canonicalization (CEC)
 
 1. Apply output encoding just before the content is passed to the target system
 2. Conduct all output encoding on a trusted system
@@ -22,7 +22,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 7. In particular sanitize all output used for operating system commands
 8. Sanitize potentially dangerous characters before using the data to call another service
 
-#### 2. Contextual output encoding
+#### 2. Contextual output encoding (COE)
 
 Contextual output encoding of data is based on how it will be utilized by the target.
 The specific methods vary depending on the way the output data is used, such as HTML entity encoding.

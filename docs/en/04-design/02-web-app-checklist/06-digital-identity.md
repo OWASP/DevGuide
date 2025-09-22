@@ -6,7 +6,7 @@ Refer to proactive control [C7: Secure Digital Identities][control7] and its [ch
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
-#### 1. Authentication
+#### 1. Authentication (A)
 
 1. Require authentication for all pages and resources, except those specifically intended to be public
 2. Require authentication before allowing a file to be uploaded
@@ -35,7 +35,7 @@ and use the list below as suggestions for a checklist that has been tailored for
    differ, depending on whether a username exist or not. Use a DB transaction that looks for a fake user profile in case the
    username doesn't exist
 
-#### 2. Passwords
+#### 2. Passwords (P)
 
 1. If your application manages a credential store, use cryptographically strong one-way salted hashes
 2. Password hashing must be implemented on a trusted system
@@ -56,7 +56,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 15. Ensure that no credentials are stored in clear text or are easily retrievable in encoded or encrypted forms in the
     browser's storage mechanisms
 
-#### 3. Session Management
+#### 3. Session Management (SM)
 
 1. Use the server or framework's session management controls
 2. Session identifier creation must always be done on a trusted system

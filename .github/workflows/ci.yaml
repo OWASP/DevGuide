@@ -20,10 +20,10 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
 
       - name: Link Checker
-        uses: lycheeverse/lychee-action@v2.4.1
+        uses: lycheeverse/lychee-action@v2.6.1
         with:
           args: >-
             --no-progress
@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
 
       - name: Lint markdown
         uses: DavidAnson/markdownlint-cli2-action@v20.0.0
@@ -57,7 +57,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
 
       - name: Spell check EN language
         uses: rojopolis/spellcheck-github-actions@0.51.0
@@ -92,7 +92,7 @@ jobs:
     needs: [md_linter, spell_checker]
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
 
       - name: Install python
         uses: actions/setup-python@v5.6.0
@@ -125,7 +125,7 @@ jobs:
     needs: [md_linter, spell_checker]
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
 
       - name: Install python
         uses: actions/setup-python@v5.6.0
