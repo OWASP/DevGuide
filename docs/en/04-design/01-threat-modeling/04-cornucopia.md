@@ -144,6 +144,6 @@ then [submit an issue][issue060104] or [edit on GitHub][edit060104].
 [mlsec]: https://github.com/kantega/elevation-of-mlsec
 [online]: https://cornucopia.owasp.org/webshop
 [safecode]: https://safecode.org/
-[devguide]: https://devguide.owasp.org/en/04-design/02-web-app-checklist/docs/OWASP_SCP_Quick_Reference_Guide_v21.pdf
+[devguide]: https://devguide.owasp.org/en/04-design/02-web-app-checklist
 [spotlight16]: https://youtu.be/NesxjEGX58s
 [start-game]: https://copi.owasp.org/games/new
