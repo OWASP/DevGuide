@@ -60,7 +60,7 @@ jobs:
 
     steps:
       - name: Tidy stale PRs and issues
-        uses: actions/stale@v9
+        uses: actions/stale@v10
         with:
           days-before-issue-stale: 183
           days-before-issue-close: -1
