@@ -6,15 +6,14 @@ El objetivo de pytm es realizar el modelado de amenazas Shift-Left, lo que signi
 el modelado ya en etapas tempranas del proyecto, haciendo que el modelado de amenazas sea más automatizado
 y centrado en el desarrollador.
 
-Pytm es un Proyecto de Laboratorio de OWASP con una comunidad de colaboradores
+Pytm es un Proyecto de Producion de OWASP con una comunidad de colaboradores
 que crean [versiones regulares][pytmreleases].
 
 #### ¿Qué es pytm?
 
-Pytm es una biblioteca Java que proporciona una forma programática de modelado de amenazas;
+Pytm es una biblioteca Python que proporciona una forma programática de modelado de amenazas;
 el modelo de aplicación en sí se define como un archivo fuente de python3 y sigue la sintaxis del programa Python.
-Los hallazgos se incluyen en el programa python del modelo de aplicación con amenazas definidas
-como filas en un archivo de texto asociado.
+Los hallazgos se incluyen en un informe de modelado de amenazas basado en plantillas.
 El archivo de amenazas puede reutilizarse entre proyectos y permite la acumulación de una base de conocimiento.
 
 Usando pytm, el modelo y las amenazas pueden ser programáticamente generados
@@ -69,7 +68,7 @@ Las siguientes herramientas y bibliotecas deben estar instaladas:
 
 * Python 3.x
 * Paquete [Graphviz][graphvizdot]
-* Java, como OpenJDK 10 u 11
+* Java, como OpenJDK 10 u 11 (solamente para el uso del diagrama de secuencia)
 * El archivo JAR ejecutable de [PlantUML][plantumljar]
 * Y por supuesto pytm: clone el [repositorio del proyecto pytm][pytmrepo]
 
