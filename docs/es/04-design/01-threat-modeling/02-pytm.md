@@ -6,7 +6,7 @@ El objetivo de pytm es realizar el modelado de amenazas Shift-Left, lo que signi
 el modelado ya en etapas tempranas del proyecto, haciendo que el modelado de amenazas sea más automatizado
 y centrado en el desarrollador.
 
-Pytm es un Proyecto de Producion de OWASP con una comunidad de colaboradores
+Pytm es un Proyecto de Producción de OWASP con una comunidad de colaboradores
 que crean [versiones regulares][pytmreleases].
 
 #### ¿Qué es pytm?
