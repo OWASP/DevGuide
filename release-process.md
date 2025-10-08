@@ -26,7 +26,7 @@ The [PDF][pdf-guide] version of the [web document][devguide] can be downloaded f
 
 [devguide]: devguide.owasp.org
 [leaders]: https://github.com/OWASP/www-project-developer-guide/blob/main/leaders.md
-[pdf-guide]: https://github.com/OWASP/threat-dragon/releases/download/v4.1.8/OWASP_Developer_Guide-V4.1.8.pdf
+[pdf-guide]: https://github.com/OWASP/DevGuide/releases/download/vx.x.x/OWASP_Developer_Guide-Vx.x.x.pdf
 ```
 
 ----

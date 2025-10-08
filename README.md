@@ -3,6 +3,7 @@
 [![CC BY-SA 4.0 license](https://img.shields.io/github/license/owasp/DevGuide.svg)](license.txt)
 [![OWASP Lab project](https://img.shields.io/badge/owasp-lab%20project-f7b73c.svg)](https://www.owasp.org/projects)
 [![Build status](https://github.com/OWASP/DevGuide/actions/workflows/ci.yaml/badge.svg?event=push)][build]
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/9373/badge)](https://www.bestpractices.dev/projects/9373)
 
 ## OWASP Foundation Developer Guide
 

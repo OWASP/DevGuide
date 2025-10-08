@@ -58,6 +58,7 @@ Cheatsheets
 ClickJacking
 Clickjacking
 CodeQL
+Copi
 Coraza
 Crackmes
 Cryptographic
@@ -175,6 +176,7 @@ MagicLink
 Matteo
 Microservices
 Misconfiguration
+MLSec
 ModSecurity
 Multifactor
 NIST
@@ -419,6 +421,7 @@ edumco
 encodings
 endif
 enum
+eop
 esapi
 executables
 exfiltrate
@@ -470,6 +473,7 @@ lychee
 mastg
 maswe
 misconfiguration
+mlsec
 mitigations
 modsecurity
 modularized

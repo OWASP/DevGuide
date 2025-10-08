@@ -18,7 +18,11 @@ Feel free to discuss topics in the [project wiki][wiki] and create new discussio
 
 * follow our [Code of Conduct](code_of_conduct.md)
 * ensure that all contributions are within the [license](license.txt)
-* the use of generative AI is not prohibited but must be declared in the pull request
+* although the use of generative AI is not prohibited, it _must_ be declared in the pull request
+
+The Developer Guide is a documentation project and so there may be differences of opinion on wording or punctuation.
+If you submit a pull request please make it substantive, otherwise
+it will be hard to get attention from the maintainers for trivial changes and it may end up being rejected.
 
 #### Philosophy
 
@@ -54,9 +58,10 @@ and should rarely deal with any subject at an advanced level.
 This is a deliberate policy that makes the guide accessible and keeps the length reasonable.
 
 The overview/introduction of the main sections should be aimed at the introductory level,
-with more detail contained in the sub-sections at a medium technical level.
+with more detail at a medium technical level contained in any sections that follow.
+
 Note this guide should not replicate the many detailed sources on specific security topics;
-instead provide links to these specialist security knowledge bases.
+instead provide links to any specialist security knowledge bases and refer the user to them.
 
 #### Page structure
 
@@ -96,7 +101,7 @@ If you can help with these translations then please contact the lead translator 
 ### Media kit
 
 The OWASP projects have [media kits][media] that contain biographies of the project leaders and other project media.
-This can be used for logos and marketing material.
+Please use the project media for any logos and marketing material.
 
 ### Pull requests
 
