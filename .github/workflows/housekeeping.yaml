@@ -37,7 +37,7 @@ jobs:
         uses: actions/checkout@v5.0.0
 
       - name: Link Checker
-        uses: lycheeverse/lychee-action@v2.6.1
+        uses: lycheeverse/lychee-action@v2.7.0
         with:
           # skip the jekyll files under '_includes' directory, check all other directories
           args: >-
