@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
 
 permissions:
@@ -24,8 +21,6 @@ jobs:
     steps:
       - name: Checkout markdown
         uses: actions/checkout@v6.0.1
-        with:
-          ref: ${{ github.event.pull_request.head.sha || github.sha }}
 
       - name: Link Checker
         uses: lycheeverse/lychee-action@v2.7.0
@@ -94,7 +89,7 @@ jobs:
   deploy:
     name: Deploy web doc
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+
     needs: [md_linter, spell_checker]
     steps:
       - name: Checkout markdown
