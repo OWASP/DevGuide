@@ -34,7 +34,7 @@ jobs:
         run: mkdocs build
 
       - name: Upload PDF
-        uses: actions/upload-artifact@v5.0.0
+        uses: actions/upload-artifact@v6.0.0
         with:
           name: 'pdf-export'
           path: 'site/OWASP_Developer_Guide.pdf'
