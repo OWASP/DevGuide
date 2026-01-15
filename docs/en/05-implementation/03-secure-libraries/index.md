@@ -8,6 +8,11 @@ and provide standardized technologies and frameworks that can be used throughout
 within the SAMM [Security Architecture][sammdsa] security practice
 which in turn is part of the [Design][sammd] business function.
 
+## Recommended Secure Libraries (OWASP Projects)
+
+- **OWASP Java Encoder** – https://owasp.org/www-project-java-encoder/
+- **OWASP Java HTML Sanitizer** – https://owasp.org/www-project-java-html-sanitizer/
+
 ----
 
 The OWASP Developer Guide is a community effort; if there is something that needs changing
