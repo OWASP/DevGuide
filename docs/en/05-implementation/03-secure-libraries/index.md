@@ -10,6 +10,26 @@ which in turn is part of the [Design][sammd] business function.
 
 ----
 
+## Additional Secure Libraries
+
+### Java Encoder
+Java Encoder is an OWASP library that helps prevent cross-site scripting (XSS)
+by safely encoding untrusted data before it is included in application output.
+
+It should be used whenever user-controlled input is rendered in HTML,
+JavaScript, URLs, or other browser-facing contexts.
+
+See the OWASP Java Encoder project for details [javaencoder].
+
+### Java HTML Sanitizer
+Java HTML Sanitizer is an OWASP library designed to clean untrusted HTML content
+by allowing only safe elements and attributes.
+
+It is useful when applications need to accept HTML input from users while
+reducing the risk of XSS vulnerabilities.
+
+See the OWASP Java HTML Sanitizer project for details [htmlsanitizer].
+
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue0703] or [edit on GitHub][edit0703].
 
@@ -18,3 +38,5 @@ then [submit an issue][issue0703] or [edit on GitHub][edit0703].
 [sammd]: https://owaspsamm.org/model/design/
 [sammdsa]: https://owaspsamm.org/model/design/secure-architecture/
 [sammdsatm]: https://owaspsamm.org/model/design/secure-architecture/stream-b/
+[javaencoder]: https://owasp.org/www-project-java-encoder/
+[htmlsanitizer]: https://owasp.org/www-project-java-html-sanitizer/
