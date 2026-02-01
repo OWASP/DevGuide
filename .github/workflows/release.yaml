@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
 
       - name: Install python
         uses: actions/setup-python@v6.1.0
@@ -46,7 +46,7 @@ jobs:
     needs: [export_pdf]
     steps:
       - name: Check out
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
 
       - name: Fetch prepared SBOM artifacts
         uses: actions/download-artifact@v7.0.0
