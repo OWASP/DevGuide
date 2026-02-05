@@ -12,8 +12,8 @@ updates:
         patterns:
           - "*"
         update-types:
-          - "minor"
           - "patch"
+          - "minor"
       security-update:
         applies-to: security-updates
         patterns:
