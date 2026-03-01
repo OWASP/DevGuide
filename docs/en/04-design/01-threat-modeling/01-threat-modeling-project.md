@@ -1,4 +1,4 @@
-The [Threat Model Project][tmproject] is an over-arching project provided by OWASP
+The OWASP [Threat Modeling Project][tmproject] is an over-arching project
 that seeks to inform and guide on the very large domain that is [Threat Modeling][tmptm].
 
 #### What is the Threat Model project?
@@ -6,14 +6,15 @@ that seeks to inform and guide on the very large domain that is [Threat Modeling
 The Threat Model project is not intended to be a primary source on the threat modeling domain;
 there are already many excellent sources that describe and explain threat modeling that this project does not need to repeat.
 
-Instead the Threat Model project seeks to provide information on [threat modeling techniques][tmpapp]
+Instead the Threat Model project seeks to provide direction on [threat modeling techniques][tmpapp]
 for applications and systems of all types, with a focus on current and emerging techniques.
+To provide this the project intends to collate threat modeling techniques, methodologies, tools and examples.
 
-To do this project intends to gather techniques, methodologies, tools and examples.
-There is also the intention to foster a threat modeling community and support it through initiatives and forums.
+There is also the aim to foster a threat modeling community and support it through initiatives and forums.
 
-Note that much of this is what the project intends to provide in the future.
-As of January 2026 the project is going through a change process that will better provide this information and guidance.
+Note that much of this are intentions for the future;
+as of January 2026 the project is going through a change process that will better provide this information and guidance.
+At present it is at OWASP Incubator status with promotion to Laboratory status expected later in 2026.
 
 #### Why refer to this project?
 
@@ -21,8 +22,8 @@ The [Threat Modeling][tmproject] project is an over-arching project for the othe
 
 It can be used as a landing page for all things threat modeling;
 the starting point for finding [resources and tools][tmpres] as well as the core concepts.
-For example there is an introduction to Shostack's [Four Question Framework][4QFW],
-that then references the primary source if the user needs to know more.
+For example there is an introduction to Shostack's [Four Question Framework][4QFW]
+that references the primary source if the user needs to know more.
 
 #### OWASP threat modeling projects
 

@@ -6,7 +6,7 @@ In 2024 it became an OWASP Production project, supported by the existing leaders
 #### What is ModSecurity?
 
 In January 2024 the [ModSecurity][modsec] Web Application Firewall project was [adopted by OWASP][modsec-press],
-previously [TrustWave][trustwave] had been the custodian of this project.
+previously TrustWave (now [LevelBlue][levelblue]) had been the custodian of this project.
 ModSecurity itself has a long history as an open source project, the first release was in November 2002,
 and is widely used as a web application firewall for [cloud applications][cscloud] and on-premises web servers.
 
@@ -39,7 +39,7 @@ then [submit an issue][issue1103] or [edit on GitHub][edit1103].
 [cscloud]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Cloud_Architecture_Cheat_Sheet
 [edit1103]: https://github.com/OWASP/DevGuide/blob/main/docs/en/09-operations/03-modsecurity.md
 [issue1103]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2009-operations/03-modsecurity
+[levelblue]: https://www.levelblue.com/
 [modsec]: https://owasp.org/www-project-modsecurity/
 [modsec-docs]: https://modsecurity.org/
 [modsec-press]: https://owasp.org/blog/2024/01/09/ModSecurity.html
-[trustwave]: https://www.trustwave.com/
