@@ -150,7 +150,7 @@ jobs:
         run: mkdocs build --config-file mkdocs-pdf-en.yaml
 
       - name: Upload EN PDF
-        uses: actions/upload-artifact@v6.0.0
+        uses: actions/upload-artifact@v7.0.0
         with:
           name: pdf-export-en
           path: site/OWASP_Developer_Guide.pdf
@@ -159,7 +159,7 @@ jobs:
         run: mkdocs build --config-file mkdocs-pdf-es.yaml
 
       - name: Upload ES PDF
-        uses: actions/upload-artifact@v6.0.0
+        uses: actions/upload-artifact@v7.0.0
         with:
           name: pdf-export-es
           path: site/OWASP_Developer_Guide-ES.pdf
@@ -168,7 +168,7 @@ jobs:
         run: mkdocs build --config-file mkdocs-pdf-fa.yaml
 
       - name: Upload FA PDF
-        uses: actions/upload-artifact@v6.0.0
+        uses: actions/upload-artifact@v7.0.0
         with:
           name: pdf-export-fa
           path: site/OWASP_Developer_Guide-FA.pdf
@@ -177,7 +177,7 @@ jobs:
         run: mkdocs build --config-file mkdocs-pdf-pt-br.yaml
 
       - name: Upload PT-BR PDF
-        uses: actions/upload-artifact@v6.0.0
+        uses: actions/upload-artifact@v7.0.0
         with:
           name: pdf-export-pt-br
           path: site/OWASP_Developer_Guide-PT-BR.pdf
