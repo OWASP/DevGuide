@@ -162,6 +162,7 @@ LINNDUN
 LLM
 LSMs
 Laravel
+LevelBlue
 Lezza
 LifeCycle
 Lifecycle

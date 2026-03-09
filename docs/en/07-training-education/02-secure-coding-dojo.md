@@ -46,7 +46,7 @@ to practice penetration testing.
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue0902] or [edit on GitHub][edit0902].
 
-[codedojo]: https://securecodingdojo.owasp.org/
+[codedojo]: https://securecodingdojo.owasp.org/public/index.html
 [codedojo-insecure]: https://github.com/OWASP/SecureCodingDojo/wiki/Running-Insecure.Inc
 [codedojo-install]: https://github.com/OWASP/SecureCodingDojo/wiki/Deploying-with-Docker
 [codedojo-project]: https://owasp.org/www-project-secure-coding-dojo/
