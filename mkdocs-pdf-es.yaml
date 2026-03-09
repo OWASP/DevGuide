@@ -22,6 +22,7 @@ markdown_extensions:
 plugins: 
   - with-pdf:  # https://github.com/orzih/mkdocs-with-pdf
       output_path: OWASP_Developer_Guide-ES.pdf
+      toc_level: 3
       exclude_pages:
         - 'index.md'
         - 'en/02-foundations/'
@@ -30,6 +31,7 @@ plugins:
         - 'en/05-implementation/'
         - 'en/06-verification/'
         - 'fa/'
+        - 'hi/'
         - 'pt-br/'
       cover_title: La Guía del Desarrollador OWASP
       cover_subtitle: Un Proyecto abierto de seguridad de aplicaciones a nivel mundial

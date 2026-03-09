@@ -22,9 +22,11 @@ markdown_extensions:
 plugins:
   - with-pdf:  # https://github.com/orzih/mkdocs-with-pdf
       output_path: OWASP_Developer_Guide.pdf
+      toc_level: 3
       exclude_pages:
         - 'es/'
         - 'fa/'
+        - 'hi/'
         - 'pt-br/'
       cover_title: OWASP Developer Guide
       cover_subtitle: A guide to building secure Web Applications and Web Services
