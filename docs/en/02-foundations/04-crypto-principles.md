@@ -47,7 +47,7 @@ Cryptography is central to authentication:
 1. to protect the provided corroborating evidence (for example hashing of passwords for subsequent storage)
 2. in authentication protocols often use cryptography to either directly authenticate entities
     or to exchange credentials in a secure manner
-3. to verify the identity one or both parties in exchanging messages,
+3. to verify the identity of one or both parties in exchanging messages,
     for example identity verification within [Transport Layer Security][tls] (TLS)
 
 OpenID Connect is widely used as an identity layer on top of the OAuth 2.0 protocol,
