@@ -29,7 +29,7 @@ plugins:
         - 'hi/'
         - 'pt-br/'
       cover_title: OWASP Developer Guide
-      cover_subtitle: A guide to building secure Web Applications and Web Services
+      cover_subtitle: A wayfinder for the many tools and documents provided by OWASP for developers
       cover_logo: assets/images/dg_logo.png
       author: Open Worldwide Application Security Project (OWASP)
       copyright: Creative Commons Attribution ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -93,7 +93,7 @@ nav:
       - ESAPI: en/05-implementation/03-secure-libraries/01-esapi.md
       - CSRFGuard: en/05-implementation/03-secure-libraries/02-csrf-guard.md
       - OSHP: en/05-implementation/03-secure-libraries/03-secure-headers.md
-      - Java: en/05-implementation/03-secure-libraries/04-java-secure-libs.md
+      - Java Encoding and Sanitization: en/05-implementation/03-secure-libraries/04-java-secure-libs.md
     - MASWE: en/05-implementation/04-maswe.md
   - Verification:
     - Overview: en/06-verification/index.md

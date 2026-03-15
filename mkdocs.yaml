@@ -111,7 +111,7 @@ nav:
         - ESAPI: en/05-implementation/03-secure-libraries/01-esapi.md
         - CSRFGuard: en/05-implementation/03-secure-libraries/02-csrf-guard.md
         - OSHP: en/05-implementation/03-secure-libraries/03-secure-headers.md
-        - Java: en/05-implementation/03-secure-libraries/04-java-secure-libs.md
+        - Java Encoding and Sanitization: en/05-implementation/03-secure-libraries/04-java-secure-libs.md
       - MASWE: en/05-implementation/04-maswe.md
     - Verification:
       - Overview: en/06-verification/index.md

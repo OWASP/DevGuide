@@ -3,7 +3,7 @@
 [![CC BY-SA 4.0 license](https://img.shields.io/github/license/owasp/DevGuide.svg)](license.txt)
 [![OWASP Lab project](https://img.shields.io/badge/owasp-lab%20project-f7b73c.svg)](https://owasp.org/projects/)
 [![Build status](https://github.com/OWASP/DevGuide/actions/workflows/ci.yaml/badge.svg?event=push)][build]
-[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/9373/badge)](https://www.bestpractices.dev/en/projects/9373)
+[![OpenSSF Best Practices][openssf-badge]](https://www.bestpractices.dev/en/projects/9373)
 
 ## OWASP Foundation Developer Guide
 
@@ -58,6 +58,7 @@ OWASP DevGuide: _accessible security for developers_
 [history]: https://www.youtube.com/watch?v=niqV55vPTfw
 [issues]: https://github.com/OWASP/DevGuide/issues/new/choose
 [latest]: https://devguide.owasp.org/
+[openssf-badge]: https://www.bestpractices.dev/projects/9373/badge
 [original]: https://github.com/OWASP/DevGuide/blob/1d24d140de3724b6f95655e53b8d0cc6689fbfd8/DevGuide1.0/OWASPBuildingSecureWebApplicationsAndWebServices-V1.0.pdf
 [project]: https://owasp.slack.com/messages/C04QN6CMNAC
 [project-pages]: https://owasp.org/www-project-developer-guide/
