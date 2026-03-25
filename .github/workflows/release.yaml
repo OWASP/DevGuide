@@ -15,10 +15,10 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
 
       - name: Install python
-        uses: actions/setup-python@v6.2.0
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405
         with:
           python-version: 3.x
 
@@ -35,7 +35,7 @@ jobs:
         run: mkdocs build
 
       - name: Upload PDF
-        uses: actions/upload-artifact@v7.0.0
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f
         with:
           name: 'pdf-export'
           path: 'site/OWASP_Developer_Guide.pdf'
@@ -46,10 +46,10 @@ jobs:
     needs: [export_pdf]
     steps:
       - name: Check out
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
 
       - name: Fetch prepared SBOM artifacts
-        uses: actions/download-artifact@v8.0.0
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
         with:
           name: 'pdf-export'
           path: 'site/OWASP_Developer_Guide.pdf'
@@ -60,7 +60,7 @@ jobs:
           sed -e s/x.x.x/${releaseVersion:1}/g .release-note-template.md > ./release-notes.txt
 
       - name: Create release notes
-        uses: softprops/action-gh-release@v2.5.0
+        uses: softprops/action-gh-release@153bb8e04406b158c6c84fc1615b65b24149a1fe
         with:
           draft: true
           name: "${releaseVersion:1}"
