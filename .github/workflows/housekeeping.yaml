@@ -7,7 +7,7 @@ on:
     - cron: '15 6 * * *'
   workflow_dispatch:
 
-# for security reasons the github actions are pinned to specific release versions
+# for security reasons the github actions are pinned to specific SHAs
 jobs:
   chores:
     name: Tidy workflows
@@ -41,6 +41,7 @@ jobs:
         with:
           # skip the jekyll files under '_includes' directory, check all other directories
           args: >-
+            --verbose
             --no-progress
             --max-retries 1
             --retry-wait-time 10

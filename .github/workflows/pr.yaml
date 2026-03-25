@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
 
-# for security reasons the github actions are pinned to specific release versions
+# for security reasons the github actions are pinned to specific SHAs
 jobs:
   link_checker:
     name: Link checker
@@ -20,6 +20,7 @@ jobs:
         with:
           args: >-
             --exclude 'github\.com/OWASP/DevGuide/blob/main/docs'
+            --verbose
             --no-progress
             --max-retries 1
             --retry-wait-time 10

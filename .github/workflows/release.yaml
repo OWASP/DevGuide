@@ -8,7 +8,7 @@ on:
       - ?.?.?*
   workflow_dispatch:
 
-# for security reasons the github actions are pinned to specific release versions
+# for security reasons the github actions are pinned to specific SHAs
 jobs:
   export_pdf:
     name: Export PDF

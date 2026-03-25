@@ -13,7 +13,7 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-# for security reasons the github actions are pinned to specific release versions
+# for security reasons the github actions are pinned to specific SHAs
 jobs:
   link_checker:
     name: Link checker
@@ -26,6 +26,7 @@ jobs:
         uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411
         with:
           args: >-
+            --verbose
             --no-progress
             --max-retries 1
             --retry-wait-time 10
