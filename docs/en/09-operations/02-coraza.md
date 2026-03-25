@@ -53,12 +53,12 @@ then [submit an issue][issue1102] or [edit on GitHub][edit1102].
 
 [apisix]: https://github.com/corazawaf/coraza-proxy-wasm
 [connectors]: https://www.coraza.io/connectors/
-[coraza]: https://coraza.io/
+[coraza]: https://www.coraza.io/
 [coraza-caddy]: https://github.com/corazawaf/coraza-caddy
 [coraza-lib]: https://github.com/corazawaf/libcoraza
 [coraza-project]: https://owasp.org/www-project-coraza-web-application-firewall/
 [coraza-spoa]: https://github.com/corazawaf/coraza-spoa
-[coraza-tutorial]: https://coraza.io/docs/tutorials/quick-start/
+[coraza-tutorial]: https://www.coraza.io/docs/tutorials/quick-start/
 [coraza-wasm]: https://github.com/corazawaf/coraza-proxy-wasm
 [cscloud]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Cloud_Architecture_Cheat_Sheet
 [edit1102]: https://github.com/OWASP/DevGuide/blob/main/docs/en/09-operations/02-coraza.md
