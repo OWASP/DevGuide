@@ -3,6 +3,7 @@ AEAD
 AES
 APIT
 APIs
+APISIX
 APK
 ARP
 ASVS
@@ -310,6 +311,7 @@ Threagile
 ThreatAtlas
 Tink
 ToC
+Traefik
 Trivy
 TrustWave
 UEFI
