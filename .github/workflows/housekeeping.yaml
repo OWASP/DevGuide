@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Delete stale workflow runs
-        uses: Mattraks/delete-workflow-runs@5bf9a1dac5c4d041c029f0a8370ddf0c5cb5aeb7
+        uses: Mattraks/delete-workflow-runs@b3018382ca039b53d238908238bd35d1fb14f8ee
         with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
