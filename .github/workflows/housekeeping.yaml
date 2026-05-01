@@ -25,7 +25,7 @@ jobs:
           keep_minimum_runs: 10
 
       - name: Delete unused workflows
-        uses: otto-de/purge-deprecated-workflow-runs@f586d3fe7f959c38ca76a0030521dfa47946bce3
+        uses: otto-de/purge-deprecated-workflow-runs@05bb48958a4a1c5e0e17e8d4a94868266a6548ea
         with:
           token: ${{ github.token }}
 
