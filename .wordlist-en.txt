@@ -1,7 +1,6 @@
 ACM
 AEAD
 AES
-allowes
 APIT
 APIs
 APISIX
