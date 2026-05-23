@@ -20,6 +20,7 @@ AppSec
 AppSensor
 Arithmatex
 Atlassian
+authorisation
 BOLA
 BOM
 BOMs
@@ -93,6 +94,7 @@ ECB
 ECMA
 EE
 ENISA
+EoP
 ESAPI
 Ebihara
 Ecommerce
@@ -300,6 +302,7 @@ SuperFences
 Sydseter
 Symfony
 TCP
+th
 TLS
 TMBOM
 TOCTOU
