@@ -2,14 +2,14 @@
 
 #### What is Cornucopia?
 
-OWASP Cornucopia is a mechanism in the form of a card game to assist software development teams identify security
+OWASP Cornucopia is a mechanism in the form of a card game to assist software development teams in identifying security
 requirements in Agile, conventional and formal development processes. It is language, platform and technology-agnostic.
-The idea behind Cornucopia is to help development teams, especially those using Agile methodologies, to identify application
+The idea behind Cornucopia is to help development teams, especially those using Agile methodologies, identify application
 security requirements and develop security-based user stories.
 [Cornucopia][cornucopia] is an OWASP production project. The cards can be [downloaded][cornucopia-cards] and printed or
 [bought online][online] from its website.
 It is also possible to play OWASP Cornucopia online using the cornucopia game engine called [Copi][copi].
-The game engine has also a broad selection of other EoP related games.
+The game engine also has a broad selection of other EoP-related games.
 
 #### Why use it?
 
@@ -27,21 +27,21 @@ play their list of games, see their website at
 
 Cornucopia is useful for both requirements analysis and threat modeling,
 providing gamification of these activities within the development lifecycle.
-It is targeted towards agile development teams and provides a different perspective to these tasks.
+It is targeted towards agile development teams and provides a different perspective on these tasks.
 
 The outcome of the game is to identify possible threats and propose remediations.
 
 #### How to use Cornucopia
 
-Cornucopia can be played in many different ways, there is no one way,
+Cornucopia can be played in many different ways; there is no one way,
 and there is a suggested [set of rules][cornucopia-play] to start the game off.
-[OWASP Threat Dragon][threat-dragon] also has a diagram called "EoP Games" that allowes the players to link the card that
+[OWASP Threat Dragon][threat-dragon] also has a diagram called "EoP Games" that allows the players to link the card that
 scores directly to a threat model to simplify security requirement analysis.
 
 The OWASP Spotlight series provides an excellent overview of Cornucopia and how it can be used for gamification:
 'Project 16 - [Cornucopia][spotlight16]'. [Videos on the OWASP Cornucopia website][cornucopia-play] also demonstrate several
-ways the game can be utilized. There is also a [OWASP 25th Anniversary Video][owasp25th] that gives a short presentation on
-the games and how to use it.
+ways the game can be utilised. There is also a [OWASP 25th Anniversary Video][owasp25th] that gives a short presentation on
+the games and how to use them.
 
 #### References
 
