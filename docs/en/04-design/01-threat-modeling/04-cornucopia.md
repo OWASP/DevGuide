@@ -40,7 +40,7 @@ scores directly to a threat model to simplify security requirement analysis.
 
 The OWASP Spotlight series provides an excellent overview of Cornucopia and how it can be used for gamification:
 'Project 16 - [Cornucopia][spotlight16]'. [Videos on the OWASP Cornucopia website][cornucopia-play] also demonstrate several
-ways the game can be utilised. There is also a [OWASP 25th Anniversary Video][owasp25th] that gives a short presentation on
+ways the game can be utilized. There is also a [OWASP 25th Anniversary Video][owasp25th] that gives a short presentation on
 the games and how to use them.
 
 #### References
