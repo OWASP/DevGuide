@@ -9,15 +9,16 @@ on:
 
 # for security reasons the github actions are pinned to specific SHAs
 jobs:
-  chores:
+  tidy_workflows:
     name: Tidy workflows
     runs-on: ubuntu-24.04
     permissions:
       actions: write
+      contents: read
 
     steps:
       - name: Delete stale workflow runs
-        uses: Mattraks/delete-workflow-runs@5bf9a1dac5c4d041c029f0a8370ddf0c5cb5aeb7
+        uses: Mattraks/delete-workflow-runs@5bf9a1dac5c4d041c029f0a8370ddf0c5cb5aeb7 # v2.1.0
         with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
@@ -25,7 +26,7 @@ jobs:
           keep_minimum_runs: 10
 
       - name: Delete unused workflows
-        uses: otto-de/purge-deprecated-workflow-runs@f586d3fe7f959c38ca76a0030521dfa47946bce3
+        uses: otto-de/purge-deprecated-workflow-runs@4781dc30eb7236b195e896b9a26b14296341b63a # v4.0.10
         with:
           token: ${{ github.token }}
 
@@ -34,10 +35,10 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Link Checker
-        uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411
+        uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411 # v2.8.0
         with:
           # skip the jekyll files under '_includes' directory, check all other directories
           args: >-
@@ -62,7 +63,7 @@ jobs:
 
     steps:
       - name: Tidy stale PRs and issues
-        uses: actions/stale@b5d41d4e1d5dceea10e7104786b73624c18a190f
+        uses: actions/stale@b5d41d4e1d5dceea10e7104786b73624c18a190f # v10.2.0
         with:
           days-before-issue-stale: 183
           days-before-issue-close: -1
