@@ -151,7 +151,7 @@ jobs:
         run: mkdocs build --config-file mkdocs-pdf-en.yaml
 
       - name: Upload EN PDF
-        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: pdf-export-en
           path: site/OWASP_Developer_Guide.pdf
@@ -160,7 +160,7 @@ jobs:
         run: mkdocs build --config-file mkdocs-pdf-es.yaml
 
       - name: Upload ES PDF
-        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: pdf-export-es
           path: site/OWASP_Developer_Guide-ES.pdf
@@ -169,7 +169,7 @@ jobs:
         run: mkdocs build --config-file mkdocs-pdf-fa.yaml
 
       - name: Upload FA PDF
-        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: pdf-export-fa
           path: site/OWASP_Developer_Guide-FA.pdf
@@ -178,7 +178,7 @@ jobs:
         run: mkdocs build --config-file mkdocs-pdf-pt-br.yaml
 
       - name: Upload PT-BR PDF
-        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: pdf-export-pt-br
           path: site/OWASP_Developer_Guide-PT-BR.pdf
