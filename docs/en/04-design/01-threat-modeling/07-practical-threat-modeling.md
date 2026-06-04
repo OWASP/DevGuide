@@ -259,7 +259,7 @@ then [submit an issue][issue040107] or [edit on GitHub][edit040107].
 [issue040107]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/01-threat-modeling/07-practical-threat-modeling
 [linddun]: https://linddun.org/
 [nist-cvss]: https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator
-[pasta]: https://versprite.com/blog/what-is-pasta-threat-modeling/
+[pasta]: https://versprite.com/resources/blog/what-is-pasta-threat-modeling/
 [PYTM]: https://owasp.org/www-project-pytm/
 [samm]: https://owaspsamm.org/about/
 [sammd]: https://owaspsamm.org/model/design/

@@ -40,8 +40,8 @@ The OWASP Spotlight series provides an overview of how to use this CRS:
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue1104] or [edit on GitHub][edit1104].
 
-[coraza]: https://coraza.io/
-[coraza-tutorial]: https://coraza.io/docs/tutorials/quick-start/
+[coraza]: https://www.coraza.io/
+[coraza-tutorial]: https://www.coraza.io/docs/tutorials/quick-start/
 [edit1104]: https://github.com/OWASP/DevGuide/blob/main/docs/en/09-operations/04-crs.md
 [issue1104]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2009-operations/04-crs
 [crs]: https://coreruleset.org/

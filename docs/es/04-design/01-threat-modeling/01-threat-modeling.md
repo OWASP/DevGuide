@@ -278,7 +278,7 @@ La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que 
 [issue060101]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/01-threat-modeling/01-threat-modeling
 [linddun]: https://linddun.org/
 [nist-cvss]: https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator
-[pasta]: https://versprite.com/blog/what-is-pasta-threat-modeling/
+[pasta]: https://versprite.com/resources/blog/what-is-pasta-threat-modeling/
 [PYTM]: https://owasp.org/www-project-pytm/
 [samm]: https://owaspsamm.org/about/
 [sammd]: https://owaspsamm.org/model/design/
