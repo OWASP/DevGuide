@@ -161,7 +161,7 @@ NIST یک [آسیب‌پذیری][nistvuln] را اینگونه تعریف می�
 [csproto]: https://cheatsheetseries.owasp.org/cheatsheets/Prototype_Pollution_Prevention_Cheat_Sheet
 [csfile]: https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
 [csheaders]: https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html
-[csjwt]: https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_for_Java_Cheat_Sheet.html
+[csjwt]: https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_Cheat_Sheet
 [cssql]: https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet
 [csredirect]: https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet
 [csserial]: https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html

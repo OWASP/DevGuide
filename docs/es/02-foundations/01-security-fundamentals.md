@@ -168,7 +168,7 @@ si ve algo que necesita cambios, entonces [cree un issue][issue0401] o [edítelo
 [csfile]: https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet
 [csheaders]: https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet
 [cshtml5]: https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet
-[csjwt]: https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_for_Java_Cheat_Sheet
+[csjwt]: https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_Cheat_Sheet
 [csredirect]: https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet
 [csserial]: https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet
 [cssql]: https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet

@@ -119,7 +119,7 @@ needed to produce secure software :
 * Strongly consider [HTTP Strict Transport Security][csstrict]
 * If the application has a file upload feature, follow the [File Upload][csfile] cheat sheet
 * Ensure content security policy is in place with the [Content Security Policy][cscsp] cheat sheet
-* Using JWTs for a Java application? Refer to the [JSON Web Token][csjwt] cheat sheet
+* Using JWTs in the application? Refer to the [JSON Web Token][csjwt] cheat sheet
 * Storing or sending objects? Check out the [Deserialization][csserial] cheat sheet
 
 #### References
@@ -151,7 +151,7 @@ then [submit an issue][issue0401] or [edit on GitHub][edit0401].
 [csfile]: https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet
 [csheaders]: https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet
 [cshtml5]: https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet
-[csjwt]: https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_for_Java_Cheat_Sheet
+[csjwt]: https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_Cheat_Sheet
 [csredirect]: https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet
 [csserial]: https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet
 [cssql]: https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet
