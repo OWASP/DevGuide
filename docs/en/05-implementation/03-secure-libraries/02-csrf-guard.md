@@ -20,8 +20,7 @@ The OWASP CSRFGuard library is widely used for Java applications, and will help 
 
 #### How to use it
 
-Pre-compiled versions of the CSRFGuard library can be downloaded from
-the [Maven Central repository][csrfguard-maven] or the [OSS Sonatype Nexus][csrfguard-nexus] repository.
+Pre-compiled versions of the CSRFGuard library can be downloaded from the [Maven Central repository][csrfguard-maven].
 
 Follow the [instructions][csrfguard-build] to build CSRFGuard into the Java application using Maven.
 
@@ -37,7 +36,6 @@ then [submit an issue][issue070302] or [edit on GitHub][edit070302].
 
 [csrfguard]: https://owasp.org/www-project-csrfguard/
 [csrfguard-build]: https://github.com/OWASP/www-project-csrfguard/blob/master/readme.md#using-with-maven
-[csrfguard-nexus]: https://oss.sonatype.org/#nexus-search;gav~~csrfguard~~~
 [csrfguard-maven]: https://central.sonatype.com/search?q=csrfguard&smo=true
 [cscsrf]: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet
 [edit070302]: https://github.com/OWASP/DevGuide/blob/main/docs/en/05-implementation/03-secure-libraries/02-csrf-guard.md
