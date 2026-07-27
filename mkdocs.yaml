@@ -41,6 +41,9 @@ markdown_extensions:
   - def_list
   - attr_list
   - md_in_html
+  - toc:
+      permalink: true
+      slugify: !!python/name:markdown.extensions.toc.slugify_unicode
 
 plugins:
   - open-in-new-tab  
