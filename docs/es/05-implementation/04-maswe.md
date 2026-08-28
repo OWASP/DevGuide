@@ -15,13 +15,13 @@ El MASWE se divide en categorías de debilidades que corresponden a las categor�
 
 * [MASVS-STORAGE](https://mas.owasp.org/MASWE/MASVS-STORAGE/MASWE-0001/) almacenamiento de datos sensibles
 * [MASVS-CRYPTO](https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0009/) mejores prácticas de criptografía
-* [MASVS-AUTH](https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0028/) mecanismos de autenticación y autorización
-* [MASVS-NETWORK](https://mas.owasp.org/MASWE/MASVS-NETWORK/MASWE-0047/) comunicaciones de red
-* [MASVS-PLATFORM](https://mas.owasp.org/MASWE/MASVS-PLATFORM/MASWE-0053/) interacciones con la plataforma móvil
-* [MASVS-CODE](https://mas.owasp.org/MASWE/MASVS-CODE/MASWE-0075/) plataforma y software de terceros
-* [MASVS-RESILIENCE](https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0089/) integridad
+* [MASVS-AUTH](https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0018/) mecanismos de autenticación y autorización
+* [MASVS-NETWORK](https://mas.owasp.org/MASWE/MASVS-NETWORK/MASWE-0026/) comunicaciones de red
+* [MASVS-PLATFORM](https://mas.owasp.org/MASWE/MASVS-PLATFORM/MASWE-0029/) interacciones con la plataforma móvil
+* [MASVS-CODE](https://mas.owasp.org/MASWE/MASVS-CODE/MASWE-0041/) plataforma y software de terceros
+* [MASVS-RESILIENCE](https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0051/) integridad
   y ejecución en una plataforma confiable
-* [MASVS-PRIVACY](https://mas.owasp.org/MASWE/MASVS-PRIVACY/MASWE-0108/) privacidad de usuarios, datos y recursos
+* [MASVS-PRIVACY](https://mas.owasp.org/MASWE/MASVS-PRIVACY/MASWE-0066/) privacidad de usuarios, datos y recursos
 
 #### ¿Por qué usarlo?
 

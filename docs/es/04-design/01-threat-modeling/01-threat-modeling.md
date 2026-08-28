@@ -292,6 +292,6 @@ La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que 
 [tmmanifesto]: https://www.threatmodelingmanifesto.org/
 [TM]: https://owasp.org/www-community/Threat_Modeling
 [TMP]: https://owasp.org/www-community/Threat_Modeling_Process
-[TMdesigning]: https://shostack.org/books/threat-modeling-book
+[TMdesigning]: https://shostack.org/books/threat-modeling-book-2nd-edition
 [TMpractical]: https://threatmodeling.dev/
 [TMT]: https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool

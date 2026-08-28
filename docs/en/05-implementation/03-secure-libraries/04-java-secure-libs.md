@@ -76,4 +76,4 @@ then [submit an issue][issue050304] or [edit on GitHub][edit050304].
 [json-sanitizer]: https://github.com/OWASP/json-sanitizer/releases/latest/
 [json-sanitizer-dependents]: https://central.sonatype.com/artifact/com.mikesamuel/json-sanitizer/dependents
 [json-sanitizer-usage]: https://github.com/OWASP/json-sanitizer/blob/master/docs/getting_started.md
-[rfc4627]: https://www.ietf.org/rfc/rfc4627.txt
+[rfc4627]: https://www.rfc-editor.org/rfc/rfc4627.txt

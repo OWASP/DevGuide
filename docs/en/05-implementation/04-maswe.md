@@ -15,12 +15,12 @@ The MASWE is split out into weakness categories that correspond to the [MASVS][m
 
 * [MASVS-STORAGE](https://mas.owasp.org/MASWE/MASVS-STORAGE/MASWE-0001/) sensitive data storage
 * [MASVS-CRYPTO](https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0009/) cryptography best practices
-* [MASVS-AUTH](https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0028/) authentication and authorization mechanisms
-* [MASVS-NETWORK](https://mas.owasp.org/MASWE/MASVS-NETWORK/MASWE-0047/) network communications
-* [MASVS-PLATFORM](https://mas.owasp.org/MASWE/MASVS-PLATFORM/MASWE-0053/) interactions with the mobile platform
-* [MASVS-CODE](https://mas.owasp.org/MASWE/MASVS-CODE/MASWE-0075/) platform and third-party software
-* [MASVS-RESILIENCE](https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0089/) integrity and running on a trusted platform
-* [MASVS-PRIVACY](https://mas.owasp.org/MASWE/MASVS-PRIVACY/MASWE-0108/) privacy of users, data and resources
+* [MASVS-AUTH](https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0018/) authentication and authorization mechanisms
+* [MASVS-NETWORK](https://mas.owasp.org/MASWE/MASVS-NETWORK/MASWE-0026/) network communications
+* [MASVS-PLATFORM](https://mas.owasp.org/MASWE/MASVS-PLATFORM/MASWE-0029/) interactions with the mobile platform
+* [MASVS-CODE](https://mas.owasp.org/MASWE/MASVS-CODE/MASWE-0041/) platform and third-party software
+* [MASVS-RESILIENCE](https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0051/) integrity and running on a trusted platform
+* [MASVS-PRIVACY](https://mas.owasp.org/MASWE/MASVS-PRIVACY/MASWE-0066/) privacy of users, data and resources
 
 #### Why use it?
 
