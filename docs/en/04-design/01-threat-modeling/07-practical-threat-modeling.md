@@ -273,6 +273,6 @@ then [submit an issue][issue040107] or [edit on GitHub][edit040107].
 [tmmanifesto]: https://www.threatmodelingmanifesto.org/
 [tmcommunity]: https://owasp.org/www-community/Threat_Modeling
 [tmprocess]: https://owasp.org/www-community/Threat_Modeling_Process
-[TMdesigning]: https://shostack.org/books/threat-modeling-book
+[TMdesigning]: https://shostack.org/books/threat-modeling-book-2nd-edition
 [TMpractical]: https://threatmodeling.dev/
 [TMT]: https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool

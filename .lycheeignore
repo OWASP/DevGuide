@@ -50,3 +50,8 @@ www.opencre.org
 # don't irritate the US government
 nvd.nist.gov/
 
+# SKF has a habit of not renewing its SSL cert
+www.securityknowledgeframework.org
+
+# Slack tends to block bots, but not always
+owasp.slack.com
