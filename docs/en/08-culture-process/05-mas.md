@@ -45,7 +45,7 @@ then [submit an issue][issue1005] or [edit on GitHub][edit1005].
 [edit1005]: https://github.com/OWASP/DevGuide/blob/main/docs/en/08-culture-process/05-mas.md
 [issue1005]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2008-culture-process/05-mas
 [mas]: https://mas.owasp.org/
-[masproject]: https://owasp.org/www-project-mobile-app-security/
+[masproject]: https://owasp.org/projects/mobile-application-security
 [masandroid]: https://mas.owasp.org/crackmes/Android/
 [mascrack]: https://mas.owasp.org/crackmes/
 [masios]: https://mas.owasp.org/crackmes/iOS/

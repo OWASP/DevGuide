@@ -191,7 +191,7 @@ URL ارائه‌شده توسط کاربر باشد، رخ دهند. این ا�
 
 - [۱۰ مورد برتر امنیت API](https://owasp.org/API-Security/)
 - [۱۰ مورد برتر امنیت داده](https://owasp.org/www-project-data-security-top-10/)
-- [۱۰ مورد برتر Citizen Development](https://owasp.org/www-project-citizen-development-top10-security-risks/)
+- [۱۰ مورد برتر Citizen Development](https://owasp.org/projects/citizen-development-top-10)
 - [۱۰ مورد برتر موبایل](https://owasp.org/www-project-mobile-top-10/)
 - [۱۰ مورد برتر بدون سرور (Serverless)](https://owasp.org/www-project-serverless-top-10/)
 - [۱۰ ریسک امنیتی برتر CI/CD](https://owasp.org/www-project-top-10-ci-cd-security-risks/)

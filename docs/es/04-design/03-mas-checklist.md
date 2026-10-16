@@ -61,7 +61,7 @@ La Guía para Desarrolladores de OWASP es un esfuerzo comunitario; si hay algo q
 [edit0603]: https://github.com/OWASP/DevGuide/blob/main/docs/es/04-design/03-mas-checklist.md
 [en0603]: https://devguide.owasp.org/en/04-design/03-mas-checklist/
 [issue0603]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/03-mas-checklist
-[masproject]: https://owasp.org/www-project-mobile-app-security/
+[masproject]: https://owasp.org/projects/mobile-application-security
 [masxls]: https://github.com/OWASP/owasp-mastg/releases/latest/download/OWASP_MAS_Checklist.xlsx
 [masc]: https://mas.owasp.org/checklists/
 [mastg]: https://mas.owasp.org/MASTG/

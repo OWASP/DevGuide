@@ -40,7 +40,7 @@ La Guía para Desarrolladores OWASP es un esfuerzo comunitario; si hay algo que 
 [csproactive-c10]: https://cheatsheetseries.owasp.org/IndexProactiveControls.html#c10-handle-all-errors-and-exceptions
 [control3]: https://top10proactive.owasp.org/the-top-10/c3-validate-input-and-handle-exceptions/
 [edit060210]: https://github.com/OWASP/DevGuide/blob/main/docs/es/04-design/02-web-app-checklist/10-handle-errors-exceptions.md
-[handle]: https://owasp.org/www-community/Improper_Error_Handling
+[handle]: https://community.owasp.org/Improper_Error_Handling
 [en060210]: https://devguide.owasp.org/en/04-design/02-web-app-checklist/10-handle-errors-exceptions/
 [issue060210]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/02-web-app-checklist/10-handle-errors-exceptions
 [proactive10]: https://top10proactive.owasp.org/

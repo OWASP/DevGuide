@@ -122,7 +122,6 @@ necessárias para produzir software seguro:
 
 * A folha de dicas [HTML5 Security][cshtml5] descreve uma grande variedade de controles,
   alinhados com o atual [HTML Living Standard][htmlliving]
-* Consulte a folha de dicas para CSS [Securing Cascading Style Sheets][cscss]
 * Os cabeçalhos HTTP precisam sem seguros, veja a folha de dicas [HTTP Security Response Headers][csheaders]
 * Considere fortemente [HTTP Strict Transport Security][csstrict]
 * Se a aplicação tem uma funcionalidade de upload de arquivo, siga a folha de dicas [File Upload][csfile]
@@ -146,7 +145,6 @@ então [submeta uma issue][issue0401] ou [edite no GitHub][edit0401].
 [csclick]: https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet
 [cscreds]: https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet
 [cscsp]: https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet
-[cscss]: https://cheatsheetseries.owasp.org/cheatsheets/Securing_Cascading_Style_Sheets_Cheat_Sheet
 [csdom]: https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet
 [csdomclub]: https://cheatsheetseries.owasp.org/cheatsheets/DOM_Clobbering_Prevention_Cheat_Sheet
 [csdos]: https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet

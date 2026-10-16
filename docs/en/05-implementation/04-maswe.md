@@ -64,7 +64,7 @@ then [submit an issue][issue0704] or [edit on GitHub][edit0704].
 [cwe]: https://cwe.mitre.org/
 [edit0704]: https://github.com/OWASP/DevGuide/blob/main/docs/en/05-implementation/04-maswe.md
 [issue0704]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-implementation/04-maswe
-[masproject]: https://owasp.org/www-project-mobile-app-security/
+[masproject]: https://owasp.org/projects/mobile-application-security
 [masc]: https://mas.owasp.org/checklists/
 [mastg]: https://mas.owasp.org/MASTG/
 [maswe]: https://mas.owasp.org/MASWE/

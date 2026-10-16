@@ -209,7 +209,7 @@ si ve algo que necesita cambios, entonces [cree un issue][issue0405] o [edítelo
 [a10]: https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/
 [a10cs]: https://cheatsheetseries.owasp.org/IndexTopTen.html#a102021-server-side-request-forgery-ssrf
 [apisec]: https://owasp.org/API-Security/
-[cd10]: https://owasp.org/www-project-citizen-development-top10-security-risks/
+[cd10]: https://owasp.org/projects/citizen-development-top-10
 [cicd10]: https://owasp.org/www-project-top-10-ci-cd-security-risks/
 [cschain]: https://cheatsheetseries.owasp.org/cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet
 [cscloud]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Cloud_Architecture_Cheat_Sheet

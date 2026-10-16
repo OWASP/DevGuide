@@ -286,12 +286,12 @@ La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que 
 [sammgata]: https://owaspsamm.org/guidance/agile/#TA
 [snakes]: https://owasp.org/www-project-snakes-and-ladders/
 [stride]: https://en.wikipedia.org/wiki/STRIDE_%28security%29
-[tdtm]: https://owasp.org/www-project-threat-dragon/
-[tmpb]: https://owasp.org/www-project-threat-modeling-playbook/
-[tmproject]: https://owasp.org/www-project-threat-modeling/
+[tdtm]: https://owasp.org/projects/threat-dragon
+[tmpb]: https://owasp.org/projects/threat-modeling-playbook-otmp
+[tmproject]: https://owasp.org/projects/threat-modeling-project
 [tmmanifesto]: https://www.threatmodelingmanifesto.org/
-[TM]: https://owasp.org/www-community/Threat_Modeling
-[TMP]: https://owasp.org/www-community/Threat_Modeling_Process
+[TM]: https://community.owasp.org/Threat_Modeling
+[TMP]: https://community.owasp.org/Threat_Modeling_Process
 [TMdesigning]: https://shostack.org/books/threat-modeling-book-2nd-edition
 [TMpractical]: https://threatmodeling.dev/
 [TMT]: https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool

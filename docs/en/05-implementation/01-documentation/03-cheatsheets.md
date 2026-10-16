@@ -57,7 +57,7 @@ The cheat sheets are continually being updated and are always open to contributi
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue070103] or [edit on GitHub][edit070103].
 
-[csproject]: https://owasp.org/www-project-cheat-sheets/
+[csproject]: https://owasp.org/projects/cheat-sheet-series
 [cheatsheets]: https://cheatsheetseries.owasp.org/
 [cheatsheet-alpha]: https://cheatsheetseries.owasp.org/Glossary
 [csasvs]: https://cheatsheetseries.owasp.org/IndexASVS

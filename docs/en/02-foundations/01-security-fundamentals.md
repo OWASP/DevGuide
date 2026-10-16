@@ -114,7 +114,6 @@ needed to produce secure software :
 
 * The [HTML5 Security][cshtml5] cheat sheet describes a wide range of controls,
   aligned with the current [HTML Living Standard][htmlliving]
-* Refer to the [Securing Cascading Style Sheets][cscss] cheat sheet for CSS
 * The HTTP headers need to be secure, see the [HTTP Security Response Headers][csheaders] cheat sheet
 * Strongly consider [HTTP Strict Transport Security][csstrict]
 * If the application has a file upload feature, follow the [File Upload][csfile] cheat sheet
@@ -137,7 +136,6 @@ then [submit an issue][issue0401] or [edit on GitHub][edit0401].
 [csclick]: https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet
 [cscreds]: https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet
 [cscsp]: https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet
-[cscss]: https://cheatsheetseries.owasp.org/cheatsheets/Securing_Cascading_Style_Sheets_Cheat_Sheet
 [csdom]: https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet
 [csdomclub]: https://cheatsheetseries.owasp.org/cheatsheets/DOM_Clobbering_Prevention_Cheat_Sheet
 [csdos]: https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet

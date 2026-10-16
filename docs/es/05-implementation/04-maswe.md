@@ -70,7 +70,7 @@ si ve algo que necesita cambios, entonces [cree un issue][issue0704] o [edítelo
 [edit0704]: https://github.com/OWASP/DevGuide/blob/main/docs/es/05-implementation/04-maswe.md
 [en0704]: https://devguide.owasp.org/en/05-implementation/04-maswe/
 [issue0704]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-implementation/04-maswe
-[masproject]: https://owasp.org/www-project-mobile-app-security/
+[masproject]: https://owasp.org/projects/mobile-application-security
 [masc]: https://mas.owasp.org/checklists/
 [mastg]: https://mas.owasp.org/MASTG/
 [maswe]: https://mas.owasp.org/MASWE/

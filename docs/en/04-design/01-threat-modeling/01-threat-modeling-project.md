@@ -1,12 +1,12 @@
 The OWASP [Threat Modeling Project][tmproject] is an over-arching project
-that seeks to inform and guide on the very large domain that is [Threat Modeling][tmptm].
+that seeks to inform and guide on the very large domain that is Threat Modeling.
 
 #### What is the Threat Model project?
 
 The Threat Model project is not intended to be a primary source on the threat modeling domain;
 there are already many excellent sources that describe and explain threat modeling that this project does not need to repeat.
 
-Instead the Threat Model project seeks to provide direction on [threat modeling techniques][tmpapp]
+Instead the Threat Model project seeks to provide direction on threat modeling techniques
 for applications and systems of all types, with a focus on current and emerging techniques.
 To provide this the project intends to collate threat modeling techniques, methodologies, tools and examples.
 
@@ -21,7 +21,7 @@ At present it is at OWASP Incubator status with promotion to Laboratory status e
 The [Threat Modeling][tmproject] project is an over-arching project for the other threat modeling projects and resources.
 
 It can be used as a landing page for all things threat modeling;
-the starting point for finding [resources and tools][tmpres] as well as the core concepts.
+the starting point for finding resources and tools as well as the core concepts.
 For example there is an introduction to Shostack's [Four Question Framework][4QFW]
 that references the primary source if the user needs to know more.
 
@@ -77,20 +77,17 @@ then [submit an issue][issue040101] or [edit on GitHub][edit040101].
 [edit040101]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/01-threat-modeling/01-threat-modeling-project.md
 [issue040101]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2004-design/01-threat-modeling/01-threat-modeling-project
 [ltm]: https://owasp.org/www-project-lets-threat-model/
-[oats]: https://owasp.org/www-project-automated-threats-to-web-applications/
+[oats]: https://owasp.org/projects/automated-threats-to-web-applications
 [odtmf]: https://owasp.org/www-project-ontology-driven-threat-modeling-framework/
 [pytm]: https://owasp.org/www-project-pytm/
-[rdtmproject]: https://owasp.org/www-project-rapid-developer-driven-threat-modeling/
+[rdtmproject]: https://owasp.org/projects/rapid-developer-driven-threat-modeling-rad-tm
 [saptmb]: https://owasp.org/www-project-sap-threat-modeling-builder/
-[tdtm]: https://owasp.org/www-project-threat-dragon/
+[tdtm]: https://owasp.org/projects/threat-dragon
 [threatatlas]: https://owasp.org/www-project-threatatlas/
 [toolkit]: https://www.youtube.com/watch?v=KGy_KCRUGd4
-[tmpb]: https://owasp.org/www-project-threat-modeling-playbook/
-[tmcommunity]: https://owasp.org/www-community/Threat_Modeling
+[tmpb]: https://owasp.org/projects/threat-modeling-playbook-otmp
+[tmcommunity]: https://community.owasp.org/Threat_Modeling
 [tmgproject]: https://owasp.org/www-project-threat-modelling-guide/
-[tml]: https://owasp.org/www-project-threat-model-library/
-[tmpapp]: https://owasp.org/www-project-threat-modeling/#div-application-tm
-[tmpres]: https://owasp.org/www-project-threat-modeling/#div-resources
-[tmprocess]: https://owasp.org/www-community/Threat_Modeling_Process
-[tmproject]: https://owasp.org/www-project-threat-modeling/
-[tmptm]: https://owasp.org/www-project-threat-modeling/#div-threatmodeling
+[tml]: https://owasp.org/projects/threat-model-library
+[tmprocess]: https://community.owasp.org/Threat_Modeling_Process
+[tmproject]: https://owasp.org/projects/threat-modeling-project

@@ -78,4 +78,4 @@ then [submit an issue][issue1001] or [edit on GitHub][edit1001].
 [dsodast]: https://owasp.org/www-project-devsecops-guideline/latest/02b-Dynamic-Application-Security-Testing
 [dsoiast]: https://owasp.org/www-project-devsecops-guideline/latest/02c-Interactive-Application-Security-Testing
 [dsosast]: https://owasp.org/www-project-devsecops-guideline/latest/02a-Static-Application-Security-Testing
-[scguide]: https://owasp.org/www-project-security-champions-guidebook/
+[scguide]: https://owasp.org/projects/security-champions-guide

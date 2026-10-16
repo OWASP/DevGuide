@@ -65,8 +65,8 @@ si hay algo que necesita cambiarse, [cree un issue][issue070301] o [edítelo en 
 [en070301]: https://devguide.owasp.org/en/05-implementation/03-secure-libraries/01-esapi/
 [esapi-docs]: https://www.javadoc.io/doc/org.owasp.esapi/esapi/latest/index.html
 [esapi-java]: https://mvnrepository.com/artifact/org.owasp.esapi/esapi
-[esapi-project]: https://owasp.org/www-project-enterprise-security-api/
-[esapi-question]: https://owasp.org/www-project-enterprise-security-api/#div-shouldiuseesapi
+[esapi-project]: https://owasp.org/projects/enterprise-security-api-esapi
+[esapi-question]: https://owasp.org/projects/enterprise-security-api-esapi?tab=should-i-use-esapi
 [google-keyczar]: https://github.com/google/keyczar
 [google-tink]: https://github.com/tink-crypto/tink
 [issue070301]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2005-implementation/03-secure-libraries/01-esapi

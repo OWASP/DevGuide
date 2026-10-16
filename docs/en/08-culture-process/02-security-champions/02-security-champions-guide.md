@@ -3,7 +3,7 @@
 The OWASP [Security Champions Guide][scguide] is a guidebook that helps organizations build
 a security champions program that can succeed over the long term.
 
-It is a relatively new [OWASP Incubator project][scguiderepo] and is available as a [web document][scguidedoc].
+It is a relatively new [OWASP Incubator project][scg-repo] and is available as a [web document][scg-doc].
 
 #### Overview
 
@@ -16,15 +16,15 @@ to counter this risk a Security Champions Program will help identify and nurture
 The [Security Champions Guide][scguide] provides two resources that explain what a security champion program is
 and how it can be put into practice:
 
-* The Security Champions Manifesto sets out a philosophy for a good security champions program
-* The Security Champions Guide explains each point in the manifesto and illustrates it with practical advice
+* The [Security Champions Manifesto][scg-manifesto] sets out a philosophy for a good security champions program
+* The [Security Champions Guide][scg-doc] explains each point in the manifesto and illustrates it with practical advice
 
 The Security Champions Guide is not proscriptive, an individual organization should select freely from the suggestions
 to create its own program - and perhaps revisit the guide as its security champions program matures over time.
 
 #### The Security Champions Manifesto
 
-The manifesto defines ten key principles for a successful security champions program:
+The [manifesto][scg-manifesto] defines ten key principles for a successful security champions program:
 
 * Be passionate about security
 * Start with a clear vision for your program
@@ -68,6 +68,7 @@ then [submit an issue][issue1022] or [edit on GitHub][edit1022].
 
 [issue1022]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2008-culture-process/02-security-champions/02-security-champions-guide
 [edit1022]: https://github.com/OWASP/DevGuide/blob/main/docs/en/08-culture-process/02-security-champions/02-security-champions-guide.md
-[scguide]: https://owasp.org/www-project-security-champions-guidebook/
-[scguidedoc]: https://owasp.org/www-project-security-champions-guidebook/#div-principles
-[scguiderepo]: https://github.com/OWASP/www-project-security-champions-guidebook
+[scguide]: https://owasp.org/projects/security-champions-guide
+[scg-doc]: https://securitychampions.owasp.org/
+[scg-manifesto]: https://securitychampions.owasp.org/manifesto/
+[scg-repo]: https://github.com/OWASP/www-project-security-champions-guidebook

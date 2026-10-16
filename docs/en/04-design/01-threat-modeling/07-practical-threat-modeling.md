@@ -267,12 +267,12 @@ then [submit an issue][issue040107] or [edit on GitHub][edit040107].
 [sammgata]: https://owaspsamm.org/guidance/agile/#TA
 [snakes]: https://owasp.org/www-project-snakes-and-ladders/
 [stride]: https://en.wikipedia.org/wiki/STRIDE_%28security%29
-[tdtm]: https://owasp.org/www-project-threat-dragon/
-[tmpb]: https://owasp.org/www-project-threat-modeling-playbook/
-[tmproject]: https://owasp.org/www-project-threat-modeling/
+[tdtm]: https://owasp.org/projects/threat-dragon
+[tmpb]: https://owasp.org/projects/threat-modeling-playbook-otmp
+[tmproject]: https://owasp.org/projects/threat-modeling-project
 [tmmanifesto]: https://www.threatmodelingmanifesto.org/
-[tmcommunity]: https://owasp.org/www-community/Threat_Modeling
-[tmprocess]: https://owasp.org/www-community/Threat_Modeling_Process
+[tmcommunity]: https://community.owasp.org/Threat_Modeling
+[tmprocess]: https://community.owasp.org/Threat_Modeling_Process
 [TMdesigning]: https://shostack.org/books/threat-modeling-book-2nd-edition
 [TMpractical]: https://threatmodeling.dev/
 [TMT]: https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool

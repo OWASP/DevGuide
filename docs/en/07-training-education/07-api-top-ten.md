@@ -47,6 +47,6 @@ then [submit an issue][issue0907] or [edit on GitHub][edit0907].
 [api10]: https://owasp.org/API-Security/editions/2023/en/0xaa-unsafe-consumption-of-apis/
 [apisec]: https://owasp.org/API-Security/
 [apisec-doc]: https://owasp.org/API-Security/editions/2023/en/0x00-header/
-[apisec-project]: https://owasp.org/www-project-api-security/
+[apisec-project]: https://owasp.org/projects/api-security-project
 [edit0907]: https://github.com/OWASP/DevGuide/blob/main/docs/en/07-training-education/07-api-top-ten.md
 [issue0907]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-training-education/07-api-top-ten

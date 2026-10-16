@@ -80,9 +80,9 @@ then [submit an issue][issue040106] or [edit on GitHub][edit040106].
 [edit040106]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/01-threat-modeling/06-threat-model-library.md
 [issue040106]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2004-design/01-threat-modeling/06-threat-model-library
 [tddownload]: https://github.com/OWASP/threat-dragon/releases
-[tdtm]: https://owasp.org/www-project-threat-dragon/
+[tdtm]: https://owasp.org/projects/threat-dragon
 [tmboms]: https://github.com/OWASP/www-project-threat-model-library/tree/main/threat-models/
 [tmbom-schema]: https://github.com/OWASP/www-project-threat-model-library/releases/latest
-[tml]: https://owasp.org/www-project-threat-model-library/
+[tml]: https://owasp.org/projects/threat-model-library
 [tmlwiki]: https://github.com/OWASP/www-project-threat-model-library/wiki/Creating-TM%E2%80%90BOMs
 [tmpublish]: https://www.youtube.com/watch?v=jEqa16lGz_E

@@ -61,6 +61,6 @@ then [submit an issue][issue130103] or [edit on GitHub][edit130103].
 [edit130103]: https://github.com/OWASP/DevGuide/blob/main/docs/en/11-security-gap-analysis/01-guides/03-mas.md
 [issue130103]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2011-security-gap-analysis/01-guides/03-mas
 [mas]: https://mas.owasp.org/
-[masproject]: https://owasp.org/www-project-mobile-app-security/
+[masproject]: https://owasp.org/projects/mobile-application-security
 [mastg]: https://mas.owasp.org/MASTG/
 [masvs]: https://mas.owasp.org/MASVS/

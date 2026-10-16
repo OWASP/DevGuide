@@ -128,7 +128,6 @@ NIST یک [آسیب‌پذیری][nistvuln] را اینگونه تعریف می�
 
 - برگه تقلب [امنیت HTML5][htmlliving] طیف گسترده‌ای از کنترل‌ها را، مطابق با
 [استاندارد زنده HTML][htmlliving] فعلی، توصیف می‌کند.
-- برای CSS به برگه تقلب [CSS][cscss] مراجعه کنید.
 - هدرهای HTTP باید امن باشند، برگه تقلب [هدرهای پاسخ امنیتی HTTP][csheaders] را ببینید.
 - [امنیت انتقال اکید HTTP][csstrict] را قویاً مد نظر قرار دهید.
 - اگر اپلیکیشن قابلیت آپلود فایل دارد، از برگه تقلب [آپلود فایل][csfile] پیروی کنید.
@@ -150,7 +149,6 @@ NIST یک [آسیب‌پذیری][nistvuln] را اینگونه تعریف می�
 [csclick]: https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet
 [cscreds]: https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet
 [cscsp]: https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
-[cscss]: https://cheatsheetseries.owasp.org/cheatsheets/Securing_Cascading_Style_Sheets_Cheat_Sheet.html
 [csdom]: https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet
 [csdomclub]: https://cheatsheetseries.owasp.org/cheatsheets/DOM_Clobbering_Prevention_Cheat_Sheet
 [csdos]: https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet

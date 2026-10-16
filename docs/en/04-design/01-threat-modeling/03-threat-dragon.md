@@ -69,5 +69,5 @@ then [submit an issue][issue060103] or [edit on GitHub][edit060103].
 [tdcode]: https://github.com/OWASP/threat-dragon
 [tddocker]: https://hub.docker.com/r/owasp/threat-dragon/tags
 [tddownload]: https://github.com/OWASP/threat-dragon/releases
-[tdtm]: https://owasp.org/www-project-threat-dragon/
+[tdtm]: https://owasp.org/projects/threat-dragon
 [spotlight22]: https://youtu.be/hUOAoc6QGJo

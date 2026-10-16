@@ -77,7 +77,7 @@ then [submit an issue][issue1021] or [edit on GitHub][edit1021].
 [edit1021]: https://github.com/OWASP/DevGuide/blob/main/docs/en/08-culture-process/02-security-champions/01-security-champions-program.md
 [issue1021]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2008-culture-process/02-security-champions/01-security-champions-program
 [sammgegoc]: https://owaspsamm.org/model/governance/education-and-guidance/stream-b/
-[scguide]: https://owasp.org/www-project-security-champions-guidebook/
+[scguide]: https://owasp.org/projects/security-champions-guide
 [scplaybook]: https://github.com/c0rdis/security-champions-playbook
 [culturechamps]: https://owasp.org/www-project-security-culture/stable/4-Security_Champions/
 [culturedoc]: https://owasp.org/www-project-security-culture/stable/

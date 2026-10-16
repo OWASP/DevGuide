@@ -267,7 +267,7 @@ si ve algo que necesita cambios, entonces [cree un issue][issue0404] o [edítelo
 [csauthn]: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet
 [csauthz]: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet
 [csoauth]: https://cheatsheetseries.owasp.org/cheatsheets/OAuth2_Cheat_Sheet
-[csproject]: https://owasp.org/www-project-cheat-sheets/
+[csproject]: https://owasp.org/projects/cheat-sheet-series
 [cscs]: https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet
 [kmcs]: https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet
 [edit0404]: https://github.com/OWASP/DevGuide/blob/main/docs/es/02-foundations/04-crypto-principles.md

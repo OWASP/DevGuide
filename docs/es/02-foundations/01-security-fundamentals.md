@@ -128,7 +128,6 @@ la información necesario para producir software seguro:
 
 * La hoja de referencia [Seguridad HTML5][cshtml5] describe una amplia gama de controles,
   alineado con el actual [Estándar de vida HTML][htmlliving]
-* Consulte la hoja de referencia para CSS [Seguridad de Hojas de estilo en cascada][cscss]
 * Los encabezados HTTP deben ser seguros; consulte la hoja de referencia [HTTP Security Response Headers][csheaders]
 * Considere seriamente [Seguridad estricta de transporte HTTP][csstrict]
 * Si la aplicación tiene una función de carga de archivos, siga la hoja de referencia de [Carga de archivos][csfile]
@@ -154,7 +153,6 @@ si ve algo que necesita cambios, entonces [cree un issue][issue0401] o [edítelo
 [csclick]: https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet
 [cscreds]: https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet
 [cscsp]: https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet
-[cscss]: https://cheatsheetseries.owasp.org/cheatsheets/Securing_Cascading_Style_Sheets_Cheat_Sheet
 [csdom]: https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet
 [csdomclub]: https://cheatsheetseries.owasp.org/cheatsheets/DOM_Clobbering_Prevention_Cheat_Sheet
 [csdos]: https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet

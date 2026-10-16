@@ -62,7 +62,7 @@ then [submit an issue][issue0506] or [edit on GitHub][edit0506].
 [issue0506]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2003-requirements/06-mas
 [mas]: https://mas.owasp.org/
 [masc]: https://mas.owasp.org/checklists/
-[masproject]: https://owasp.org/www-project-mobile-app-security/
+[masproject]: https://owasp.org/projects/mobile-application-security
 [mastg]: https://mas.owasp.org/MASTG/
 [masvs]: https://mas.owasp.org/MASVS/
 [masvs-storage]: https://cheatsheetseries.owasp.org/IndexMASVS.html#masvs-storage

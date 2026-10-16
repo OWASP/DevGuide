@@ -63,7 +63,7 @@ Traducción de versión [original en inglés][en070103].
 La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que necesita cambiarse
 entonces [cree un issue][issue070103] o [edítelo en GitHub][edit070103].
 
-[csproject]: https://owasp.org/www-project-cheat-sheets/
+[csproject]: https://owasp.org/projects/cheat-sheet-series
 [cheatsheets]: https://cheatsheetseries.owasp.org/
 [cheatsheet-alpha]: https://cheatsheetseries.owasp.org/Glossary
 [csasvs]: https://cheatsheetseries.owasp.org/IndexASVS

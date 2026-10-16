@@ -73,5 +73,5 @@ La Guía para Desarrolladores de OWASP es un esfuerzo comunitario; si hay algo q
 [tdcode]: https://github.com/OWASP/threat-dragon
 [tddocker]: https://hub.docker.com/r/owasp/threat-dragon/tags
 [tddownload]: https://github.com/OWASP/threat-dragon/releases
-[tdtm]: https://owasp.org/www-project-threat-dragon/
+[tdtm]: https://owasp.org/projects/threat-dragon
 [spotlight22]: https://youtu.be/hUOAoc6QGJo

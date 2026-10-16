@@ -203,7 +203,7 @@ si ve algo que necesita cambios, entonces [cree un issue][issue0403] o [edítelo
 
 [csauthn]: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet
 [csauthz]: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet
-[csproject]: https://owasp.org/www-project-cheat-sheets/
+[csproject]: https://owasp.org/projects/cheat-sheet-series
 [did]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html#2-the-principle-of-defense-in-depth
 [edit0403]: https://github.com/OWASP/DevGuide/blob/main/docs/es/02-foundations/03-security-principles.md
 [elp]: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html#enforce-least-privileges

@@ -61,7 +61,7 @@ La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que 
 [en080102]: https://devguide.owasp.org/en/06-verification/01-guides/02-mastg/
 [issue080102]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-verification/01-guides/02-mastg
 [mas]: https://mas.owasp.org/
-[masproject]: https://owasp.org/www-project-mobile-app-security/
+[masproject]: https://owasp.org/projects/mobile-application-security
 [masc]: https://mas.owasp.org/checklists/
 [mastg]: https://mas.owasp.org/MASTG/
 [mastgapps]: https://mas.owasp.org/MASTG/apps/
