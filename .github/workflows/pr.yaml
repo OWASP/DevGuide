@@ -20,7 +20,6 @@ jobs:
         with:
           args: >-
             --exclude 'github\.com/OWASP/DevGuide/blob/main/docs'
-            --verbose
             --no-progress
             --max-retries 1
             --retry-wait-time 10

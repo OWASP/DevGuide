@@ -30,9 +30,9 @@ the information on HTTP response headers is the best advice, in one location, an
 The OWASP Spotlight series provides an overview of this project and its uses:
 'Project 24 - [OWASP Security Headers Project][spotlight24]'.
 
-OSHP provides links to development [libraries][oshp-libs] that provide for secure HTTP response headers
+OSHP provides links to development libraries that provide for secure HTTP response headers
 in a range of languages and frameworks: DotNet, Go, HAPI, Java, NodeJS, PHP, Python, Ruby, Rust.
-The OSHP also lists [various tools][oshp-tools] useful for inspection, analysis and scanning of HTTP response headers.
+The OSHP also lists various tools useful for inspection, analysis and scanning of HTTP response headers.
 
 ----
 
@@ -41,7 +41,5 @@ then [submit an issue][issue070303] or [edit on GitHub][edit070303].
 
 [edit070303]: https://github.com/OWASP/DevGuide/blob/main/docs/en/05-implementation/03-secure-libraries/03-secure-headers.md
 [issue070303]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2005-implementation/03-secure-libraries/03-secure-headers
-[oshp]: https://owasp.org/projects/secure-headers/
-[oshp-libs]: https://owasp.org/projects/secure-headers/#development-libraries
-[oshp-tools]: https://owasp.org/projects/secure-headers/#analysis-tools
+[oshp]: https://owasp.github.io/www-project-secure-headers/index/
 [spotlight24]: https://youtu.be/N4F3VWQYU9E

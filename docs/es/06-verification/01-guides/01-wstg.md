@@ -85,7 +85,7 @@ La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que 
 [en080101]: https://devguide.owasp.org/en/06-verification/01-guides/01-wstg/
 [issue080101]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2006-verification/01-guides/01-wstg
 [spotlight01]: https://youtu.be/bxQPePVDbQk
-[wstg]: https://owasp.org/projects/web-security-testing-guide/
-[wstg-framework]: https://owasp.org/projects/web-security-testing-guide/latest/3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework
-[wstg-howto]: https://owasp.org/projects/web-security-testing-guide/latest/4-Web_Application_Security_Testing/
-[wstg-latest]: https://owasp.org/projects/web-security-testing-guide/stable/
+[wstg]: https://owasp.org/projects/web-security-testing-guide
+[wstg-framework]: https://wstg.owasp.org/stable/3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework/
+[wstg-howto]: https://wstg.owasp.org/stable/4-Web_Application_Security_Testing/
+[wstg-latest]: https://wstg.owasp.org/stable/

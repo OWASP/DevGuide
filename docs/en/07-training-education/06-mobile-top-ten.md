@@ -22,7 +22,7 @@ an approach detailed in the [repository][mobile10repo] read-me.
 * M9: [Insecure Data Storage][m09]
 * M10: [Insufficient Cryptography][m10]
 
-The project also provides a comprehensive list of [security controls and techniques][mobile10controls]
+The project also provides a comprehensive list of security controls and techniques
 that should be applied to mobile applications to provide a minimum level of security:
 
 1. Identify and protect sensitive data on the mobile device
@@ -57,7 +57,7 @@ but they can be applied at any time during development.
 The Mobile Top 10 was [first released in 2014][mobile10-2014], [updated in 2016][mobile10-2016]
 with the latest version [released in 2024][mobile10-2023].
 
-The list of mobile application [controls][mobile10controls] were originally published in 2011 by [ENISA][enisa]
+The list of mobile application controls were originally published in 2011 by [ENISA][enisa]
 as the 'Smartphone Secure Development Guideline'.
 This was then revised during 2016, released in February 2017, to inform the latest set of mobile application controls.
 
@@ -69,19 +69,18 @@ then [submit an issue][issue0906] or [edit on GitHub][edit0906].
 [edit0906]: https://github.com/OWASP/DevGuide/blob/main/docs/en/07-training-education/06-mobile-top-ten.md
 [enisa]: https://www.enisa.europa.eu/
 [issue0906]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-training-education/06-mobile-top-ten
-[m01]: https://owasp.org/projects/mobile-top-10/2023-risks/m1-improper-credential-usage.html
-[m02]: https://owasp.org/projects/mobile-top-10/2023-risks/m2-inadequate-supply-chain-security.html
-[m03]: https://owasp.org/projects/mobile-top-10/2023-risks/m3-insecure-authentication-authorization.html
-[m04]: https://owasp.org/projects/mobile-top-10/2023-risks/m4-insufficient-input-output-validation.html
-[m05]: https://owasp.org/projects/mobile-top-10/2023-risks/m5-insecure-communication.html
-[m06]: https://owasp.org/projects/mobile-top-10/2023-risks/m6-inadequate-privacy-controls.html
-[m07]: https://owasp.org/projects/mobile-top-10/2023-risks/m7-insufficient-binary-protection.html
-[m08]: https://owasp.org/projects/mobile-top-10/2023-risks/m8-security-misconfiguration.html
-[m09]: https://owasp.org/projects/mobile-top-10/2023-risks/m9-insecure-data-storage.html
-[m10]: https://owasp.org/projects/mobile-top-10/2023-risks/m10-insufficient-cryptography.html
-[mobile10]: https://owasp.org/projects/mobile-top-10/
-[mobile10-2014]: https://owasp.org/projects/mobile-top-10/2014-risks/
-[mobile10-2016]: https://owasp.org/projects/mobile-top-10/2016-risks/
-[mobile10-2023]: https://owasp.org/projects/mobile-top-10/2023-risks/
-[mobile10controls]: https://owasp.org/projects/mobile-top-10/#div-controls
+[m01]: https://owasp.github.io/www-project-mobile-top-10/2023-risks/m1-improper-credential-usage.html
+[m02]: https://owasp.github.io/www-project-mobile-top-10/2023-risks/m2-inadequate-supply-chain-security.html
+[m03]: https://owasp.github.io/www-project-mobile-top-10/2023-risks/m3-insecure-authentication-authorization.html
+[m04]: https://owasp.github.io/www-project-mobile-top-10/2023-risks/m4-insufficient-input-output-validation.html
+[m05]: https://owasp.github.io/www-project-mobile-top-10/2023-risks/m5-insecure-communication.html
+[m06]: hhttps://owasp.github.io/www-project-mobile-top-102023-risks/m6-inadequate-privacy-controls.html
+[m07]: https://owasp.github.io/www-project-mobile-top-10/2023-risks/m7-insufficient-binary-protection.html
+[m08]: https://owasp.github.io/www-project-mobile-top-10/2023-risks/m8-security-misconfiguration.html
+[m09]: https://owasp.github.io/www-project-mobile-top-10/2023-risks/m9-insecure-data-storage.html
+[m10]: https://owasp.github.io/www-project-mobile-top-10/2023-risks/m10-insufficient-cryptography.html
+[mobile10]: https://owasp.org/projects/mobile-top-10
+[mobile10-2014]: https://owasp.github.io/www-project-mobile-top-10/2014-risks/
+[mobile10-2016]: https://owasp.github.io/www-project-mobile-top-10/2016-risks/
+[mobile10-2023]: https://owasp.github.io/www-project-mobile-top-10/2023-risks/
 [mobile10repo]: https://github.com/OWASP/www-project-mobile-top-10/blob/master/README.md

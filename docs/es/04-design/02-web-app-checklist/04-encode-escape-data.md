@@ -45,7 +45,7 @@ entonces [cree un issue][issue060204] o [edítelo en GitHub][edit060204].
 [csproactive-c4]: https://cheatsheetseries.owasp.org/IndexProactiveControls.html#c4-encode-and-escape-data
 [control3]: https://top10proactive.owasp.org/the-top-10/c3-validate-input-and-handle-exceptions/
 [edit060204]: https://github.com/OWASP/DevGuide/blob/main/docs/es/04-design/02-web-app-checklist/04-encode-escape-data.md
-[encoder]: https://owasp.org/projects/java-encoder/
+[encoder]: https://owasp.org/projects/java-encoder
 [ipcs]: https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet
 [en060204]: https://devguide.owasp.org/en/04-design/02-web-app-checklist/04-encode-escape-data/
 [issue060204]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/02-web-app-checklist/04-encode-escape-data

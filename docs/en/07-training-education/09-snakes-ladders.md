@@ -26,7 +26,7 @@ The web application version can be downloaded for various languages:
 * [Chinese](https://github.com/OWASP/www-project-snakes-and-ladders/tree/master/assets/files/web/ZH) (ZH)
 
 The board game for mobile applications uses the mobile controls
-detailed in the [OWASP Mobile Top 10][mobile10controls] as the virtuous behaviors.
+detailed in the [OWASP Mobile Top 10][mobile10] as the virtuous behaviors.
 The vices are the [Mobile Top 10 risks][mobile10-2014] from the 2014 version of the project.
 
 The mobile application version is available as a download in
@@ -54,7 +54,7 @@ but this last option no longer seems to be available.
 * OWASP [Snakes & Ladders][snakes]
 * OWASP [Proactive Controls][proactive10]
 * OWASP [Top Ten][top102017] 2017 version
-* OWASP [Mobile Top 10][mobile10controls]
+* OWASP [Mobile Top 10][mobile10]
 * OWASP [Cornucopia][cornucopia].
 
 ----
@@ -62,13 +62,13 @@ but this last option no longer seems to be available.
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue0909] or [edit on GitHub][edit0909].
 
-[cornucopia]: https://owasp.org/projects/cornucopia/
+[cornucopia]: https://owasp.org/projects/cornucopia
 [csmas]: https://cheatsheetseries.owasp.org/cheatsheets/Mobile_Application_Security_Cheat_Sheet
 [edit0909]: https://github.com/OWASP/DevGuide/blob/main/docs/en/07-training-education/09-snakes-ladders.md
 [issue0909]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-training-education/09-snakes-ladders
-[mobile10-2014]: https://owasp.org/projects/mobile-top-10/2014-risks/
-[mobile10controls]: https://owasp.org/projects/mobile-top-10/#div-controls
+[mobile10-2014]: https://owasp.github.io/www-project-mobile-top-10//2014-risks/
+[mobile10]: https://owasp.org/projects/mobile-top-10
 [proactive10]: https://top10proactive.owasp.org/
-[snakes]: https://owasp.org/projects/snakes-and-ladders/
-[snakeshowto]: https://owasp.org/projects/snakes-and-ladders/#div-play
-[top102017]: https://owasp.org/projects/top-ten/2017/
+[snakes]: https://owasp.org/projects/snakes-and-ladders
+[snakeshowto]: https://owasp.org/projects/snakes-and-ladders?tab=how-to-play
+[top102017]: https://owasp.github.io/www-project-top-ten/2017/

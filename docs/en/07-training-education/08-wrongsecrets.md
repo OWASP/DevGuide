@@ -61,4 +61,4 @@ then [submit an issue][issue0908] or [edit on GitHub][edit0908].
 [readme]: https://github.com/OWASP/wrongsecrets/blob/master/README.md
 [wrongsecrets]: https://github.com/OWASP/wrongsecrets
 [wrongsecrets-helm]: https://owasp.org/projects/wrongsecrets?tab=ctf
-[wrongsecrets-project]: https://owasp.org/projects/wrongsecrets/
+[wrongsecrets-project]: https://owasp.org/projects/wrongsecrets

@@ -30,7 +30,7 @@ the information on HTTP response headers is the best advice, in one location, an
 The OWASP Spotlight series provides an overview of this project and its uses:
 'Project 24 - [OWASP Security Headers Project][spotlight24]'.
 
-OSHP documents [various tools][oshp-tools] useful for inspection, analysis and scanning of HTTP response headers:
+OSHP documents various tools useful for inspection, analysis and scanning of HTTP response headers:
 
 * hsecscan
 * humble
@@ -41,7 +41,7 @@ OSHP documents [various tools][oshp-tools] useful for inspection, analysis and s
 * DrHEADer
 * csp-evaluator
 
-OSHP also provides links to development [libraries][oshp-libs] that provide for secure HTTP response headers
+OSHP also provides links to development libraries that provide for secure HTTP response headers
 in a range of languages and frameworks.
 
 ----
@@ -51,7 +51,5 @@ then [submit an issue][issue080205] or [edit on GitHub][edit080205].
 
 [edit080205]: https://github.com/OWASP/DevGuide/blob/main/docs/en/06-verification/02-tools/05-secure-headers.md
 [issue080205]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2006-verification/02-tools/05-secure-headers
-[oshp]: https://owasp.org/projects/secure-headers/
-[oshp-libs]: https://owasp.org/projects/secure-headers/#development-libraries
-[oshp-tools]: https://owasp.org/projects/secure-headers/#analysis-tools
+[oshp]: https://owasp.org/projects/secure-headers-project
 [spotlight24]: https://youtu.be/N4F3VWQYU9E

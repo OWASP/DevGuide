@@ -49,7 +49,7 @@ Traducción de versión [original en inglés][en080202].
 La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que necesita cambios,
 [cree un issue][issue080202] o [edítelo en GitHub][edit080202].
 
-[amass]: https://owasp.org/projects/amass/
+[amass]: https://owasp.org/projects/amass
 [amass-docs]: https://github.com/owasp-amass/amass/blob/master/doc/user_guide.md
 [amass-download]: https://github.com/owasp-amass/amass/releases
 [amass-install]: https://github.com/owasp-amass/amass/blob/master/doc/install.md

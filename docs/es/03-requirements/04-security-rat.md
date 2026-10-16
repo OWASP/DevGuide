@@ -111,7 +111,7 @@ entonces [cree un issue][issue0504] o [edítelo en GitHub][edit0504].
 [issue0504]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2003-requirements/04-security-rat
 [spotlight05]: https://youtu.be/HiaHXtzJ3DE
 [scat]: https://securityrat.github.io/int_securitycat.html#securitycat
-[srat]: https://owasp.org/projects/securityrat/
+[srat]: https://owasp.org/projects/securityrat
 [sratdemo]: https://securityrat.org/
 [sratdeploy]: https://securityrat.github.io/depl_production.html
 [sratdocker]: https://hub.docker.com/r/securityrat/securityrat

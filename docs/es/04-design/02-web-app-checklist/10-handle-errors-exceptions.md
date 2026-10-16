@@ -44,4 +44,4 @@ La Guía para Desarrolladores OWASP es un esfuerzo comunitario; si hay algo que 
 [en060210]: https://devguide.owasp.org/en/04-design/02-web-app-checklist/10-handle-errors-exceptions/
 [issue060210]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/02-web-app-checklist/10-handle-errors-exceptions
 [proactive10]: https://top10proactive.owasp.org/
-[review]: https://owasp.org/projects/code-review-guide/
+[review]: https://owasp.org/projects/code-review-guide

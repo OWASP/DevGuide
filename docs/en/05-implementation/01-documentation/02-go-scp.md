@@ -55,6 +55,6 @@ then [submit an issue][issue070102] or [edit on GitHub][edit070102].
 
 [edit070102]: https://github.com/OWASP/DevGuide/blob/main/docs/en/05-implementation/01-documentation/02-go-scp.md
 [go-scp-download]: https://github.com/OWASP/Go-SCP/tree/master/dist
-[go-scp-project]: https://owasp.org/projects/go-secure-coding-practices-guide/
+[go-scp-project]: https://owasp.org/projects/go-secure-coding-practices-guide
 [issue070102]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2005-implementation/01-documentation/02-go-scp
-[scp-qrf]: https://owasp.org/projects/secure-coding-practices-quick-reference-guide/
+[scp-qrf]: https://owasp.org/projects/secure-coding-practices-quick-reference-guide

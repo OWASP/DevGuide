@@ -100,4 +100,4 @@ then [submit an issue][issue0505] or [edit on GitHub][edit0505].
 [edit0505]: https://github.com/OWASP/DevGuide/blob/main/docs/en/03-requirements/05-asvs.md
 [issue0505]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2003-requirements/05-asvs
 [spotlight19]: https://youtu.be/3puIavsZfAk
-[srat]: https://owasp.org/projects/securityrat/
+[srat]: https://owasp.org/projects/securityrat

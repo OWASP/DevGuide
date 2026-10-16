@@ -49,16 +49,16 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue1101] or [edit on GitHub][edit1101].
 
 [cscicd]: https://cheatsheetseries.owasp.org/cheatsheets/CI_CD_Security_Cheat_Sheet
-[devsecops]: https://owasp.org/projects/devsecops-guideline/
-[dsocvs]: https://owasp.org/projects/devsecops-guideline/latest/02f-Container-Vulnerability-Scanning
-[dsodoc]: https://owasp.org/projects/devsecops-guideline/latest/
-[dsodast]: https://owasp.org/projects/devsecops-guideline/latest/02b-Dynamic-Application-Security-Testing
-[dsoiast]: https://owasp.org/projects/devsecops-guideline/latest/02c-Interactive-Application-Security-Testing
-[dsointro]: https://owasp.org/projects/devsecops-guideline/latest/index
-[dsoivs]: https://owasp.org/projects/devsecops-guideline/latest/02e-Infrastructure-Vulnerability-Scanning
+[devsecops]: https://owasp.org/projects/devsecops-guideline
+[dsocvs]: https://owasp.github.io/www-project-devsecops-guideline/latest/02f-Container-Vulnerability-Scanning
+[dsodoc]: https://owasp.github.io/www-project-devsecops-guideline/latest/
+[dsodast]: https://owasp.github.io/www-project-devsecops-guideline/latest/02b-Dynamic-Application-Security-Testing
+[dsoiast]: https://owasp.github.io/www-project-devsecops-guideline/latest/02c-Interactive-Application-Security-Testing
+[dsointro]: https://owasp.github.io/www-project-devsecops-guideline/latest/index
+[dsoivs]: https://owasp.github.io/www-project-devsecops-guideline/latest/02e-Infrastructure-Vulnerability-Scanning
 [dsonew]: https://github.com/OWASP/DevSecOpsGuideline/tree/master/current-version
 [dsopdf]: https://github.com/OWASP/DevSecOpsGuideline/releases
-[dsosast]: https://owasp.org/projects/devsecops-guideline/latest/02a-Static-Application-Security-Testing
-[dsosca]: https://owasp.org/projects/devsecops-guideline/latest/02d-Software-Composition-Analysis
+[dsosast]: https://owasp.github.io/www-project-devsecops-guideline/latest/02a-Static-Application-Security-Testing
+[dsosca]: https://owasp.github.io/www-project-devsecops-guideline/latest/02d-Software-Composition-Analysis
 [edit1101]: https://github.com/OWASP/DevGuide/blob/main/docs/en/09-operations/01-devsecops.md
 [issue1101]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2009-operations/01-devsecops

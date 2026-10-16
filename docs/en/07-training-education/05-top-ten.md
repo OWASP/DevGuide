@@ -64,18 +64,18 @@ The 2021 version of the OWASP Top Ten was released to mark 20 years of OWASP.
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue0905] or [edit on GitHub][edit0905].
 
-[a01]: https://owasp.org/Top10/2025/A01_2025-Broken_Access_Control/
-[a02]: https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/
-[a03]: https://owasp.org/Top10/2025/A03_2025-Software_Supply_Chain_Failures/
-[a04]: https://owasp.org/Top10/2025/A04_2025-Cryptographic_Failures/
-[a05]: https://owasp.org/Top10/2025/A05_2025-Injection/
-[a06]: https://owasp.org/Top10/2025/A06_2025-Insecure_Design/
-[a07]: https://owasp.org/Top10/2025/A07_2025-Authentication_Failures/
-[a08]: https://owasp.org/Top10/2025/A08_2025-Software_or_Data_Integrity_Failures/
-[a09]: https://owasp.org/Top10/2025/A09_2025-Security_Logging_and_Alerting_Failures/
-[a10]: https://owasp.org/Top10/2025/A10_2025-Mishandling_of_Exceptional_Conditions/
+[a01]: https://top10.owasp.org/2025/A01_2025-Broken_Access_Control/
+[a02]: https://top10.owasp.org/2025/A02_2025-Security_Misconfiguration/
+[a03]: https://top10.owasp.org/2025/A03_2025-Software_Supply_Chain_Failures/
+[a04]: https://top10.owasp.org/2025/A04_2025-Cryptographic_Failures/
+[a05]: https://top10.owasp.org/2025/A05_2025-Injection/
+[a06]: https://top10.owasp.org/2025/A06_2025-Insecure_Design/
+[a07]: https://top10.owasp.org/2025/A07_2025-Authentication_Failures/
+[a08]: https://top10.owasp.org/2025/A08_2025-Software_or_Data_Integrity_Failures/
+[a09]: https://top10.owasp.org/2025/A09_2025-Security_Logging_and_Alerting_Failures/
+[a10]: https://top10.owasp.org/2025/A10_2025-Mishandling_of_Exceptional_Conditions/
 [edit0905]: https://github.com/OWASP/DevGuide/blob/main/docs/en/07-training-education/05-top-ten.md
 [issue0905]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-training-education/05-top-ten
 [spotlight10]: https://youtu.be/RMkoIrpz8ug
-[top10project]: https://owasp.org/projects/top-ten/
-[top10data]: https://owasp.org/projects/top-ten/#div-data_2020
+[top10project]: https://owasp.org/projects/top-ten
+[top10data]: https://owasp.org/projects/top-ten?tab=data-2025

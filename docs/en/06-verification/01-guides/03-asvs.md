@@ -100,4 +100,4 @@ then [submit an issue][issue080103] or [edit on GitHub][edit080103].
 [edit080103]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2006-verification/01-guides/05-asvs.md
 [issue080103]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-verification/01-guides/03-asvs
 [spotlight19]: https://youtu.be/3puIavsZfAk
-[srat]: https://owasp.org/projects/securityrat/
+[srat]: https://owasp.org/projects/securityrat

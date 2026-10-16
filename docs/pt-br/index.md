@@ -63,9 +63,9 @@ projetos e documentos dentro do OWASP, e o Guia do Desenvolvedor fornece um cont
 O Guia do Desenvolvedor do OWASP é um trabalho da comunidade; se há algo que precisa ser mudado
 então [submeta uma issue][issue03] ou [edite no GitHub][edit03].
 
-[about]: https://owasp.org/about/
+[about]: https://owasp.org/about
 [edit03]: https://github.com/OWASP/DevGuide/blob/main/docs/pt-br/index.md
-[intstand]: https://owasp.org/projects/integration-standards/
+[intstand]: https://owasp.org/projects/integration-standards
 [issue03]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2001-introduction
 [opencrechat]: https://www.opencre.org/chatbot
 [samm]: https://owaspsamm.org/about/

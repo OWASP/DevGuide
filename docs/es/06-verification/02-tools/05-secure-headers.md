@@ -33,8 +33,7 @@ la información sobre cabeceras de respuesta HTTP es el mejor consejo, en una so
 La serie OWASP Spotlight proporciona una descripción general de este proyecto y sus usos:
 'Proyecto 24 - [OWASP Security Headers Project][spotlight24]'.
 
-OSHP documenta [varias herramientas][oshp-tools] útiles para la inspección, análisis
-y escaneo de cabeceras de respuesta HTTP:
+OSHP documenta varias herramientas útiles para la inspección, análisis y escaneo de cabeceras de respuesta HTTP:
 
 * hsecscan
 * humble
@@ -45,7 +44,7 @@ y escaneo de cabeceras de respuesta HTTP:
 * DrHEADer
 * csp-evaluator
 
-OSHP también proporciona enlaces a [bibliotecas][oshp-libs] de desarrollo
+OSHP también proporciona enlaces a bibliotecas de desarrollo
 que proporcionan cabeceras de respuesta HTTP seguras en una variedad de lenguajes y frameworks.
 
 ----
@@ -58,7 +57,5 @@ La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que 
 [edit080205]: https://github.com/OWASP/DevGuide/blob/main/docs/es/06-verification/02-tools/05-secure-headers.md
 [en080205]: https://devguide.owasp.org/en/06-verification/02-tools/05-secure-headers/
 [issue080205]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2006-verification/02-tools/05-secure-headers
-[oshp]: https://owasp.org/projects/secure-headers/
-[oshp-libs]: https://owasp.org/projects/secure-headers/#development-libraries
-[oshp-tools]: https://owasp.org/projects/secure-headers/#analysis-tools
+[oshp]: https://owasp.org/projects/secure-headers-project
 [spotlight24]: https://youtu.be/N4F3VWQYU9E

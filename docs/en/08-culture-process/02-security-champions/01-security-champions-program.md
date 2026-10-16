@@ -79,5 +79,5 @@ then [submit an issue][issue1021] or [edit on GitHub][edit1021].
 [sammgegoc]: https://owaspsamm.org/model/governance/education-and-guidance/stream-b/
 [scguide]: https://owasp.org/projects/security-champions-guide
 [scplaybook]: https://github.com/c0rdis/security-champions-playbook
-[culturechamps]: https://owasp.org/projects/security-culture/stable/4-Security_Champions/
-[culturedoc]: https://owasp.org/projects/security-culture/stable/
+[culturechamps]: https://owasp.github.io/www-project-security-culture/stable/4-Security_Champions/
+[culturedoc]: https://owasp.github.io/www-project-security-culture/stable/

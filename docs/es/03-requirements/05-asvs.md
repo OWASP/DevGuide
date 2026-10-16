@@ -112,4 +112,4 @@ entonces [cree un issue][issue0505] o [edítelo en GitHub][edit0505].
 [en0505]: https://devguide.owasp.org/en/03-requirements/05-asvs/
 [issue0505]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2003-requirements/05-asvs
 [spotlight19]: https://youtu.be/3puIavsZfAk
-[srat]: https://owasp.org/projects/securityrat/
+[srat]: https://owasp.org/projects/securityrat

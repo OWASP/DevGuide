@@ -70,7 +70,7 @@ si hay algo que necesita cambiarse, [cree un issue][issue070203] o [edítelo en 
 [cyclonedx-mlbom]: https://cyclonedx.org/capabilities/mlbom/
 [cyclonedx-notes]: https://cyclonedx.org/capabilities/release-notes/
 [cyclonedx-obom]: https://cyclonedx.org/capabilities/obom/
-[cyclonedx-project]: https://owasp.org/projects/cyclonedx/
+[cyclonedx-project]: https://owasp.org/projects/cyclonedx
 [cyclonedx-saasbom]: https://cyclonedx.org/capabilities/saasbom/
 [cyclonedx-sbom]: https://cyclonedx.org/capabilities/sbom/
 [cyclonedx-spec]: https://cyclonedx.org/specification/overview/

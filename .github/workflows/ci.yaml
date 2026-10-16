@@ -26,7 +26,6 @@ jobs:
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8
         with:
           args: >-
-            --verbose
             --no-progress
             --max-retries 1
             --retry-wait-time 10

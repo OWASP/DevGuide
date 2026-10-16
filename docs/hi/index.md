@@ -63,9 +63,9 @@ _या_ इस गाइड को आप OWASP [Integration Standards][intstan
 OWASP Developer गाइड एक सामुदायिक प्रयास (community effort) है; यदि आपको कुछ बदलने की आवश्यकता लगे तो यहा
 [issue submit करे][issue03] या [GitHub पर edit करे][edit03].
 
-[about]: https://owasp.org/about/
+[about]: https://owasp.org/about
 [edit03]: https://github.com/OWASP/DevGuide/blob/main/docs/index.md
-[intstand]: https://owasp.org/projects/integration-standards/
+[intstand]: https://owasp.org/projects/integration-standards
 [issue03]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2001-introduction
 [opencrechat]: https://www.opencre.org/chatbot
 [samm]: https://owaspsamm.org/about/

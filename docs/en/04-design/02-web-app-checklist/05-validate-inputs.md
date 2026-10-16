@@ -72,4 +72,4 @@ then [submit an issue][issue060205] or [edit on GitHub][edit060205].
 [edit060205]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/02-web-app-checklist/05-validate-inputs.md
 [issue060205]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/02-web-app-checklist/05-validate-inputs
 [proactive10]: https://top10proactive.owasp.org
-[sanitizer]: https://owasp.org/projects/java-html-sanitizer/
+[sanitizer]: https://owasp.org/projects/java-html-sanitizer

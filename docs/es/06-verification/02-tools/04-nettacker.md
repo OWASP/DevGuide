@@ -56,7 +56,7 @@ La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que 
 [nettacker-brute]: https://github.com/OWASP/Nettacker/wiki/Modules#brute-modules
 [nettacker-install]: https://github.com/OWASP/Nettacker/wiki/Installation
 [nettacker-intro]: https://github.com/OWASP/Nettacker/wiki#introduction
-[nettacker-project]: https://owasp.org/projects/nettacker/
+[nettacker-project]: https://owasp.org/projects/nettacker
 [nettacker-scan]: https://github.com/OWASP/Nettacker/wiki/Modules#scan-modules
 [nettacker-vuln]: https://github.com/OWASP/Nettacker/wiki/Modules#vuln-modules
 [spotlight11]: https://www.youtube.com/watch?v=OGv7OtG127A

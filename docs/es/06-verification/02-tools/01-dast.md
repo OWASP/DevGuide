@@ -48,7 +48,7 @@ Traducción de versión [original en inglés][en080201].
 La Guía del Desarrollador de OWASP es un esfuerzo comunitario;
 si hay algo que necesita cambios, [cree un issue][issue080201] o [edítelo en GitHub][edit080201].
 
-[benchmark]: https://owasp.org/projects/benchmark/
+[benchmark]: https://owasp.org/projects/benchmark
 [dast]: https://community.owasp.org/Vulnerability_Scanning_Tools
 [edit080201]: https://github.com/OWASP/DevGuide/blob/main/docs/es/06-verification/02-tools/01-dast.md
 [en080201]: https://devguide.owasp.org/en/06-verification/02-tools/01-dast/

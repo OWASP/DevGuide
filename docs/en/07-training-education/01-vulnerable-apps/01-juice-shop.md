@@ -7,7 +7,7 @@ along with many other security flaws found in real-world applications.
 #### What is Juice Shop?
 
 Juice Shop is an Open Source web application that is free to download and use, and is intentionally insecure.
-It is easy to get started with Juice Shop; it includes [Hacking Instructor scripts][juicetutorial]
+It is easy to get started with Juice Shop; it includes Hacking Instructor scripts
 with an optional tutorial mode to guide newcomers through several challenges
 while explaining the underlying vulnerabilities.
 
@@ -68,10 +68,9 @@ then [submit an issue][issue090101] or [edit on GitHub][edit090101].
 [dockerinstall]: https://docs.docker.com/engine/install/
 [edit090101]: https://github.com/OWASP/DevGuide/blob/main/docs/en/07-training-education/01-vulnerable-apps/01-juice-shop.md
 [issue090101]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2007-training-education/01-vulnerable-apps/01-juice-shop
-[juice]: https://owasp.org/projects/juice-shop/
-[juicectf]: https://owasp.org/projects/juice-shop/#div-ctf
+[juice]: https://owasp.org/projects/juice-shop
+[juicectf]: https://juice-shop.github.io/tab_ctf
 [juicedocker]: https://hub.docker.com/r/bkimminich/juice-shop
-[juiceguide]: https://owasp.org/projects/juice-shop/#div-ecosystem
-[juicetutorial]: https://owasp.org/projects/juice-shop/#div-learning
+[juiceguide]: https://juice-shop.github.io/tab_learning
 [webhook]: https://pwning.owasp-juice.shop/companion-guide/latest/part4/integration.html#_challenge_solution_webhook
 [spotlight25]: https://youtu.be/--50rE76EeA

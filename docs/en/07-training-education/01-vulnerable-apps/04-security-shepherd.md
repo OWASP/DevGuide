@@ -44,7 +44,7 @@ then [submit an issue][issue090104] or [edit on GitHub][edit090104].
 [csmas]: https://cheatsheetseries.owasp.org/cheatsheets/Mobile_Application_Security_Cheat_Sheet
 [edit090104]: https://github.com/OWASP/DevGuide/blob/main/docs/en/07-training-education/01-vulnerable-apps/04-security-shepherd.md
 [issue090104]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-training-education/01-vulnerable-apps/04-security-shepherd
-[sec-shep]: https://owasp.org/projects/security-shepherd/
+[sec-shep]: https://owasp.org/projects/security-shepherd
 [sec-shep-docker]: https://github.com/OWASP/SecurityShepherd/wiki/Docker-Environment-Setup
 [sec-shep-repo]: https://github.com/OWASP/SecurityShepherd
 [sec-shep-tomcat]: https://github.com/OWASP/SecurityShepherd/wiki/Manual-Shepherd-Setup

@@ -40,6 +40,6 @@ then [submit an issue][issue1103] or [edit on GitHub][edit1103].
 [edit1103]: https://github.com/OWASP/DevGuide/blob/main/docs/en/09-operations/03-modsecurity.md
 [issue1103]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2009-operations/03-modsecurity
 [levelblue]: https://www.levelblue.com/
-[modsec]: https://owasp.org/projects/modsecurity/
+[modsec]: https://owasp.org/projects/modsecurity
 [modsec-docs]: https://modsecurity.org/
-[modsec-press]: https://owasp.org/blog/2024/01/09/ModSecurity.html
+[modsec-press]: https://owasp.github.io/blog/2024/01/09/ModSecurity.html

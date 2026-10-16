@@ -66,9 +66,9 @@ then [submit an issue][issue0904] or [edit on GitHub][edit0904].
 [issue0904]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-training-education/04-samurai-wtf
 [kali]: https://www.kali.org/
 [samuraiwtf]: https://www.samuraiwtf.org/
-[samurai-dojo]: https://owasp.org/projects/samuraiwtf/#div-dojo
-[samurai-katana]: https://owasp.org/projects/samuraiwtf/#div-katana
+[samurai-dojo]: https://owasp.org/projects/samuraiwtf?tab=dojo
+[samurai-katana]: https://owasp.org/projects/samuraiwtf?tab=katana
 [samurai-wtf]: https://www.samurai-wtf.org/
 [samuraiwtf-download]: https://github.com/SamuraiWTF/samuraiwtf/blob/main/README.md
-[samuraiwtf-project]: https://owasp.org/projects/samuraiwtf/
+[samuraiwtf-project]: https://owasp.org/projects/samuraiwtf
 [spotlight26]: https://youtu.be/PBWUlx_kJmI

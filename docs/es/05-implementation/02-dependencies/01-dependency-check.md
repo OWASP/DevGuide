@@ -74,12 +74,12 @@ Traducción de versión [original en inglés][en070201].
 La Guía del Desarrollador de OWASP es un esfuerzo comunitario;
 si hay algo que necesita cambiarse entonces [cree un issue][issue070201] o [edítelo en GitHub][edit070201].
 
-[a06]: https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/
+[a06]: https://top10.owasp.org/A06_2021-Vulnerable_and_Outdated_Components/
 [adoptium]: https://adoptium.net/
 [cpe]: https://nvd.nist.gov/products/cpe
 [cscicd]: https://cheatsheetseries.owasp.org/cheatsheets/CI_CD_Security_Cheat_Sheet
 [cve]: https://www.cve.org/
-[depcheck]: https://owasp.org/projects/dependency-check/
+[depcheck]: https://owasp.org/projects/dependency-check
 [depcheck-docs]: https://jeremylong.github.io/DependencyCheck/
 [depcheck-download]: https://github.com/jeremylong/DependencyCheck/releases
 [edit070201]: https://github.com/OWASP/DevGuide/blob/main/docs/es/05-implementation/02-dependencies/01-dependency-check.md

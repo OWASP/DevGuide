@@ -60,9 +60,9 @@ projects and documents within OWASP and the Developer Guide provides some 'wordy
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue03] or [edit on GitHub][edit03].
 
-[about]: https://owasp.org/about/
+[about]: https://owasp.org/about
 [edit03]: https://github.com/OWASP/DevGuide/blob/main/docs/index.md
-[intstand]: https://owasp.org/projects/integration-standards/
+[intstand]: https://owasp.org/projects/integration-standards
 [issue03]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2001-introduction
 [opencrechat]: https://www.opencre.org/chatbot
 [samm]: https://owaspsamm.org/about/

@@ -61,7 +61,7 @@ OWASP DevGuide: _accessible security for developers_
 [openssf-badge]: https://www.bestpractices.dev/projects/9373/badge
 [original]: https://github.com/OWASP/DevGuide/blob/1d24d140de3724b6f95655e53b8d0cc6689fbfd8/DevGuide1.0/OWASPBuildingSecureWebApplicationsAndWebServices-V1.0.pdf
 [project]: https://owasp.slack.com/messages/C04QN6CMNAC
-[project-pages]: https://owasp.org/projects/developer-guide/
+[project-pages]: https://owasp.org/projects/developer-guide
 [project-repo]: https://github.com/OWASP/www-project-developer-guide
 [request]: https://github.com/OWASP/DevGuide/pulls
 [subscribe]: https://owasp.org/slack/invite

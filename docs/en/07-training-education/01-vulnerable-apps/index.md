@@ -15,6 +15,7 @@ available intentionally-vulnerable web applications:
 * [Offline][vwad-offline] vulnerable web applications
 * [Containerized][vwad-containers] vulnerable web applications
 * vulnerable web applications [available Online][vwad-online]
+* vulnerable [platforms][vwad-platform]
 
 ----
 
@@ -24,8 +25,9 @@ The OWASP Developer Guide is a community effort; if there is something that need
 [sammg]: https://owaspsamm.org/model/governance/
 [sammgeg]: https://owaspsamm.org/model/governance/education-and-guidance/
 [sammgegta]: https://owaspsamm.org/model/governance/education-and-guidance/stream-a/
-[vwad]: https://owasp.org/projects/vulnerable-web-applications-directory/
-[vwad-containers]: https://owasp.org/projects/vulnerable-web-applications-directory/#div-container
-[vwad-mobile]: https://owasp.org/projects/vulnerable-web-applications-directory/#div-mobile
-[vwad-online]: https://owasp.org/projects/vulnerable-web-applications-directory/#div-online
-[vwad-offline]: https://owasp.org/projects/vulnerable-web-applications-directory/#div-offline
+[vwad]: https://owasp.org/projects/vulnerable-web-applications-directory
+[vwad-containers]: https://vwad.owasp.org/?coll=container
+[vwad-mobile]: https://vwad.owasp.org/?coll=mobile
+[vwad-offline]: https://vwad.owasp.org/?coll=offline
+[vwad-online]: https://vwad.owasp.org/?coll=online
+[vwad-platform]: https://vwad.owasp.org/?coll=platform

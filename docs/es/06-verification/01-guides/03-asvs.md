@@ -108,4 +108,4 @@ entonces [cree un issue][issue080103] o [edítelo en GitHub][edit080103].
 [en080103]: https://devguide.owasp.org/en/06-verification/01-guides/03-asvs/
 [issue080103]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-verification/01-guides/03-asvs
 [spotlight19]: https://youtu.be/3puIavsZfAk
-[srat]: https://owasp.org/projects/securityrat/
+[srat]: https://owasp.org/projects/securityrat

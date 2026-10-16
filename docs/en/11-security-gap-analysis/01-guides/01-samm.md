@@ -97,7 +97,7 @@ then [submit an issue][issue130101] or [edit on GitHub][edit130101].
 [sammvaa]: https://owaspsamm.org/model/verification/architecture-assessment/
 [sammvrt]: https://owaspsamm.org/model/verification/requirements-driven-testing/
 [sammvst]: https://owaspsamm.org/model/verification/security-testing/
-[samm-project]: https://owasp.org/projects/samm/
+[samm-project]: https://owasp.org/projects/samm
 [sammwise]: https://github.com/owaspsamm/sammwise
 [sammy]: https://sammy.codific.com/
 [spotlight09]: https://youtu.be/N0zcZnkH5Wg

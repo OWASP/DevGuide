@@ -59,7 +59,7 @@ OWASP secureCodeBox is fully scalable and can be separately configured for multi
 
 #### How to use it
 
-OWASP secureCodeBox runs on [Kubernetes][kube] and uses [Helm][helm] to [install][codebox-install].
+OWASP secureCodeBox runs on [Kubernetes][kube] and is installed using [Helm][helm].
 There is an excellent '[Starting your First Scans][codebox-start]' guide to getting started with secureCodeBox,
 with the rest of the [documentation][codebox-docs] providing clear information on configuring and running secureCodeBox.
 
@@ -75,8 +75,7 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue080301] or [edit on GitHub][edit080301].
 
 [codebox]: https://www.securecodebox.io/
-[codebox-project]: https://owasp.org/projects/securecodebox/
-[codebox-install]: https://www.securecodebox.io/docs/getting-started/installation
+[codebox-project]: https://owasp.org/projects/securecodebox
 [codebox-start]: https://www.securecodebox.io/docs/getting-started/first-scans/
 [codebox-docs]: https://www.securecodebox.io/docs/getting-started/installation/
 [edit080301]: https://github.com/OWASP/DevGuide/blob/main/docs/en/06-verification/03-frameworks/01-secure-codebox.md

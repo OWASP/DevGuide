@@ -102,4 +102,4 @@ then [submit an issue][issue1004] or [edit on GitHub][edit1004].
 [edit1004]: https://github.com/OWASP/DevGuide/blob/main/docs/en/08-culture-process/04-asvs.md
 [issue1004]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2008-culture-process/04-asvs
 [spotlight19]: https://youtu.be/3puIavsZfAk
-[srat]: https://owasp.org/projects/securityrat/
+[srat]: https://owasp.org/projects/securityrat

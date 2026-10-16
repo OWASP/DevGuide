@@ -23,7 +23,7 @@ ranging from vulnerable applications, training platforms and gamification.
 
 The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue0900].
 
-[cultureacts]: https://owasp.org/projects/security-culture/stable/5-Activities/
+[cultureacts]: https://owasp.github.io/www-project-security-culture/stable/5-Activities/
 [issue0900]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2007-training-education/00-toc
 [sammg]: https://owaspsamm.org/model/governance/
 [sammgeg]: https://owaspsamm.org/model/governance/education-and-guidance/

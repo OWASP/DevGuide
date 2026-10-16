@@ -98,7 +98,7 @@ then [submit an issue][issue060102] or [edit on GitHub][edit060102].
 [plantuml]: https://plantuml.com/
 [plantumljar]: https://plantuml.com/download
 [pytmrepo]: https://github.com/OWASP/pytm/
-[pytmproject]: https://owasp.org/projects/pytm/
+[pytmproject]: https://owasp.org/projects/pytm
 [pytmexample]: https://github.com/OWASP/pytm/blob/master/tm.py
 [pytmreleases]: https://github.com/OWASP/pytm/releases
 [spotlight06]: https://youtu.be/oTqkPaEbTnE

@@ -49,4 +49,4 @@ La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que 
 [owtfinstall]: https://owtf.readthedocs.io/en/develop/installation/methods.html
 [owtfdocs]: https://owtf.readthedocs.io/en/develop/
 [owtfdownload]: https://github.com/owtf/owtf/releases
-[owtf]: https://owasp.org/projects/owtf/
+[owtf]: https://owasp.org/projects/owtf
