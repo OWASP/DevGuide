@@ -51,7 +51,7 @@ then [submit an issue][issue060204] or [edit on GitHub][edit060204].
 [nettacker-brute]: https://github.com/OWASP/Nettacker/wiki/Modules#brute-modules
 [nettacker-install]: https://github.com/OWASP/Nettacker/wiki/Installation
 [nettacker-intro]: https://github.com/OWASP/Nettacker/wiki#introduction
-[nettacker-project]: https://owasp.org/www-project-nettacker/
+[nettacker-project]: https://owasp.org/projects/nettacker/
 [nettacker-releases]: https://github.com/OWASP/Nettacker/releases/latest/
 [nettacker-scan]: https://github.com/OWASP/Nettacker/wiki/Modules#scan-modules
 [nettacker-vuln]: https://github.com/OWASP/Nettacker/wiki/Modules#vuln-modules

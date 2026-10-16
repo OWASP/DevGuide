@@ -46,7 +46,7 @@ then [submit an issue][issue1104] or [edit on GitHub][edit1104].
 [issue1104]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2009-operations/04-crs
 [crs]: https://coreruleset.org/
 [crs-download]: https://coreruleset.org/docs/deployment/install/
-[crs-project]: https://owasp.org/www-project-modsecurity-core-rule-set/
-[modsec]: https://owasp.org/www-project-modsecurity/
+[crs-project]: https://owasp.org/projects/crs
+[modsec]: https://owasp.org/projects/modsecurity/
 [modsec-docs]: https://modsecurity.org/
 [spotlight03]: https://youtu.be/88ZMKpiZbRI

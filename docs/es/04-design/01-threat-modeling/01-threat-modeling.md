@@ -268,10 +268,10 @@ La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que 
 [asacs]: https://cheatsheetseries.owasp.org/cheatsheets/Attack_Surface_Analysis_Cheat_Sheet
 [capec]: https://capec.mitre.org/
 [chains]: https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html
-[corncards]: https://owasp.org/www-project-cornucopia/
+[corncards]: https://owasp.org/projects/cornucopia/
 [ccsnet]: https://cheatsheetseries.owasp.org/cheatsheets/Network_Segmentation_Cheat_Sheet
 [cstm]: https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet
-[culturetm]: https://owasp.org/www-project-security-culture/stable/6-Threat_Modelling/
+[culturetm]: https://owasp.org/projects/security-culture/stable/6-Threat_Modelling/
 [eop]: https://shostack.org/games/elevation-of-privilege
 [edit060101]: https://github.com/OWASP/DevGuide/blob/main/docs/es/04-design/01-threat-modeling/01-threat-modeling.md
 [en060101]: https://devguide.owasp.org/en/04-design/01-threat-modeling/01-threat-modeling/
@@ -279,12 +279,12 @@ La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que 
 [linddun]: https://linddun.org/
 [nist-cvss]: https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator
 [pasta]: https://versprite.com/resources/blog/what-is-pasta-threat-modeling/
-[PYTM]: https://owasp.org/www-project-pytm/
+[PYTM]: https://owasp.org/projects/pytm/
 [samm]: https://owaspsamm.org/about/
 [sammd]: https://owaspsamm.org/model/design/
 [sammdta]: https://owaspsamm.org/model/design/threat-assessment/
 [sammgata]: https://owaspsamm.org/guidance/agile/#TA
-[snakes]: https://owasp.org/www-project-snakes-and-ladders/
+[snakes]: https://owasp.org/projects/snakes-and-ladders/
 [stride]: https://en.wikipedia.org/wiki/STRIDE_%28security%29
 [tdtm]: https://owasp.org/projects/threat-dragon
 [tmpb]: https://owasp.org/projects/threat-modeling-playbook-otmp

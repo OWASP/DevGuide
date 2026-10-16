@@ -46,9 +46,9 @@ La Guía para Desarrolladores de OWASP es un esfuerzo comunitario; si hay algo q
 [edit070303]: https://github.com/OWASP/DevGuide/blob/main/docs/es/05-implementation/03-secure-libraries/03-secure-headers.md
 [en070303]: https://devguide.owasp.org/en/05-implementation/03-secure-libraries/03-secure-headers/
 [issue070303]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2005-implementation/03-secure-libraries/03-secure-headers
-[oshp]: https://owasp.org/www-project-secure-headers/
-[oshp-libs]: https://owasp.org/www-project-secure-headers/#development-libraries
-[oshp-tools]: https://owasp.org/www-project-secure-headers/#analysis-tools
+[oshp]: https://owasp.org/projects/secure-headers/
+[oshp-libs]: https://owasp.org/projects/secure-headers/#development-libraries
+[oshp-tools]: https://owasp.org/projects/secure-headers/#analysis-tools
 [spotlight24]: https://youtu.be/N4F3VWQYU9E
 
 \newpage

@@ -6,7 +6,7 @@ OWASP Top Ten یک فهرست بسیار شناخته‌شده از خطرات �
 
 #### نمای کلی
 
-پروژه [۱۰ ریسک امنیتی برتر اپلیکیشن‌های وب OWASP](https://owasp.org/www-project-top-ten/) احتمالاً
+پروژه [۱۰ ریسک امنیتی برتر اپلیکیشن‌های وب OWASP](https://owasp.org/projects/top-ten/) احتمالاً
 شناخته‌شده‌ترین مفهوم امنیتی در جامعه امنیت است که اندکی پس از انتشارش در سال ۲۰۰۳ به پذیرش و شهرت
 گسترده‌ای دست یافت. این فهرست که اغلب فقط «OWASP Top Ten» نامیده می‌شود، لیستی است که مهم‌ترین تهدیدات
 برای اپلیکیشن‌های وب را شناسایی کرده و به دنبال رتبه‌بندی آن‌ها بر اساس اهمیت و شدت است.
@@ -190,13 +190,13 @@ URL ارائه‌شده توسط کاربر باشد، رخ دهند. این ا�
 گفته شود. در اینجا لیستی از پروژه‌های پایدار «OWASP Top 10» آمده است:
 
 - [۱۰ مورد برتر امنیت API](https://owasp.org/API-Security/)
-- [۱۰ مورد برتر امنیت داده](https://owasp.org/www-project-data-security-top-10/)
+- [۱۰ مورد برتر امنیت داده](https://owasp.org/projects/data-security-top-10/)
 - [۱۰ مورد برتر Citizen Development](https://owasp.org/projects/citizen-development-top-10)
-- [۱۰ مورد برتر موبایل](https://owasp.org/www-project-mobile-top-10/)
-- [۱۰ مورد برتر بدون سرور (Serverless)](https://owasp.org/www-project-serverless-top-10/)
-- [۱۰ ریسک امنیتی برتر CI/CD](https://owasp.org/www-project-top-10-ci-cd-security-risks/)
-- [۱۰ مورد برتر برای اپلیکیشن‌های مدل‌های زبان بزرگ](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
-- [۱۰ ریسک برتر حریم خصوصی](https://owasp.org/www-project-top-10-privacy-risks/)
+- [۱۰ مورد برتر موبایل](https://owasp.org/projects/mobile-top-10/)
+- [۱۰ مورد برتر بدون سرور (Serverless)](https://owasp.org/projects/serverless-top-10/)
+- [۱۰ ریسک امنیتی برتر CI/CD](https://owasp.org/projects/top-10-ci-cd-security-risks/)
+- [۱۰ مورد برتر برای اپلیکیشن‌های مدل‌های زبان بزرگ](https://owasp.org/projects/top-10-for-large-language-model-applications/)
+- [۱۰ ریسک برتر حریم خصوصی](https://owasp.org/projects/top-10-privacy-risks/)
 - [۱۰ کنترل پیشگیرانه برتر](https://top10proactive.owasp.org/)
 - [۱۰ ریسک امنیتی برتر اپلیکیشن‌های وب](https://owasp.org/Top10/)
 

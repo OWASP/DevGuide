@@ -51,7 +51,7 @@ then [submit an issue][issue080205] or [edit on GitHub][edit080205].
 
 [edit080205]: https://github.com/OWASP/DevGuide/blob/main/docs/en/06-verification/02-tools/05-secure-headers.md
 [issue080205]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2006-verification/02-tools/05-secure-headers
-[oshp]: https://owasp.org/www-project-secure-headers/
-[oshp-libs]: https://owasp.org/www-project-secure-headers/#development-libraries
-[oshp-tools]: https://owasp.org/www-project-secure-headers/#analysis-tools
+[oshp]: https://owasp.org/projects/secure-headers/
+[oshp-libs]: https://owasp.org/projects/secure-headers/#development-libraries
+[oshp-tools]: https://owasp.org/projects/secure-headers/#analysis-tools
 [spotlight24]: https://youtu.be/N4F3VWQYU9E

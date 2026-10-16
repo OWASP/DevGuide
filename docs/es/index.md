@@ -70,4 +70,4 @@ entonces [cree un issue][issue03] o [edítelo en GitHub][edit03].
 [issue03]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2001-introduction
 [samm]: https://owaspsamm.org/about/
 [versions]: https://github.com/OWASP/DevGuide/wiki#old-versions
-[intstand]: https://owasp.org/www-project-integration-standards/
+[intstand]: https://owasp.org/projects/integration-standards/

@@ -56,7 +56,7 @@ then [submit an issue][issue1102] or [edit on GitHub][edit1102].
 [coraza]: https://www.coraza.io/
 [coraza-caddy]: https://github.com/corazawaf/coraza-caddy
 [coraza-lib]: https://github.com/corazawaf/libcoraza
-[coraza-project]: https://owasp.org/www-project-coraza-web-application-firewall/
+[coraza-project]: https://owasp.org/projects/coraza-web-application-firewall/
 [coraza-spoa]: https://github.com/corazawaf/coraza-spoa
 [coraza-tutorial]: https://www.coraza.io/docs/tutorials/quick-start/
 [coraza-wasm]: https://github.com/corazawaf/coraza-proxy-wasm
@@ -65,6 +65,6 @@ then [submit an issue][issue1102] or [edit on GitHub][edit1102].
 [envoy]: https://github.com/united-security-providers/coraza-envoy-go-filter
 [issue1102]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2009-operations/02-coraza
 [crs]: https://coreruleset.org/
-[modsec]: https://owasp.org/www-project-modsecurity/
+[modsec]: https://owasp.org/projects/modsecurity/
 [nginx]: https://github.com/corazawaf/coraza-nginx
 [traefik]: https://github.com/jcchavezs/coraza-http-wasm-traefik

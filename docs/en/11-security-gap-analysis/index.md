@@ -16,7 +16,7 @@ Guides and tools are useful for these compliance activities and the OWASP projec
 
 The OWASP Developer Guide is a community effort; if there is something that needs changing then [submit an issue][issue1300].
 
-[asvs]: https://owasp.org/www-project-application-security-verification-standard/
+[asvs]: https://owasp.org/projects/asvs
 [iso27001]: https://www.iso.org/standard/82875.html
 [issue1300]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2011-security-gap-analysis/00-toc
 [masvs]: https://mas.owasp.org/MASVS/

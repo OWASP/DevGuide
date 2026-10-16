@@ -68,7 +68,7 @@ Traducción de versión [original en inglés][en0507].
 La Guía del Desarrollador de OWASP es un esfuerzo comunitario; si hay algo que necesita cambiar
 entonces [cree un issue][issue0507] o [edítelo en GitHub][edit0507].
 
-[asvs]: https://owasp.org/www-project-application-security-verification-standard/
+[asvs]: https://owasp.org/projects/asvs
 [edit0507]: https://github.com/OWASP/DevGuide/blob/main/docs/es/03-requirements/07-skf.md
 [en0507]: https://devguide.owasp.org/en/03-requirements/07-skf/
 [issue0507]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2003-requirements/07-skf

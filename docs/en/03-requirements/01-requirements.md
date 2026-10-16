@@ -97,7 +97,7 @@ both of which may have a direct impact on the application.
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue0501] or [edit on GitHub][edit0501].
 
-[asvs]: https://owasp.org/www-project-application-security-verification-standard/
+[asvs]: https://owasp.org/projects/asvs
 [csabuse]: https://cheatsheetseries.owasp.org/cheatsheets/Abuse_Case_Cheat_Sheet
 [edit0501]: https://github.com/OWASP/DevGuide/blob/main/docs/en/03-requirements/01-requirements.md
 [issue0501]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2003-requirements/01-requirements

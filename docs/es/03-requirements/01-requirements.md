@@ -105,7 +105,7 @@ Traducción de versión [original en inglés][en0501].
 La Guía del Desarrollador OWASP es un esfuerzo comunitario; si hay algo que necesite cambios
 entonces [cree un issue][issue0501] o [edítelo en GitHub][edit0501].
 
-[asvs]: https://owasp.org/www-project-application-security-verification-standard/
+[asvs]: https://owasp.org/projects/asvs
 [csabuse]: https://cheatsheetseries.owasp.org/cheatsheets/Abuse_Case_Cheat_Sheet
 [edit0501]: https://github.com/OWASP/DevGuide/blob/main/docs/es/03-requirements/01-requirements.md
 [en0501]: https://devguide.owasp.org/en/03-requirements/01-requirements/

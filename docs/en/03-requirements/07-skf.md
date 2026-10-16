@@ -63,7 +63,7 @@ The OWASP Spotlight series provides an overview of the SKF: 'Project 7 - [Securi
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue0507] or [edit on GitHub][edit0507].
 
-[asvs]: https://owasp.org/www-project-application-security-verification-standard/
+[asvs]: https://owasp.org/projects/asvs
 [edit0507]: https://github.com/OWASP/DevGuide/blob/main/docs/en/03-requirements/07-skf.md
 [issue0507]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2003-requirements/07-skf
 [skf]: https://www.securityknowledgeframework.org/

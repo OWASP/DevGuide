@@ -79,7 +79,7 @@ which can be used as documentation to help decide if a requirements category is 
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue0505] or [edit on GitHub][edit0505].
 
-[asvs]: https://owasp.org/www-project-application-security-verification-standard/
+[asvs]: https://owasp.org/projects/asvs
 [asvsL123]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x03-Using-ASVS.md#application-security-verification-levels
 [asvsmd]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x00-Header.md
 [asvsV1]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x10-V1-Architecture.md#v1-architecture-design-and-threat-modeling
@@ -100,4 +100,4 @@ then [submit an issue][issue0505] or [edit on GitHub][edit0505].
 [edit0505]: https://github.com/OWASP/DevGuide/blob/main/docs/en/03-requirements/05-asvs.md
 [issue0505]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2003-requirements/05-asvs
 [spotlight19]: https://youtu.be/3puIavsZfAk
-[srat]: https://owasp.org/www-project-securityrat/
+[srat]: https://owasp.org/projects/securityrat/

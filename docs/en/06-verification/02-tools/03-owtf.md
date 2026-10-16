@@ -40,4 +40,4 @@ then [submit an issue][issue080203] or [edit on GitHub][edit080203].
 [owtfinstall]: https://owtf.readthedocs.io/en/develop/installation/methods.html
 [owtfdocs]: https://owtf.readthedocs.io/en/develop/
 [owtfdownload]: https://github.com/owtf/owtf/releases
-[owtf]: https://owasp.org/www-project-owtf/
+[owtf]: https://owasp.org/projects/owtf/

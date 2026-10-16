@@ -24,7 +24,7 @@ Traducción de versión [original en inglés][en0602].
 La Guía del Desarrollador de OWASP es un esfuerzo comunitario;
 si ve algo que necesita cambios, entonces [cree un issue][issue0602] o [edítelo en GitHub][edit0602].
 
-[asvs]: https://owasp.org/www-project-application-security-verification-standard/
+[asvs]: https://owasp.org/projects/asvs
 [edit0602]: https://github.com/OWASP/DevGuide/blob/main/docs/es/04-design/02-web-app-checklist/index.md
 [en0602]: https://devguide.owasp.org/en/04-design/02-web-app-checklist/
 [issue0602]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2004-design/02-web-app-checklist/index

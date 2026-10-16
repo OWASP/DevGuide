@@ -78,7 +78,7 @@ then [submit an issue][issue050203] or [edit on GitHub][edit050203].
 [cyclonedx]: https://cyclonedx.org/
 [cyclonedx-bomlink]: https://cyclonedx.org/capabilities/bomlink/
 [cyclonedx-notes]: https://cyclonedx.org/capabilities/release-notes/
-[cyclonedx-project]: https://owasp.org/www-project-cyclonedx/
+[cyclonedx-project]: https://owasp.org/projects/cyclonedx/
 [cyclonedx-spec]: https://cyclonedx.org/specification/overview/
 [cyclonedx-tools]: https://cyclonedx.org/tool-center/
 [cyclonedx-vdr]: https://cyclonedx.org/capabilities/vdr/

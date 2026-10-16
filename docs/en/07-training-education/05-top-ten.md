@@ -77,5 +77,5 @@ then [submit an issue][issue0905] or [edit on GitHub][edit0905].
 [edit0905]: https://github.com/OWASP/DevGuide/blob/main/docs/en/07-training-education/05-top-ten.md
 [issue0905]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-training-education/05-top-ten
 [spotlight10]: https://youtu.be/RMkoIrpz8ug
-[top10project]: https://owasp.org/www-project-top-ten/
-[top10data]: https://owasp.org/www-project-top-ten/#div-data_2020
+[top10project]: https://owasp.org/projects/top-ten/
+[top10data]: https://owasp.org/projects/top-ten/#div-data_2020

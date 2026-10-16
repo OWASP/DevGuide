@@ -88,7 +88,7 @@ entonces [envía un issue][issue060202] o [edita en GitHub][edit060202].
 [csxml]: https://cheatsheetseries.owasp.org/cheatsheets/XML_Security_Cheat_Sheet
 [csproactive-c2]: https://cheatsheetseries.owasp.org/IndexProactiveControls.html#c2-leverage-security-frameworks-and-libraries
 [control4]: https://top10proactive.owasp.org/the-top-10/c4-secure-architecture/
-[dependency]: https://owasp.org/www-project-dependency-check/
+[dependency]: https://owasp.org/projects/dependency-check/
 [edit060202]: https://github.com/OWASP/DevGuide/blob/main/docs/es/04-design/02-web-app-checklist/02-frameworks-libraries.md
 [en060202]: https://devguide.owasp.org/en/04-design/02-web-app-checklist/02-frameworks-libraries/
 [issue060202]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/02-web-app-checklist/02-frameworks-libraries

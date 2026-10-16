@@ -43,7 +43,7 @@ The extensive [Amass tutorial][amass-tutorial] provides the best way of learning
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue080202] or [edit on GitHub][edit080202].
 
-[amass]: https://owasp.org/www-project-amass/
+[amass]: https://owasp.org/projects/amass/
 [amass-docs]: https://github.com/owasp-amass/amass/blob/master/doc/user_guide.md
 [amass-download]: https://github.com/owasp-amass/amass/releases
 [amass-install]: https://github.com/owasp-amass/amass/blob/master/doc/install.md

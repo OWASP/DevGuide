@@ -75,7 +75,7 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue080301] or [edit on GitHub][edit080301].
 
 [codebox]: https://www.securecodebox.io/
-[codebox-project]: https://owasp.org/www-project-securecodebox/
+[codebox-project]: https://owasp.org/projects/securecodebox/
 [codebox-install]: https://www.securecodebox.io/docs/getting-started/installation
 [codebox-start]: https://www.securecodebox.io/docs/getting-started/first-scans/
 [codebox-docs]: https://www.securecodebox.io/docs/getting-started/installation/

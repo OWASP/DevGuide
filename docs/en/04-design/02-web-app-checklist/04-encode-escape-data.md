@@ -46,7 +46,7 @@ then [submit an issue][issue060204] or [edit on GitHub][edit060204].
 [control3]: https://top10proactive.owasp.org/the-top-10/c3-validate-input-and-handle-exceptions/
 [control10]: https://top10proactive.owasp.org/the-top-10/c10-stop-server-side-request-forgery/
 [edit060204]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/02-web-app-checklist/04-encode-escape-data.md
-[encoder]: https://owasp.org/www-project-java-encoder/
+[encoder]: https://owasp.org/projects/java-encoder/
 [ipcs]: https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet
 [issue060204]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/02-web-app-checklist/04-encode-escape-data
 [proactive10]: https://top10proactive.owasp.org/

@@ -61,7 +61,7 @@ entonces [cree un issue][issue070202] o [edítelo en GitHub][edit070202].
 [cschain]: https://cheatsheetseries.owasp.org/cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet
 [deptrack]: https://dependencytrack.org/
 [deptrack-docs]: https://docs.dependencytrack.org/
-[deptrack-project]: https://owasp.org/www-project-dependency-track/
+[deptrack-project]: https://owasp.org/projects/dependency-track/
 [edit070202]: https://github.com/OWASP/DevGuide/blob/main/docs/es/05-implementation/02-dependencies/02-dependency-track.md
 [en070202]: https://devguide.owasp.org/en/05-implementation/02-dependencies/02-dependency-track/
 [issue070202]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2005-implementation/02-dependencies/02-dependency-track

@@ -37,7 +37,7 @@ and encourage users/reporters to use the [BLT app][bltapp] and chrome [extension
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue1302] or [edit on GitHub][edit1302].
 
-[blt]: https://owasp.org/www-project-bug-logging-tool/
+[blt]: https://owasp.org/projects/blt
 [bltchrome]: https://github.com/OWASP/BLT-Extension
 [bltcore]: https://github.com/OWASP/BLT
 [bltapp]: https://github.com/OWASP/BLT-Flutter

@@ -67,7 +67,7 @@ Traducción de versión [original en inglés][en060201].
 La Guía para Desarrolladores de OWASP es un esfuerzo comunitario; si hay algo que necesita cambiarse
 entonces [cree un issue][issue060201] o [edítelo en GitHub][edit060201].
 
-[asvs]: https://owasp.org/www-project-application-security-verification-standard/
+[asvs]: https://owasp.org/projects/asvs
 [csproactive-c1]: https://cheatsheetseries.owasp.org/IndexProactiveControls.html#c1-define-security-requirements
 [control4]: https://top10proactive.owasp.org/the-top-10/c4-secure-architecture/
 [edit060201]: https://github.com/OWASP/DevGuide/blob/main/docs/es/04-design/02-web-app-checklist/01-define-security-requirements.md

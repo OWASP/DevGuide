@@ -34,7 +34,7 @@ Follow the [instructions][csrfguard-build] to build CSRFGuard into the Java appl
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue070302] or [edit on GitHub][edit070302].
 
-[csrfguard]: https://owasp.org/www-project-csrfguard/
+[csrfguard]: https://owasp.org/projects/csrfguard/
 [csrfguard-build]: https://github.com/OWASP/www-project-csrfguard/blob/master/readme.md#using-with-maven
 [csrfguard-maven]: https://central.sonatype.com/search?q=csrfguard&smo=true
 [cscsrf]: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet

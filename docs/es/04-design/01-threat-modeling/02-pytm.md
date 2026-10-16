@@ -110,7 +110,7 @@ La Guía para Desarrolladores de OWASP es un esfuerzo comunitario; si hay algo q
 [plantuml]: https://plantuml.com/
 [plantumljar]: https://plantuml.com/download
 [pytmrepo]: https://github.com/OWASP/pytm/
-[pytmproject]: https://owasp.org/www-project-pytm/
+[pytmproject]: https://owasp.org/projects/pytm/
 [pytmexample]: https://github.com/OWASP/pytm/blob/master/tm.py
 [pytmreleases]: https://github.com/OWASP/pytm/releases
 [spotlight06]: https://youtu.be/oTqkPaEbTnE

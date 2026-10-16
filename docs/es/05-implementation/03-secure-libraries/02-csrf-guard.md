@@ -37,7 +37,7 @@ Traducción de versión [original en inglés][en070302].
 La Guía para Desarrolladores de OWASP es un esfuerzo comunitario; si hay algo que necesita cambiarse,
 [cree un issue][issue070302] o [edítelo en GitHub][edit070302].
 
-[csrfguard]: https://owasp.org/www-project-csrfguard/
+[csrfguard]: https://owasp.org/projects/csrfguard/
 [csrfguard-build]: https://github.com/OWASP/www-project-csrfguard/blob/master/readme.md#using-with-maven
 [csrfguard-maven]: https://central.sonatype.com/search?q=csrfguard&smo=true
 [cscsrf]: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet

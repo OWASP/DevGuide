@@ -39,7 +39,7 @@ know if the tool was configured correctly or was able to understand the web appl
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue080201] or [edit on GitHub][edit080201].
 
-[benchmark]: https://owasp.org/www-project-benchmark/
+[benchmark]: https://owasp.org/projects/benchmark/
 [dast]: https://community.owasp.org/Vulnerability_Scanning_Tools
 [edit080201]: https://github.com/OWASP/DevGuide/blob/main/docs/en/06-verification/02-tools/01-dast.md
 [issue080201]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2006-verification/02-tools/01-dast

@@ -22,8 +22,8 @@ ensure this checklist is in line with modern practices.
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue0602] or [edit on GitHub][edit0602].
 
-[asvs]: https://owasp.org/www-project-application-security-verification-standard/
+[asvs]: https://owasp.org/projects/asvs
 [edit0602]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/02-web-app-checklist/index.md
 [issue0602]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2004-design/02-web-app-checklist/index
 [proactive10]: https://top10proactive.owasp.org/
-[scp]: https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/
+[scp]: https://owasp.org/projects/secure-coding-practices-quick-reference-guide/

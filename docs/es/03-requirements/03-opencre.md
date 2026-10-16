@@ -96,7 +96,7 @@ Traducción de versión [original en inglés][en0503].
 La Guía de Desarrollador OWASP es un esfuerzo comunitario; si hay algo que necesite cambios
 entonces [cree un issue][issue0503] o [edítelo en GitHub][edit0503].
 
-[asvs]: https://owasp.org/www-project-application-security-verification-standard/
+[asvs]: https://owasp.org/projects/asvs
 [capecocre]: https://www.opencre.org/search/CAPEC
 [csocre]: https://www.opencre.org/search/OWASP%20Cheat%20Sheets
 [cweocre]: https://www.opencre.org/search/CWE
@@ -104,7 +104,7 @@ entonces [cree un issue][issue0503] o [edítelo en GitHub][edit0503].
 [cwe1002]: https://www.opencre.org/node/standard/CWE/sectionid/1002
 [edit0503]: https://github.com/OWASP/DevGuide/blob/main/docs/es/03-requirements/03-opencre.md
 [en0503]: https://devguide.owasp.org/en/03-requirements/03-opencre/
-[intstand]: https://owasp.org/www-project-integration-standards/
+[intstand]: https://owasp.org/projects/integration-standards/
 [issue0503]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2003-requirements/03-opencre
 [nist]: https://csrc.nist.gov/
 [nist53]: https://www.nist.gov/privacy-framework/nist-privacy-framework-and-cybersecurity-framework-nist-special-publication-800-53
@@ -114,7 +114,7 @@ entonces [cree un issue][issue0503] o [edítelo en GitHub][edit0503].
 [opencretalk]: https://www.youtube.com/watch?v=VPOkT9quve0
 [proactiveocre]: https://www.opencre.org/search/Proactive%20Controls
 [projects]: https://owasp.org/projects/
-[sdlc]: https://owasp.org/www-project-integration-standards/writeups/owasp_in_sdlc/
+[sdlc]: https://owasp.org/projects/integration-standards/writeups/owasp_in_sdlc/
 [spotlight28]: https://www.youtube.com/watch?v=TwNroVARmB0&list=PLUKo5k_oSrfOTl27gUmk2o-NBKvkTGw0T
 [top10ocre]: https://www.opencre.org/search/OWASP%20Top%2010
 [wstgocre]: https://www.opencre.org/search/WSTG

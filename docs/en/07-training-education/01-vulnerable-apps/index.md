@@ -24,8 +24,8 @@ The OWASP Developer Guide is a community effort; if there is something that need
 [sammg]: https://owaspsamm.org/model/governance/
 [sammgeg]: https://owaspsamm.org/model/governance/education-and-guidance/
 [sammgegta]: https://owaspsamm.org/model/governance/education-and-guidance/stream-a/
-[vwad]: https://owasp.org/www-project-vulnerable-web-applications-directory/
-[vwad-containers]: https://owasp.org/www-project-vulnerable-web-applications-directory/#div-container
-[vwad-mobile]: https://owasp.org/www-project-vulnerable-web-applications-directory/#div-mobile
-[vwad-online]: https://owasp.org/www-project-vulnerable-web-applications-directory/#div-online
-[vwad-offline]: https://owasp.org/www-project-vulnerable-web-applications-directory/#div-offline
+[vwad]: https://owasp.org/projects/vulnerable-web-applications-directory/
+[vwad-containers]: https://owasp.org/projects/vulnerable-web-applications-directory/#div-container
+[vwad-mobile]: https://owasp.org/projects/vulnerable-web-applications-directory/#div-mobile
+[vwad-online]: https://owasp.org/projects/vulnerable-web-applications-directory/#div-online
+[vwad-offline]: https://owasp.org/projects/vulnerable-web-applications-directory/#div-offline

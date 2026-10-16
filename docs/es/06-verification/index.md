@@ -33,7 +33,7 @@ Traducción de versión [original en inglés][en0800].
 La Guía del Desarrollador de OWASP es un esfuerzo comunitario;
 si ve algo que necesita cambios, entonces [cree un issue][issue0800] o [edítelo en GitHub][edit0800].
 
-[culturetest]: https://owasp.org/www-project-security-culture/stable/7-Security_Testing/
+[culturetest]: https://owasp.org/projects/security-culture/stable/7-Security_Testing/
 [edit0800]: https://github.com/OWASP/DevGuide/blob/main/docs/es/06-verification/index.md
 [en0800]: https://devguide.owasp.org/en/06-verification/
 [issue0800]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-verification/index

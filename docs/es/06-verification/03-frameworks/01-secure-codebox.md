@@ -4,7 +4,7 @@ OWASP [secureCodeBox][codebox] es una cadena de herramientas modularizada basada
 que proporciona escaneos de seguridad continuos de los proyectos y aplicaciones web de una organización.
 
 El [proyecto constructor/herramienta][codebox-project] secureCodeBox es un Proyecto de Laboratorio OWASP
-y se instala usando [Helm ChartMuseum][codebox-repo].
+y se instala usando Helm.
 
 #### ¿Qué es secureCodeBox?
 
@@ -63,8 +63,7 @@ para múltiples equipos, sistemas o clústeres.
 
 #### Cómo usarlo
 
-OWASP secureCodeBox se ejecuta en [Kubernetes][kube] y utiliza [Helm][helm] para la instalación
-usando [Helm ChartMuseum][codebox-repo].
+OWASP secureCodeBox se ejecuta en [Kubernetes][kube] y utiliza [Helm][helm] para la [instalación][codebox-install].
 Hay una excelente guía, '[Iniciando tus primeros escaneos][codebox-start]' para comenzar con secureCodeBox,
 con el resto de la [documentación][codebox-docs] que proporciona información clara sobre la configuración
 y ejecución de secureCodeBox.
@@ -83,8 +82,8 @@ La Guía para Desarrolladores de OWASP es un esfuerzo comunitario; si hay algo q
 [cree un issue][issue080301] o [edítelo en GitHub][edit080301].
 
 [codebox]: https://www.securecodebox.io/
-[codebox-project]: https://owasp.org/www-project-securecodebox/
-[codebox-repo]: https://charts.securecodebox.io
+[codebox-project]: https://owasp.org/projects/securecodebox/
+[codebox-install]: https://www.securecodebox.io/docs/getting-started/installation
 [codebox-start]: https://www.securecodebox.io/docs/getting-started/first-scans/
 [codebox-docs]: https://www.securecodebox.io/docs/getting-started/installation/
 [edit080301]: https://github.com/OWASP/DevGuide/blob/main/docs/es/06-verification/03-frameworks/01-secure-codebox.md

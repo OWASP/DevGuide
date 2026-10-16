@@ -105,13 +105,13 @@ Traducción de versión [original en inglés][en0504].
 La Guía de Desarrollador OWASP es un esfuerzo comunitario; si hay algo que necesite cambios
 entonces [cree un issue][issue0504] o [edítelo en GitHub][edit0504].
 
-[asvs]: https://owasp.org/www-project-application-security-verification-standard/
+[asvs]: https://owasp.org/projects/asvs
 [edit0504]: https://github.com/OWASP/DevGuide/blob/main/docs/es/03-requirements/04-security-rat.md
 [en0504]: https://devguide.owasp.org/en/03-requirements/04-security-rat/
 [issue0504]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2003-requirements/04-security-rat
 [spotlight05]: https://youtu.be/HiaHXtzJ3DE
 [scat]: https://securityrat.github.io/int_securitycat.html#securitycat
-[srat]: https://owasp.org/www-project-securityrat/
+[srat]: https://owasp.org/projects/securityrat/
 [sratdemo]: https://securityrat.org/
 [sratdeploy]: https://securityrat.github.io/depl_production.html
 [sratdocker]: https://hub.docker.com/r/securityrat/securityrat

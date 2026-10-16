@@ -62,13 +62,13 @@ but this last option no longer seems to be available.
 The OWASP Developer Guide is a community effort; if there is something that needs changing
 then [submit an issue][issue0909] or [edit on GitHub][edit0909].
 
-[cornucopia]: https://owasp.org/www-project-cornucopia/
+[cornucopia]: https://owasp.org/projects/cornucopia/
 [csmas]: https://cheatsheetseries.owasp.org/cheatsheets/Mobile_Application_Security_Cheat_Sheet
 [edit0909]: https://github.com/OWASP/DevGuide/blob/main/docs/en/07-training-education/09-snakes-ladders.md
 [issue0909]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2007-training-education/09-snakes-ladders
-[mobile10-2014]: https://owasp.org/www-project-mobile-top-10/2014-risks/
-[mobile10controls]: https://owasp.org/www-project-mobile-top-10/#div-controls
+[mobile10-2014]: https://owasp.org/projects/mobile-top-10/2014-risks/
+[mobile10controls]: https://owasp.org/projects/mobile-top-10/#div-controls
 [proactive10]: https://top10proactive.owasp.org/
-[snakes]: https://owasp.org/www-project-snakes-and-ladders/
-[snakeshowto]: https://owasp.org/www-project-snakes-and-ladders/#div-play
-[top102017]: https://owasp.org/www-project-top-ten/2017/
+[snakes]: https://owasp.org/projects/snakes-and-ladders/
+[snakeshowto]: https://owasp.org/projects/snakes-and-ladders/#div-play
+[top102017]: https://owasp.org/projects/top-ten/2017/

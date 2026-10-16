@@ -67,12 +67,12 @@ then [submit an issue][issue050304] or [edit on GitHub][edit050304].
 [edit050304]: https://github.com/OWASP/DevGuide/blob/main/docs/en/05-implementation/03-secure-libraries/04-java-secure-libs.md
 [html-sanitizer]: https://github.com/OWASP/java-html-sanitizer/releases/latest/
 [html-sanitizer-examples]: https://github.com/OWASP/java-html-sanitizer/tree/main/owasp-java-html-sanitizer/src/main/java/org/owasp/html/examples
-[html-sanitizer-project]: https://owasp.org/www-project-java-html-sanitizer/
+[html-sanitizer-project]: https://owasp.org/projects/java-html-sanitizer/
 [issue050304]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2005-implementation/03-secure-libraries/04-java-secure-libs
 [java-encoder]: http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.owasp.encoder%22
 [java-encoder-github]: https://github.com/OWASP/owasp-java-encoder/releases/latest/
-[java-encoder-project]: https://owasp.org/www-project-java-encoder/
-[java-encoder-usage]: https://owasp.org/www-project-java-encoder/#div-use
+[java-encoder-project]: https://owasp.org/projects/java-encoder/
+[java-encoder-usage]: https://owasp.org/projects/java-encoder/#div-use
 [json-sanitizer]: https://github.com/OWASP/json-sanitizer/releases/latest/
 [json-sanitizer-dependents]: https://central.sonatype.com/artifact/com.mikesamuel/json-sanitizer/dependents
 [json-sanitizer-usage]: https://github.com/OWASP/json-sanitizer/blob/master/docs/getting_started.md

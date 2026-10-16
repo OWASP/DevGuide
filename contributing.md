@@ -237,7 +237,7 @@ and to install `pyspelling` use pip: `pip install pyspelling`
 
 OWASP DevGuide: _accessible security for developers_
 
-[asvs]: https://owasp.org/www-project-application-security-verification-standard/
+[asvs]: https://owasp.org/projects/asvs
 [conduct]: code_of_conduct.md
 [es]: https://github.com/OWASP/DevGuide/tree/main/docs/es
 [fa]: https://github.com/OWASP/DevGuide/tree/main/docs/fa
@@ -246,8 +246,8 @@ OWASP DevGuide: _accessible security for developers_
 [lychee-install]: https://lychee.cli.rs/
 [media]: https://drive.google.com/drive/folders/1Ft8Ll0cgw0TIoub6aXTIJDmy0sk1RarU
 [pandoc-install]: https://pandoc.org/installing.html
-[project]: https://owasp.org/www-project-developer-guide/
+[project]: https://owasp.org/projects/developer-guide/
 [pt-br]: https://github.com/OWASP/DevGuide/tree/main/docs/pt-br
 [request]: https://github.com/OWASP/DevGuide/pulls
 [wiki]: https://github.com/OWASP/DevGuide/wiki
-[wstg]: https://owasp.org/www-project-web-security-testing-guide/
+[wstg]: https://owasp.org/projects/web-security-testing-guide/

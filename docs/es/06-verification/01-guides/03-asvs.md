@@ -86,7 +86,7 @@ Traducción de versión [original en inglés][en080103].
 La Guía para Desarrolladores de OWASP es un esfuerzo comunitario; si hay algo que necesita cambiarse
 entonces [cree un issue][issue080103] o [edítelo en GitHub][edit080103].
 
-[asvs]: https://owasp.org/www-project-application-security-verification-standard/
+[asvs]: https://owasp.org/projects/asvs
 [asvsL123]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x03-Using-ASVS.md#application-security-verification-levels
 [asvsmd]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x00-Header.md
 [asvsV1]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x10-V1-Architecture.md#v1-architecture-design-and-threat-modeling
@@ -108,4 +108,4 @@ entonces [cree un issue][issue080103] o [edítelo en GitHub][edit080103].
 [en080103]: https://devguide.owasp.org/en/06-verification/01-guides/03-asvs/
 [issue080103]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-verification/01-guides/03-asvs
 [spotlight19]: https://youtu.be/3puIavsZfAk
-[srat]: https://owasp.org/www-project-securityrat/
+[srat]: https://owasp.org/projects/securityrat/

@@ -78,7 +78,7 @@ then [submit an issue][issue080101] or [edit on GitHub][edit080101].
 [edit080101]: https://github.com/OWASP/DevGuide/blob/main/docs/en/06-verification/01-guides/01-wstg.md
 [issue080101]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2006-verification/01-guides/01-wstg
 [spotlight01]: https://youtu.be/bxQPePVDbQk
-[wstg]: https://owasp.org/www-project-web-security-testing-guide/
-[wstg-framework]: https://owasp.org/www-project-web-security-testing-guide/latest/3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework
-[wstg-howto]: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/
-[wstg-latest]: https://owasp.org/www-project-web-security-testing-guide/stable/
+[wstg]: https://owasp.org/projects/web-security-testing-guide/
+[wstg-framework]: https://owasp.org/projects/web-security-testing-guide/latest/3-The_OWASP_Testing_Framework/0-The_Web_Security_Testing_Framework
+[wstg-howto]: https://owasp.org/projects/web-security-testing-guide/latest/4-Web_Application_Security_Testing/
+[wstg-latest]: https://owasp.org/projects/web-security-testing-guide/stable/

@@ -79,7 +79,7 @@ si hay algo que necesita cambiarse entonces [cree un issue][issue070201] o [edí
 [cpe]: https://nvd.nist.gov/products/cpe
 [cscicd]: https://cheatsheetseries.owasp.org/cheatsheets/CI_CD_Security_Cheat_Sheet
 [cve]: https://www.cve.org/
-[depcheck]: https://owasp.org/www-project-dependency-check/
+[depcheck]: https://owasp.org/projects/dependency-check/
 [depcheck-docs]: https://jeremylong.github.io/DependencyCheck/
 [depcheck-download]: https://github.com/jeremylong/DependencyCheck/releases
 [edit070201]: https://github.com/OWASP/DevGuide/blob/main/docs/es/05-implementation/02-dependencies/01-dependency-check.md

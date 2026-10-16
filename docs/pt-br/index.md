@@ -65,7 +65,7 @@ então [submeta uma issue][issue03] ou [edite no GitHub][edit03].
 
 [about]: https://owasp.org/about/
 [edit03]: https://github.com/OWASP/DevGuide/blob/main/docs/pt-br/index.md
-[intstand]: https://owasp.org/www-project-integration-standards/
+[intstand]: https://owasp.org/projects/integration-standards/
 [issue03]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2001-introduction
 [opencrechat]: https://www.opencre.org/chatbot
 [samm]: https://owaspsamm.org/about/
