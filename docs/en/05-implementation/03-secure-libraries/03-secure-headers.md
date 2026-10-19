@@ -41,5 +41,5 @@ then [submit an issue][issue070303] or [edit on GitHub][edit070303].
 
 [edit070303]: https://github.com/OWASP/DevGuide/blob/main/docs/en/05-implementation/03-secure-libraries/03-secure-headers.md
 [issue070303]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2005-implementation/03-secure-libraries/03-secure-headers
-[oshp]: https://owasp.github.io/www-project-secure-headers/index/
+[oshp]: https://owasp.github.io/secure-headers-project/index/
 [spotlight24]: https://youtu.be/N4F3VWQYU9E
