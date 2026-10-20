@@ -2,7 +2,9 @@
 
 ## What is SAST?
 
-SAST stands for Static Application Security Testing. SAST is a technique that lets you analyze and detect potential security issues in your code. SAST can be used early in the development lifecycle to detect vulnerable code before production.
+SAST stands for Static Application Security Testing.
+SAST is a technique that lets you analyze and detect potential security issues in your code.
+SAST can be used early in the development lifecycle to detect vulnerable code before production.
 
 ## Why use SAST?
 
@@ -12,13 +14,16 @@ SAST has benefits like early vulnerability detection, quick feedback and support
 
 - SAST examines source code or compiled/intermediate representations without running the application.
 - It can use rules, patterns or models to identify potentially unsafe code.
-- When a SAST tool performs data-flow or taint analysis, it can track untrusted data from the source, through its propagation, to a sink.
+- When a SAST tool performs data-flow or taint analysis, it can track untrusted data
+  from the source, through its propagation, to a sink.
 - The analysis produces findings but not automatically confirmed vulnerabilities.
 
 ## SAST in the development lifecycle
 
-1. SAST can run locally in the IDE that you normally use. It can also be configured on push, on pull request or in CI/CD pipelines.
-2. SAST can be integrated early in the development stage. This can help to reduce remediation costs and find problems before they reach later stages.
+1. SAST can run locally in the IDE that you normally use.
+   It can also be configured on push, on pull request or in CI/CD pipelines.
+2. SAST can be integrated early in the development stage.
+   This can help to reduce remediation costs and find problems before they reach later stages.
 3. Shift-left security is supported by SAST.
 4. Findings can be classified or prioritized by severity and context in order to be reviewed.
 5. Not all the findings should automatically block the CI/CD pipeline.
@@ -40,7 +45,8 @@ SAST has benefits like early vulnerability detection, quick feedback and support
 - SCA helps to identify vulnerabilities in libraries or third-party dependencies.
 - DAST tests the application while running.
 - Manual review can identify logical problems or context that automatic tools could not take into account.
-- It is important to know that these techniques complement each other giving a stronger security strategy. They should not be treated as replacements for one another.
+- It is important to know that these techniques complement each other giving a stronger security strategy.
+  They should not be treated as replacements for one another.
 
 ## References
 

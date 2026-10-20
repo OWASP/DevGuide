@@ -20,7 +20,7 @@
 
 ### Step 1 - Install Semgrep Community Edition.
 
-On macOS, Semgrep CE can be installed using Homebrew:
+On MacOS, Semgrep CE can be installed using Homebrew:
 
 ```bash
 brew install semgrep
@@ -53,7 +53,9 @@ semgrep --config=semgrep.yml VulnerableExample.java
 ```
 
 ### Step 3 - Review the findings.
-Semgrep reports matches found by the configured rules. Each finding should be reviewed to determine whether it represents a real security issue.
+
+Semgrep reports matches found by the configured rules.
+Each finding should be reviewed to determine whether it represents a real security issue.
 
 ## Rules and patterns
 
@@ -91,10 +93,11 @@ rules:
 - `propagation` represents how that data moves through variables, methods, or expressions.
 - A `sink` is a sensitive or dangerous operation, such as executing a command or constructing an insecure query.
 - Semgrep can use rules in "taint mode" to detect when untrusted data reaches a sink.
-- A `sanitizer` is something that the rule recognizes as a validation or transformation that makes the data safe for this context.
+- A `sanitizer` is something that the rule recognizes as a validation or transformation
+  that makes the data safe for this context.
 - The result is a `finding` that requires review; it is not an automatically confirmed vulnerability.
 
-### Example
+### Taint analysis example
 
 ```text
 request.getParameter(...)
