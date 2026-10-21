@@ -116,6 +116,9 @@ nav:
         - OSHP: en/05-implementation/03-secure-libraries/03-secure-headers.md
         - Java Encoding and Sanitization: en/05-implementation/03-secure-libraries/04-java-secure-libs.md
       - MASWE: en/05-implementation/04-maswe.md
+      - Static Analysis:
+        - Overview: en/05-implementation/05-static-analysis/index.md
+        - Semgrep: en/05-implementation/05-static-analysis/01-semgrep.md
     - Verification:
       - Overview: en/06-verification/index.md
       - Guides:
