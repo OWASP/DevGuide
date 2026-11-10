@@ -16,24 +16,27 @@ that are relied on to protect against vulnerabilities in the application.
 
 The ASVS is split into various sections:
 
-* V1 [Architecture, Design and Threat Modeling][asvsV1]
-* V2 [Authentication][asvsV2]
-* V3 [Session Management][asvsV3]
-* V4 [Access Control][asvsV4]
-* V5 [Validation, Sanitization and Encoding][asvsV5]
-* V6 [Stored Cryptography][asvsV6]
-* V7 [Error Handling and Logging][asvsV7]
-* V8 [Data Protection][asvsV8]
-* V9 [Communication][asvsV9]
-* V10 [Malicious Code][asvsV10]
-* V11 [Business Logic][asvsV11]
-* V12 [Files and Resources][asvsV12]
-* V13 [API and Web Service][asvsV13]
-* V14 [Configuration][asvsV14]
+* V1 [Encoding and Sanitization][asvsV1]
+* V2 [Validation and Business Logic][asvsV2]
+* V3 [Web Frontend Security][asvsV3]
+* V4 [API and Web Service][asvsV4]
+* V5 [File Handling][asvsV5]
+* V6 [Authentication][asvsV6]
+* V7 [Session Management][asvsV7]
+* V8 [Authorization][asvsV8]
+* V9 [Self-contained Tokens][asvsV9]
+* V10 [OAuth and OIDC][asvsV10]
+* V11 [Cryptography][asvsV11]
+* V12 [Secure Communication][asvsV12]
+* V13 [Configuration][asvsV13]
+* V14 [Data Protection][asvsV14]
+* V15 [Secure Coding and Architecture][asvsV15]
+* V16 [Security Logging and Error Handling][asvsV16]
+* V17 [WebRTC][asvsV17]
 
 The ASVS defines three [levels of security verification][asvsL123]:
 
-1. applications that only need low assurance levels; these applications are completely penetration testable
+1. the minimum requirements and a critical starting point for any application, around 20% of the requirements
 2. applications which contain sensitive data that require protection; the recommended level for most applications
 3. the most critical applications that require the highest level of trust
 
@@ -45,7 +48,7 @@ or contain sensitive medical data, aiming for the highest level of trust at leve
 The ASVS is used by many organizations as a basis for the verification of their web applications.
 It is well established, the earlier versions were written in 2008, and it has been continually supported since then.
 
-The ASVS is comprehensive, for example version 4.0.3 has a list of 286 verification requirements,
+The ASVS is comprehensive, for example version 5.0.0 has around 350 verification requirements,
 and these verification requirements have been created and agreed to by a wide security community.
 Using the ASVS as a guide provides a firm basis for the verification process.
 
@@ -56,7 +59,7 @@ The OWASP Spotlight series provides an overview of the ASVS and its uses:
 
 The ASVS should be used as a guide for the verification process, with the appropriate level of verification chosen from:
 
-* Level 1: First steps, automated, or whole of portfolio view
+* Level 1: Minimum requirements, the starting point for every application
 * Level 2: Most applications
 * Level 3: High value, high assurance, or high safety
 
@@ -80,22 +83,25 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue080103] or [edit on GitHub][edit080103].
 
 [asvs]: https://owasp.org/projects/asvs
-[asvsL123]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x03-Using-ASVS.md#application-security-verification-levels
-[asvsmd]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x00-Header.md
-[asvsV1]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x10-V1-Architecture.md#v1-architecture-design-and-threat-modeling
-[asvsV2]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x11-V2-Authentication.md#v2-authentication
-[asvsV3]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x12-V3-Session-management.md#v3-session-management
-[asvsV4]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x12-V4-Access-Control.md#v4-access-control
-[asvsV5]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v5-validation-sanitization-and-encoding
-[asvsV6]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x14-V6-Cryptography.md#v6-stored-cryptography
-[asvsV7]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x15-V7-Error-Logging.md#v7-error-handling-and-logging
-[asvsV8]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x16-V8-Data-Protection.md#v8-data-protection
-[asvsV9]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x17-V9-Communications.md#control-objective
-[asvsV10]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x18-V10-Malicious.md#v10-malicious-code
-[asvsV11]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x19-V11-BusLogic.md#v11-business-logic
-[asvsV12]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x20-V12-Files-Resources.md#v12-files-and-resources
-[asvsV13]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x21-V13-API.md#v13-api-and-web-service
-[asvsV14]: https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x22-V14-Config.md#v14-configuration
+[asvsL123]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x03-What-is-the-ASVS.md#application-security-verification-levels
+[asvsmd]: https://github.com/OWASP/ASVS/tree/v5.0.0/5.0/en
+[asvsV1]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x10-V1-Encoding-and-Sanitization.md#v1-encoding-and-sanitization
+[asvsV2]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x11-V2-Validation-and-Business-Logic.md#v2-validation-and-business-logic
+[asvsV3]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x12-V3-Web-Frontend-Security.md#v3-web-frontend-security
+[asvsV4]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x13-V4-API-and-Web-Service.md#v4-api-and-web-service
+[asvsV5]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x14-V5-File-Handling.md#v5-file-handling
+[asvsV6]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x15-V6-Authentication.md#v6-authentication
+[asvsV7]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x16-V7-Session-Management.md#v7-session-management
+[asvsV8]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x17-V8-Authorization.md#v8-authorization
+[asvsV9]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x18-V9-Self-contained-Tokens.md#v9-self-contained-tokens
+[asvsV10]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x19-V10-OAuth-and-OIDC.md#v10-oauth-and-oidc
+[asvsV11]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x20-V11-Cryptography.md#v11-cryptography
+[asvsV12]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x21-V12-Secure-Communication.md#v12-secure-communication
+[asvsV13]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x22-V13-Configuration.md#v13-configuration
+[asvsV14]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x23-V14-Data-Protection.md#v14-data-protection
+[asvsV15]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x24-V15-Secure-Coding-and-Architecture.md#v15-secure-coding-and-architecture
+[asvsV16]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x25-V16-Security-Logging-and-Error-Handling.md#v16-security-logging-and-error-handling
+[asvsV17]: https://github.com/OWASP/ASVS/blob/v5.0.0/5.0/en/0x26-V17-WebRTC.md#v17-webrtc
 [csasvs]: https://cheatsheetseries.owasp.org/IndexASVS.html
 [edit080103]: https://github.com/OWASP/DevGuide/issues/new?labels=content&template=request.md&title=Update:%2006-verification/01-guides/05-asvs.md
 [issue080103]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2006-verification/01-guides/03-asvs
