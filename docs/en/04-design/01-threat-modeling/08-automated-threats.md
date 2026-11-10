@@ -57,7 +57,8 @@ The project's [threat identification chart][oatchart] helps decide which threat 
 
 Each threat event in the handbook describes the symptoms and the possible countermeasures,
 and these can be used to define the security requirements and the monitoring that the feature needs.
-The OWASP [Bot Management and Anti-Automation Cheat Sheet][csbot] gives practical guidance on implementing those countermeasures.
+The OWASP [Bot Management and Anti-Automation Cheat Sheet][csbot] gives practical guidance
+on implementing those countermeasures.
 
 #### References
 
