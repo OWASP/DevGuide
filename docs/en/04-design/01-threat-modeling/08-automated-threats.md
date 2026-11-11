@@ -36,8 +36,8 @@ The project defines 21 threat events, each with an OAT identifier:
 
 #### Why use it?
 
-Most of these threats are not covered by the OWASP Top 10 or by vulnerability scanners,
-because the application is working as designed - it is the way it is being used that causes the harm.
+None of these threats are implementation bugs, so they don't show up as findings from a vulnerability scan
+or map neatly onto the OWASP Top 10. The application is working as designed; it's the way it is used that causes the harm.
 They also often have sector-specific names, for example 'sneaker bots' for scalping,
 which makes it hard for business owners, developers and security teams to talk about the same problem.
 
@@ -52,7 +52,8 @@ rather than naming a particular product such as a bot management service.
 When threat modeling a feature, ask which of the threat events apply to it:
 login and password reset pages attract Credential Stuffing and Credential Cracking,
 sign up pages attract Account Creation, checkout pages attract Carding and Card Cracking,
-and limited stock or booking systems attract Scalping, Sniping and Denial of Inventory.
+limited stock or booking systems attract Scalping and Denial of Inventory,
+and auctions or other time-limited offers attract Sniping.
 The project's [threat identification chart][oatchart] helps decide which threat event matches an observed behavior.
 
 Each threat event in the handbook describes the symptoms and the possible countermeasures,
