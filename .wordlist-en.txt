@@ -265,6 +265,7 @@ SDLCs
 SECCOMP
 SELinux
 SFL
+SHA
 SIEM
 SKF
 SL
@@ -489,6 +490,7 @@ lxml
 lychee
 mastg
 maswe
+md
 misconfiguration
 mlsec
 mitigations
