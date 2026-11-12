@@ -13,12 +13,15 @@ to web applications and seeks to rank them in importance and severity.
 
 The list has changed over time, with some threat types becoming more of a problem to web applications
 and other threats becoming less of a risk as technologies change.
-The [latest version][top10] was issued in 2021 and each category is summarized below.
+The [latest version][top10] was issued in 2025 and each category is summarized below.
+Compared to the 2021 version, Server-Side Request Forgery is now part of Broken Access Control,
+Vulnerable and Outdated Components has grown into Software Supply Chain Failures,
+and Mishandling of Exceptional Conditions is a new category.
 
 Note that there are various 'OWASP Top Ten' projects, for example the 'OWASP Top 10 for Large Language Model Applications',
 so to avoid confusion the context should be noted when referring to these lists.
 
-#### A01:2021 Broken Access Control
+#### A01:2025 Broken Access Control
 
 Access control involves the use of protection mechanisms that can be categorized as:
 
@@ -32,118 +35,113 @@ When a security control fails or is not applied then attackers can compromise th
 by gaining privileges, reading sensitive information, executing commands, evading detection, etc.
 
 Broken Access Control can take many forms, such as path traversal or elevation of privilege,
-so refer to both the [Common Weakness Enumeration CWE-284][cwe284] and [A01 Broken Access Control][a01]
-and also follow the various [OWASP Cheat Sheets][a01cs] related to access controls.
+and in the 2025 version it also includes Server-Side Request Forgery (SSRF),
+where the application can be coerced into sending requests to destinations the attacker could not reach directly.
+Refer to [A01 Broken Access Control][a01] and follow the [Authorization][csauthz]
+and [SSRF Prevention][csssrf] cheat sheets.
 
-#### A02:2021 Cryptographic Failures
+#### A02:2025 Security Misconfiguration
 
-Referring to [OWASP Top 10 A02:2021][a02], sensitive data should be protected when at rest and in transit.
+Systems and large applications can be configurable, and this configuration is often used to secure the system/application.
+If this configuration is misapplied then the application may no longer be secure,
+and instead be vulnerable to well-known exploits. The [A02 Security Misconfiguration][a02] page contains
+a common example of misconfiguration where default accounts and their passwords are still enabled and unchanged.
+These passwords and accounts are usually well-known and provide an easy way for malicious actors to compromise applications.
+
+Security misconfiguration has moved up to second place in the 2025 version,
+reflecting how much of an application's security now depends on configurable frameworks, platforms and cloud services.
+Establish a repeatable hardening process, and where infrastructure is defined as code
+follow the [Infrastructure as Code Security][csiac] cheat sheet.
+
+#### A03:2025 Software Supply Chain Failures
+
+Software supply chain failures are breakdowns or compromises in the process of building, distributing, or updating software.
+This category expands the 2021 'Vulnerable and Outdated Components' to cover the whole supply chain:
+third party dependencies, build tools and pipelines, and the way updates are delivered.
+
+Keeping all the third party software dependencies up to date is still one of the easiest
+and most effective security activities.
+If a vulnerable dependency is identified by a malicious actor during the reconnaissance phase of an attack
+then there are databases available, such as [Exploit Database][exploit], that will provide a description of any exploit,
+making it easy for vulnerable third party software dependencies to be exploited.
+Refer to [A03 Software Supply Chain Failures][a03] and the [Software Supply Chain Security][cschain]
+and [Vulnerable Dependency Management][csdeps] cheat sheets.
+
+#### A04:2025 Cryptographic Failures
+
+Referring to [OWASP Top 10 A04:2025][a04], sensitive data should be protected when at rest and in transit.
 Cryptographic failures occur when the cryptographic security control is either broken or not applied,
 and the data is exposed to unauthorized actors - malicious or not.
 
-It is important to protect data both at rest, when it is stored in an area  of memory,
+It is important to protect data both at rest, when it is stored in an area of memory,
 and also when it is in transit such as being transmitted across a communication channel or being transformed.
-A good example of protecting data transformation is given by [A02 Cryptographic Failures][a02]
-where sensitive data is properly encrypted in a database, but the export function automatically
-decrypts the data leading to sensitive data exposure.
-
 Crypto failures can take many forms and may be subtle - a security control that looks secure may be easily broken.
-Follow the crypto [OWASP Cheat Sheets][a02cs] to get the basic crypto controls in place
-and consider putting a crypto audit in place.
+Follow the [Cryptographic Storage][cscrypto] and [Transport Layer Security][cstls] cheat sheets
+to get the basic crypto controls in place and consider putting a crypto audit in place.
 
-#### A03:2021 Injection
+#### A05:2025 Injection
 
 A lack of input validation and sanitization can lead to injection exploits,
 and this risk has been a constant feature of the OWASP Top Ten since the first version was published in 2003.
-These vulnerabilities occur when hostile data is directly used within the application
-and can result in malicious data being used to subvert the application; see [A03 Injection][a03] for further explanations.
+These vulnerabilities occur when untrusted input is sent to an interpreter,
+such as a browser, a database or the command line,
+and the interpreter executes parts of that input as commands; see [A05 Injection][a05] for further explanations.
 
-The security control is straight forward: all input from untrusted sources should be sanitized and validated.
-See the [Injection Cheat Sheets][a03cs] for the various types of input and their controls.
+The security control is straight forward: all input from untrusted sources should be sanitized and validated,
+and queries and commands should keep data separate from code, for example by using parameterized queries.
+See the [Injection Prevention][csinject] cheat sheet for the various types of input and their controls.
 
-#### A04:2021 Insecure Design
+#### A06:2025 Insecure Design
 
 It is important that security is built into applications from the beginning and not applied as an afterthought.
-The [A04 Insecure Design][a04] category recognizes this and advises that
+The [A06 Insecure Design][a06] category recognizes this and advises that
 the use of threat modeling, secure design patterns, and reference architectures
 should be incorporated within the application design and architecture activities.
 
 In practice this involves establishing a secure development lifecycle that encourages
 the identification of security requirements, the periodic use of threat modeling
 and consideration of existing secure libraries and frameworks.
-This category was introduced in the 2021 version and for now the supporting cheat sheets only cover [threat modeling][cstm];
-as this category becomes more established it is expected that more supporting information will become available.
+See the [Threat Modeling][cstm] and [Secure Product Design][csdesign] cheat sheets.
 
-#### A05:2021 Security Misconfiguration
-
-Systems and large applications can be configurable, and this configuration is often used to secure the system/application.
-If this configuration is misapplied then the application may no longer be secure,
-and instead be vulnerable to well-known exploits. The [A05 Security Misconfiguration][a05] page contains
-a common example of misconfiguration where default accounts and their passwords are still enabled and unchanged.
-These passwords and accounts are usually well-known and provide an easy way for malicious actors to compromise applications.
-
-Both the [OWASP Top 10 A05:2021][a05] and the linked [OWASP Cheat Sheets][a05cs] provide strategies to establish
-a concerted, repeatable application security configuration process to minimize misconfiguration.
-
-#### A06:2021 Vulnerable and Outdated Components
-
-Perhaps one of the easiest and most effective security activities
-is keeping all the third party software dependencies up to date.
-If a vulnerable dependency is identified by a malicious actor during the reconnaissance phase of an attack
-then there are databases available, such as [Exploit Database][exploit], that will provide a description of any exploit.
-These databases can also provide ready made scripts and techniques for attacking a given vulnerability,
-making it easy for vulnerable third party software dependencies to be exploited .
-
-Risk [A06 Vulnerable and Outdated Components][a06] underlines the importance of this activity,
-and recommends that fixes and upgrades to the underlying platform, frameworks, and dependencies
-are based on a risk assessment and done in a 'timely fashion'.
-Several tools can used to analyze dependencies and flag vulnerabilities, refer to the [Cheat Sheets][a06cs] for these.
-
-#### A07:2021 Identification and Authentication Failures
+#### A07:2025 Authentication Failures
 
 Confirmation of the user's identity, authentication, and session management is critical
 to protect the system or application against authentication related attacks.
-Referring to risk [A07 Identification and Authentication Failures][a07], authorization can fail in several ways
-that often involve other OWASP Top Ten risks:
+Referring to risk [A07 Authentication Failures][a07], authentication can fail in several ways,
+for example by permitting automated attacks such as credential stuffing and password spraying,
+by allowing weak or well-known passwords, or by missing or ineffective multi-factor authentication.
+This category was called 'Identification and Authentication Failures' in the 2021 version.
 
-* broken access controls (A01)
-* cryptographic failure (A02)
-* default passwords (A05)
-* out-dated libraries (A06)
-
-Refer to the [Cheat Sheets][a07cs] for the several good practices that are needed for secure authorization.
+Refer to the [Authentication][csauthn] and [Password Storage][cspass] cheat sheets for the good practices that are needed.
 There are also third party suppliers of Identity and Access Management (IAM) that will provide this as a service,
 consider the cost / benefit of using these (often commercial) suppliers.
 
-#### A08:2021 Software and Data Integrity Failures
+#### A08:2025 Software or Data Integrity Failures
 
-Software and data integrity failures relate to code and infrastructure that does not protect against integrity violations.
-This is a wide ranging category that describes [supply chain attacks][cschain],
-compromised auto-update and use of untrusted components for example.
-[A07 Software and Data Integrity Failures][a08] was a new category introduced in 2021
-so there is little information available from the [Cheat Sheets][a08cs],
-but this is sure to change for such an important threat.
+Software and data integrity failures relate to code and infrastructure that does not protect against
+invalid or untrusted code or data being treated as trusted and valid.
+Examples include relying on plugins or libraries from untrusted sources, auto-update without integrity checks,
+CI/CD pipelines that pull artifacts without verifying them, and insecure deserialization of untrusted data.
+Refer to [A08 Software or Data Integrity Failures][a08] and the [CI/CD Security][cscicd]
+and [Deserialization][csdeser] cheat sheets.
 
-#### A09:2021 Security Logging and Monitoring Failures
+#### A09:2025 Security Logging and Alerting Failures
 
 Logging and monitoring helps detect, escalate, and respond to active breaches; without it breaches will not be detected.
-[A09 Security Logging and Monitoring Failures][a09] lists various logging and monitoring techniques that should be familiar,
-but also others that may not be so common;
-for example monitoring the DevOps supply chain may be just as important as monitoring the application or system.
-The [Cheat Sheets][a09cs] provide guidance on sufficient logging and also provide for a common logging vocabulary.
-The aim of this common vocabulary is to provide logging that uses a common set of terms, formats and key words;
-and this allows for easier monitoring, analysis and alerting.
+The 2025 version renames this category from 'Security Logging and Monitoring Failures'
+to stress that logs only help if they raise alerts that someone acts on.
+[A09 Security Logging and Alerting Failures][a09] lists various logging, monitoring and alerting techniques.
+The [Logging][cslogging] and [Logging Vocabulary][cslogvocab] cheat sheets provide guidance on sufficient logging
+and a common set of terms, formats and key words that allows for easier monitoring, analysis and alerting.
 
-#### A10:2021 Server-Side Request Forgery
+#### A10:2025 Mishandling of Exceptional Conditions
 
-Referring to [A10 Server-Side Request Forgery (SSRF)][a10], these vulnerabilities can occur
-whenever a web application is fetching a remote resource without validating the user-supplied URL.
-These exploits allow an attacker to coerce the application to send a crafted request to an unexpected destination,
-even when protected by a firewall, VPN, or another type of network access control list.
-Fetching a URL has become a common scenario for modern web applications and as a result the incidence of SSRF is increasing,
-especially for [cloud services][cscloud] and more complex application architectures.
-
-This is a new category introduced in 2021 with a single (for now) [Cheat Sheet][a10cs] that deals with SSRF.
+This is a new category in the 2025 version.
+Mishandling exceptional conditions happens when an application fails to prevent, detect, or respond to unusual situations,
+which leads to crashes, unexpected behavior, and sometimes vulnerabilities;
+for example error messages that reveal sensitive information, or a failure part way through a transaction
+that leaves the application in an inconsistent or insecure state ('failing open').
+Refer to [A10 Mishandling of Exceptional Conditions][a10] and the [Error Handling][cserror] cheat sheet.
 
 #### OWASP top tens
 
@@ -168,32 +166,36 @@ Other OWASP Top 10s are 'incubator' projects, which are work in progress, so thi
 The OWASP Developer Guide is a community effort; if you see something that needs changing
 then [submit an issue][issue0405] or [edit on GitHub][edit0405].
 
-[a01]: https://top10.owasp.org/A01_2021-Broken_Access_Control/
-[a01cs]: https://cheatsheetseries.owasp.org/IndexTopTen.html#a012021-broken-access-control
-[a02]: https://top10.owasp.org/A02_2021-Cryptographic_Failures/
-[a02cs]: https://cheatsheetseries.owasp.org/IndexTopTen.html#a022021-cryptographic-failures
-[a03]: https://top10.owasp.org/A03_2021-Injection/
-[a03cs]: https://cheatsheetseries.owasp.org/IndexTopTen.html#a032021-injection
-[a04]: https://top10.owasp.org/A04_2021-Insecure_Design/
-[a05]: https://top10.owasp.org/A05_2021-Security_Misconfiguration/
-[a05cs]: https://cheatsheetseries.owasp.org/IndexTopTen.html#a052021-security-misconfiguration
-[a06]: https://top10.owasp.org/A06_2021-Vulnerable_and_Outdated_Components/
-[a06cs]: https://cheatsheetseries.owasp.org/IndexTopTen.html#a062021-vulnerable-and-outdated-components
-[a07]: https://top10.owasp.org/A07_2021-Identification_and_Authentication_Failures/
-[a07cs]: https://cheatsheetseries.owasp.org/IndexTopTen.html#a072021-identification-and-authentication-failures
-[a08]: https://top10.owasp.org/A08_2021-Software_and_Data_Integrity_Failures/
-[a08cs]: https://cheatsheetseries.owasp.org/IndexTopTen.html#a082021-software-and-data-integrity-failures
-[a09]: https://top10.owasp.org/A09_2021-Security_Logging_and_Monitoring_Failures/
-[a09cs]: https://cheatsheetseries.owasp.org/IndexTopTen.html#a092021-security-logging-and-monitoring-failures
-[a10]: https://top10.owasp.org/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/
-[a10cs]: https://cheatsheetseries.owasp.org/IndexTopTen.html#a102021-server-side-request-forgery-ssrf
+[a01]: https://top10.owasp.org/2025/A01_2025-Broken_Access_Control/
+[a02]: https://top10.owasp.org/2025/A02_2025-Security_Misconfiguration/
+[a03]: https://top10.owasp.org/2025/A03_2025-Software_Supply_Chain_Failures/
+[a04]: https://top10.owasp.org/2025/A04_2025-Cryptographic_Failures/
+[a05]: https://top10.owasp.org/2025/A05_2025-Injection/
+[a06]: https://top10.owasp.org/2025/A06_2025-Insecure_Design/
+[a07]: https://top10.owasp.org/2025/A07_2025-Authentication_Failures/
+[a08]: https://top10.owasp.org/2025/A08_2025-Software_or_Data_Integrity_Failures/
+[a09]: https://top10.owasp.org/2025/A09_2025-Security_Logging_and_Alerting_Failures/
+[a10]: https://top10.owasp.org/2025/A10_2025-Mishandling_of_Exceptional_Conditions/
+[csauthz]: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet
+[csssrf]: https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet
+[csiac]: https://cheatsheetseries.owasp.org/cheatsheets/Infrastructure_as_Code_Security_Cheat_Sheet
+[csdeps]: https://cheatsheetseries.owasp.org/cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet
+[cscrypto]: https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet
+[cstls]: https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet
+[csinject]: https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet
+[csdesign]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet
+[csauthn]: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet
+[cspass]: https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet
+[cscicd]: https://cheatsheetseries.owasp.org/cheatsheets/CI_CD_Security_Cheat_Sheet
+[csdeser]: https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet
+[cslogging]: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet
+[cslogvocab]: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Vocabulary_Cheat_Sheet
+[cserror]: https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet
 [apisec]: https://api-security.owasp.org/
 [cd10]: https://owasp.org/projects/citizen-development-top-10
 [cicd10]: https://owasp.org/projects/top-10-cicd-security-risks
 [cschain]: https://cheatsheetseries.owasp.org/cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet
-[cscloud]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Cloud_Architecture_Cheat_Sheet
 [cstm]: https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet
-[cwe284]: https://cwe.mitre.org/data/definitions/284.html
 [data10]: https://owasp.org/projects/data-security-top-10
 [edit0405]: https://github.com/OWASP/DevGuide/blob/main/docs/en/02-foundations/05-top-ten.md
 [exploit]: https://www.exploit-db.com/
