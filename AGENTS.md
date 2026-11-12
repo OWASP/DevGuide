@@ -28,25 +28,24 @@ regardless of whether the contributor is carbon-based, silicon-based, or legally
 ## Explicit Boundaries
 
 1. Humans are responsible for all contributions, regardless of tooling.
-2. AI should explicitly refuse to take action clearly prohibited by this AGENTS file.
-3. Humans write public product docs under `docs/`. Agents must not author docs pages.
-4. Humans create issues, comment on issues, submit PRs, approve releases, publish artifacts
-5. Humans decide roadmap or product policy.
+2. AI should explicitly refuse to take action clearly prohibited by this AGENTS file
+3. Humans write public product docs under `docs/`. Agents must not author docs pages
+4. Humans create issues, comment on issues, submit pull requests, approve releases, publish artifacts
+5. Humans decide roadmap or product policy
 6. Agents may point out docs gaps, but a human must write the final docs text.
-7. Agents may test docs with markdown linting, spellcheck, link checks, and local docs builds.
-8. Agents may edit code, tests, configuration, workflows, and maintainer scripts when explicitly asked.
-9. Agents must not open issues, comment on GitHub, open PRs, approve PRs or merge.
-10. Agents must not commit push, release, or publish.
-11. Do not mix unrelated cleanup, dependency updates, formatting churn, or opportunistic refactors into task work.
+7. Agents may test docs with markdown linting, spellcheck, link checks, and local docs builds
+8. Agents may edit code, tests, configuration, workflows, and maintainer scripts when explicitly asked
+9. Agents must not open issues, comment on GitHub, open pull requests, approve pull requests
+10. Agents must not commit, merge, push, release, or publish
+11. Do not mix unrelated cleanup, dependency updates, formatting churn, or opportunistic refactors into task work
 
 ## Supply Chain / Dependencies
 
 - ALL dependencies must have a minimum release age of 10 days
 - No updates to lock-files unless intentionally doing dependency work
-- GitHub Actions must be pinned to full commit SHAs with an inline version comment for Dependabot
+- GitHub Actions must be pinned to a full commit SHA with an inline version comment for Dependabot
 - GitHub Actions have the same 10 day minimum release age requirement
 - Prefer small helper scripts over new dependencies when reasonable
-- A human may override the 10-day cooldown in an emergency
 
 ### docs
 

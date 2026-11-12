@@ -21,8 +21,8 @@ Thanks for submitting a pull request, please make sure:
 - [ ] content meets the [license](https://github.com/OWASP/DevGuide/blob/main/license.txt) for this project
 - [ ] you have read the [contribution guide](https://github.com/OWASP/DevGuide/blob/main/contributing.md)
   and agree to the [Code of Conduct](https://github.com/OWASP/DevGuide/blob/main/code_of_conduct.md)
-- [ ] no agentic AI used in creating this pull request
-- [ ] no generative AI used in creating content under `/docs`
+- [ ] no agentic AI was used in creating this pull request
+- [ ] no generative AI was used in creating content under `/docs`
 
 **Other info** :  
 

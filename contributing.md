@@ -18,7 +18,7 @@ Feel free to discuss topics in the [project wiki][wiki] and create new discussio
 
 Note that you **must** follow the rules for any [use of AI](#use-of-ai).
 
-The use of AI is quick and seems to fulfil what is needed
+The use of AI is quick and seems to provide what is needed
 but ultimately it does not deliver true insight into what projects actually are,
 why a developer would want to use them and how they need to be used;
 it can only provide superficial answers
@@ -137,7 +137,7 @@ Note that you **must** follow the rules for any [use of AI](#use-of-ai) in the p
 ### Use of AI
 
 The Developer Guide is a documentation project and so the content must be accurate, informative and concise.
-Generative AI usually produces content that is superficial, generalised and verbose; **do not** use it to create content.
+Generative AI usually produces content that is superficial, generalized and verbose; **do not** use it to create content.
 
 **Do not** use generative AI for any issues, pull requests, comments and discussions.
 Use of generative AI will result in the contribution being closed or even deleted.
