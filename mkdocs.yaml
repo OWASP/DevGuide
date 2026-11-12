@@ -84,6 +84,7 @@ nav:
         - LINDDUN GO: en/04-design/01-threat-modeling/05-linddun-go.md
         - Threat Model Library: en/04-design/01-threat-modeling/06-threat-model-library.md
         - Threat modeling in practice: en/04-design/01-threat-modeling/07-practical-threat-modeling.md
+        - Automated threats: en/04-design/01-threat-modeling/08-automated-threats.md
       - Web application checklist:
         - Overview: en/04-design/02-web-app-checklist/index.md
         - Secure by Default: en/04-design/02-web-app-checklist/01-secure-by-default.md
