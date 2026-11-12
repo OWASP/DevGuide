@@ -14,7 +14,19 @@ Contributors can [make suggestions][issues] and provide changes via a [pull requ
 
 Feel free to discuss topics in the [project wiki][wiki] and create new discussions.
 
+### Generative AI
+
 Note that you **must** follow the rules for any [use of AI](#use-of-ai).
+
+The use of AI is quick and seems to fulfil what is needed
+but ultimately it does not deliver true insight into what projects actually are,
+why a developer would want to use them and how they need to be used;
+it can only provide superficial answers
+
+This Developer Guide seeks to provide knowledge about the various OWASP projects.
+This requires human insight that provides a developer with reasons and knowledge that go beyond what can be gleaned by AI.
+Perhaps it is the difference between a Lonely Planet Guide and Google Maps;
+one has human insight and the other is truthful but mechanical
 
 ### Ground rules
 
@@ -25,16 +37,19 @@ When contributing:
 * ensure that all contributions are within the [license](license.txt)
 * although the use of generative AI is not prohibited, it _must_ be declared in the pull request
 
-The Developer Guide is a documentation project and so there may be differences of opinion on wording or punctuation.
-If you submit a pull request please make it substantive, otherwise
+When you submit a pull request please make it substantive, otherwise
 it will be hard to get attention from the maintainers for trivial changes and it may end up being rejected.
+
+The Developer Guide is a documentation project and so there may be differences of opinion on wording or punctuation.
 
 #### Philosophy
 
 The Developer Guide does not seek to duplicate the information contained in the many OWASP documentation projects;
 these projects address their subject fully and completely.
+
 Instead the Developer Guide is a starting point on a wide range of subjects
 which a developer would need to know at least the basics.
+
 The Developer Guide should supply this basic knowledge only,
 and then refer the developer to further reading for more in-depth treatment of the subject.
 As a rule of thumb, if a section is more than two pages then it is probably too long;
@@ -83,12 +98,12 @@ Sub-sections that describe an individual project should follow the same structur
 3. The 'Why', explaining why developers will want to use the project:
   _provide more context for project that allows developers to determine whether to use it in their team_
 4. The 'How', describe how to get started with the project
-  _give a brief outline of how the project provides value for a web application development team_
+  _give a brief outline of how the project provides value for a web application development team_.
   _Do not repeat the project documentation itself; ideally provide a primer and a pointer to the project documentation_
 5. Further reading or resources, if any, providing links on the project at an advanced/detailed level
 
 Note that the page describing a project should not be the same as the project documentation on the OWASP site,
-the Developer Guide should strive to be a ' TL;DR ' for the project running to one or maybe two pages.
+the Developer Guide should strive to be a ' TL;DR ' for the project in one or maybe two pages.
 
 ### Translations
 
@@ -122,14 +137,12 @@ Note that you **must** follow the rules for any [use of AI](#use-of-ai) in the p
 ### Use of AI
 
 The Developer Guide is a documentation project and so the content must be accurate, informative and concise.
+Generative AI usually produces content that is superficial, generalised and verbose; **do not** use it to create content.
 
-Generative AI can produce content that is general and verbose;
-avoid using it for any issues, pull requests, comments and discussions.
+**Do not** use generative AI for any issues, pull requests, comments and discussions.
+Use of generative AI will result in the contribution being closed or even deleted.
 
-If it is genuinely helpful to use generative AI then it **must** be declared in any pull request or issue,
-failure to do so can result in the contribution being closed or even deleted.
-
-There is no need to use agentic AI to create issues or pull requests;
+**Do not** use agentic AI to create issues or pull requests;
 templates for all issues and pull requests **must** be used.
 Failure to use the templates can result in the issue / pull request being closed or even deleted.
 
